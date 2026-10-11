@@ -111,7 +111,7 @@ for (a in seq_len(nrow(arms))) {
                pct_at_min = 100 * mean(x == min(x))) }))
   write.csv(mutate(eda_num, across(where(is.numeric), ~ round(.x, 2))), sprintf("%s/eda_numeric_%s.csv", OUT, A$name), row.names = FALSE)
   eda_cat <- bind_rows(lapply(intersect(cat_cov, covs_a), function(v)
-    data.frame(covariate = v, level = names(table(tr[[v]])), n = as.integer(table(tr[[v]])), pct = round(100 * prop.table(table(tr[[v]]))))))
+    data.frame(covariate = v, level = names(table(tr[[v]])), n = as.integer(table(tr[[v]])), pct = round(100 * as.numeric(prop.table(table(tr[[v]])))))))
   write.csv(eda_cat, sprintf("%s/eda_categorical_%s.csv", OUT, A$name), row.names = FALSE)
   cat("\nCategorical covariates (training patients):\n"); print(eda_cat, row.names = FALSE)
   ggsave(sprintf("%s/fig_eda_distributions_%s.png", OUT, A$name),
