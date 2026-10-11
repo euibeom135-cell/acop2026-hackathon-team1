@@ -229,7 +229,7 @@ ggsave(file.path(OUT, "fig_covariate_matrix.png"),
   ggplot(dm, aes(method, covariate)) + geom_point(aes(shape = picked, colour = picked), size = 3) +
     scale_shape_manual(values = c(`TRUE` = 16, `FALSE` = 1)) + scale_colour_manual(values = c(`TRUE` = "#08519c", `FALSE` = "grey75")) +
     facet_wrap(~arm) + guides(shape = "none", colour = "none") +
-    labs(x = NULL, y = NULL, title = "Covariates picked by each method (filled = picked; random forest = Boruta confirmed; XGBoost = SHAP above the noise probe)") +
+    labs(x = NULL, y = NULL, title = "Covariates picked by each method (filled = picked; random forest = permutation importance and XGBoost = SHAP above the noise probe)") +
     theme(axis.text.x = element_text(angle = 35, hjust = 1)), width = 11, height = 6, dpi = 150)
 ggsave(file.path(OUT, "fig_scoreboard.png"),
   ggplot(board_all, aes(R2, reorder(method, R2), fill = type)) + geom_col() + facet_wrap(~arm) + geom_vline(xintercept = 0) +
