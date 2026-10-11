@@ -172,8 +172,9 @@ for (a in seq_len(nrow(arms))) {
 
   # Evaluate once on the locked test set.
   yt <- te[[A$outcome]]; rt <- te$.resp
+  cut_p <- mean(tr$.resp)     # responder cut-off: the training responder share, fixed before seeing the test set
   board <- bind_rows(lapply(names(reg$pred), function(m) {
-    r <- reg_metrics(yt, reg$pred[[m]]); k <- cls_metrics(rt, cls$pred[[m]])
+    r <- reg_metrics(yt, reg$pred[[m]]); k <- cls_metrics(rt, cls$pred[[m]], cut = cut_p)
     data.frame(arm = A$name, method = m, type = type_of[[m]], RMSE = r[["RMSE"]], MAE = r[["MAE"]], R2 = r[["R2"]],
                R2_95CI = boot_ci(yt, reg$pred[[m]], function(y, p) reg_metrics(y, p)[["R2"]]),
                AUC = k[["AUC"]], AUC_95CI = boot_ci(rt, cls$pred[[m]], auc),
