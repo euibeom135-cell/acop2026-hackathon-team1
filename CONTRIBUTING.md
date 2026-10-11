@@ -3,7 +3,7 @@
 ## Never upload
 
 - **The dataset.** It was shared with participants through SharePoint. Keep it in `3_analysis/data/` on your own machine; the repository ignores everything in that folder.
-- The organizers' kickoff deck, or any licensed third-party material.
+- Licensed third-party material. (The organizers' kickoff deck is in `1_kickoff/` only while this repository is private.)
 
 ## If you use git
 

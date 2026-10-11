@@ -2,8 +2,7 @@
 3_analysis/data/*
 !3_analysis/data/README.md
 
-# Organizers' material, licensed-library notes and pre-kickoff work stay local.
-1_kickoff/
+# Licensed-library notes and pre-kickoff work stay local.
 5_reference/
 archive_before_kickoff/
 
@@ -21,3 +20,6 @@ __pycache__/
 .ipynb_checkpoints/
 .claude/settings.local.json
 .codex/
+
+# Shareable bundle of the repository
+Team1_hackathon_repo.zip

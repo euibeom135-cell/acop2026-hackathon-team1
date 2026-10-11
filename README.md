@@ -17,7 +17,8 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 
 | If you want to... | Go to |
 |---|---|
-| Understand the task in 3 pages | [`2_team_docs/Team1_hackathon_brief.pdf`](2_team_docs/Team1_hackathon_brief.pdf) |
+| Read the original kickoff slides | [`1_kickoff/`](1_kickoff/) (PDF, with a slide index) |
+| Understand the task in 3 pages | [`2_team_docs/`](2_team_docs/) (short version on the page, PDF for the full brief) |
 | Read the full background and method notes | [`2_team_docs/Team1_hackathon_detailed_guide.pdf`](2_team_docs/Team1_hackathon_detailed_guide.pdf) |
 | Run the analysis | [`3_analysis/`](3_analysis/) |
 | See or record a team decision | [`DECISIONS.md`](DECISIONS.md) |
@@ -36,7 +37,8 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 ├── DECISIONS.md           log of analysis decisions and their reasons
 ├── AI_DISCLOSURE.md       which AI tools were used, and for what
 ├── CONTRIBUTING.md        how to share changes; what must not be uploaded
-├── 2_team_docs/           brief and detailed guide (PDF)
+├── 1_kickoff/             organizers' 90-slide kickoff deck (PDF) and a slide index
+├── 2_team_docs/           brief (also readable on the page) and detailed guide (PDF)
 ├── 3_analysis/
 │   ├── README.md          how to run, what each output means
 │   ├── dm1_analysis.R     main pipeline; the only place the test set is used
@@ -49,7 +51,7 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
     └── slide_outline.md   five-slide outline mapped to the scoring
 ```
 
-Folder numbers follow the team's local working copy, where `1_kickoff/` (organizers' deck) and `5_reference/` are kept off GitHub.
+Folder numbers follow the local working copy; `5_reference/` (background notes) is kept off GitHub.
 
 ## Quick start
 
