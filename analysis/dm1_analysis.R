@@ -182,8 +182,8 @@ for (a in seq_len(nrow(arms))) {
   board <- board[order(board$type, -board$R2), ]
   all_board[[a]] <- board
   write.csv(board, sprintf("%s/scoreboard_%s.csv", OUT, A$name), row.names = FALSE)
-  cat(sprintf("\nScoreboard (test n = %d, %d responders; cutoff 0.5; XGBoost tuned: %s reg / %s cls):\n",
-              nrow(te), sum(rt), reg$tuned, cls$tuned))
+  cat(sprintf("\nScoreboard (test n = %d, %d responders; responder cut-off %.2f; XGBoost tuned: %s reg / %s cls):\n",
+              nrow(te), sum(rt), cut_p, reg$tuned, cls$tuned))
   print(mutate(board, across(where(is.numeric), ~ round(.x, 2))), row.names = FALSE)
 
   # SHAP summary for the tuned XGBoost model (training data): size and direction per covariate.
