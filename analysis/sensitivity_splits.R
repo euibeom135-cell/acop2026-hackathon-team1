@@ -29,7 +29,7 @@ for (s in seeds) {
 res <- bind_rows(res)
 summ <- res |> group_by(arm, method) |>
   summarise(median_R2 = median(R2), q10 = quantile(R2, 0.1), q90 = quantile(R2, 0.9), .groups = "drop")
-first <- res |> group_by(arm, seed) |> slice_max(R2, n = 1, with_ties = FALSE) |> count(arm, method, name = "times_ranked_first")
+first <- res |> group_by(arm, seed) |> slice_max(R2, n = 1, with_ties = FALSE) |> ungroup() |> count(arm, method, name = "times_ranked_first")
 summ <- left_join(summ, first, by = c("arm", "method")) |> mutate(times_ranked_first = coalesce(times_ranked_first, 0L)) |>
   arrange(arm, desc(median_R2))
 write.csv(res, file.path(OUT, "sensitivity_splits_all.csv"), row.names = FALSE)
