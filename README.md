@@ -1,39 +1,100 @@
 # ACoP 2026 Hackathon — Team 1
 
-"Beyond CTG Repeats: Advancing Patient Stratification in Myotonic Dystrophy Type 1"
+**Beyond CTG Repeats: Advancing Patient Stratification in Myotonic Dystrophy Type 1 (DM1)**
 
-**Task:** for each of three treatment arms in a simulated 500-patient dataset, find which baseline covariates drive response, separate real predictors from planted noise, and compare covariate models with machine-learning models.
+> **The question:** can machine learning identify additional predictors and improve patient stratification beyond traditional covariate modelling?
 
-**Due:** slides and code in the Team 1 SharePoint folder by **Tue 13 Oct, 11:59 PM ET**. Talk: Wed 14 Oct, 9:00 AM (5 min + 3 min Q&A).
+For each of three treatment arms in a simulated 500-patient dataset, we find which baseline covariates drive response, separate real predictors from planted noise, and compare covariate models with machine-learning models.
 
-## Folders, in the order you need them
+| | |
+|---|---|
+| **Submission** | Slides and all code in the Team 1 SharePoint folder by **Tue 13 Oct 2026, 11:59 PM ET** |
+| **Presentation** | Wed 14 Oct, 9:00 AM. 5-minute talk + 3-minute Q&A (one judge question) |
+| **Scoring** | Clinical 10, Technical 10, Communication 10 |
+| **Office hour** | Tue 13 Oct, 8:00 to 9:00 AM, Magnolia 1 |
 
-| Folder | What's inside | Touch it? |
-|---|---|---|
-| `1_kickoff/` | The organizers' kickoff slide deck (90 slides) | Read |
-| `2_team_docs/` | Three-page brief and ten-page detailed guide, both PDF, for sharing with the team | Share |
-| `3_analysis/` | `dm1_analysis.R`, the whole analysis in one script. Put the dataset in `3_analysis/data/`. Results appear in `3_analysis/dm1_outputs/` | **Work here** |
-| `4_slides/` | `slide_outline.md`: five-slide outline mapped to the scoring. The deck goes here | Work here |
-| `5_reference/` | Background notes written before kickoff: DM1 science brief, Certara and nlmixr2lib model catalogues | Reference |
-| `archive_before_kickoff/` | The longitudinal `nlmixr2` pipeline, overnight loop and practice data built before the real task was known. Not part of the submission | Leave |
+## Start here
 
-In the shared GitHub repository only `2_team_docs/`, `3_analysis/` and `4_slides/` are present. The kickoff deck, reference notes, archive and the dataset itself are kept off GitHub; get the deck and dataset from the team SharePoint folder.
+| If you want to... | Go to |
+|---|---|
+| Understand the task in 3 pages | [`2_team_docs/Team1_hackathon_brief.pdf`](2_team_docs/Team1_hackathon_brief.pdf) |
+| Read the full background and method notes | [`2_team_docs/Team1_hackathon_detailed_guide.pdf`](2_team_docs/Team1_hackathon_detailed_guide.pdf) |
+| Run the analysis | [`3_analysis/`](3_analysis/) |
+| See or record a team decision | [`DECISIONS.md`](DECISIONS.md) |
+| Work on the slides | [`4_slides/`](4_slides/) |
+| Know how to share a change | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
+| Check what we must disclose about AI | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
 
-## Run the analysis
+## Repository layout
 
-1. Save the dataset (any file name containing `DM1`, `.xlsx` or `.csv`) into `3_analysis/data/`.
-2. Run:
+```
+├── README.md              this page
+├── DECISIONS.md           log of analysis decisions and their reasons
+├── AI_DISCLOSURE.md       which AI tools were used, and for what
+├── CONTRIBUTING.md        how to share changes; what must not be uploaded
+├── 2_team_docs/           brief and detailed guide (PDF)
+├── 3_analysis/
+│   ├── README.md          how to run, what each output means
+│   ├── dm1_analysis.R     the whole analysis in one script
+│   ├── install_packages.R one-off package install
+│   ├── data/              put the dataset here (never uploaded)
+│   └── dm1_outputs/       tables and figures, created by the script
+└── 4_slides/
+    └── slide_outline.md   five-slide outline mapped to the scoring
+```
+
+Folder numbers follow the team's local working copy, where `1_kickoff/` (organizers' deck) and `5_reference/` are kept off GitHub.
+
+## Quick start
+
+1. Get the dataset from the team SharePoint folder and save it into `3_analysis/data/`.
+2. Install packages once: `Rscript 3_analysis/install_packages.R`
+3. Run:
 
 ```bash
 cd 3_analysis && Rscript dm1_analysis.R
 ```
 
-3. Read the data checks printed at the top, then the per-arm covariate calls and scoreboards. Figures and tables are in `3_analysis/dm1_outputs/`.
+Results appear in `3_analysis/dm1_outputs/`. See [`3_analysis/README.md`](3_analysis/README.md) for what each file means.
 
-The script has only been run on mock data with the kickoff's column names. The arm and label column names are taken from the slides and may need a small edit once the real file arrives.
+## Workflow
 
-## What goes to SharePoint
+The script follows the six steps from the kickoff session.
 
-- The slide deck from `4_slides/`.
-- `3_analysis/dm1_analysis.R` and the `dm1_outputs/` it produced.
-- AI disclosure: Claude (Anthropic) via Claude Code for code drafting and workflow design. Add InsightRX Astra if it is used for a cross-check.
+| Step | What the script does |
+|---|---|
+| 1. Understand | Data checks, correlated covariates, responder balance (training data only after the split) |
+| 2. Split | Per arm, 75/25, stratified by responder label and onset phenotype, fixed seed, test set locked |
+| 3. Preprocess | Category encoding; scaling and imputation learned on the training set only |
+| 4. Select | Covariate models (stepwise, LASSO, elastic net) and ML (random forest, XGBoost) |
+| 5. Train | Tuning by 5-fold cross-validation inside the training set |
+| 6. Evaluate | Once on the test set, with bootstrap intervals; covariates compared across methods |
+
+## Task board
+
+- [ ] Dataset received and placed in `3_analysis/data/`
+- [ ] Data checks reviewed; cleaning decisions recorded in `DECISIONS.md` and in the script
+- [ ] Analysis run on real data; outputs shared
+- [ ] Clinical sense-check of selected covariates per arm
+- [ ] Team call: agree the story
+- [ ] Slides drafted (five slides)
+- [ ] Slides reviewed after Tuesday office hour
+- [ ] AI disclosure final in code and slides
+- [ ] Slides and code uploaded to SharePoint; representative emails the chairs
+- [ ] Presenter rehearsed with the likely judge questions
+
+## Team and roles
+
+| Role | Who |
+|---|---|
+| Analysis and code | Euibeom Shin |
+| Clinical sense-check | to be agreed |
+| Slides | to be agreed |
+| Presenter | to be agreed |
+| Team representative (emails the chairs) | to be agreed |
+
+Team 1: Euibeom Shin, Luong Vuong, Vijay Ivaturi, Ming Gao, Wenzhe Ma, Bei Zhao.
+
+## Status
+
+The script has been tested end to end on mock data built with the kickoff's column names. It has **not yet been run on the real dataset**; column names for the arm and responder labels are taken from the slides and may need a small edit.

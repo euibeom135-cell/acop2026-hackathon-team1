@@ -1,6 +1,6 @@
 # The dataset stays out of the repository: each team member puts it in 3_analysis/data/ locally.
 3_analysis/data/*
-!3_analysis/data/.gitkeep
+!3_analysis/data/README.md
 
 # Organizers' material, licensed-library notes and pre-kickoff work stay local.
 1_kickoff/

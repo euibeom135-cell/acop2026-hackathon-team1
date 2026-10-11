@@ -290,4 +290,5 @@ ggsave(file.path(OUT, "fig_scoreboard.png"),
 
 cat("\nSignal covariates per arm:\n")
 print(as.data.frame(cov_all |> filter(call == "signal") |> group_by(arm) |> summarise(signal = paste(covariate, collapse = ", "))), row.names = FALSE)
+writeLines(capture.output(sessionInfo()), file.path(OUT, "session_info.txt"))   # versions, for reproducibility
 cat("\nDone. Outputs in", OUT, "\n")
