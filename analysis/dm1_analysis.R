@@ -126,12 +126,11 @@ for (a in seq_len(nrow(arms))) {
   stab <- rowMeans(replicate(200, { i <- sample(nrow(tr), replace = TRUE)
     cv <- cv.glmnet(Xtr[i, ], tr[[A$outcome]][i], alpha = 1, nfolds = 5)
     by_var(as.numeric(coef(cv, s = "lambda.1se"))[-1], Xtr)[vars] > 0 }))
-  # Boruta: is a covariate more important to a random forest than shuffled copies of the covariates?
-  set.seed(SEED); bor <- Boruta::Boruta(x = tr[vars], y = tr[[A$outcome]], maxRuns = 200)
+  # One vote per method. The two ML votes are "ranked above the noise probe" (kickoff slides 72 and 74).
   s <- reg$sel
   tab <- data.frame(covariate = vars,
     Stepwise = s$Stepwise > 0, LASSO = s$LASSO > 0, `Elastic net` = s$`Elastic net` > 0,
-    `Random forest` = vars %in% Boruta::getSelectedAttributes(bor, withTentative = FALSE),
+    `Random forest` = s$`Random forest` > s["noise_probe", "Random forest"],
     XGBoost = s$`XGBoost SHAP` > s["noise_probe", "XGBoost SHAP"],
     lasso_stability_pct = round(100 * stab), check.names = FALSE)
   tab$votes <- rowSums(tab[2:6])
