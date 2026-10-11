@@ -5,7 +5,7 @@
 | [`1_kickoff_slides_original.pdf`](1_kickoff_slides_original.pdf) | The organizers' kickoff deck, 90 slides |
 | [`2_brief.pdf`](2_brief.pdf) | Our 3-page summary: clinical background, approach, logistics |
 | [`3_detailed_guide.pdf`](3_detailed_guide.pdf) | Our 10-page guide: the same three topics with the reasoning, methods in plain words, metrics, pitfalls, glossary |
-| [`4_methods_and_tools.pdf`](4_methods_and_tools.pdf) | Every method, metric and tool named at kickoff, explained in a line or two, with links and whether our script uses it (4 pages) |
+| [`4_methods_and_tools.pdf`](4_methods_and_tools.pdf) | Every method, metric and tool named at kickoff, explained in a line or two, with links |
 | [`session_notes_summary.md`](session_notes_summary.md) | What the organizers said beyond the slides, including their hints |
 | [`presentation_outline.md`](presentation_outline.md) | Five-slide outline for our talk. The final deck goes in this folder |
 

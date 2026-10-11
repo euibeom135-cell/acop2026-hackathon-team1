@@ -75,6 +75,33 @@ Summary of the organizers' spoken remarks at the kickoff, 11 October 2026, taken
 - Tuning: every model has settings; grid search tries combinations and keeps the best.
 - Covariate-method examples in the deck are in R; ML examples are in Python (scikit-learn).
 
+## Interpreting ML models
+
+- **Permutation importance:** shuffle one covariate and see whether predictions get worse; a longer bar means the model relied on it more. Caveat: correlated covariates share the importance.
+- **SHAP** (Shapley additive explanations): splits one patient's prediction into a contribution from each covariate, like an itemised receipt. Shows which covariates matter and in which direction, per arm.
+- Caveat stressed aloud: SHAP "explains the model, not the biology". Importance does not show a causal relationship. "Always ask: does it align with the clinical situation? Does it make sense to you clinically?"
+
+## Assessment and metrics
+
+- **Continuous outcome:** RMSE (heavily influenced by large errors), MAE, and R² or adjusted R². RMSE and MAE are in the outcome's own units, so they **cannot be compared between treatment arms**. R² near 1 is good; below 0 is worse than predicting the mean.
+- Compute these on the **test set**. If an outcome was scaled, convert predictions back to the original units first.
+- **Binary outcome:** every metric starts from four counts (responder found, responder missed, false alarm, non-responder found). Recall: of the true responders, how many did we find. Precision: of the predicted responders, how many were right.
+- **Accuracy alone can mislead.** Example given: with 30 responders in 100, a model that calls everyone a non-responder is 70% accurate and finds nobody. Report recall and precision with accuracy, and check the class mix in the test set first.
+- **ROC-AUC** ignores the class mix and looks across every cut-off: 0.5 is a coin flip, 1.0 is perfect ranking. It is not the pharmacokinetic AUC.
+- **Scoreboard:** one summary table with the covariate models and ML models together. Training-set metrics may be shown, "but what we're really looking for is how they perform on the test dataset you separated from the beginning".
+- **Hint:** "It's not only about ranking different models." Two methods can score alike and point to different covariates. The team should discuss "why this set of key covariates makes more sense than the other set" for each arm.
+- What to list: for stepwise, the selected terms; for LASSO and elastic net, the non-zero coefficients; for ML models, an importance ranking from permutation importance or SHAP, "or maybe both". Then compare which covariates appear across methods and check whether that makes sense clinically.
+- Evaluation checklist as spoken: match metrics to the outcome type; evaluate every method on the same test patients; report results per arm; never report accuracy without recall and precision.
+
+## Closing remarks and Q&A
+
+- What they want in the talk: not "this model performed really well, so we picked it", but everything tied together and brought "back to the clinic: what are the patient characteristics, and why do they respond or not respond?"
+- The simulated dataset was built from current knowledge of the disease, with patient stratification designed in for each treatment arm. "Clinical data is always messy, and there will always be something unexpected."
+- **Q&A: continuous or binary outcome?** Either. "It's not like if you choose one of them you're going to score better."
+- Teams may choose a team name; folders are created as Team 1, Team 2 and so on. Organizers visited each table to set up the team SharePoint subfolder.
+- Some teams were merged or adjusted at the end because of absences, so rosters may differ from slide 85.
+- The last part of the session was working time to agree who does what.
+
 ## Takeaways for our approach
 
 1. Keep models simple; expect plain regression to be competitive.
@@ -85,4 +112,4 @@ Summary of the organizers' spoken remarks at the kickoff, 11 October 2026, taken
 6. End with a stratification proposal.
 7. Disclose AI use in code comments and aloud in the talk.
 
-*Compiled with Claude (Anthropic) from a live transcript. The session's later parts (permutation importance, SHAP, assessment metrics, Q&A) were not captured in the transcript; see slides 72 to 83 of the kickoff deck.*
+*Compiled with Claude (Anthropic) from a live transcript, which had gaps. Not captured: the end of the evaluation checklist and the innovation slide (see slides 82 to 83 of the kickoff deck).*
