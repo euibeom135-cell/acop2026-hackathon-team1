@@ -1,0 +1,301 @@
+Cohort,N,Covariate_1,Covariate_2,Status,Effect_type,Effect,P,Groups,Minimum_expected_count,Q_within_cohort_type
+Pooled training,399,phenotype,sex,Testable,Cramer's V,0.020376976033443905,0.9205015265875802,,31.017543859649123,0.9240236046777774
+Pooled training,399,phenotype,family_history,Testable,Cramer's V,0.11085688485261314,0.04381057226916409,,8.010025062656641,0.1682722136740661
+Pooled training,399,phenotype,cataracts,Testable,Cramer's V,0.29823399026215885,1.96688271420073e-08,,16.70175438596491,1.96688271420073e-07
+Pooled training,399,phenotype,smoking_status,Testable,Cramer's V,0.0730248386659773,0.3725386569862753,,14.486215538847118,0.8867660470278447
+Pooled training,399,sex,family_history,Testable,Cramer's V,0.04245260861395141,0.6979947598425766,,21.43859649122807,0.8867660470278447
+Pooled training,399,sex,cataracts,Testable,Cramer's V,0.026866277059187576,0.5915070064517531,,44.70175438596491,0.8867660470278447
+Pooled training,399,sex,smoking_status,Testable,Cramer's V,0.048281971771507184,0.628094789487387,,38.771929824561404,0.8867660470278447
+Pooled training,399,family_history,cataracts,Testable,Cramer's V,0.1223443739744344,0.05048166410221983,,11.543859649122806,0.1682722136740661
+Pooled training,399,family_history,smoking_status,Testable,Cramer's V,0.051825695712641756,0.7094128376222757,,10.012531328320803,0.8867660470278447
+Pooled training,399,cataracts,smoking_status,Testable,Cramer's V,0.019901721122871096,0.9240236046777773,,20.87719298245614,0.9240236046777774
+Pooled training,399,phenotype,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.45982040968237686,1.0607355713002574e-40,3.0,,2.2982604044838913e-39
+Pooled training,399,phenotype,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.19252073533646621,1.025152092263112e-17,3.0,,1.1105814332850382e-16
+Pooled training,399,phenotype,age,Testable,Kruskal-Wallis eta squared (H),0.6934457083602712,8.63169088798046e-61,3.0,,2.80529953859365e-59
+Pooled training,399,phenotype,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.7301793756752565,5.989030631632349e-64,3.0,,3.8928699105610265e-62
+Pooled training,399,phenotype,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.06309172142731781,1.3817484850834478e-06,3.0,,8.164877411856737e-06
+Pooled training,399,phenotype,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.3759477622637182,1.729186627760716e-33,3.0,,2.8099282701111633e-32
+Pooled training,399,phenotype,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.03428818728324088,0.00041424164034367075,3.0,,0.0017950471081559065
+Pooled training,399,phenotype,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.024174392069090975,0.003068612942685999,3.0,,0.011732931839681762
+Pooled training,399,phenotype,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.1975454675205616,3.790618145310394e-18,3.0,,4.927803588903512e-17
+Pooled training,399,phenotype,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.39295463254725194,3.0,,0.7095014198769827
+Pooled training,399,phenotype,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.08604504561061763,1.467795643460475e-08,3.0,,1.0600746313881208e-07
+Pooled training,399,phenotype,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.7365630702194254,3.0,,0.8178323675535073
+Pooled training,399,phenotype,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.4413213924750876,3.0,,0.7453298272890665
+Pooled training,399,sex,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.5589531115827733,2.0,,0.7453298272890665
+Pooled training,399,sex,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.5525671487980468,2.0,,0.7453298272890665
+Pooled training,399,sex,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.3914468129417682,2.0,,0.7095014198769827
+Pooled training,399,sex,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.4363630143605305,2.0,,0.7453298272890665
+Pooled training,399,sex,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.8081720569110915,2.0,,0.8472771564390476
+Pooled training,399,sex,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.022032011619959026,0.0017964407766142855,2.0,,0.007298040654995535
+Pooled training,399,sex,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.011587651279395554,0.017957427349781428,2.0,,0.05473799895727718
+Pooled training,399,sex,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.040656003118585395,3.4715349820711124e-05,2.0,,0.00016130280144667936
+Pooled training,399,sex,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.522059706773546,2.0,,0.7453298272890665
+Pooled training,399,sex,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0023823732457823993,0.16303992505200818,2.0,,0.36051412786867393
+Pooled training,399,sex,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),5.809801792736991e-05,0.311793104725002,2.0,,0.6141379335492463
+Pooled training,399,sex,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.7157585251345222,2.0,,0.8178323675535073
+Pooled training,399,sex,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.47910446984015154,2.0,,0.7453298272890665
+Pooled training,399,family_history,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.49127698307696344,3.0,,0.7453298272890665
+Pooled training,399,family_history,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.626641283878545,3.0,,0.7986604598452045
+Pooled training,399,family_history,age,Testable,Kruskal-Wallis eta squared (H),0.009052545306126725,0.06127373645848744,3.0,,0.1531843411462186
+Pooled training,399,family_history,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.010785382077088217,0.04347776368395939,3.0,,0.11775227664405669
+Pooled training,399,family_history,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.6433277005136497,3.0,,0.8041596256420622
+Pooled training,399,family_history,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0028561706295089835,0.20897894271713915,3.0,,0.4381816540843241
+Pooled training,399,family_history,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0,0.5587769566206777,3.0,,0.7453298272890665
+Pooled training,399,family_history,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.5137268358501115,3.0,,0.7453298272890665
+Pooled training,399,family_history,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.49661379504278536,3.0,,0.7453298272890665
+Pooled training,399,family_history,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.5969587193040172,3.0,,0.7760463350952225
+Pooled training,399,family_history,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.009849409276783357,0.05233012673268143,3.0,,0.1360583295049717
+Pooled training,399,family_history,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.9965047565428243,3.0,,0.9965047565428243
+Pooled training,399,family_history,bmi,Testable,Kruskal-Wallis eta squared (H),0.004007141523277416,0.16639113593938795,3.0,,0.36051412786867393
+Pooled training,399,cataracts,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.01265887515083465,0.014100050000216366,2.0,,0.04582516250070319
+Pooled training,399,cataracts,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.01424427871466439,0.009887915578846704,2.0,,0.03382707961184399
+Pooled training,399,cataracts,age,Testable,Kruskal-Wallis eta squared (H),0.1381129955527125,7.898198559702515e-14,2.0,,7.334041519723765e-13
+Pooled training,399,cataracts,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.08179914869009848,7.221330640746062e-09,2.0,,5.867331145606175e-08
+Pooled training,399,cataracts,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.06572830061603231,1.9378494242176567e-07,2.0,,1.2596021257414767e-06
+Pooled training,399,cataracts,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.015517539756237611,0.0074527945088462295,2.0,,0.026912869059722497
+Pooled training,399,cataracts,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.04065231210764918,3.4742141850054015e-05,2.0,,0.00016130280144667936
+Pooled training,399,cataracts,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.01019858425917056,0.024642459716039795,2.0,,0.06964173398011246
+Pooled training,399,cataracts,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.006065302006724233,0.0648839904912112,2.0,,0.15620219933069363
+Pooled training,399,cataracts,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0036460886240452664,0.11771242281664694,2.0,,0.2732609815386447
+Pooled training,399,cataracts,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.053724671810082246,2.297478122877411e-06,2.0,,1.2444673165585975e-05
+Pooled training,399,cataracts,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.4781742870248331,2.0,,0.7453298272890665
+Pooled training,399,cataracts,bmi,Testable,Kruskal-Wallis eta squared (H),0.011449992261489274,0.01852670733938612,2.0,,0.05473799895727718
+Pooled training,399,smoking_status,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.5618640236486809,3.0,,0.7453298272890665
+Pooled training,399,smoking_status,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.6701712133779822,3.0,,0.8178323675535073
+Pooled training,399,smoking_status,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.7392501283917914,3.0,,0.8178323675535073
+Pooled training,399,smoking_status,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.6883155092958411,3.0,,0.8178323675535073
+Pooled training,399,smoking_status,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.8240795477380198,3.0,,0.8502408032217665
+Pooled training,399,smoking_status,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0,0.7597130121900773,3.0,,0.8230224298725837
+Pooled training,399,smoking_status,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0,0.7298383855311734,3.0,,0.8178323675535073
+Pooled training,399,smoking_status,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.00018656835803292966,0.35453772013998014,3.0,,0.6777927002676091
+Pooled training,399,smoking_status,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.7888145623367038,3.0,,0.840540107407963
+Pooled training,399,smoking_status,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.8872705538849166,3.0,,0.9011341562893684
+Pooled training,399,smoking_status,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.7423401490101067,3.0,,0.8178323675535073
+Pooled training,399,smoking_status,albumin,Testable,Kruskal-Wallis eta squared (H),0.0024911053445747073,0.22464388628739743,3.0,,0.45630789402127603
+Pooled training,399,smoking_status,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.5332854597578365,3.0,,0.7453298272890665
+Mexiletine,128,phenotype,sex,Testable,Cramer's V,0.08558694393529773,0.6257477162985616,,7.171875,0.8964340329089412
+Mexiletine,128,phenotype,family_history,Testable,Cramer's V,0.20456409597988767,0.02998991658526399,,1.859375,0.14994958292631994
+Mexiletine,128,phenotype,cataracts,Testable,Cramer's V,0.35884457617450766,0.000263556310588407,,3.984375,0.0026355631058840702
+Mexiletine,128,phenotype,smoking_status,Testable,Cramer's V,0.05991723682846269,0.9218106743887542,,3.453125,0.9218106743887542
+Mexiletine,128,sex,family_history,Testable,Cramer's V,0.11710742421139105,0.41573571397861897,,5.90625,0.8314714279572379
+Mexiletine,128,sex,cataracts,Testable,Cramer's V,0.012837080703225215,0.8845253415224739,,12.65625,0.9218106743887542
+Mexiletine,128,sex,smoking_status,Testable,Cramer's V,0.13003700309058214,0.33884387647404873,,10.96875,0.8314714279572379
+Mexiletine,128,family_history,cataracts,Testable,Cramer's V,0.08533074580590583,0.6275038230362588,,3.28125,0.8964340329089412
+Mexiletine,128,family_history,smoking_status,Testable,Cramer's V,0.08950122513185571,0.726437776504219,,2.84375,0.9080472206302738
+Mexiletine,128,cataracts,smoking_status,Testable,Cramer's V,0.11736031953139983,0.41416101550322015,,6.09375,0.8314714279572379
+Mexiletine,128,phenotype,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.4539749789636718,1.7509701814057234e-13,3.0,,3.501940362811447e-12
+Mexiletine,128,phenotype,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.17668159798261987,5.88796645394542e-06,3.0,,4.415974840459065e-05
+Mexiletine,128,phenotype,age,Testable,Kruskal-Wallis eta squared (H),0.7384498801330439,3.3240018865916187e-21,3.0,,9.972005659774856e-20
+Mexiletine,128,phenotype,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.7483056038147903,1.795326167686246e-21,3.0,,9.972005659774856e-20
+Mexiletine,128,phenotype,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.1029566561915973,0.0005903523405276933,3.0,,0.0032201036756056
+Mexiletine,128,phenotype,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.3995719747505177,5.2476097857149935e-12,3.0,,7.87141467857249e-11
+Mexiletine,128,phenotype,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0394104671527135,0.031330782538350636,3.0,,0.08173247618700166
+Mexiletine,128,phenotype,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.02559016989071165,0.07431922457198718,3.0,,0.17150590285843195
+Mexiletine,128,phenotype,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.18536199270659967,3.4225504330355734e-06,3.0,,2.9336146568876344e-05
+Mexiletine,128,phenotype,ck_level,Testable,Kruskal-Wallis eta squared (H),0.00171534595991114,0.33048000442816156,3.0,,0.5084307760433254
+Mexiletine,128,phenotype,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.08471896941351696,0.001845628169164677,3.0,,0.008518283857683124
+Mexiletine,128,phenotype,albumin,Constant within cohort,Kruskal-Wallis eta squared (H),,,3.0,,
+Mexiletine,128,phenotype,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.4738024296602289,3.0,,0.6460942222639484
+Mexiletine,128,sex,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.010222327722112836,0.1303767126392316,2.0,,0.26974492270185846
+Mexiletine,128,sex,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.02761193632766628,0.03431170516698196,2.0,,0.0857792629174549
+Mexiletine,128,sex,age,Testable,Kruskal-Wallis eta squared (H),0.0035304439982804005,0.22935837994193414,2.0,,0.404750082250472
+Mexiletine,128,sex,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.3304358401397133,2.0,,0.5084307760433254
+Mexiletine,128,sex,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.6133780571336133,2.0,,0.6931537345074823
+Mexiletine,128,sex,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.03664132985440563,0.017789023538312163,2.0,,0.0561758638051963
+Mexiletine,128,sex,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.003857809993498217,0.2228250355648515,2.0,,0.404750082250472
+Mexiletine,128,sex,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.04037026662555709,0.01362068235383093,2.0,,0.04807299654293269
+Mexiletine,128,sex,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.5889148100871111,2.0,,0.6931537345074823
+Mexiletine,128,sex,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.3235425553005859,2.0,,0.5084307760433254
+Mexiletine,128,sex,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.4917196538315175,2.0,,0.6555255724159271
+Mexiletine,128,sex,albumin,Constant within cohort,Kruskal-Wallis eta squared (H),,,2.0,,
+Mexiletine,128,sex,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.4357912282354933,2.0,,0.6225588974792762
+Mexiletine,128,family_history,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.45581684008038725,3.0,,0.6360234977865868
+Mexiletine,128,family_history,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.604864015680797,3.0,,0.6931537345074823
+Mexiletine,128,family_history,age,Testable,Kruskal-Wallis eta squared (H),0.061768490179345735,0.007746372294723389,3.0,,0.033198738405957384
+Mexiletine,128,family_history,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.050503666561811995,0.015662606484165918,3.0,,0.052208688280553056
+Mexiletine,128,family_history,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.008512097017246074,0.21610171841056747,3.0,,0.404750082250472
+Mexiletine,128,family_history,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.009456464353992274,0.2037158756980011,3.0,,0.3942887916735505
+Mexiletine,128,family_history,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.04064298824455909,0.029007908905876758,3.0,,0.08173247618700166
+Mexiletine,128,family_history,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.43409621712098445,3.0,,0.6225588974792762
+Mexiletine,128,family_history,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.03502804761760678,0.0412026388013829,3.0,,0.09888633312331896
+Mexiletine,128,family_history,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.7780346425996566,3.0,,0.8048634233789551
+Mexiletine,128,family_history,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.014779146595190966,0.14606600619697155,3.0,,0.2921320123939431
+Mexiletine,128,family_history,albumin,Constant within cohort,Kruskal-Wallis eta squared (H),,,3.0,,
+Mexiletine,128,family_history,bmi,Testable,Kruskal-Wallis eta squared (H),0.0025662698704409692,0.3133633600901806,3.0,,0.5084307760433254
+Mexiletine,128,cataracts,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.04090265770485473,0.013113488331819943,2.0,,0.04807299654293269
+Mexiletine,128,cataracts,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.029406415791223817,0.030071356027546438,2.0,,0.08173247618700166
+Mexiletine,128,cataracts,age,Testable,Kruskal-Wallis eta squared (H),0.20691642078444245,1.960704945282339e-07,2.0,,2.352845934338807e-06
+Mexiletine,128,cataracts,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.1176718369748494,6.941781028922693e-05,2.0,,0.0004627854019281795
+Mexiletine,128,cataracts,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.16872881444204574,2.3813646462748716e-06,2.0,,2.3813646462748716e-05
+Mexiletine,128,cataracts,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.03068296109754927,0.02739007698225766,2.0,,0.08173247618700166
+Mexiletine,128,cataracts,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.1136883884838522,9.05233487319131e-05,2.0,,0.0005431400923914786
+Mexiletine,128,cataracts,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.010666458289619712,0.12576836399322022,2.0,,0.26950363712832903
+Mexiletine,128,cataracts,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0027726978864276654,0.2453900452234476,2.0,,0.4206686489544816
+Mexiletine,128,cataracts,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.6238383610567341,2.0,,0.6931537345074823
+Mexiletine,128,cataracts,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.07124415984808792,0.0015852803467169673,2.0,,0.007926401733584837
+Mexiletine,128,cataracts,albumin,Constant within cohort,Kruskal-Wallis eta squared (H),,,2.0,,
+Mexiletine,128,cataracts,bmi,Testable,Kruskal-Wallis eta squared (H),0.0447531240681886,0.009977587938631042,2.0,,0.03991035175452417
+Mexiletine,128,smoking_status,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.7180075471008686,3.0,,0.7557974180009144
+Mexiletine,128,smoking_status,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.6891853224676053,3.0,,0.751838533601024
+Mexiletine,128,smoking_status,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.6215579336139571,3.0,,0.6931537345074823
+Mexiletine,128,smoking_status,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.8800210665027921,3.0,,0.8800210665027921
+Mexiletine,128,smoking_status,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.021379618059478758,0.09669185315598813,3.0,,0.21487078479108473
+Mexiletine,128,smoking_status,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0,0.873551732996149,3.0,,0.8800210665027921
+Mexiletine,128,smoking_status,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0,0.5957831316413991,3.0,,0.6931537345074823
+Mexiletine,128,smoking_status,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.40166392943261575,3.0,,0.6024958941489237
+Mexiletine,128,smoking_status,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.7152274034357285,3.0,,0.7557974180009144
+Mexiletine,128,smoking_status,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.6153025239002455,3.0,,0.6931537345074823
+Mexiletine,128,smoking_status,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.5152246426198828,3.0,,0.6577335863232546
+Mexiletine,128,smoking_status,albumin,Constant within cohort,Kruskal-Wallis eta squared (H),,,3.0,,
+Mexiletine,128,smoking_status,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.5025696055188774,3.0,,0.6555255724159271
+Oligonucleotide,136,phenotype,sex,Testable,Cramer's V,0.07991742267722726,0.6477166010047306,,10.235294117647058,0.8096457512559132
+Oligonucleotide,136,phenotype,family_history,Testable,Cramer's V,0.17887339389361032,0.06897210302042735,,3.3529411764705883,0.23120899122610805
+Oligonucleotide,136,phenotype,cataracts,Testable,Cramer's V,0.30806331752232735,0.0015751504034739801,,5.647058823529412,0.0157515040347398
+Oligonucleotide,136,phenotype,smoking_status,Testable,Cramer's V,0.14288519750158926,0.23509250936062268,,5.647058823529412,0.4701850187212454
+Oligonucleotide,136,sex,family_history,Testable,Cramer's V,0.02095606451611528,0.9705788319211821,,8.102941176470589,0.9705788319211821
+Oligonucleotide,136,sex,cataracts,Testable,Cramer's V,0.04742036211782552,0.5802553981012296,,13.647058823529411,0.8096457512559132
+Oligonucleotide,136,sex,smoking_status,Testable,Cramer's V,0.09443261757648595,0.545315196201642,,13.647058823529411,0.8096457512559132
+Oligonucleotide,136,family_history,cataracts,Testable,Cramer's V,0.19809408258970038,0.06936269736783242,,4.470588235294118,0.23120899122610805
+Oligonucleotide,136,family_history,smoking_status,Testable,Cramer's V,0.1641064133720056,0.11966845372393957,,4.470588235294118,0.29917113430984893
+Oligonucleotide,136,cataracts,smoking_status,Testable,Cramer's V,0.06343733929227732,0.7605966186591315,,7.529411764705882,0.8451073540657017
+Oligonucleotide,136,phenotype,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.500390375795487,1.3005879149562343e-15,3.0,,2.8179404824051744e-14
+Oligonucleotide,136,phenotype,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.18952972642121108,1.235880598178625e-06,3.0,,1.338870648026844e-05
+Oligonucleotide,136,phenotype,age,Testable,Kruskal-Wallis eta squared (H),0.6649218328628764,2.3034315159032497e-20,3.0,,7.486152426685562e-19
+Oligonucleotide,136,phenotype,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.7270929106971783,3.688402673441085e-22,3.0,,2.397461737736705e-20
+Oligonucleotide,136,phenotype,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.04407882504011028,0.019619292901616358,3.0,,0.09108957418607595
+Oligonucleotide,136,phenotype,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.36477484339977834,1.0734834666305394e-11,3.0,,1.7444106332746265e-10
+Oligonucleotide,136,phenotype,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0479178035231334,0.015198873977701498,3.0,,0.08232723404588312
+Oligonucleotide,136,phenotype,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.005444502766025239,0.25613274494840055,3.0,,0.5945938722016441
+Oligonucleotide,136,phenotype,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.21409068435295991,2.4134690238146315e-07,3.0,,3.1375097309590213e-06
+Oligonucleotide,136,phenotype,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0032575001280405174,0.2962286198218968,3.0,,0.6418286762807763
+Oligonucleotide,136,phenotype,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.08069763676445292,0.001718346401901204,3.0,,0.011169251612357826
+Oligonucleotide,136,phenotype,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.40500214896423403,3.0,,0.6927668337546108
+Oligonucleotide,136,phenotype,bmi,Testable,Kruskal-Wallis eta squared (H),0.01801015316737721,0.11106105480158944,3.0,,0.42215205374383574
+Oligonucleotide,136,sex,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.867204745782604,2.0,,0.9853291943714477
+Oligonucleotide,136,sex,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.8877534501723969,2.0,,0.9853291943714477
+Oligonucleotide,136,sex,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.8550409856308475,2.0,,0.9853291943714477
+Oligonucleotide,136,sex,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.7000386907179625,2.0,,0.9100502979333512
+Oligonucleotide,136,sex,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.9876805150372145,2.0,,0.9997708573582993
+Oligonucleotide,136,sex,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0068835272934069415,0.1655931350615174,2.0,,0.527560935415797
+Oligonucleotide,136,sex,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.005378486611940372,0.18960075098185195,2.0,,0.5601840369918353
+Oligonucleotide,136,sex,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.06739561891463314,0.0015392636639052183,2.0,,0.011116904239315465
+Oligonucleotide,136,sex,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.4597461660969189,2.0,,0.7470875199074932
+Oligonucleotide,136,sex,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.9627401644280886,2.0,,0.9997708573582993
+Oligonucleotide,136,sex,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.8793317438570742,2.0,,0.9853291943714477
+Oligonucleotide,136,sex,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.48548036734470834,2.0,,0.7696639970099034
+Oligonucleotide,136,sex,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.6872073194181452,2.0,,0.9100502979333512
+Oligonucleotide,136,family_history,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.6957897552126718,3.0,,0.9100502979333512
+Oligonucleotide,136,family_history,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.9176989386082164,3.0,,0.9853291943714477
+Oligonucleotide,136,family_history,age,Testable,Kruskal-Wallis eta squared (H),0.008653125699371557,0.20691796698759338,3.0,,0.5604028272580653
+Oligonucleotide,136,family_history,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.020678147341604825,0.09300548600973263,3.0,,0.3778347869145388
+Oligonucleotide,136,family_history,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.9997708573582993,3.0,,0.9997708573582993
+Oligonucleotide,136,family_history,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0003113934710275263,0.3603398497278925,3.0,,0.6744417038556125
+Oligonucleotide,136,family_history,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0,0.9921752476607781,3.0,,0.9997708573582993
+Oligonucleotide,136,family_history,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.38391296988704093,3.0,,0.6744417038556125
+Oligonucleotide,136,family_history,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.00560277554954566,0.25345104928998574,3.0,,0.5945938722016441
+Oligonucleotide,136,family_history,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.5272991084471598,3.0,,0.8155824005524142
+Oligonucleotide,136,family_history,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.04516826595111949,0.018248184456289285,3.0,,0.09108957418607595
+Oligonucleotide,136,family_history,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.8976533399636539,3.0,,0.9853291943714477
+Oligonucleotide,136,family_history,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.5795008529922496,3.0,,0.8560808055567324
+Oligonucleotide,136,cataracts,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0014488266065317734,0.2744955014181004,2.0,,0.6152485376612596
+Oligonucleotide,136,cataracts,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.004725341700158923,0.20126159541348657,2.0,,0.5604028272580653
+Oligonucleotide,136,cataracts,age,Testable,Kruskal-Wallis eta squared (H),0.1078898252006535,8.439318708983344e-05,2.0,,0.0007836510229770248
+Oligonucleotide,136,cataracts,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.08712567865355231,0.00037060874120093177,2.0,,0.0030111960222575706
+Oligonucleotide,136,cataracts,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.00656003506087861,0.17044276374971903,2.0,,0.527560935415797
+Oligonucleotide,136,cataracts,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.009123545789773008,0.13600780257294162,2.0,,0.4652898509074318
+Oligonucleotide,136,cataracts,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.010882996335918374,0.11690364565213912,2.0,,0.42215205374383574
+Oligonucleotide,136,cataracts,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.3704746080183363,2.0,,0.6744417038556125
+Oligonucleotide,136,cataracts,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.7465270795855175,2.0,,0.9514560818246791
+Oligonucleotide,136,cataracts,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.35045389784722536,2.0,,0.6744417038556125
+Oligonucleotide,136,cataracts,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.04174600894948759,0.010232501314416272,2.0,,0.06046478049427797
+Oligonucleotide,136,cataracts,albumin,Testable,Kruskal-Wallis eta squared (H),0.003387048889672679,0.2279088634585829,2.0,,0.5925630449923155
+Oligonucleotide,136,cataracts,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.44306079301631374,2.0,,0.7384346550271896
+Oligonucleotide,136,smoking_status,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.6449875610378197,3.0,,0.9100502979333512
+Oligonucleotide,136,smoking_status,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.9132061741831763,3.0,,0.9853291943714477
+Oligonucleotide,136,smoking_status,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.7813953831179672,3.0,,0.976744228897459
+Oligonucleotide,136,smoking_status,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.6913026158711653,3.0,,0.9100502979333512
+Oligonucleotide,136,smoking_status,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.9246935516408971,3.0,,0.9853291943714477
+Oligonucleotide,136,smoking_status,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0,0.6205136499805217,3.0,,0.8962974944163092
+Oligonucleotide,136,smoking_status,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0,0.843141495222666,3.0,,0.9853291943714477
+Oligonucleotide,136,smoking_status,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.3825468885474778,3.0,,0.6744417038556125
+Oligonucleotide,136,smoking_status,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0003031965666720194,0.36053632241144773,3.0,,0.6744417038556125
+Oligonucleotide,136,smoking_status,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0009493040866673921,0.34537354043976015,3.0,,0.6744417038556125
+Oligonucleotide,136,smoking_status,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.005543231626547189,0.25445662158301197,3.0,,0.5945938722016441
+Oligonucleotide,136,smoking_status,albumin,Testable,Kruskal-Wallis eta squared (H),0.032335923308244356,0.0428376067418941,3.0,,0.18562962921487444
+Oligonucleotide,136,smoking_status,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.5395391265192894,3.0,,0.8155824005524142
+Tideglusib,135,phenotype,sex,Testable,Cramer's V,0.06219430736113933,0.7702047417527658,,11.555555555555555,0.9817465947398445
+Tideglusib,135,phenotype,family_history,Testable,Cramer's V,0.03891310785254126,0.9817465947398445,,2.488888888888889,0.9817465947398445
+Tideglusib,135,phenotype,cataracts,Testable,Cramer's V,0.2509758965204616,0.01423928203995517,,6.4,0.1423928203995517
+Tideglusib,135,phenotype,smoking_status,Testable,Cramer's V,0.11262215430861719,0.4894333764093862,,4.8,0.9817465947398445
+Tideglusib,135,sex,family_history,Testable,Cramer's V,0.03786703295766319,0.9077474548532659,,6.7407407407407405,0.9817465947398445
+Tideglusib,135,sex,cataracts,Testable,Cramer's V,0.011174753906691847,0.896693879843648,,17.333333333333332,0.9817465947398445
+Tideglusib,135,sex,smoking_status,Testable,Cramer's V,0.058600903867311926,0.7931051641632733,,13.0,0.9817465947398445
+Tideglusib,135,family_history,cataracts,Testable,Cramer's V,0.10079015714449739,0.5037328228004152,,3.7333333333333334,0.9817465947398445
+Tideglusib,135,family_history,smoking_status,Testable,Cramer's V,0.05574699057950999,0.9331325194424215,,2.8,0.9817465947398445
+Tideglusib,135,cataracts,smoking_status,Testable,Cramer's V,0.12934372029518085,0.3232719486746467,,7.2,0.9817465947398445
+Tideglusib,135,phenotype,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.39311977601227294,1.984001766268399e-12,3.0,,4.298670493581531e-11
+Tideglusib,135,phenotype,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.1724480684122175,4.195187532600146e-06,3.0,,4.544786493650158e-05
+Tideglusib,135,phenotype,age,Testable,Kruskal-Wallis eta squared (H),0.6598162882828735,4.498872605205366e-20,3.0,,1.462133596691744e-18
+Tideglusib,135,phenotype,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.696872482766164,3.898933640784348e-21,3.0,,2.534306866509826e-19
+Tideglusib,135,phenotype,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.10355319121776665,0.00039583598160612503,3.0,,0.0032161673505497657
+Tideglusib,135,phenotype,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.3431610277937667,5.36452689472656e-11,3.0,,8.717356203930661e-10
+Tideglusib,135,phenotype,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.009284491368451674,0.19933340975412106,3.0,,0.5116532431048353
+Tideglusib,135,phenotype,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.04747284110439447,0.016031375424518872,3.0,,0.08015687712259437
+Tideglusib,135,phenotype,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.199499792109197,7.036489334762736e-07,3.0,,9.147436135191556e-06
+Tideglusib,135,phenotype,ck_level,Testable,Kruskal-Wallis eta squared (H),0.012136277071068157,0.16513461541773838,3.0,,0.5116532431048353
+Tideglusib,135,phenotype,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.05703968633860301,0.008526133537741544,3.0,,0.05541986799532004
+Tideglusib,135,phenotype,albumin,Testable,Kruskal-Wallis eta squared (H),0.02415263548429949,0.0747150345052639,3.0,,0.3035298276776346
+Tideglusib,135,phenotype,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.9779569066343115,3.0,,0.9963770756250573
+Tideglusib,135,sex,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.5864574000953047,2.0,,0.8789803954671018
+Tideglusib,135,sex,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0028819161963874506,0.23954071019004355,2.0,,0.5369015918052701
+Tideglusib,135,sex,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.757786890048938,2.0,,0.9465799023716431
+Tideglusib,135,sex,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.6293257423844201,2.0,,0.8892646359779848
+Tideglusib,135,sex,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.8981182332856619,2.0,,0.9894522909079326
+Tideglusib,135,sex,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0056547076428917955,0.1856159483482281,2.0,,0.5116532431048353
+Tideglusib,135,sex,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0028855054479147856,0.2394596439056189,2.0,,0.5369015918052701
+Tideglusib,135,sex,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.008417954995449239,0.14542565864267523,2.0,,0.5116532431048353
+Tideglusib,135,sex,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.5259700658736997,2.0,,0.8338549824826946
+Tideglusib,135,sex,ck_level,Testable,Kruskal-Wallis eta squared (H),0.006351855999948915,0.17438976642717108,2.0,,0.5116532431048353
+Tideglusib,135,sex,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.38082183119870383,2.0,,0.7501036069065379
+Tideglusib,135,sex,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.7932877400221174,2.0,,0.9465799023716431
+Tideglusib,135,sex,bmi,Testable,Kruskal-Wallis eta squared (H),0.004577404596948083,0.2046612972419341,2.0,,0.5116532431048353
+Tideglusib,135,family_history,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.6592524115597981,3.0,,0.8927376406538933
+Tideglusib,135,family_history,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.9493864432683713,3.0,,0.9963770756250573
+Tideglusib,135,family_history,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.7142282131366626,3.0,,0.9284966770776615
+Tideglusib,135,family_history,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.0,0.8023692624182195,3.0,,0.9465799023716431
+Tideglusib,135,family_history,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.9755065696070613,3.0,,0.9963770756250573
+Tideglusib,135,family_history,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0,0.5495062684381307,3.0,,0.8504263678209165
+Tideglusib,135,family_history,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.0,0.8446405282700815,3.0,,0.9465799023716431
+Tideglusib,135,family_history,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.01276009054783673,0.15847380362201677,3.0,,0.5116532431048353
+Tideglusib,135,family_history,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.48547740758046753,3.0,,0.8338549824826946
+Tideglusib,135,family_history,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.45417444124018724,3.0,,0.8338549824826946
+Tideglusib,135,family_history,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.6073427498733899,3.0,,0.8789803954671018
+Tideglusib,135,family_history,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.8166248199876611,3.0,,0.9465799023716431
+Tideglusib,135,family_history,bmi,Testable,Kruskal-Wallis eta squared (H),0.0004199287416877486,0.35782354793494975,3.0,,0.7268290817428666
+Tideglusib,135,cataracts,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.5064324174825857,2.0,,0.8338549824826946
+Tideglusib,135,cataracts,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.35496679468081216,2.0,,0.7268290817428666
+Tideglusib,135,cataracts,age,Testable,Kruskal-Wallis eta squared (H),0.10409134584265876,0.00011676974521278533,2.0,,0.001084290491261578
+Tideglusib,135,cataracts,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.037720710136954855,0.01416988040219817,2.0,,0.07675351884524008
+Tideglusib,135,cataracts,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.06686523786625864,0.0016590176009020482,2.0,,0.011981793784292571
+Tideglusib,135,cataracts,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.00027004156079400845,0.30877331849946527,2.0,,0.6690088567488414
+Tideglusib,135,cataracts,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.018543179641662067,0.0626334203647955,2.0,,0.27141148824744715
+Tideglusib,135,cataracts,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.007770229751496367,0.1538719293233997,2.0,,0.5116532431048353
+Tideglusib,135,cataracts,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.020580155302679363,0.053214800257804624,2.0,,0.24706871548266432
+Tideglusib,135,cataracts,ck_level,Testable,Kruskal-Wallis eta squared (H),0.005275265263689252,0.1920775221842412,2.0,,0.5116532431048353
+Tideglusib,135,cataracts,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.038373769862464664,0.013489827619192802,2.0,,0.07675351884524008
+Tideglusib,135,cataracts,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.8054349000050911,2.0,,0.9465799023716431
+Tideglusib,135,cataracts,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.516086706295435,2.0,,0.8338549824826946
+Tideglusib,135,smoking_status,ctg_repeats,Testable,Kruskal-Wallis eta squared (H),0.0,0.6085248891695321,3.0,,0.8789803954671018
+Tideglusib,135,smoking_status,somatic_mosaicism_index,Testable,Kruskal-Wallis eta squared (H),0.0,0.48890889071920207,3.0,,0.8338549824826946
+Tideglusib,135,smoking_status,age,Testable,Kruskal-Wallis eta squared (H),0.0,0.6974620652500508,3.0,,0.9252047804337409
+Tideglusib,135,smoking_status,age_at_onset,Testable,Kruskal-Wallis eta squared (H),0.011553052123137812,0.17161504170828926,3.0,,0.5116532431048353
+Tideglusib,135,smoking_status,disease_duration,Testable,Kruskal-Wallis eta squared (H),0.0,0.426013782728619,3.0,,0.8144381140400069
+Tideglusib,135,smoking_status,myotonia_severity,Testable,Kruskal-Wallis eta squared (H),0.0,0.9181546109177414,3.0,,0.9946674951608865
+Tideglusib,135,smoking_status,muscle_strength,Testable,Kruskal-Wallis eta squared (H),0.007914937091001651,0.218190695621696,3.0,,0.5252738968670458
+Tideglusib,135,smoking_status,pr_interval,Testable,Kruskal-Wallis eta squared (H),0.0,0.6585017788876728,3.0,,0.8927376406538933
+Tideglusib,135,smoking_status,cognitive_function,Testable,Kruskal-Wallis eta squared (H),0.0,0.5117577784191829,3.0,,0.8338549824826946
+Tideglusib,135,smoking_status,ck_level,Testable,Kruskal-Wallis eta squared (H),0.0,0.9862283376367939,3.0,,0.9963770756250573
+Tideglusib,135,smoking_status,insulin_resistance,Testable,Kruskal-Wallis eta squared (H),0.0,0.8008828781254947,3.0,,0.9465799023716431
+Tideglusib,135,smoking_status,albumin,Testable,Kruskal-Wallis eta squared (H),0.0,0.9963770756250573,3.0,,0.9963770756250573
+Tideglusib,135,smoking_status,bmi,Testable,Kruskal-Wallis eta squared (H),0.0,0.8322936193040216,3.0,,0.9465799023716431

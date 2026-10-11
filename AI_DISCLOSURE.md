@@ -5,6 +5,7 @@ The hackathon rules allow AI tools if the team reports which tools were used and
 | Tool | Used for | Not used for |
 |---|---|---|
 | Claude (Anthropic), via Claude Code | Drafting the analysis script, the testing on mock data, workflow design, summarising the kickoff material, drafting the slide outline and team documents | Deciding which covariates are clinically meaningful; final interpretation |
+| Claude Code (Euibeom) | Three exploration scripts in `analysis/explorations/euibeom/` on training data; the changes to the main script that followed (decisions 7, 8, 11) | Choosing the final covariate set |
 | Codex / Claude Code (individual members) | add a row per person: what it was used for | |
 | | | |
 
