@@ -11,3 +11,13 @@ archive_before_kickoff/
 .Rhistory
 .RData
 Rplots.pdf
+
+# Local exports and tool files
+3_analysis/explorations/**/*.csv
+3_analysis/explorations/**/*.xlsx
+3_analysis/explorations/**/*.rds
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.claude/settings.local.json
+.codex/

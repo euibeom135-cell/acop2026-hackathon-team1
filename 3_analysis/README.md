@@ -1,6 +1,6 @@
 # Analysis
 
-One script, `dm1_analysis.R`, runs everything for all three arms.
+One script, `dm1_analysis.R`, runs everything for all three arms. It gets the cleaned data and the train/test split from `R/common.R`, which the per-member `explorations/` also use, so everyone works from the same split.
 
 ## Run
 
@@ -38,6 +38,6 @@ One script, `dm1_analysis.R`, runs everything for all three arms.
 
 ## Changing things
 
-- Column names: edit `num_cov`, `cat_cov` and the `arms` table near the top.
-- Cleaning rules: add one line each in the marked "Team cleaning decisions" block, with the reason, and log it in `../DECISIONS.md`.
+- Column names: edit `num_cov`, `cat_cov` and the `arms` table in `R/common.R`.
+- Cleaning rules: add one line each in the marked "Team cleaning decisions" block in `R/common.R`, with the reason, and log it in `../DECISIONS.md`.
 - Options without editing: `DM1_DATA=path/to/file` and `DM1_OUT=folder` environment variables.

@@ -5,6 +5,7 @@ The hackathon rules allow AI tools if the team reports which tools were used and
 | Tool | Used for | Not used for |
 |---|---|---|
 | Claude (Anthropic), via Claude Code | Drafting the analysis script, the testing on mock data, workflow design, summarising the kickoff material, drafting the slide outline and team documents | Deciding which covariates are clinically meaningful; final interpretation |
+| Codex / Claude Code (individual members) | add a row per person: what it was used for | |
 | | | |
 
 Add a row for any other tool a team member uses (for example InsightRX Astra for an independent cross-check, or a chatbot for wording).

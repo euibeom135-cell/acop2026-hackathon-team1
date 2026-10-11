@@ -26,7 +26,9 @@ For anything larger than a small fix to `dm1_analysis.R`, say so in the team cha
 
 ## Conventions
 
-- One analysis script: `3_analysis/dm1_analysis.R`. Change it; don't fork copies.
+- Try ideas in your own folder under `3_analysis/explorations/`. They see training patients only.
+- One main script: `3_analysis/dm1_analysis.R`, and one shared foundation: `3_analysis/R/common.R`. Change them only after the team agrees; don't fork copies.
+- If you work with Codex or Claude Code, start it inside this repository so it reads `AGENTS.md`.
 - Any change to the split, methods, thresholds or cleaning rules gets a row in `DECISIONS.md`.
 - Do not change the random seed or re-split after looking at test-set results.
 - If you use an AI tool, add it to `AI_DISCLOSURE.md`.

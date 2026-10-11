@@ -22,6 +22,8 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 | Run the analysis | [`3_analysis/`](3_analysis/) |
 | See or record a team decision | [`DECISIONS.md`](DECISIONS.md) |
 | Work on the slides | [`4_slides/`](4_slides/) |
+| Try an idea of your own | [`3_analysis/explorations/`](3_analysis/explorations/) |
+| Use Codex or Claude Code here | [`AGENTS.md`](AGENTS.md) |
 | Know how to share a change | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 | Check what we must disclose about AI | [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) |
 
@@ -29,16 +31,20 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 
 ```
 ├── README.md              this page
+├── AGENTS.md              rules for AI coding assistants (Codex reads this)
+├── CLAUDE.md              points Claude Code to AGENTS.md
 ├── DECISIONS.md           log of analysis decisions and their reasons
 ├── AI_DISCLOSURE.md       which AI tools were used, and for what
 ├── CONTRIBUTING.md        how to share changes; what must not be uploaded
 ├── 2_team_docs/           brief and detailed guide (PDF)
 ├── 3_analysis/
 │   ├── README.md          how to run, what each output means
-│   ├── dm1_analysis.R     the whole analysis in one script
+│   ├── dm1_analysis.R     main pipeline; the only place the test set is used
+│   ├── R/common.R         shared data loading, cleaning and the one train/test split
 │   ├── install_packages.R one-off package install
+│   ├── explorations/      one folder per member for trying ideas (training data only)
 │   ├── data/              put the dataset here (never uploaded)
-│   └── dm1_outputs/       tables and figures, created by the script
+│   └── dm1_outputs/       tables and figures, created by the main script
 └── 4_slides/
     └── slide_outline.md   five-slide outline mapped to the scoring
 ```
@@ -56,6 +62,10 @@ cd 3_analysis && Rscript dm1_analysis.R
 ```
 
 Results appear in `3_analysis/dm1_outputs/`. See [`3_analysis/README.md`](3_analysis/README.md) for what each file means.
+
+## Working with AI assistants
+
+Several of us use Codex or Claude Code. Both pick up the project rules automatically from `AGENTS.md` / `CLAUDE.md` when started inside this folder. The rules that matter most: the dataset is never uploaded, explorations see training patients only, nobody changes the split or the seed, and every AI tool used is logged in `AI_DISCLOSURE.md`. Each person works in their own folder under `3_analysis/explorations/`, so two assistants never edit the same file.
 
 ## Workflow
 
