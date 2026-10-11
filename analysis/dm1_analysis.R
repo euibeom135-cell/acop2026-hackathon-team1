@@ -15,11 +15,17 @@
 #   5 Train        tuning by 5-fold cross-validation inside the training set
 #   6 Evaluate     once on the test set, with bootstrap intervals
 #
-# Signal vs noise uses established tools: Boruta (random-forest "shadow feature" test), LASSO
-# stability over bootstrap resamples, and agreement across five methods. A pure-noise probe
-# column is also added as a visible negative control.
+# Signal vs noise: a pure-noise probe column is added as a visible negative control; each method's
+# pick must beat it (random forest = permutation importance, XGBoost = SHAP). LASSO stability over
+# bootstrap resamples and agreement across the five methods decide the call.
+#
+# Two choices informed by explorations on training data only (analysis/explorations/euibeom/):
+#   "Linear with cut-off": the top covariate enters as above/below a threshold chosen in training,
+#   because in the Tideglusib arm the outcome steps rather than slopes with cognitive_function.
+#   Responder cut-off = the training responder share, not 0.5, because arms with few responders
+#   (Mexiletine, 29%) otherwise call almost nobody a responder.
 
-pkgs <- c("readxl", "dplyr", "tidyr", "ggplot2", "glmnet", "MASS", "ranger", "xgboost", "Boruta", "shapviz", "rpart", "rpart.plot")
+pkgs <- c("readxl", "dplyr", "tidyr", "ggplot2", "glmnet", "MASS", "ranger", "xgboost", "shapviz", "rpart", "rpart.plot")
 miss <- setdiff(pkgs, rownames(installed.packages()))
 if (length(miss)) install.packages(miss, repos = "https://cloud.r-project.org")
 suppressPackageStartupMessages({ library(dplyr); library(tidyr); library(ggplot2); library(glmnet); library(ranger); library(xgboost) })
