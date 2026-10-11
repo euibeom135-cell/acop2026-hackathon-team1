@@ -10,6 +10,22 @@ Data checks:
 Dropped in this arm (no variation): albumin 
 n = 161 (train 120, test 41); responders: train 29%, test 29%
 Phenotype mix (%), train vs test: adult_onset 59/59; juvenile_onset 23/24; late_onset 18/17 
+
+Categorical covariates (training patients):
+      covariate          level  n pct
+      phenotype    adult_onset 71  59
+      phenotype juvenile_onset 28  23
+      phenotype     late_onset 21  18
+            sex         Female 53  44
+            sex           Male 67  56
+ family_history             No 10   8
+ family_history        Unknown 31  26
+ family_history            Yes 79  66
+      cataracts             No 91  76
+      cataracts            Yes 29  24
+ smoking_status        Current 24  20
+ smoking_status         Former 36  30
+ smoking_status          Never 60  50
 Correlated (|r| > 0.7): myotonia_severity ~ ctg_repeats (0.87); age_at_onset ~ age (0.90); muscle_strength ~ disease_duration (-0.76) 
 Linked: phenotype explains 50% of the variation in ctg_repeats
 Linked: phenotype explains 72% of the variation in age
@@ -67,6 +83,22 @@ Tree rule, responder rate in held-out patients:
 ========== Oligonucleotide ==========
 n = 170 (train 127, test 43); responders: train 41%, test 42%
 Phenotype mix (%), train vs test: adult_onset 61/60; juvenile_onset 18/19; late_onset 20/21 
+
+Categorical covariates (training patients):
+      covariate          level  n pct
+      phenotype    adult_onset 78  61
+      phenotype juvenile_onset 23  18
+      phenotype     late_onset 26  20
+            sex         Female 58  46
+            sex           Male 69  54
+ family_history             No 16  13
+ family_history        Unknown 25  20
+ family_history            Yes 86  68
+      cataracts             No 99  78
+      cataracts            Yes 28  22
+ smoking_status        Current 32  25
+ smoking_status         Former 34  27
+ smoking_status          Never 61  48
 Correlated (|r| > 0.7): myotonia_severity ~ ctg_repeats (0.87); age_at_onset ~ age (0.86); muscle_strength ~ disease_duration (-0.79) 
 Linked: phenotype explains 45% of the variation in ctg_repeats
 Linked: phenotype explains 74% of the variation in age
@@ -124,6 +156,22 @@ Tree rule, responder rate in held-out patients:
 ========== Tideglusib ==========
 n = 169 (train 128, test 41); responders: train 48%, test 49%
 Phenotype mix (%), train vs test: adult_onset 65/66; juvenile_onset 19/17; late_onset 16/17 
+
+Categorical covariates (training patients):
+      covariate          level  n pct
+      phenotype    adult_onset 83  65
+      phenotype juvenile_onset 24  19
+      phenotype     late_onset 21  16
+            sex         Female 64  50
+            sex           Male 64  50
+ family_history             No 16  12
+ family_history        Unknown 23  18
+ family_history            Yes 89  70
+      cataracts             No 94  73
+      cataracts            Yes 34  27
+ smoking_status        Current 25  20
+ smoking_status         Former 43  34
+ smoking_status          Never 60  47
 Correlated (|r| > 0.7): somatic_mosaicism_index ~ ctg_repeats (0.71); myotonia_severity ~ ctg_repeats (0.89); age_at_onset ~ age (0.87); muscle_strength ~ disease_duration (-0.81) 
 Linked: phenotype explains 37% of the variation in ctg_repeats
 Linked: phenotype explains 67% of the variation in age
