@@ -13,12 +13,15 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 | **Scoring** | Clinical 10, Technical 10, Communication 10 |
 | **Office hour** | Tue 13 Oct, 8:00 to 9:00 AM, Magnolia 1 |
 
-## Two folders
+**New here? Read [`GETTING_STARTED.md`](GETTING_STARTED.md).** Everyone on the team has write access.
+
+## Folders
 
 | Folder | What's inside |
 |---|---|
 | [`slides/`](slides/) | The original kickoff deck, our 3-page brief, our 10-page detailed guide, and the outline for our talk |
 | [`analysis/`](analysis/) | The analysis script, the shared data-loading and split code, and one folder per member for trying ideas |
+| [`results/`](results/) | The team's official tables and figures, which the slides are built from |
 
 ```
 ├── slides/
@@ -31,7 +34,10 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 │   ├── R/common.R           shared data loading, cleaning and the one train/test split
 │   ├── explorations/        one folder per member (training data only)
 │   ├── data/                put the dataset here (never uploaded)
-│   └── dm1_outputs/         tables and figures, created by the main script
+│   └── dm1_outputs/         your own run's output (not uploaded)
+├── results/                 official team results, one shared copy
+├── GETTING_STARTED.md       setup, sharing and troubleshooting
+├── sync.sh                  one command to save, pull and upload
 ├── DECISIONS.md             analysis decisions and their reasons
 ├── AI_DISCLOSURE.md         which AI tools were used, and for what
 ├── CONTRIBUTING.md          how to share changes
@@ -48,7 +54,9 @@ For each of three treatment arms in a simulated 500-patient dataset, we find whi
 cd analysis && Rscript dm1_analysis.R
 ```
 
-Results appear in `analysis/dm1_outputs/`. See [`analysis/README.md`](analysis/README.md) for what each file means.
+Your results appear in `analysis/dm1_outputs/` (personal, not uploaded). The team's official copy is in `results/`. See [`analysis/README.md`](analysis/README.md) for what each file means.
+
+To share work: `bash sync.sh "what I changed"`.
 
 ## Working with AI assistants
 

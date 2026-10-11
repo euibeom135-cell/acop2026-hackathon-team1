@@ -14,7 +14,9 @@ One script, `dm1_analysis.R`, runs everything for all three arms. It gets the cl
 2. **Per arm:** sample sizes, responder share and phenotype mix in training vs test; correlated covariates; the covariate calls; the test-set scoreboard; the stratification rule.
 3. **Summary:** signal covariates per arm.
 
-## Outputs in `dm1_outputs/`
+## Outputs
+
+Your own run writes to `dm1_outputs/` (not uploaded). The team's official copy lives in `../results/` and is produced with `DM1_OUT=../results Rscript dm1_analysis.R`. Both contain the same files:
 
 | File | What it is | Used for |
 |---|---|---|

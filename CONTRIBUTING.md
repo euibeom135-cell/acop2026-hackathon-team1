@@ -5,24 +5,9 @@
 - **The dataset.** It was shared with participants through SharePoint. Keep it in `analysis/data/` on your own machine; the repository ignores everything in that folder.
 - Licensed third-party material. (The organizers' kickoff deck is in `slides/` only while this repository is private.)
 
-## If you use git
+## Sharing changes
 
-```bash
-git clone https://github.com/euibeom135-cell/acop2026-hackathon-team1.git
-cd acop2026-hackathon-team1
-# ...make your change...
-git pull                      # get others' changes first
-git add -A
-git commit -m "Short description of what changed and why"
-git push
-```
-
-For anything larger than a small fix to `dm1_analysis.R`, say so in the team chat first, since everyone's results come from that one script.
-
-## If you don't use git
-
-- **To get the files:** green **Code** button, then **Download ZIP**.
-- **To add or replace a file:** open the folder on GitHub, then **Add file**, then **Upload files**.
+Everyone has write access. See [`GETTING_STARTED.md`](GETTING_STARTED.md) for the three ways to share (GitHub Desktop, `bash sync.sh "message"`, or uploading on the website) and what to do if a push fails.
 
 ## Conventions
 

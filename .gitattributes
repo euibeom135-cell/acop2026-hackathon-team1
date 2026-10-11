@@ -1,0 +1,9 @@
+# Consistent line endings across Mac, Windows and Linux.
+* text=auto
+*.R   text eol=lf
+*.md  text eol=lf
+*.sh  text eol=lf
+*.pdf binary
+*.png binary
+*.pptx binary
+*.xlsx binary

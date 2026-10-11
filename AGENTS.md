@@ -29,7 +29,8 @@ analysis/
     _template.R         starting point for a new exploration
     <name>/             one folder per team member; work here
   data/                 dataset goes here locally (ignored by git)
-  dm1_outputs/          created by the main script
+  dm1_outputs/          the user's own run of the main script (ignored by git)
+results/                official team results; only regenerate when the user says the team agreed
 slides/                 kickoff deck, brief, detailed guide (PDF), presentation outline and deck
 DECISIONS.md            analysis decisions and reasons
 AI_DISCLOSURE.md        AI tools used and for what
@@ -61,5 +62,5 @@ Available after sourcing: `covs`, `num_cov`, `cat_cov`, `arms` (name, outcome, l
 
 - R is the team's main language. Python is fine inside an exploration folder if the user prefers it; keep its data access to an export of training rows written locally (never committed).
 - Write small scripts with a three-line header: purpose, input, finding.
-- Before pushing: `git pull`, then commit only files in the user's own exploration folder, `slides/`, or the log files. Changes to shared files need the team's agreement first.
+- To share work use `bash sync.sh "message"` (commits, pulls with rebase, pushes). Commit only files in the user's own exploration folder, `slides/`, or the log files. Changes to shared files need the team's agreement first.
 - Commit messages: what changed and why, one line.
