@@ -57,7 +57,12 @@ for (v in c(num_cov, arms$outcome)) if (!is.numeric(raw[[v]])) {
 nmiss <- colSums(is.na(raw[covs])); if (any(nmiss > 0)) note("CHECK  missing values: %s", paste(sprintf("%s (%d)", names(nmiss)[nmiss > 0], nmiss[nmiss > 0]), collapse = ", "))
 for (v in num_cov) { x <- raw[[v]]; q <- quantile(x, c(.25, .75), na.rm = TRUE); out <- which(x < q[1] - 3 * diff(q) | x > q[2] + 3 * diff(q))
   if (length(out)) note("CHECK  %s: %d extreme values (beyond 3 IQR), e.g. %s; range %s to %s", v, length(out), paste(head(signif(x[out], 4), 5), collapse = ", "), signif(min(x, na.rm = TRUE), 4), signif(max(x, na.rm = TRUE), 4))
-  if (any(x < 0, na.rm = TRUE)) note("CHECK  %s: %d negative values", v, sum(x < 0, na.rm = TRUE)) }
+  if (any(x < 0, na.rm = TRUE) && v != "cognitive_function") note("CHECK  %s: %d negative values", v, sum(x < 0, na.rm = TRUE))   # cognitive_function is a z-score
+  for (edge in range(x, na.rm = TRUE)) if (mean(x == edge, na.rm = TRUE) > 0.10)
+    note("CHECK  %s: %.0f%% of patients sit exactly at %s (a floor, ceiling or detection limit)", v, 100 * mean(x == edge, na.rm = TRUE), signif(edge, 4)) }
+arm_col <- intersect(c("treatment_arm", "arm", "treatment"), names(raw))[1]
+if (!is.na(arm_col)) for (v in covs) for (g in unique(raw[[arm_col]])) if (length(unique(raw[[v]][raw[[arm_col]] == g])) < 2)
+  note("CHECK  %s has a single value (%s) for every %s patient: no information in that arm; dropped there", v, raw[[v]][raw[[arm_col]] == g][1], g)
 if (any(raw$age_at_onset > raw$age, na.rm = TRUE)) note("CHECK  %d patients have onset after current age", sum(raw$age_at_onset > raw$age, na.rm = TRUE))
 gap <- abs(raw$age - raw$age_at_onset - raw$disease_duration)
 if (any(gap > 1, na.rm = TRUE)) note("CHECK  %d patients where age - age_at_onset differs from disease_duration by more than 1 year", sum(gap > 1, na.rm = TRUE))
@@ -95,7 +100,9 @@ load_arm <- function(name, include_test = FALSE) {
                            function(i) sample(i, round(0.25 * length(i)))))
   tr <- d[-test_id, ]; te <- d[test_id, ]
   tr[covs] <- impute(tr[covs], tr[covs]); te[covs] <- impute(te[covs], tr[covs])
-  out <- list(info = A, train = tr)
+  # Covariates that do not vary among this arm's training patients cannot predict anything there.
+  varies <- covs[sapply(tr[covs], function(x) length(unique(x)) > 1)]
+  out <- list(info = A, train = tr, covs = varies, dropped = setdiff(covs, varies))
   if (include_test) out$test <- te
   out
 }

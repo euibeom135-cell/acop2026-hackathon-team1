@@ -1,0 +1,178 @@
+Data: /Users/euibeoms/Desktop/ACoP/hackathon/analysis/data/dm1_clinical_trial_dataset.csv - 500 rows, 26 columns
+
+Data checks:
+  CHECK  somatic_mosaicism_index: 15% of patients sit exactly at 0 (a floor, ceiling or detection limit)
+  CHECK  ck_level: 32% of patients sit exactly at 50 (a floor, ceiling or detection limit)
+  CHECK  albumin: 9 extreme values (beyond 3 IQR), e.g. 3.25, 3.14, 3.18, 5.21, 5.31; range 3.14 to 5.35
+  CHECK  albumin has a single value (4.18) for every Mexiletine patient: no information in that arm; dropped there
+
+========== Mexiletine ==========
+Dropped in this arm (no variation): albumin 
+n = 161 (train 120, test 41); responders: train 29%, test 29%
+Phenotype mix (%), train vs test: adult_onset 59/59; juvenile_onset 23/24; late_onset 18/17 
+Correlated (|r| > 0.7): myotonia_severity ~ ctg_repeats (0.87); age_at_onset ~ age (0.90); muscle_strength ~ disease_duration (-0.76) 
+Linked: phenotype explains 50% of the variation in ctg_repeats
+Linked: phenotype explains 72% of the variation in age
+Linked: phenotype explains 80% of the variation in age_at_onset
+Linked: phenotype explains 45% of the variation in myotonia_severity
+
+Covariate calls:
+               covariate votes lasso_stability_pct             call
+       myotonia_severity     5                 100           signal
+             ctg_repeats     4                  70           signal
+        disease_duration     3                  24        uncertain
+ somatic_mosaicism_index     2                   4        uncertain
+                     age     2                   2        uncertain
+            age_at_onset     2                   2        uncertain
+      cognitive_function     1                  18            noise
+      insulin_resistance     1                  16            noise
+          family_history     1                  14            noise
+             pr_interval     1                  12            noise
+         muscle_strength     1                   7            noise
+                     bmi     1                   6            noise
+               phenotype     1                   6            noise
+          smoking_status     0                  10            noise
+               cataracts     0                   8            noise
+             noise_probe     0                   6 negative control
+                ck_level     0                   4            noise
+                     sex     0                   4            noise
+
+Scoreboard (test n = 41, 12 responders; cutoff 0.5; XGBoost tuned: max_depth 3, eta 0.10, 27 rounds reg / max_depth 1, eta 0.03, 32 rounds cls):
+        arm           method      type RMSE  MAE   R2       R2_95CI  AUC
+ Mexiletine   Stepwise (BIC) Covariate 0.81 0.64 0.54  0.07 to 0.70 0.76
+ Mexiletine Consensus linear Covariate 0.85 0.67 0.51 -0.00 to 0.69 0.77
+ Mexiletine            LASSO Covariate 0.87 0.67 0.48  0.08 to 0.61 0.76
+ Mexiletine      Elastic net Covariate 0.87 0.68 0.47  0.09 to 0.60 0.77
+ Mexiletine   XGBoost, tuned        ML 0.82 0.67 0.54  0.10 to 0.71 0.77
+ Mexiletine    Random forest        ML 0.85 0.65 0.50  0.10 to 0.67 0.73
+ Mexiletine XGBoost, untuned        ML 0.98 0.81 0.33 -0.41 to 0.62 0.60
+     AUC_95CI Recall Precision Accuracy
+ 0.59 to 0.90   0.17       0.5     0.71
+ 0.61 to 0.91   0.17       0.5     0.71
+ 0.59 to 0.90   0.00        NA     0.71
+ 0.60 to 0.91   0.00        NA     0.71
+ 0.60 to 0.92   0.00        NA     0.71
+ 0.55 to 0.89   0.17       0.5     0.71
+ 0.38 to 0.79   0.17       0.4     0.68
+
+Tree rule, responder rate in held-out patients:
+                                         rule test_n test_responder_pct
+                      myotonia_severity< 4.85     20                 10
+ myotonia_severity>=4.85 & ctg_repeats< 457.5     15                 40
+ myotonia_severity>=4.85 & ctg_repeats>=457.5      6                 67
+
+========== Oligonucleotide ==========
+n = 170 (train 127, test 43); responders: train 41%, test 42%
+Phenotype mix (%), train vs test: adult_onset 61/60; juvenile_onset 18/19; late_onset 20/21 
+Correlated (|r| > 0.7): myotonia_severity ~ ctg_repeats (0.87); age_at_onset ~ age (0.86); muscle_strength ~ disease_duration (-0.79) 
+Linked: phenotype explains 45% of the variation in ctg_repeats
+Linked: phenotype explains 74% of the variation in age
+Linked: phenotype explains 81% of the variation in age_at_onset
+Linked: phenotype explains 31% of the variation in myotonia_severity
+
+Covariate calls:
+               covariate votes lasso_stability_pct             call
+             ctg_repeats     5                  90           signal
+       myotonia_severity     3                  43        uncertain
+         muscle_strength     2                  43        uncertain
+        disease_duration     2                  30        uncertain
+      insulin_resistance     1                  20            noise
+             pr_interval     1                  18            noise
+                     bmi     1                  10            noise
+ somatic_mosaicism_index     1                   6            noise
+                     age     1                   4            noise
+          family_history     0                  22            noise
+          smoking_status     0                  14            noise
+               phenotype     0                  12            noise
+               cataracts     0                  12            noise
+             noise_probe     0                  12 negative control
+                ck_level     0                  10            noise
+                 albumin     0                   8            noise
+                     sex     0                   8            noise
+      cognitive_function     0                   6            noise
+            age_at_onset     0                   0            noise
+
+Scoreboard (test n = 43, 18 responders; cutoff 0.5; XGBoost tuned: max_depth 1, eta 0.10, 27 rounds reg / max_depth 1, eta 0.10, 19 rounds cls):
+             arm           method      type RMSE  MAE    R2       R2_95CI  AUC
+ Oligonucleotide            LASSO Covariate 1.53 1.17  0.06 -0.17 to 0.14 0.50
+ Oligonucleotide      Elastic net Covariate 1.54 1.17  0.05 -0.17 to 0.13 0.72
+ Oligonucleotide   Stepwise (BIC) Covariate 1.54 1.19  0.05 -0.32 to 0.27 0.73
+ Oligonucleotide Consensus linear Covariate 1.54 1.24  0.05 -0.32 to 0.25 0.72
+ Oligonucleotide    Random forest        ML 1.51 1.19  0.09 -0.18 to 0.27 0.72
+ Oligonucleotide   XGBoost, tuned        ML 1.53 1.22  0.06 -0.26 to 0.24 0.72
+ Oligonucleotide XGBoost, untuned        ML 1.64 1.29 -0.08 -0.72 to 0.29 0.73
+     AUC_95CI Recall Precision Accuracy
+ 0.50 to 0.50   0.00        NA     0.58
+ 0.55 to 0.86   0.00        NA     0.58
+ 0.56 to 0.88   0.67      0.63     0.70
+ 0.55 to 0.86   0.50      0.56     0.63
+ 0.56 to 0.86   0.67      0.55     0.63
+ 0.55 to 0.87   0.56      0.62     0.67
+ 0.56 to 0.87   0.67      0.57     0.65
+
+Tree rule, responder rate in held-out patients:
+               rule test_n test_responder_pct
+ ctg_repeats< 346.5     26                 31
+ ctg_repeats>=346.5     17                 59
+
+========== Tideglusib ==========
+n = 169 (train 128, test 41); responders: train 48%, test 49%
+Phenotype mix (%), train vs test: adult_onset 65/66; juvenile_onset 19/17; late_onset 16/17 
+Correlated (|r| > 0.7): somatic_mosaicism_index ~ ctg_repeats (0.71); myotonia_severity ~ ctg_repeats (0.89); age_at_onset ~ age (0.87); muscle_strength ~ disease_duration (-0.81) 
+Linked: phenotype explains 37% of the variation in ctg_repeats
+Linked: phenotype explains 67% of the variation in age
+Linked: phenotype explains 74% of the variation in age_at_onset
+Linked: phenotype explains 34% of the variation in myotonia_severity
+
+Covariate calls:
+               covariate votes lasso_stability_pct             call
+      cognitive_function     5                 100           signal
+        disease_duration     4                  48        uncertain
+                     age     2                  14        uncertain
+         muscle_strength     2                   6        uncertain
+                 albumin     1                  10            noise
+       myotonia_severity     1                   9            noise
+      insulin_resistance     1                   8            noise
+                ck_level     0                  14            noise
+          family_history     0                  14            noise
+               cataracts     0                  13            noise
+               phenotype     0                  12            noise
+          smoking_status     0                  12            noise
+ somatic_mosaicism_index     0                  10            noise
+                     bmi     0                   8            noise
+                     sex     0                   8            noise
+             noise_probe     0                   8 negative control
+             ctg_repeats     0                   6            noise
+             pr_interval     0                   4            noise
+            age_at_onset     0                   2            noise
+
+Scoreboard (test n = 41, 20 responders; cutoff 0.5; XGBoost tuned: max_depth 1, eta 0.10, 36 rounds reg / max_depth 1, eta 0.10, 29 rounds cls):
+        arm           method      type RMSE  MAE   R2       R2_95CI  AUC
+ Tideglusib   Stepwise (BIC) Covariate 2.57 2.12 0.30 -0.04 to 0.50 0.79
+ Tideglusib Consensus linear Covariate 2.64 2.19 0.27 -0.01 to 0.41 0.79
+ Tideglusib      Elastic net Covariate 2.66 2.21 0.25  0.05 to 0.36 0.79
+ Tideglusib            LASSO Covariate 2.68 2.22 0.24  0.05 to 0.34 0.79
+ Tideglusib    Random forest        ML 2.05 1.72 0.56  0.37 to 0.66 0.87
+ Tideglusib   XGBoost, tuned        ML 2.07 1.69 0.55  0.28 to 0.70 0.78
+ Tideglusib XGBoost, untuned        ML 2.39 1.92 0.40 -0.10 to 0.64 0.83
+     AUC_95CI Recall Precision Accuracy
+ 0.62 to 0.92   0.85      0.81     0.83
+ 0.62 to 0.92   0.85      0.81     0.83
+ 0.62 to 0.92   0.80      0.80     0.80
+ 0.62 to 0.92   0.80      0.80     0.80
+ 0.75 to 0.97   0.85      0.74     0.78
+ 0.62 to 0.92   0.85      0.74     0.78
+ 0.69 to 0.95   0.85      0.74     0.78
+
+Tree rule, responder rate in held-out patients:
+                      rule test_n test_responder_pct
+ cognitive_function>=-0.48     18                 17
+ cognitive_function< -0.48     23                 74
+
+Signal covariates per arm:
+             arm                         signal
+      Mexiletine myotonia_severity, ctg_repeats
+ Oligonucleotide                    ctg_repeats
+      Tideglusib             cognitive_function
+
+Done. Outputs in dm1_outputs 

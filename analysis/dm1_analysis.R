@@ -92,23 +92,25 @@ for (a in seq_len(nrow(arms))) {
   # The split is made in R/common.R (75/25, stratified, fixed seed). This is the only place the
   # locked test set is requested.
   S <- load_arm(A$name, include_test = TRUE); tr <- S$train; te <- S$test; d <- rbind(tr, te)
+  covs_a <- S$covs; num_a <- intersect(num_cov, covs_a)        # this arm's usable covariates
+  if (length(S$dropped)) cat("Dropped in this arm (no variation):", paste(S$dropped, collapse = ", "), "\n")
   cat(sprintf("n = %d (train %d, test %d); responders: train %.0f%%, test %.0f%%\n", nrow(d), nrow(tr), nrow(te),
               100 * mean(tr$.resp), 100 * mean(te$.resp)))
   cat("Phenotype mix (%), train vs test:", paste(sprintf("%s %.0f/%.0f", levels(d$phenotype), 100 * prop.table(table(tr$phenotype)), 100 * prop.table(table(te$phenotype))), collapse = "; "), "\n")
 
   # Understand (training data only): correlated covariates.
-  cm <- cor(tr[num_cov]); cm[upper.tri(cm, diag = TRUE)] <- NA
+  cm <- cor(tr[num_a]); cm[upper.tri(cm, diag = TRUE)] <- NA
   hi <- which(abs(cm) > 0.7, arr.ind = TRUE)
   if (nrow(hi)) cat("Correlated (|r| > 0.7):", paste(sprintf("%s ~ %s (%.2f)", rownames(cm)[hi[, 1]], colnames(cm)[hi[, 2]], cm[hi]), collapse = "; "), "\n")
 
   # Is a categorical covariate just a binned copy of a numeric one? Share of each numeric covariate's
   # variance explained by each categorical one (only strong links are printed).
-  for (cv in cat_cov) for (nv in num_cov) { r2 <- summary(lm(tr[[nv]] ~ tr[[cv]]))$r.squared
+  for (cv in intersect(cat_cov, covs_a)) for (nv in num_a) { r2 <- summary(lm(tr[[nv]] ~ tr[[cv]]))$r.squared
     if (r2 > 0.3) cat(sprintf("Linked: %s explains %.0f%% of the variation in %s\n", cv, 100 * r2, nv)) }
 
   # Negative control: a pure-noise covariate. Anything ranked at or below it is treated as noise.
   set.seed(SEED); tr$noise_probe <- rnorm(nrow(tr)); te$noise_probe <- rnorm(nrow(te))
-  vars <- c(covs, "noise_probe")
+  vars <- c(covs_a, "noise_probe")
 
   reg <- fit_all(tr, te, vars, A$outcome, "gaussian")
   cls <- fit_all(tr, te, vars, ".resp", "binomial")
@@ -134,7 +136,7 @@ for (a in seq_len(nrow(arms))) {
   # Direction and size: linear model on the consensus covariates, numeric ones per 1 SD.
   keep <- setdiff(tab$covariate[tab$call == "signal"], "noise_probe")
   trs <- tr; tes <- te
-  for (v in num_cov) { m <- mean(tr[[v]]); sdv <- sd(tr[[v]]); trs[[v]] <- (tr[[v]] - m) / sdv; tes[[v]] <- (te[[v]] - m) / sdv }
+  for (v in num_a) { m <- mean(tr[[v]]); sdv <- sd(tr[[v]]); trs[[v]] <- (tr[[v]] - m) / sdv; tes[[v]] <- (te[[v]] - m) / sdv }
   if (length(keep)) {
     cons <- lm(reformulate(keep, A$outcome), trs)
     eff  <- as.data.frame(cbind(coef(cons), confint(cons)))[-1, ]; names(eff) <- c("estimate", "lo", "hi"); eff$term <- rownames(eff)
@@ -173,7 +175,7 @@ for (a in seq_len(nrow(arms))) {
 
   # A two-level decision tree as a read-aloud stratification rule, checked on held-out patients.
   # Built only from the consensus covariates, so the rule cannot split on noise.
-  tree <- rpart::rpart(reformulate(if (length(keep)) keep else covs, ".resp"), data = tr, method = "class",
+  tree <- rpart::rpart(reformulate(if (length(keep)) keep else covs_a, ".resp"), data = tr, method = "class",
                        control = rpart::rpart.control(maxdepth = 2, minbucket = 15, cp = 0.02))
   png(sprintf("%s/fig_tree_%s.png", OUT, A$name), width = 1000, height = 650, res = 150)
   rpart.plot::rpart.plot(tree, type = 4, extra = 104, main = paste(A$name, ": responder rule (training data)"))

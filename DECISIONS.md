@@ -23,7 +23,13 @@ Filled in after the first run on real data. One row per rule. Decide from baseli
 
 | # | Issue found | Action | Reason | Patients affected |
 |---|---|---|---|---|
-| | | | | |
+| C1 | `albumin` is 4.18 for every Mexiletine patient | Dropped as a predictor in the Mexiletine arm only (automatic: any covariate with a single value among an arm's training patients is dropped there) | A constant cannot predict anything, and it breaks scaling. Kickoff slide 44: "note how much each one varies" | All 161 Mexiletine patients; no rows removed | 
+| C2 | `ck_level`: 32% of patients are exactly 50 | None yet (**open**) | Looks like a floor or detection limit. Tree models are unaffected; linear models treat 50 as a real value | About 160 |
+| C3 | `somatic_mosaicism_index`: 15% of patients are exactly 0 | None yet (**open**) | Lower bound of a 0 to 1 index | About 75 |
+| C4 | `albumin`: 9 values beyond 3 IQR (3.14 to 5.35) in the other two arms | None | Within a physiologically plausible range | 9 |
+| | No missing values, no duplicate rows or IDs, no inconsistent category spellings, age minus onset equals duration for every patient | None needed | Checked on the full file | |
+
+Design fact from the data dictionary: `treatment_arm` was "assigned by a weighted random draw informed by each patient's relative fit across all three arms; not purely random". Arms are therefore not randomised samples of the same population. Findings describe who does well within each arm as enrolled.
 
 ## Expectations written before seeing results
 
