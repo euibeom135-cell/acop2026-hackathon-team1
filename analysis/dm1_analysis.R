@@ -134,7 +134,10 @@ for (a in seq_len(nrow(arms))) {
     XGBoost = s$`XGBoost SHAP` > s["noise_probe", "XGBoost SHAP"],
     lasso_stability_pct = round(100 * stab), check.names = FALSE)
   tab$votes <- rowSums(tab[2:6])
-  tab$call  <- ifelse(tab$votes >= 4 & tab$lasso_stability_pct >= 60, "signal", ifelse(tab$votes >= 2, "uncertain", "noise"))
+  # "signal" needs near-unanimity and stability; "uncertain" needs two votes and more stability than the
+  # probe shows (about 10%); the rest is noise. The two ML votes alone are a low bar, hence the stability test.
+  tab$call  <- ifelse(tab$votes >= 4 & tab$lasso_stability_pct >= 60, "signal",
+               ifelse(tab$votes >= 2 & tab$lasso_stability_pct >= 20, "uncertain", "noise"))
   tab$call[tab$covariate == "noise_probe"] <- "negative control"
   tab <- tab[order(-tab$votes, -tab$lasso_stability_pct), ]
 
