@@ -148,6 +148,18 @@ for (a in seq_len(nrow(arms))) {
     reg$pred[["Consensus linear"]] <- predict(cons, tes)
     cls$pred[["Consensus linear"]] <- predict(glm(reformulate(keep, ".resp"), binomial, trs), tes, type = "response")
     write.csv(eff, sprintf("%s/effects_%s.csv", OUT, A$name), row.names = FALSE)
+    # Same covariates, but the top one enters as above/below a cut-off. The cut-off is the first split of a
+    # one-level regression tree on training patients, so the test set plays no part in choosing it.
+    top <- keep[1]
+    if (top %in% num_a) {
+      stump <- rpart::rpart(reformulate(top, A$outcome), tr, control = rpart::rpart.control(maxdepth = 1, minbucket = 15, cp = 0))
+      cut_at <- stump$splits[1, "index"]
+      trc <- trs; tec <- tes; trc$.below <- tr[[top]] < cut_at; tec$.below <- te[[top]] < cut_at
+      rhs <- c(".below", keep[-1])
+      reg$pred[["Linear with cut-off"]] <- predict(lm(reformulate(rhs, A$outcome), trc), tec)
+      cls$pred[["Linear with cut-off"]] <- predict(glm(reformulate(rhs, ".resp"), binomial, trc), tec, type = "response")
+      cat(sprintf("Cut-off model: %s below %.2f (chosen on training patients)\n", top, cut_at))
+    }
     ggsave(sprintf("%s/fig_effects_%s.png", OUT, A$name),
       ggplot(eff, aes(estimate, reorder(term, estimate))) + geom_vline(xintercept = 0, linetype = 2) +
         geom_pointrange(aes(xmin = lo, xmax = hi)) +
