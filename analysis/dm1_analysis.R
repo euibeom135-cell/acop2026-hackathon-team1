@@ -90,7 +90,7 @@ fit_all <- function(tr, te, vars, y, family) {
 
 # ---- Per-arm analysis ----
 type_of <- c("Stepwise (BIC)" = "Covariate", "LASSO" = "Covariate", "Elastic net" = "Covariate", "Consensus linear" = "Covariate",
-             "Random forest" = "ML", "XGBoost, untuned" = "ML", "XGBoost, tuned" = "ML")
+             "Linear with cut-off" = "Covariate", "Random forest" = "ML", "XGBoost, untuned" = "ML", "XGBoost, tuned" = "ML")
 all_cov <- list(); all_board <- list()
 
 for (a in seq_len(nrow(arms))) {
