@@ -104,7 +104,27 @@ for (a in seq_len(nrow(arms))) {
               100 * mean(tr$.resp), 100 * mean(te$.resp)))
   cat("Phenotype mix (%), train vs test:", paste(sprintf("%s %.0f/%.0f", levels(d$phenotype), 100 * prop.table(table(tr$phenotype)), 100 * prop.table(table(te$phenotype))), collapse = "; "), "\n")
 
-  # Understand (training data only): correlated covariates.
+  # Understand (training data only). EDA: distribution of every numeric covariate, a count table for
+  # every categorical one, and the correlation matrix, each per arm.
+  eda_num <- bind_rows(lapply(num_a, function(v) { x <- tr[[v]]
+    data.frame(covariate = v, n = length(x), mean = mean(x), sd = sd(x), median = median(x), min = min(x), max = max(x),
+               pct_at_min = 100 * mean(x == min(x))) }))
+  write.csv(mutate(eda_num, across(where(is.numeric), ~ round(.x, 2))), sprintf("%s/eda_numeric_%s.csv", OUT, A$name), row.names = FALSE)
+  eda_cat <- bind_rows(lapply(intersect(cat_cov, covs_a), function(v)
+    data.frame(covariate = v, level = names(table(tr[[v]])), n = as.integer(table(tr[[v]])), pct = round(100 * prop.table(table(tr[[v]]))))))
+  write.csv(eda_cat, sprintf("%s/eda_categorical_%s.csv", OUT, A$name), row.names = FALSE)
+  cat("\nCategorical covariates (training patients):\n"); print(eda_cat, row.names = FALSE)
+  ggsave(sprintf("%s/fig_eda_distributions_%s.png", OUT, A$name),
+    ggplot(pivot_longer(tr[num_a], everything()), aes(value)) + geom_histogram(bins = 25, fill = "#2c7fb8", colour = "white") +
+      facet_wrap(~name, scales = "free", ncol = 4) + labs(x = NULL, y = "Patients", title = paste(A$name, ": numeric covariates, training patients")),
+    width = 11, height = 8, dpi = 150)
+  cm_full <- cor(tr[num_a], method = "spearman")
+  ggsave(sprintf("%s/fig_eda_correlation_%s.png", OUT, A$name),
+    ggplot(as.data.frame(as.table(cm_full)), aes(Var1, Var2, fill = Freq)) + geom_tile() +
+      geom_text(aes(label = sprintf("%.2f", Freq)), size = 2.6) +
+      scale_fill_gradient2(low = "#b2182b", mid = "white", high = "#2166ac", limits = c(-1, 1), name = "Spearman") +
+      labs(x = NULL, y = NULL, title = paste(A$name, ": correlation between numeric covariates, training patients")) +
+      theme(axis.text.x = element_text(angle = 40, hjust = 1)), width = 9, height = 8, dpi = 150)
   cm <- cor(tr[num_a]); cm[upper.tri(cm, diag = TRUE)] <- NA
   hi <- which(abs(cm) > 0.7, arr.ind = TRUE)
   if (nrow(hi)) cat("Correlated (|r| > 0.7):", paste(sprintf("%s ~ %s (%.2f)", rownames(cm)[hi[, 1]], colnames(cm)[hi[, 2]], cm[hi]), collapse = "; "), "\n")
