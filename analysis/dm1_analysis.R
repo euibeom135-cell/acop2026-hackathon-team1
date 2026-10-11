@@ -166,7 +166,7 @@ for (a in seq_len(nrow(arms))) {
     ggsave(sprintf("%s/fig_effects_%s.png", OUT, A$name),
       ggplot(eff, aes(estimate, reorder(term, estimate))) + geom_vline(xintercept = 0, linetype = 2) +
         geom_pointrange(aes(xmin = lo, xmax = hi)) +
-        labs(x = sprintf("Change in %s per 1 SD (or vs reference level); %s = better", A$outcome, A$better), y = NULL,
+        labs(x = sprintf("Change in %s per 1 SD; %s = better", A$outcome, A$better), y = NULL,
              title = paste(A$name, ": consensus predictors of response")), width = 7, height = 3.5, dpi = 150)
   } else cat("No covariate reached consensus in this arm.\n")
   tab$arm <- A$name; all_cov[[a]] <- tab
