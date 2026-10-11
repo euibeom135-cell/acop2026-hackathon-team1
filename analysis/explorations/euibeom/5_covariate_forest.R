@@ -19,8 +19,8 @@ for (nm in arms$name) {
   ref$phenotype <- factor("adult_onset", levels = levels(tr$phenotype))
   q <- quantile(tr[[k]], c(0.1, 0.9))
   scen <- list(`Reference patient (median, adult onset)` = ref)
-  s <- ref; s[[k]] <- q[[1]]; scen[[sprintf("%s at 10th percentile (%.2g)", k, q[[1]])]] <- s
-  s <- ref; s[[k]] <- q[[2]]; scen[[sprintf("%s at 90th percentile (%.2g)", k, q[[2]])]] <- s
+  s <- ref; s[[k]] <- q[[1]]; scen[[sprintf("%s at 10th percentile (%s)", k, signif(q[[1]], 2))]] <- s
+  s <- ref; s[[k]] <- q[[2]]; scen[[sprintf("%s at 90th percentile (%s)", k, signif(q[[2]], 2))]] <- s
   for (ph in c("juvenile_onset", "late_onset")) { s <- ref; s$phenotype <- factor(ph, levels = levels(tr$phenotype)); scen[[paste(ph, "(other covariates at reference)")]] <- s }
   S <- do.call(rbind, scen)
   pred <- function(d) predict(glm(f_cls, binomial, d), S, type = "response")
@@ -39,7 +39,8 @@ write.csv(res, file.path(here, "forest_scenarios.csv"), row.names = FALSE); writ
 cat("Predicted responder probability by scenario (training patients, 90% bootstrap interval):\n")
 print(transform(res, responder_prob = round(responder_prob, 2), lo90 = round(lo90, 2), hi90 = round(hi90, 2)), row.names = FALSE)
 cat("\nKey covariate within each onset phenotype (slope of the continuous outcome per unit of the covariate):\n"); print(sl, row.names = FALSE)
-res$scenario <- factor(res$scenario, rev(unique(res$scenario)))
+res$order <- ave(seq_len(nrow(res)), res$arm, FUN = seq_along)   # same row order in every panel
+res$scenario <- reorder(res$scenario, -res$order)
 ggsave(file.path(here, "fig_covariate_forest.png"),
   ggplot(res, aes(responder_prob, scenario)) + geom_vline(data = subset(res, grepl("Reference", scenario)), aes(xintercept = responder_prob), linetype = 2, colour = "grey40") +
     geom_pointrange(aes(xmin = lo90, xmax = hi90)) + facet_wrap(~arm, scales = "free_y", ncol = 1) + xlim(0, 1) +
