@@ -7,10 +7,10 @@
 
 SEED <- 20261011
 
-# Find the 3_analysis folder from wherever the calling script is run.
+# Find the analysis folder from wherever the calling script is run.
 ANALYSIS_DIR <- local({ d <- normalizePath(getwd())
   repeat { if (file.exists(file.path(d, "dm1_analysis.R"))) break
-           if (file.exists(file.path(d, "3_analysis", "dm1_analysis.R"))) { d <- file.path(d, "3_analysis"); break }
+           if (file.exists(file.path(d, "analysis", "dm1_analysis.R"))) { d <- file.path(d, "analysis"); break }
            if (dirname(d) == d) stop("Run from inside the repository."); d <- dirname(d) }
   d })
 
@@ -20,7 +20,7 @@ if (!nzchar(f)) {
   f <- list.files(file.path(ANALYSIS_DIR, "data"), pattern = "\\.(xlsx|csv)$", full.names = TRUE, ignore.case = TRUE)
   f <- f[grepl("dm1", basename(f), ignore.case = TRUE) & !grepl("dictionary|mock", basename(f), ignore.case = TRUE)][1]
 }
-if (is.na(f)) stop("Put the hackathon dataset (DM1*.xlsx or .csv) in 3_analysis/data/")
+if (is.na(f)) stop("Put the hackathon dataset (DM1*.xlsx or .csv) in analysis/data/")
 raw <- if (grepl("\\.csv$", f, ignore.case = TRUE)) read.csv(f) else as.data.frame(readxl::read_excel(f))
 names(raw) <- tolower(names(raw))
 

@@ -10,10 +10,10 @@ Deadline: slides and code due Tue 13 Oct 2026, 11:59 PM ET. Favour simple, expla
 
 ## Hard rules
 
-1. **Never commit the dataset** or copy its rows into any file, chat or commit message. It lives only in `3_analysis/data/`, which git ignores.
+1. **Never commit the dataset** or copy its rows into any file, chat or commit message. It lives only in `analysis/data/`, which git ignores.
 2. **The test set is locked.** In an exploration, get data only with `load_arm("<arm>")`, which returns training patients. Never call `load_arm(..., include_test = TRUE)`, never read the data file directly, and never reimplement the split. Compare ideas with cross-validation inside the training set (`cv_folds()`).
-3. **Do not change the seed, the split, or `3_analysis/R/common.R`** unless the user tells you the team has agreed. Everyone's results depend on them being identical.
-4. **Do not edit `3_analysis/dm1_analysis.R` for an experiment.** Work in the user's own folder under `3_analysis/explorations/<name>/`. A finding moves into the main script only after the team agrees.
+3. **Do not change the seed, the split, or `analysis/R/common.R`** unless the user tells you the team has agreed. Everyone's results depend on them being identical.
+4. **Do not edit `analysis/dm1_analysis.R` for an experiment.** Work in the user's own folder under `analysis/explorations/<name>/`. A finding moves into the main script only after the team agrees.
 5. **Decide data cleaning from baseline columns and plausibility, never from the outcome.**
 6. **Log it.** Any change to methods, thresholds or cleaning gets a row in `DECISIONS.md`. Any AI tool used gets a row in `AI_DISCLOSURE.md`.
 7. **Report results as they are.** A null result is a result. With about 40 test patients per arm, do not rank methods on small differences. State which direction is better: Mexiletine lower, the other two higher.
@@ -22,7 +22,7 @@ Deadline: slides and code due Tue 13 Oct 2026, 11:59 PM ET. Favour simple, expla
 ## Layout
 
 ```
-3_analysis/
+analysis/
   dm1_analysis.R        main pipeline, all three arms; the only place the test set is used
   R/common.R            data loading, cleaning, the split, small helpers (shared; do not copy)
   explorations/
@@ -30,8 +30,7 @@ Deadline: slides and code due Tue 13 Oct 2026, 11:59 PM ET. Favour simple, expla
     <name>/             one folder per team member; work here
   data/                 dataset goes here locally (ignored by git)
   dm1_outputs/          created by the main script
-4_slides/               slide outline and deck
-2_team_docs/            brief and detailed guide (PDF)
+slides/                 kickoff deck, brief, detailed guide (PDF), presentation outline and deck
 DECISIONS.md            analysis decisions and reasons
 AI_DISCLOSURE.md        AI tools used and for what
 ```
@@ -39,16 +38,16 @@ AI_DISCLOSURE.md        AI tools used and for what
 ## Commands
 
 ```bash
-Rscript 3_analysis/install_packages.R                 # once
-cd 3_analysis && Rscript dm1_analysis.R               # full analysis, about a minute
-cd 3_analysis/explorations/<name> && Rscript my_idea.R
+Rscript analysis/install_packages.R                 # once
+cd analysis && Rscript dm1_analysis.R               # full analysis, about a minute
+cd analysis/explorations/<name> && Rscript my_idea.R
 ```
 
 There is no test suite. To check a change to the main script, run it and confirm it prints `Done.`
 
 ## Starting an exploration
 
-Copy `3_analysis/explorations/_template.R` into the user's folder. It loads the shared code and one arm's training data:
+Copy `analysis/explorations/_template.R` into the user's folder. It loads the shared code and one arm's training data:
 
 ```r
 root <- normalizePath(getwd()); while (!file.exists(file.path(root, "dm1_analysis.R")) && dirname(root) != root) root <- dirname(root)
@@ -62,5 +61,5 @@ Available after sourcing: `covs`, `num_cov`, `cat_cov`, `arms` (name, outcome, l
 
 - R is the team's main language. Python is fine inside an exploration folder if the user prefers it; keep its data access to an export of training rows written locally (never committed).
 - Write small scripts with a three-line header: purpose, input, finding.
-- Before pushing: `git pull`, then commit only files in the user's own exploration folder, `4_slides/`, or the log files. Changes to shared files need the team's agreement first.
+- Before pushing: `git pull`, then commit only files in the user's own exploration folder, `slides/`, or the log files. Changes to shared files need the team's agreement first.
 - Commit messages: what changed and why, one line.

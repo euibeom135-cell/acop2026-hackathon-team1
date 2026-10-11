@@ -1,9 +1,9 @@
-# The dataset stays out of the repository: each team member puts it in 3_analysis/data/ locally.
-3_analysis/data/*
-!3_analysis/data/README.md
+# The dataset stays out of the repository: each team member puts it in analysis/data/ locally.
+analysis/data/*
+!analysis/data/README.md
 
 # Licensed-library notes and pre-kickoff work stay local.
-5_reference/
+reference/
 archive_before_kickoff/
 
 .DS_Store
@@ -12,9 +12,9 @@ archive_before_kickoff/
 Rplots.pdf
 
 # Local exports and tool files
-3_analysis/explorations/**/*.csv
-3_analysis/explorations/**/*.xlsx
-3_analysis/explorations/**/*.rds
+analysis/explorations/**/*.csv
+analysis/explorations/**/*.xlsx
+analysis/explorations/**/*.rds
 .venv/
 __pycache__/
 .ipynb_checkpoints/
