@@ -16,6 +16,7 @@ Status: **proposed** = in the script, not yet agreed by the team. **agreed** = t
 | 8 | Metrics | Continuous: RMSE, MAE, R². Label: ROC-AUC, recall, precision, accuracy at a cut-off equal to the training responder share (0.29 / 0.41 / 0.48). Bootstrap 95% intervals | Kickoff recommendations. At 0.5 the Mexiletine models found 0 to 17% of responders because only 29% respond; the share cut-off is fixed before the test set is seen | proposed |
 | 9 | Class imbalance | No oversampling. Check responder share per arm first; use class weights or a different cut-off only if an arm is badly imbalanced | Oversampling was not taught, risks leakage, and does not apply to the continuous outcome | proposed |
 | 10 | Stratification rule | Two-level decision tree built from consensus covariates only, checked on test patients | Gives a rule that can be said aloud; cannot split on noise | proposed |
+| 12 | Split sensitivity | `analysis/sensitivity_splits.R` repeats the split and test-set scoring with 20 seeds, continuous outcome. The single locked split stays the main result | Suggested by Leo; about 41 test patients is noisy, so show that the method pattern does not depend on one draw | proposed |
 | 11 | "Linear with cut-off" model | Consensus linear model where the top covariate enters as above/below a cut-off chosen by a one-level tree on training patients | Exploration on training data showed the Tideglusib outcome steps at cognitive_function about -0.5 rather than sloping; this keeps an explainable model competitive with ML | proposed |
 
 ## Data cleaning decisions
