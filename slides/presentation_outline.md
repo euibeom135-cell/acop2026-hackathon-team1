@@ -50,8 +50,18 @@ References: `references.md`, one per claim, in small type on the slide that make
 
 - Stratification proposal, one line: "Measure the organ the drug acts on: myotonia before mexiletine, repeat length before the antisense drug, cognition before tideglusib. One routine measurement per drug separates groups that differ 2- to 7-fold in response."
 - Small figure: `fig_strata_Tideglusib.png` (held-out thirds by predicted benefit: 21 / 46 / 79%).
+- Trial-design implication, one line per arm (judge Sarah Kim works on model-based trial design):
+  - Mexiletine: enrol by baseline myotonia severity, not by diagnosis; mild-myotonia patients dilute the effect (ref 5, the null 6-minute-walk trial).
+  - Oligonucleotide: stratify randomisation by repeat length; the only predictor, and prognostic, so imbalance would bias a small trial.
+  - Tideglusib: enrich for impaired cognition; expected response about 48% → 74%, so a smaller trial can show an effect.
+- Next step, said before a judge asks: "This dataset is one time point per patient. The natural next step is a disease-progression model on repeated measures, where these baseline covariates become covariates on progression rate and drug effect."
+- Robustness line: "We repeated the split 20 times; the pattern held in every arm." (backup figure `fig_sensitivity_splits.png`)
 - Limits: no placebo arm (who does well on the drug, not who the drug helps); 41 test patients per arm, so cut-offs are "about 5, about 350, about -0.5"; arm assignment not random; the test set was scored twice, both runs logged; real DM1 would add repeat interruptions, somatic expansion rate, splicing biomarkers, exposure.
 - AI disclosure: "Claude (Anthropic) via Claude Code for code drafting, workflow design and documentation; Codex / Claude Code by individual members for explorations. Every analysis choice was reviewed and is the team's."
+
+## Backup C. Split sensitivity
+
+- `dm1_outputs/fig_sensitivity_splits.png` and `sensitivity_splits.csv`: test R² over 20 splits. Mexiletine: all methods tie, median about 0.6. Oligonucleotide: all weak, medians 0.06 to 0.12. Tideglusib: tree models first on 19 of 20 splits, linear never.
 
 ## Backup A. Does the key covariate hold within each onset group? (for Q&A)
 
