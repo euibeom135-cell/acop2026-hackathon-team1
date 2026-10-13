@@ -4,6 +4,8 @@ This file is read automatically by Codex. Claude Code reads `CLAUDE.md`, which p
 
 ## What this project is
 
+Read `TEAM_CONTEXT.md` first: the team's current answer, where every file lives, how the four pipelines differ, open items, and judge Q&A.
+
 ACoP 2026 Hackathon, Team 1. A simulated trial of 500 DM1 patients, one row per patient, three treatment arms (Mexiletine, Oligonucleotide, Tideglusib). Each arm has its own continuous outcome and a responder label, plus 18 baseline covariates, some of which are deliberate noise. Goal: identify which covariates drive response in each arm, and compare covariate models with machine-learning models. Scoring: clinical 10, technical 10, communication 10. "Meaningful covariate identification matters more than fancy models."
 
 Deadline: slides and code due Tue 13 Oct 2026, 11:59 PM ET. Favour simple, explainable work over new machinery.
