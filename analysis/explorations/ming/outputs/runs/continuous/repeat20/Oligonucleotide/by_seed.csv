@@ -1,0 +1,101 @@
+method,tier,R2,RMSE,MAE,seed,kept
+OLS all,inference,-0.2085336621324001,1.7709262675831223,1.3493687531574572,2026,ctg_repeats;disease_duration;family_history
+LASSO,inference,-0.01073963286211832,1.6195365424451025,1.2878629428898933,2026,ctg_repeats;somatic_mosaicism_index;disease_duration;myotonia_severity;insulin_resistance;bmi;family_history
+Ridge,inference,-0.005519506464316537,1.6153489508984662,1.3005662289351758,2026,ctg_repeats;myotonia_severity;disease_duration;family_history;somatic_mosaicism_index
+Random forest,prediction,-0.08316692679188842,1.676558837956059,1.3875421428571428,2026,
+Gradient boosting (untuned),prediction,-0.22153712369325462,1.7804280958436913,1.4964261049463745,2026,
+OLS all,inference,-0.29947010469498103,1.6126564052174226,1.3117828178781303,2027,ctg_repeats;disease_duration;family_history
+LASSO,inference,-0.044149430234056375,1.4455729981583672,1.1397003174670663,2027,ctg_repeats;somatic_mosaicism_index;disease_duration;cognitive_function;family_history
+Ridge,inference,0.04597531478578576,1.3817787375849147,1.074843098818833,2027,ctg_repeats;somatic_mosaicism_index;myotonia_severity;disease_duration;family_history
+Random forest,prediction,-0.07869621996662923,1.4692925548420526,1.0827828571428573,2027,
+Gradient boosting (untuned),prediction,-0.23993527229272393,1.5752816235775626,1.2183307460253128,2027,
+OLS all,inference,0.08422534288072014,1.6475284194447057,1.4040126788158873,2028,family_history
+LASSO,inference,0.05747178505247852,1.6714207302236526,1.4014687137369317,2028,ctg_repeats
+Ridge,inference,0.11944189352251156,1.6155396234220845,1.369117417367864,2028,ctg_repeats;myotonia_severity;somatic_mosaicism_index;bmi;family_history
+Random forest,prediction,0.10621572591340478,1.6276272749707072,1.3960771428571424,2028,
+Gradient boosting (untuned),prediction,-0.09784561574573769,1.80388663263797,1.511577189058435,2028,
+OLS all,inference,-0.09603012891536777,1.8435771120808893,1.531731830696417,2029,ctg_repeats;disease_duration;family_history
+LASSO,inference,0.12456341974360097,1.6476403012778045,1.2978820917273128,2029,ctg_repeats;somatic_mosaicism_index;disease_duration;insulin_resistance;family_history
+Ridge,inference,0.14526488431282147,1.628042862977204,1.2818637396845773,2029,ctg_repeats;insulin_resistance;disease_duration;family_history;myotonia_severity
+Random forest,prediction,0.18265389530362008,1.592036645104987,1.2284092857142854,2029,
+Gradient boosting (untuned),prediction,0.129227370865015,1.6432454791349185,1.3676777914975737,2029,
+OLS all,inference,0.04535323963011828,1.746835215509693,1.4427379087046652,2030,ctg_repeats;age_at_onset;disease_duration;family_history
+LASSO,inference,0.18332181918500812,1.6156826574737522,1.198451582849874,2030,ctg_repeats;somatic_mosaicism_index;disease_duration;ck_level;albumin
+Ridge,inference,0.16723772186513253,1.6315151438124396,1.232033952653606,2030,ctg_repeats;myotonia_severity;somatic_mosaicism_index;disease_duration;albumin
+Random forest,prediction,0.12302538073364533,1.6742646172573794,1.2413785714285712,2030,
+Gradient boosting (untuned),prediction,-0.012282149538580533,1.7987937764340811,1.3314951967825022,2030,
+OLS all,inference,-0.23595011887602713,1.8025834758046346,1.4946211659996054,2031,ctg_repeats;age_at_onset;family_history
+LASSO,inference,0.08788872881399779,1.548527153033475,1.2381152511030709,2031,ctg_repeats;somatic_mosaicism_index;disease_duration;insulin_resistance;albumin
+Ridge,inference,0.0737650079411275,1.5604702948159297,1.253511407669647,2031,ctg_repeats;somatic_mosaicism_index;myotonia_severity;insulin_resistance;disease_duration
+Random forest,prediction,0.10995387646441357,1.5296820492600975,1.3243971428571428,2031,
+Gradient boosting (untuned),prediction,0.2464843655346357,1.4074761607177126,1.2085408451373179,2031,
+OLS all,inference,0.15356977145532347,1.450893315077885,1.2257877397983385,2032,ctg_repeats;disease_duration;family_history
+LASSO,inference,0.16009316458804812,1.4452915218892095,1.2632237000581625,2032,ctg_repeats;disease_duration
+Ridge,inference,0.18456567009124392,1.4240800188857474,1.2566093303777646,2032,ctg_repeats;myotonia_severity;somatic_mosaicism_index;disease_duration;age_at_onset
+Random forest,prediction,0.15127489138087247,1.452858847641927,1.2885485714285712,2032,
+Gradient boosting (untuned),prediction,0.23955553982143796,1.3752246477023742,1.1968832176064415,2032,
+OLS all,inference,-0.1357831677473349,1.7629315093565594,1.4565753134446808,2033,ctg_repeats;disease_duration;muscle_strength;family_history
+LASSO,inference,0.16596284215429724,1.5107076410549165,1.2142866598956752,2033,ctg_repeats;somatic_mosaicism_index;disease_duration;cognitive_function
+Ridge,inference,0.16434322927191647,1.5121737477188488,1.2035867783628231,2033,ctg_repeats;disease_duration;somatic_mosaicism_index;myotonia_severity;family_history
+Random forest,prediction,-0.11553549352757742,1.7471469021808097,1.3601714285714286,2033,
+Gradient boosting (untuned),prediction,-0.1800630925967277,1.796967985485094,1.3679202261874406,2033,
+OLS all,inference,-0.09325900128745612,1.6362507604079353,1.2343049755677622,2034,ctg_repeats;family_history
+LASSO,inference,-0.003250087309663474,1.5674472476847765,1.2359707699335007,2034,ctg_repeats
+Ridge,inference,-0.00014315864284220048,1.5650182805264627,1.2064640162334226,2034,ctg_repeats;family_history;somatic_mosaicism_index;myotonia_severity;cataracts
+Random forest,prediction,-0.061638748478824334,1.6124145600930304,1.2751014285714286,2034,
+Gradient boosting (untuned),prediction,-0.09983617851812876,1.641165320225024,1.425443429816907,2034,
+OLS all,inference,0.337654310294182,1.4133142260820308,1.1690463828559867,2035,family_history
+LASSO,inference,0.22858071486427545,1.5252520563527745,1.2211890621724562,2035,ctg_repeats;somatic_mosaicism_index;disease_duration;myotonia_severity;muscle_strength
+Ridge,inference,0.17862059231108252,1.5738679031229552,1.2262900127864216,2035,ctg_repeats;myotonia_severity;somatic_mosaicism_index;disease_duration;muscle_strength
+Random forest,prediction,0.26460003122164744,1.489217656993094,1.1642535714285718,2035,
+Gradient boosting (untuned),prediction,0.2656424943875041,1.4881617655201163,1.1061356513586713,2035,
+OLS all,inference,0.0447715247032654,1.6519270439235876,1.3514749473576855,2036,ctg_repeats;family_history
+LASSO,inference,0.17098747572965323,1.5389261479907197,1.232504910924937,2036,ctg_repeats;somatic_mosaicism_index;disease_duration;pr_interval;family_history
+Ridge,inference,0.10643838682417461,1.5977156334999132,1.2570684676056367,2036,ctg_repeats;somatic_mosaicism_index;disease_duration;family_history;myotonia_severity
+Random forest,prediction,0.019304112223068937,1.6738032628162385,1.2708835714285716,2036,
+Gradient boosting (untuned),prediction,-0.011787013847845751,1.700128640154453,1.2823593827939983,2036,
+OLS all,inference,0.3104282528320875,1.3822825561437975,1.068333272346546,2037,disease_duration
+LASSO,inference,0.21533351990993632,1.4745165381823142,1.1528599450105426,2037,ctg_repeats;disease_duration
+Ridge,inference,0.20335146030442963,1.4857320086079406,1.16264421466749,2037,ctg_repeats;disease_duration;myotonia_severity;somatic_mosaicism_index;muscle_strength
+Random forest,prediction,0.2662938726017877,1.4258313871612889,1.1479578571428566,2037,
+Gradient boosting (untuned),prediction,0.11634420382353328,1.564763340827064,1.2623095971276712,2037,
+OLS all,inference,0.04704163894547442,1.4050057259112199,1.1277963701906923,2038,family_history
+LASSO,inference,0.23417001843564278,1.259526513643522,1.0373095006294535,2038,ctg_repeats;somatic_mosaicism_index;disease_duration;myotonia_severity;albumin;family_history
+Ridge,inference,0.18868854416188718,1.2963878017045072,1.0759100467575136,2038,ctg_repeats;somatic_mosaicism_index;disease_duration;myotonia_severity;family_history
+Random forest,prediction,0.17684900338438658,1.3058126933501168,1.0278614285714283,2038,
+Gradient boosting (untuned),prediction,0.17649629778166376,1.3060924221782817,1.0626107154592366,2038,
+OLS all,inference,-0.33240903200484073,1.7560616294257307,1.429333051942683,2039,ctg_repeats;disease_duration;family_history
+LASSO,inference,0.07213130514169808,1.4654271407743484,1.2584636787144554,2039,ctg_repeats;somatic_mosaicism_index;disease_duration;insulin_resistance;family_history
+Ridge,inference,0.10849586301983827,1.4364239939270904,1.2174549354785216,2039,ctg_repeats;disease_duration;family_history;muscle_strength;insulin_resistance
+Random forest,prediction,0.22606639873865264,1.338359607136395,1.1125107142857142,2039,
+Gradient boosting (untuned),prediction,0.21053499701139067,1.3517220888132453,1.1422781705794929,2039,
+OLS all,inference,-0.00995581513210353,1.9036453829682012,1.5469772754355755,2040,ctg_repeats;age_at_onset;disease_duration;family_history
+LASSO,inference,0.0910213066537694,1.8059749183821254,1.4768849030326496,2040,ctg_repeats;somatic_mosaicism_index;disease_duration;bmi
+Ridge,inference,0.06316432543251871,1.8334394546905326,1.5073816261972304,2040,disease_duration;ctg_repeats;myotonia_severity;somatic_mosaicism_index;family_history
+Random forest,prediction,0.13989932153919615,1.7567481623280152,1.4352207142857147,2040,
+Gradient boosting (untuned),prediction,0.091704209158047,1.8052963895389798,1.5163365105147883,2040,
+OLS all,inference,0.029854500231071723,1.6382625126350734,1.3487079844507757,2041,ctg_repeats;disease_duration;family_history
+LASSO,inference,0.14246659185404698,1.5402477433895057,1.221555699977968,2041,ctg_repeats;somatic_mosaicism_index;disease_duration;myotonia_severity
+Ridge,inference,0.13192408472092743,1.5496867165167378,1.2556520933316107,2041,ctg_repeats;disease_duration;somatic_mosaicism_index;myotonia_severity;family_history
+Random forest,prediction,0.11292712294431151,1.5665516098287806,1.1852271428571428,2041,
+Gradient boosting (untuned),prediction,0.13160388649550836,1.549972498657794,1.27020945784809,2041,
+OLS all,inference,-0.06517967279556047,1.9136042434748044,1.607368232973973,2042,age_at_onset;family_history
+LASSO,inference,0.09119948865720318,1.7675632837267894,1.4614174284988681,2042,ctg_repeats;somatic_mosaicism_index;disease_duration;muscle_strength;albumin
+Ridge,inference,0.07344818942024256,1.7847424147975184,1.4711549216614046,2042,ctg_repeats;somatic_mosaicism_index;myotonia_severity;muscle_strength;albumin
+Random forest,prediction,0.04152714637716859,1.8152255629496061,1.5125449999999998,2042,
+Gradient boosting (untuned),prediction,-0.12025087700798198,1.9624488079073246,1.6839162171046715,2042,
+OLS all,inference,-0.09218366864637173,1.6670377784941177,1.307003390518401,2043,ctg_repeats;disease_duration;family_history
+LASSO,inference,0.17546135411063501,1.4484486744814908,1.1747482766614417,2043,ctg_repeats;somatic_mosaicism_index;disease_duration;insulin_resistance
+Ridge,inference,0.15291156222289926,1.4681214358065295,1.1628870730302967,2043,ctg_repeats;somatic_mosaicism_index;disease_duration;insulin_resistance;myotonia_severity
+Random forest,prediction,0.2356310608278387,1.394598257399907,1.1355814285714285,2043,
+Gradient boosting (untuned),prediction,0.20781304307914072,1.4197485918810795,1.202948372953257,2043,
+OLS all,inference,0.021547828820012493,1.8873926973533355,1.4905102567889756,2044,family_history
+LASSO,inference,0.10632287675113261,1.803776772380784,1.3939984253938373,2044,ctg_repeats;somatic_mosaicism_index;disease_duration;myotonia_severity;cognitive_function;insulin_resistance;albumin;family_history
+Ridge,inference,0.09255858800532435,1.817614451935352,1.4012400103327143,2044,myotonia_severity;ctg_repeats;somatic_mosaicism_index;family_history;cognitive_function
+Random forest,prediction,-0.0010314633828549802,1.9090457385263755,1.4266735714285719,2044,
+Gradient boosting (untuned),prediction,0.01423542859573812,1.8944322242606957,1.5227004047991806,2044,
+OLS all,inference,0.02968261312626419,1.4629530189062312,1.278572978253127,2045,ctg_repeats;disease_duration;family_history
+LASSO,inference,0.17802534610020027,1.3464886152437032,1.073546675052789,2045,ctg_repeats;somatic_mosaicism_index;disease_duration
+Ridge,inference,0.21524600371629365,1.3156496081884534,1.0334757198066256,2045,ctg_repeats;somatic_mosaicism_index;myotonia_severity;disease_duration;family_history
+Random forest,prediction,0.12903525053542908,1.386033610610816,1.0631914285714283,2045,
+Gradient boosting (untuned),prediction,0.06319182318973304,1.4374700641777496,1.0871912041791238,2045,

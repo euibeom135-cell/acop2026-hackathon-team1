@@ -1,0 +1,97 @@
+method,term,kind,value,kept
+OLS all,ctg_repeats,coef,0.7411425550066274,False
+OLS all,somatic_mosaicism_index,coef,0.0759574692068544,False
+OLS all,age_at_onset,coef,0.8662697013854633,False
+OLS all,disease_duration,coef,0.8550261510079926,True
+OLS all,myotonia_severity,coef,0.18929440842488618,False
+OLS all,muscle_strength,coef,0.3498184641129797,False
+OLS all,pr_interval,coef,-0.21679423090540956,False
+OLS all,cognitive_function,coef,-0.08176878461771031,False
+OLS all,ck_level,coef,-0.08108637689366177,False
+OLS all,insulin_resistance,coef,-0.02308502895023869,False
+OLS all,albumin,coef,-0.02705488423498999,False
+OLS all,bmi,coef,0.20124401951304796,False
+OLS all,phenotype,coef,-1.3720531219192702,False
+OLS all,sex,coef,0.23830910292721355,False
+OLS all,family_history,coef,-1.1747174496524166,True
+OLS all,cataracts,coef,-0.43015401137477893,False
+OLS all,smoking_status,coef,0.34472633837497785,False
+Stepwise AIC,ctg_repeats,coef,1.0091279882212243,True
+Stepwise AIC,disease_duration,coef,0.36451829689265813,True
+Stepwise AIC,family_history,coef,0.7752350159434896,True
+Stepwise AIC,age_at_onset,coef,-0.491241161534154,True
+Stepwise AIC,muscle_strength,coef,-1.218989078840713,True
+Stepwise BIC,ctg_repeats,coef,0.6938095404973291,True
+Stepwise BIC,disease_duration,coef,0.45103257422363924,True
+Stepwise BIC,family_history,coef,-1.0927996066379966,True
+Best subset,ctg_repeats,coef,0.6938095404973291,True
+Best subset,disease_duration,coef,0.45103257422363924,True
+Best subset,family_history,coef,-1.0927996066379966,True
+LASSO,ctg_repeats,coef,0.3010340797071682,True
+LASSO,somatic_mosaicism_index,coef,0.11694523791176517,True
+LASSO,age_at_onset,coef,0.0,False
+LASSO,disease_duration,coef,0.3240625368568468,True
+LASSO,myotonia_severity,coef,0.2119310115943843,True
+LASSO,muscle_strength,coef,-0.0,False
+LASSO,pr_interval,coef,0.0,False
+LASSO,cognitive_function,coef,0.0,False
+LASSO,ck_level,coef,-0.0,False
+LASSO,insulin_resistance,coef,0.0,False
+LASSO,albumin,coef,-0.0,False
+LASSO,bmi,coef,0.024951298739249214,True
+LASSO,phenotype,coef,0.0,False
+LASSO,sex,coef,-0.0,False
+LASSO,family_history,coef,-0.20810910472745897,True
+LASSO,cataracts,coef,-0.0,False
+LASSO,smoking_status,coef,0.0,False
+Elastic net,ctg_repeats,coef,0.23304812520932108,True
+Elastic net,somatic_mosaicism_index,coef,0.14991063227007367,True
+Elastic net,age_at_onset,coef,-0.0,False
+Elastic net,disease_duration,coef,0.2617219692272661,True
+Elastic net,myotonia_severity,coef,0.2244407284730626,True
+Elastic net,muscle_strength,coef,-0.011479488891064742,True
+Elastic net,pr_interval,coef,0.0,False
+Elastic net,cognitive_function,coef,0.0,False
+Elastic net,ck_level,coef,-0.0,False
+Elastic net,insulin_resistance,coef,0.046847782401288264,True
+Elastic net,albumin,coef,-0.0,False
+Elastic net,bmi,coef,0.059101251921188216,True
+Elastic net,phenotype,coef,0.0,False
+Elastic net,sex,coef,-0.0,False
+Elastic net,family_history,coef,-0.18269625923798216,True
+Elastic net,cataracts,coef,-0.0,False
+Elastic net,smoking_status,coef,0.0,False
+Ridge,ctg_repeats,coef,0.23541320285604186,True
+Ridge,somatic_mosaicism_index,coef,0.1726335365499859,True
+Ridge,age_at_onset,coef,0.0027273826144383773,False
+Ridge,disease_duration,coef,0.25338667024825784,True
+Ridge,myotonia_severity,coef,0.23452362214161185,True
+Ridge,muscle_strength,coef,-0.0680639931922148,False
+Ridge,pr_interval,coef,-0.01059145389002448,False
+Ridge,cognitive_function,coef,-0.006710164873906733,False
+Ridge,ck_level,coef,-0.04337184956131696,False
+Ridge,insulin_resistance,coef,0.09647526273337086,False
+Ridge,albumin,coef,-0.018580753893816977,False
+Ridge,bmi,coef,0.11597858934054463,False
+Ridge,phenotype,coef,-0.03706846525967525,False
+Ridge,sex,coef,-0.01993285086308147,False
+Ridge,family_history,coef,-0.24531356316172143,True
+Ridge,cataracts,coef,-0.11509736542284053,False
+Ridge,smoking_status,coef,0.05908459768971726,False
+GAM,ctg_repeats,coef,0.6098102411971108,True
+GAM,somatic_mosaicism_index,coef,0.47134674173282237,False
+GAM,age_at_onset,coef,0.296960212981919,False
+GAM,disease_duration,coef,0.5455983591582205,True
+GAM,myotonia_severity,coef,0.5803191179963276,True
+GAM,muscle_strength,coef,0.420539618665589,False
+GAM,pr_interval,coef,0.39011803933301087,False
+GAM,cognitive_function,coef,0.19537652830847643,False
+GAM,ck_level,coef,0.21125674898530727,False
+GAM,insulin_resistance,coef,0.42290665957168816,False
+GAM,albumin,coef,0.3068460235413777,False
+GAM,bmi,coef,0.8501703828798691,True
+GAM,phenotype,coef,0.1349943720801211,False
+GAM,sex,coef,0.06100315486134854,False
+GAM,family_history,coef,0.594147200833209,True
+GAM,cataracts,coef,0.25976669142743986,False
+GAM,smoking_status,coef,0.24083918178627445,False

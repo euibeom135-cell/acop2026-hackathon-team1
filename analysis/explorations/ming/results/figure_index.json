@@ -1,0 +1,72 @@
+[
+  {
+    "file": "01_numeric_outcome_associations",
+    "title": "Numeric covariates and improvement by treatment arm",
+    "note": "* Within-arm BH FDR < 0.05. Mexiletine improvement = \u2212myotonia_change_12wk. Other endpoints retain their original sign. NA = constant albumin."
+  },
+  {
+    "file": "02_categorical_outcome_associations",
+    "title": "Categorical covariates and improvement by treatment arm",
+    "note": "* Within-arm BH FDR < 0.05. Eta\u00b2(H) = max(0, (H\u2212k+1)/(n\u2212k)). This rank effect size is unsigned and has a different scale from rho."
+  },
+  {
+    "file": "03_0_baseline_numeric_correlations",
+    "title": "Baseline numeric covariate correlations: Pooled training (n=399)",
+    "note": "Training patients only. Full Spearman and Pearson results are in the workbook. NA = no within-cohort variation. Onset age = age_at_onset."
+  },
+  {
+    "file": "03_1_baseline_numeric_correlations",
+    "title": "Baseline numeric covariate correlations: Mexiletine (n=128)",
+    "note": "Training patients only. Full Spearman and Pearson results are in the workbook. NA = no within-cohort variation. Onset age = age_at_onset."
+  },
+  {
+    "file": "03_2_baseline_numeric_correlations",
+    "title": "Baseline numeric covariate correlations: Oligonucleotide (n=136)",
+    "note": "Training patients only. Full Spearman and Pearson results are in the workbook. NA = no within-cohort variation. Onset age = age_at_onset."
+  },
+  {
+    "file": "03_3_baseline_numeric_correlations",
+    "title": "Baseline numeric covariate correlations: Tideglusib (n=135)",
+    "note": "Training patients only. Full Spearman and Pearson results are in the workbook. NA = no within-cohort variation. Onset age = age_at_onset."
+  },
+  {
+    "file": "04_numeric_outcome_confidence_intervals",
+    "title": "Uncertainty in numeric covariate associations",
+    "note": "Points and 95% percentile bootstrap intervals (2,000 resamples). Colored points have within-arm FDR < 0.05. Intervals are not multiplicity adjusted."
+  },
+  {
+    "file": "05_mexiletine_leading_scatterplots",
+    "title": "Leading numeric associations: Mexiletine (n=128)",
+    "note": "Four largest absolute Spearman correlations. Line shows unadjusted OLS as a visual guide. Correlated predictors can represent the same underlying signal."
+  },
+  {
+    "file": "05_oligonucleotide_leading_scatterplots",
+    "title": "Leading numeric associations: Oligonucleotide (n=136)",
+    "note": "Four largest absolute Spearman correlations. Line shows unadjusted OLS as a visual guide. Correlated predictors can represent the same underlying signal."
+  },
+  {
+    "file": "05_tideglusib_leading_scatterplots",
+    "title": "Leading numeric associations: Tideglusib (n=135)",
+    "note": "Four largest absolute Spearman correlations. Line shows unadjusted OLS as a visual guide. Correlated predictors can represent the same underlying signal."
+  },
+  {
+    "file": "06_0_categorical_outcome_distributions",
+    "title": "Improvement distributions by phenotype",
+    "note": "Training patients only. Boxes show median and IQR. Whiskers extend to 1.5 IQR. Points are individual patients. q = within-arm BH FDR."
+  },
+  {
+    "file": "06_1_categorical_outcome_distributions",
+    "title": "Improvement distributions by categorical covariates",
+    "note": "Training patients only. Boxes show median and IQR. Whiskers extend to 1.5 IQR. Points are individual patients. q = within-arm BH FDR."
+  },
+  {
+    "file": "06_2_categorical_outcome_distributions",
+    "title": "Improvement distributions by categorical covariates",
+    "note": "Training patients only. Boxes show median and IQR. Whiskers extend to 1.5 IQR. Points are individual patients. q = within-arm BH FDR."
+  },
+  {
+    "file": "07_mixed_baseline_covariate_associations",
+    "title": "Categorical and numeric baseline covariate relationships",
+    "note": "Unsigned rank effect size, not a correlation coefficient. Full results and categorical\u2013categorical Cramer\u2019s V are in the workbook. NA = constant albumin."
+  }
+]

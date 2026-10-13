@@ -1,0 +1,7 @@
+arm: Oligonucleotide
+leading numeric consensus term: ctg_repeats
+data-chosen threshold (depth-1 tree): ctg_repeats > 346.5
+enriched subgroup mean improvement: 2.026  (other subgroup: 0.384)
+subgroup size in training: 41/102
+test R2, single linear term (ctg_repeats): +0.002
+test R2, single indicator 1[ctg_repeats > 346]: -0.071

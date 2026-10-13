@@ -1,0 +1,65 @@
+method_a,method_b,jaccard
+Logistic all,Logistic all,1.0
+Logistic all,Logistic stepwise AIC,0.0
+Logistic all,Logistic stepwise BIC,0.0
+Logistic all,Logistic best subset,0.0
+Logistic all,LASSO logistic,0.0
+Logistic all,Elastic net logistic,0.0
+Logistic all,Ridge logistic,0.0
+Logistic all,GAM logistic,0.2
+Logistic stepwise AIC,Logistic all,0.0
+Logistic stepwise AIC,Logistic stepwise AIC,1.0
+Logistic stepwise AIC,Logistic stepwise BIC,1.0
+Logistic stepwise AIC,Logistic best subset,1.0
+Logistic stepwise AIC,LASSO logistic,0.5
+Logistic stepwise AIC,Elastic net logistic,0.2
+Logistic stepwise AIC,Ridge logistic,0.2
+Logistic stepwise AIC,GAM logistic,0.0
+Logistic stepwise BIC,Logistic all,0.0
+Logistic stepwise BIC,Logistic stepwise AIC,1.0
+Logistic stepwise BIC,Logistic stepwise BIC,1.0
+Logistic stepwise BIC,Logistic best subset,1.0
+Logistic stepwise BIC,LASSO logistic,0.5
+Logistic stepwise BIC,Elastic net logistic,0.2
+Logistic stepwise BIC,Ridge logistic,0.2
+Logistic stepwise BIC,GAM logistic,0.0
+Logistic best subset,Logistic all,0.0
+Logistic best subset,Logistic stepwise AIC,1.0
+Logistic best subset,Logistic stepwise BIC,1.0
+Logistic best subset,Logistic best subset,1.0
+Logistic best subset,LASSO logistic,0.5
+Logistic best subset,Elastic net logistic,0.2
+Logistic best subset,Ridge logistic,0.2
+Logistic best subset,GAM logistic,0.0
+LASSO logistic,Logistic all,0.0
+LASSO logistic,Logistic stepwise AIC,0.5
+LASSO logistic,Logistic stepwise BIC,0.5
+LASSO logistic,Logistic best subset,0.5
+LASSO logistic,LASSO logistic,1.0
+LASSO logistic,Elastic net logistic,0.4
+LASSO logistic,Ridge logistic,0.4
+LASSO logistic,GAM logistic,0.16666666666666666
+Elastic net logistic,Logistic all,0.0
+Elastic net logistic,Logistic stepwise AIC,0.2
+Elastic net logistic,Logistic stepwise BIC,0.2
+Elastic net logistic,Logistic best subset,0.2
+Elastic net logistic,LASSO logistic,0.4
+Elastic net logistic,Elastic net logistic,1.0
+Elastic net logistic,Ridge logistic,0.6666666666666666
+Elastic net logistic,GAM logistic,0.42857142857142855
+Ridge logistic,Logistic all,0.0
+Ridge logistic,Logistic stepwise AIC,0.2
+Ridge logistic,Logistic stepwise BIC,0.2
+Ridge logistic,Logistic best subset,0.2
+Ridge logistic,LASSO logistic,0.4
+Ridge logistic,Elastic net logistic,0.6666666666666666
+Ridge logistic,Ridge logistic,1.0
+Ridge logistic,GAM logistic,0.25
+GAM logistic,Logistic all,0.2
+GAM logistic,Logistic stepwise AIC,0.0
+GAM logistic,Logistic stepwise BIC,0.0
+GAM logistic,Logistic best subset,0.0
+GAM logistic,LASSO logistic,0.16666666666666666
+GAM logistic,Elastic net logistic,0.42857142857142855
+GAM logistic,Ridge logistic,0.25
+GAM logistic,GAM logistic,1.0

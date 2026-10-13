@@ -1,0 +1,7 @@
+arm: Tideglusib
+leading numeric consensus term: cognitive_function
+data-chosen threshold (depth-1 tree): cognitive_function <= -0.505
+enriched subgroup mean improvement: 8.277  (other subgroup: 3.457)
+subgroup size in training: 48/102
+test R2, single linear term (cognitive_function): +0.233
+test R2, single indicator 1[cognitive_function <= -0.505]: +0.377

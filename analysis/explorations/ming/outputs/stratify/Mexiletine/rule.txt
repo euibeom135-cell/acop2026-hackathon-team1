@@ -1,0 +1,7 @@
+arm: Mexiletine
+leading numeric consensus term: ctg_repeats
+data-chosen threshold (depth-1 tree): ctg_repeats > 448.5
+enriched subgroup mean improvement: 0.467  (other subgroup: 0.344)
+subgroup size in training: 24/96
+test R2, single linear term (ctg_repeats): +0.163
+test R2, single indicator 1[ctg_repeats > 448]: +0.138

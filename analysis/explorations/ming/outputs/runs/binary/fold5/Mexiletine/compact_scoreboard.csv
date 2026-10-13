@@ -1,0 +1,4 @@
+n_terms,terms,cutoff,ROC_AUC,Recall,Precision,Accuracy
+1,myotonia_severity,0.24656221645941626,0.7818181818181819,0.9,0.5294117647058824,0.71875
+2,myotonia_severity+ctg_repeats,0.23930654815396607,0.7636363636363637,0.9,0.45,0.625
+3,myotonia_severity+ctg_repeats+disease_duration,0.25710794499425926,0.7772727272727272,0.9,0.5,0.6875

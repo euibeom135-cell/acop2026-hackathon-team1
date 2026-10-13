@@ -1,0 +1,113 @@
+{
+  "seed": 20261011,
+  "test_fraction": 0.2,
+  "stratify_by": "assigned-arm responder label",
+  "source_sha256": "6b4fdfbd2652287192d3679c87ef6f7c0eb18c3e4a7c91d938bda666a59cb485",
+  "numeric": [
+    "ctg_repeats",
+    "somatic_mosaicism_index",
+    "age",
+    "age_at_onset",
+    "disease_duration",
+    "myotonia_severity",
+    "muscle_strength",
+    "pr_interval",
+    "cognitive_function",
+    "ck_level",
+    "insulin_resistance",
+    "albumin",
+    "bmi"
+  ],
+  "categorical": [
+    "phenotype",
+    "sex",
+    "family_history",
+    "cataracts",
+    "smoking_status"
+  ],
+  "labels": {
+    "ctg_repeats": "CTG repeats",
+    "somatic_mosaicism_index": "Somatic mosaicism",
+    "age": "Age (years)",
+    "age_at_onset": "Age at onset (years)",
+    "disease_duration": "Disease duration (years)",
+    "myotonia_severity": "Myotonia severity (0\u201310)",
+    "muscle_strength": "Muscle strength (20\u2013100)",
+    "pr_interval": "PR interval (ms)",
+    "cognitive_function": "Cognitive function (z-score)",
+    "ck_level": "CK (U/L)",
+    "insulin_resistance": "Insulin resistance (HOMA-IR)",
+    "albumin": "Albumin (g/dL)",
+    "bmi": "BMI (kg/m\u00b2)",
+    "phenotype": "Phenotype",
+    "sex": "Sex",
+    "family_history": "Family history",
+    "cataracts": "Cataracts",
+    "smoking_status": "Smoking status"
+  },
+  "short_labels": [
+    "CTG",
+    "Mosaicism",
+    "Age",
+    "Onset age",
+    "Duration",
+    "Myotonia",
+    "Strength",
+    "PR",
+    "Cognition",
+    "CK",
+    "HOMA-IR",
+    "Albumin",
+    "BMI"
+  ],
+  "arms": [
+    "Mexiletine",
+    "Oligonucleotide",
+    "Tideglusib"
+  ],
+  "endpoints": {
+    "Mexiletine": "myotonia_change_12wk",
+    "Oligonucleotide": "qmt_change_26wk",
+    "Tideglusib": "tideglusib_composite"
+  },
+  "sign": {
+    "Mexiletine": -1,
+    "Oligonucleotide": 1,
+    "Tideglusib": 1
+  },
+  "levels": {
+    "phenotype": [
+      "juvenile_onset",
+      "adult_onset",
+      "late_onset"
+    ],
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "family_history": [
+      "No",
+      "Unknown",
+      "Yes"
+    ],
+    "cataracts": [
+      "No",
+      "Yes"
+    ],
+    "smoking_status": [
+      "Never",
+      "Former",
+      "Current"
+    ]
+  },
+  "bootstrap_replicates": 2000,
+  "missing_predictor_cells": 0,
+  "constant_predictor": "albumin in Mexiletine; do not replace undefined correlations with zero",
+  "FDR_families": "17 evaluable outcome tests in Mexiletine, 18 each in other arms; 53 across arms",
+  "age_duration_identity": "disease_duration = age - age_at_onset, all 500 rows",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0"
+}

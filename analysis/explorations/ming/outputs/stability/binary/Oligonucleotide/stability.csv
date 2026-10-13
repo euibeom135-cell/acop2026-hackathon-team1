@@ -1,0 +1,18 @@
+term,stability_freq,stable,rf_importance,null_q95,beats_null,verdict
+disease_duration,0.91,True,0.00015873015873014707,2.728174603179364e-05,True,real signal
+ctg_repeats,0.76,True,0.0004960317460317443,2.728174603179364e-05,True,real signal
+somatic_mosaicism_index,0.54,False,2.2204460492503132e-17,2.728174603179364e-05,False,noise
+ck_level,0.54,False,2.2204460492503132e-17,2.728174603179364e-05,False,noise
+myotonia_severity,0.45,False,1.1102230246251566e-17,2.728174603179364e-05,False,noise
+family_history,0.41,False,3.3306690738754695e-17,2.728174603179364e-05,False,noise
+pr_interval,0.36,False,0.0,2.728174603179364e-05,False,noise
+insulin_resistance,0.31,False,1.1102230246251566e-17,2.728174603179364e-05,False,noise
+muscle_strength,0.3,False,0.0,2.728174603179364e-05,False,noise
+bmi,0.28,False,0.00011904761904764083,2.728174603179364e-05,True,suggestive
+cognitive_function,0.24,False,1.1102230246251566e-17,2.728174603179364e-05,False,noise
+albumin,0.22,False,1.1102230246251566e-17,2.728174603179364e-05,False,noise
+phenotype,0.18,False,4.4408920985006264e-17,2.728174603179364e-05,False,noise
+age_at_onset,0.17,False,1.1102230246251566e-17,2.728174603179364e-05,False,noise
+cataracts,0.06,False,2.2204460492503132e-17,2.728174603179364e-05,False,noise
+smoking_status,0.03,False,2.2204460492503132e-17,2.728174603179364e-05,False,noise
+sex,0.01,False,0.0,2.728174603179364e-05,False,noise

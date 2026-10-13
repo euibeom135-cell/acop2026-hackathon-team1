@@ -1,0 +1,1075 @@
+<!doctype html><meta charset=utf-8><title>DM1 results report</title>
+<style>
+body{font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;color:#1b2a4a;max-width:980px;margin:2rem auto;padding:0 1rem}
+h1{border-bottom:3px solid #1b2a4a;padding-bottom:.3rem} h2{margin-top:2rem;color:#1b2a4a}
+table.tbl{border-collapse:collapse;font-size:12px;margin:.4rem 0} .tbl td,.tbl th{border:1px solid #d4d9e4;padding:3px 8px;text-align:right}
+.tbl th{background:#eef2f8;text-align:center} img{max-width:100%;margin:.5rem 0}
+.cap{color:#667;font-size:12px} .grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+code{background:#f3f5fa;padding:1px 4px;border-radius:3px}
+</style>
+<h1>DM1 covariate analysis — results report</h1>
+<p class=cap>mode: <b>rehearsal</b> &nbsp;·&nbsp; rehearsal scores fold 5 (pseudo-test); the locked fold 1 is scored only at the final run (G3).
+Primary endpoint: continuous improvement per arm (mexiletine = relative myotonia change). Secondary: responder label.
+Gradient boosting uses scikit-learn HistGradientBoosting (XGBoost's role; no OpenMP runtime in this environment).</p>
+
+<h2>Continuous outcome (R², RMSE, MAE)</h2>
+<h3 style='color:#2f6f9f'>Mexiletine</h3>
+<img src='figures/scoreboard_continuous_Mexiletine.png'>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>tier</th>
+      <th>R2</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SVM (tuned)</td>
+      <td>prediction</td>
+      <td>+0.193</td>
+      <td>0.140</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>Stepwise AIC</td>
+      <td>inference</td>
+      <td>+0.190</td>
+      <td>0.140</td>
+      <td>0.115</td>
+    </tr>
+    <tr>
+      <td>OLS all</td>
+      <td>inference</td>
+      <td>+0.183</td>
+      <td>0.141</td>
+      <td>0.120</td>
+    </tr>
+    <tr>
+      <td>Elastic net</td>
+      <td>inference</td>
+      <td>+0.166</td>
+      <td>0.143</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>Stepwise BIC</td>
+      <td>inference</td>
+      <td>+0.163</td>
+      <td>0.143</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>Best subset</td>
+      <td>inference</td>
+      <td>+0.163</td>
+      <td>0.143</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>prediction</td>
+      <td>+0.135</td>
+      <td>0.145</td>
+      <td>0.120</td>
+    </tr>
+    <tr>
+      <td>LASSO</td>
+      <td>inference</td>
+      <td>+0.130</td>
+      <td>0.146</td>
+      <td>0.118</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>inference</td>
+      <td>+0.126</td>
+      <td>0.146</td>
+      <td>0.118</td>
+    </tr>
+    <tr>
+      <td>GAM</td>
+      <td>inference</td>
+      <td>+0.122</td>
+      <td>0.146</td>
+      <td>0.117</td>
+    </tr>
+    <tr>
+      <td>kNN (tuned)</td>
+      <td>prediction</td>
+      <td>+0.101</td>
+      <td>0.148</td>
+      <td>0.117</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (tuned)</td>
+      <td>prediction</td>
+      <td>+0.055</td>
+      <td>0.152</td>
+      <td>0.126</td>
+    </tr>
+    <tr>
+      <td>MLP (tuned)</td>
+      <td>prediction</td>
+      <td>+0.036</td>
+      <td>0.153</td>
+      <td>0.128</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (untuned)</td>
+      <td>prediction</td>
+      <td>-0.047</td>
+      <td>0.160</td>
+      <td>0.133</td>
+    </tr>
+  </tbody>
+</table>
+<p class=cap>Compact models on consensus covariates:</p>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>n_terms</th>
+      <th>terms</th>
+      <th>R2</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ctg_repeats</td>
+      <td>0.163</td>
+      <td>0.143</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ctg_repeats+myotonia_severity</td>
+      <td>0.219</td>
+      <td>0.138</td>
+      <td>0.112</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ctg_repeats+myotonia_severity+disease_duration</td>
+      <td>0.242</td>
+      <td>0.136</td>
+      <td>0.111</td>
+    </tr>
+  </tbody>
+</table>
+<h3 style='color:#1f8a70'>Oligonucleotide</h3>
+<img src='figures/scoreboard_continuous_Oligonucleotide.png'>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>tier</th>
+      <th>R2</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stepwise BIC</td>
+      <td>inference</td>
+      <td>+0.057</td>
+      <td>1.566</td>
+      <td>1.262</td>
+    </tr>
+    <tr>
+      <td>Best subset</td>
+      <td>inference</td>
+      <td>+0.057</td>
+      <td>1.566</td>
+      <td>1.262</td>
+    </tr>
+    <tr>
+      <td>Elastic net</td>
+      <td>inference</td>
+      <td>+0.051</td>
+      <td>1.571</td>
+      <td>1.276</td>
+    </tr>
+    <tr>
+      <td>LASSO</td>
+      <td>inference</td>
+      <td>+0.048</td>
+      <td>1.574</td>
+      <td>1.279</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>inference</td>
+      <td>+0.037</td>
+      <td>1.583</td>
+      <td>1.274</td>
+    </tr>
+    <tr>
+      <td>kNN (tuned)</td>
+      <td>prediction</td>
+      <td>+0.029</td>
+      <td>1.589</td>
+      <td>1.263</td>
+    </tr>
+    <tr>
+      <td>OLS all</td>
+      <td>inference</td>
+      <td>+0.022</td>
+      <td>1.595</td>
+      <td>1.342</td>
+    </tr>
+    <tr>
+      <td>GAM</td>
+      <td>inference</td>
+      <td>+0.020</td>
+      <td>1.597</td>
+      <td>1.312</td>
+    </tr>
+    <tr>
+      <td>SVM (tuned)</td>
+      <td>prediction</td>
+      <td>+0.014</td>
+      <td>1.601</td>
+      <td>1.279</td>
+    </tr>
+    <tr>
+      <td>Stepwise AIC</td>
+      <td>inference</td>
+      <td>-0.020</td>
+      <td>1.629</td>
+      <td>1.351</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>prediction</td>
+      <td>-0.028</td>
+      <td>1.635</td>
+      <td>1.279</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (tuned)</td>
+      <td>prediction</td>
+      <td>-0.115</td>
+      <td>1.703</td>
+      <td>1.387</td>
+    </tr>
+    <tr>
+      <td>MLP (tuned)</td>
+      <td>prediction</td>
+      <td>-0.162</td>
+      <td>1.739</td>
+      <td>1.347</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (untuned)</td>
+      <td>prediction</td>
+      <td>-0.169</td>
+      <td>1.744</td>
+      <td>1.405</td>
+    </tr>
+  </tbody>
+</table>
+<p class=cap>Compact models on consensus covariates:</p>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>n_terms</th>
+      <th>terms</th>
+      <th>R2</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ctg_repeats</td>
+      <td>0.002</td>
+      <td>1.612</td>
+      <td>1.277</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ctg_repeats+disease_duration</td>
+      <td>0.057</td>
+      <td>1.566</td>
+      <td>1.262</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ctg_repeats+disease_duration+somatic_mosaicism_index</td>
+      <td>0.031</td>
+      <td>1.587</td>
+      <td>1.295</td>
+    </tr>
+  </tbody>
+</table>
+<h3 style='color:#b4654a'>Tideglusib</h3>
+<img src='figures/scoreboard_continuous_Tideglusib.png'>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>tier</th>
+      <th>R2</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Random forest</td>
+      <td>prediction</td>
+      <td>+0.255</td>
+      <td>2.501</td>
+      <td>1.895</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (tuned)</td>
+      <td>prediction</td>
+      <td>+0.251</td>
+      <td>2.508</td>
+      <td>2.012</td>
+    </tr>
+    <tr>
+      <td>Stepwise BIC</td>
+      <td>inference</td>
+      <td>+0.170</td>
+      <td>2.641</td>
+      <td>2.316</td>
+    </tr>
+    <tr>
+      <td>Best subset</td>
+      <td>inference</td>
+      <td>+0.170</td>
+      <td>2.641</td>
+      <td>2.316</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (untuned)</td>
+      <td>prediction</td>
+      <td>+0.167</td>
+      <td>2.645</td>
+      <td>2.124</td>
+    </tr>
+    <tr>
+      <td>SVM (tuned)</td>
+      <td>prediction</td>
+      <td>+0.148</td>
+      <td>2.675</td>
+      <td>2.272</td>
+    </tr>
+    <tr>
+      <td>GAM</td>
+      <td>inference</td>
+      <td>+0.119</td>
+      <td>2.721</td>
+      <td>2.255</td>
+    </tr>
+    <tr>
+      <td>Stepwise AIC</td>
+      <td>inference</td>
+      <td>+0.103</td>
+      <td>2.745</td>
+      <td>2.342</td>
+    </tr>
+    <tr>
+      <td>Elastic net</td>
+      <td>inference</td>
+      <td>+0.092</td>
+      <td>2.761</td>
+      <td>2.412</td>
+    </tr>
+    <tr>
+      <td>LASSO</td>
+      <td>inference</td>
+      <td>+0.090</td>
+      <td>2.765</td>
+      <td>2.413</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>inference</td>
+      <td>+0.087</td>
+      <td>2.770</td>
+      <td>2.434</td>
+    </tr>
+    <tr>
+      <td>OLS all</td>
+      <td>inference</td>
+      <td>-0.011</td>
+      <td>2.914</td>
+      <td>2.501</td>
+    </tr>
+    <tr>
+      <td>kNN (tuned)</td>
+      <td>prediction</td>
+      <td>-0.092</td>
+      <td>3.029</td>
+      <td>2.483</td>
+    </tr>
+    <tr>
+      <td>MLP (tuned)</td>
+      <td>prediction</td>
+      <td>-0.394</td>
+      <td>3.422</td>
+      <td>2.908</td>
+    </tr>
+  </tbody>
+</table>
+<p class=cap>Compact models on consensus covariates:</p>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>n_terms</th>
+      <th>terms</th>
+      <th>R2</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>cognitive_function</td>
+      <td>0.233</td>
+      <td>2.538</td>
+      <td>2.217</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>cognitive_function+disease_duration</td>
+      <td>0.243</td>
+      <td>2.522</td>
+      <td>2.292</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>cognitive_function+disease_duration+muscle_strength</td>
+      <td>0.215</td>
+      <td>2.568</td>
+      <td>2.291</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Responder label (ROC-AUC, recall, precision, accuracy)</h2>
+<h3 style='color:#2f6f9f'>Mexiletine</h3>
+<img src='figures/scoreboard_binary_Mexiletine.png'>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>tier</th>
+      <th>ROC_AUC</th>
+      <th>Recall</th>
+      <th>Precision</th>
+      <th>Accuracy</th>
+      <th>cutoff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logistic stepwise AIC</td>
+      <td>inference</td>
+      <td>0.773</td>
+      <td>0.100</td>
+      <td>0.500</td>
+      <td>0.688</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Logistic stepwise BIC</td>
+      <td>inference</td>
+      <td>0.773</td>
+      <td>0.100</td>
+      <td>0.500</td>
+      <td>0.688</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Logistic best subset</td>
+      <td>inference</td>
+      <td>0.773</td>
+      <td>0.100</td>
+      <td>0.500</td>
+      <td>0.688</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>LASSO logistic</td>
+      <td>inference</td>
+      <td>0.755</td>
+      <td>1.000</td>
+      <td>0.417</td>
+      <td>0.562</td>
+      <td>0.305</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>prediction</td>
+      <td>0.752</td>
+      <td>0.400</td>
+      <td>0.500</td>
+      <td>0.688</td>
+      <td>0.454</td>
+    </tr>
+    <tr>
+      <td>Ridge logistic</td>
+      <td>inference</td>
+      <td>0.750</td>
+      <td>1.000</td>
+      <td>0.400</td>
+      <td>0.531</td>
+      <td>0.272</td>
+    </tr>
+    <tr>
+      <td>Elastic net logistic</td>
+      <td>inference</td>
+      <td>0.745</td>
+      <td>0.700</td>
+      <td>0.500</td>
+      <td>0.688</td>
+      <td>0.299</td>
+    </tr>
+    <tr>
+      <td>SVM (tuned)</td>
+      <td>prediction</td>
+      <td>0.723</td>
+      <td>0.400</td>
+      <td>0.571</td>
+      <td>0.719</td>
+      <td>0.317</td>
+    </tr>
+    <tr>
+      <td>GAM logistic</td>
+      <td>inference</td>
+      <td>0.718</td>
+      <td>0.800</td>
+      <td>0.421</td>
+      <td>0.594</td>
+      <td>0.236</td>
+    </tr>
+    <tr>
+      <td>Logistic all</td>
+      <td>inference</td>
+      <td>0.705</td>
+      <td>0.300</td>
+      <td>0.500</td>
+      <td>0.688</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>kNN (tuned)</td>
+      <td>prediction</td>
+      <td>0.705</td>
+      <td>0.700</td>
+      <td>0.412</td>
+      <td>0.594</td>
+      <td>0.264</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (tuned)</td>
+      <td>prediction</td>
+      <td>0.695</td>
+      <td>0.700</td>
+      <td>0.467</td>
+      <td>0.656</td>
+      <td>0.269</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (untuned)</td>
+      <td>prediction</td>
+      <td>0.645</td>
+      <td>0.500</td>
+      <td>0.385</td>
+      <td>0.594</td>
+      <td>0.266</td>
+    </tr>
+    <tr>
+      <td>MLP (tuned)</td>
+      <td>prediction</td>
+      <td>0.559</td>
+      <td>0.500</td>
+      <td>0.417</td>
+      <td>0.625</td>
+      <td>0.511</td>
+    </tr>
+  </tbody>
+</table>
+<p class=cap>Compact models on consensus covariates:</p>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>n_terms</th>
+      <th>terms</th>
+      <th>cutoff</th>
+      <th>ROC_AUC</th>
+      <th>Recall</th>
+      <th>Precision</th>
+      <th>Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>myotonia_severity</td>
+      <td>0.247</td>
+      <td>0.782</td>
+      <td>0.9</td>
+      <td>0.529</td>
+      <td>0.719</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>myotonia_severity+ctg_repeats</td>
+      <td>0.239</td>
+      <td>0.764</td>
+      <td>0.9</td>
+      <td>0.450</td>
+      <td>0.625</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>myotonia_severity+ctg_repeats+disease_duration</td>
+      <td>0.257</td>
+      <td>0.777</td>
+      <td>0.9</td>
+      <td>0.500</td>
+      <td>0.688</td>
+    </tr>
+  </tbody>
+</table>
+<h3 style='color:#1f8a70'>Oligonucleotide</h3>
+<img src='figures/scoreboard_binary_Oligonucleotide.png'>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>tier</th>
+      <th>ROC_AUC</th>
+      <th>Recall</th>
+      <th>Precision</th>
+      <th>Accuracy</th>
+      <th>cutoff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logistic stepwise AIC</td>
+      <td>inference</td>
+      <td>0.764</td>
+      <td>0.571</td>
+      <td>0.667</td>
+      <td>0.706</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>LASSO logistic</td>
+      <td>inference</td>
+      <td>0.754</td>
+      <td>0.571</td>
+      <td>0.533</td>
+      <td>0.618</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Logistic stepwise BIC</td>
+      <td>inference</td>
+      <td>0.743</td>
+      <td>0.571</td>
+      <td>0.667</td>
+      <td>0.706</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Logistic best subset</td>
+      <td>inference</td>
+      <td>0.743</td>
+      <td>0.571</td>
+      <td>0.667</td>
+      <td>0.706</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Elastic net logistic</td>
+      <td>inference</td>
+      <td>0.743</td>
+      <td>0.714</td>
+      <td>0.526</td>
+      <td>0.618</td>
+      <td>0.356</td>
+    </tr>
+    <tr>
+      <td>SVM (tuned)</td>
+      <td>prediction</td>
+      <td>0.729</td>
+      <td>1.000</td>
+      <td>0.412</td>
+      <td>0.412</td>
+      <td>0.387</td>
+    </tr>
+    <tr>
+      <td>kNN (tuned)</td>
+      <td>prediction</td>
+      <td>0.721</td>
+      <td>0.857</td>
+      <td>0.600</td>
+      <td>0.706</td>
+      <td>0.406</td>
+    </tr>
+    <tr>
+      <td>Logistic all</td>
+      <td>inference</td>
+      <td>0.714</td>
+      <td>0.500</td>
+      <td>0.467</td>
+      <td>0.559</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Ridge logistic</td>
+      <td>inference</td>
+      <td>0.714</td>
+      <td>0.643</td>
+      <td>0.600</td>
+      <td>0.676</td>
+      <td>0.419</td>
+    </tr>
+    <tr>
+      <td>GAM logistic</td>
+      <td>inference</td>
+      <td>0.654</td>
+      <td>0.429</td>
+      <td>0.545</td>
+      <td>0.618</td>
+      <td>0.587</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>prediction</td>
+      <td>0.648</td>
+      <td>0.857</td>
+      <td>0.545</td>
+      <td>0.647</td>
+      <td>0.366</td>
+    </tr>
+    <tr>
+      <td>MLP (tuned)</td>
+      <td>prediction</td>
+      <td>0.632</td>
+      <td>0.357</td>
+      <td>0.556</td>
+      <td>0.618</td>
+      <td>0.363</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (untuned)</td>
+      <td>prediction</td>
+      <td>0.621</td>
+      <td>0.357</td>
+      <td>0.500</td>
+      <td>0.588</td>
+      <td>0.637</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (tuned)</td>
+      <td>prediction</td>
+      <td>0.589</td>
+      <td>0.286</td>
+      <td>0.400</td>
+      <td>0.529</td>
+      <td>0.536</td>
+    </tr>
+  </tbody>
+</table>
+<p class=cap>Compact models on consensus covariates:</p>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>n_terms</th>
+      <th>terms</th>
+      <th>cutoff</th>
+      <th>ROC_AUC</th>
+      <th>Recall</th>
+      <th>Precision</th>
+      <th>Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ctg_repeats</td>
+      <td>0.363</td>
+      <td>0.725</td>
+      <td>0.714</td>
+      <td>0.556</td>
+      <td>0.647</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ctg_repeats+disease_duration</td>
+      <td>0.344</td>
+      <td>0.743</td>
+      <td>0.714</td>
+      <td>0.588</td>
+      <td>0.676</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ctg_repeats+disease_duration+somatic_mosaicism_index</td>
+      <td>0.417</td>
+      <td>0.750</td>
+      <td>0.643</td>
+      <td>0.562</td>
+      <td>0.647</td>
+    </tr>
+  </tbody>
+</table>
+<h3 style='color:#b4654a'>Tideglusib</h3>
+<img src='figures/scoreboard_binary_Tideglusib.png'>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>tier</th>
+      <th>ROC_AUC</th>
+      <th>Recall</th>
+      <th>Precision</th>
+      <th>Accuracy</th>
+      <th>cutoff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Random forest</td>
+      <td>prediction</td>
+      <td>0.704</td>
+      <td>0.667</td>
+      <td>0.769</td>
+      <td>0.758</td>
+      <td>0.586</td>
+    </tr>
+    <tr>
+      <td>Logistic stepwise BIC</td>
+      <td>inference</td>
+      <td>0.681</td>
+      <td>0.600</td>
+      <td>0.692</td>
+      <td>0.697</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Logistic best subset</td>
+      <td>inference</td>
+      <td>0.681</td>
+      <td>0.600</td>
+      <td>0.692</td>
+      <td>0.697</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Ridge logistic</td>
+      <td>inference</td>
+      <td>0.681</td>
+      <td>0.733</td>
+      <td>0.688</td>
+      <td>0.727</td>
+      <td>0.567</td>
+    </tr>
+    <tr>
+      <td>MLP (tuned)</td>
+      <td>prediction</td>
+      <td>0.678</td>
+      <td>0.867</td>
+      <td>0.481</td>
+      <td>0.515</td>
+      <td>0.293</td>
+    </tr>
+    <tr>
+      <td>LASSO logistic</td>
+      <td>inference</td>
+      <td>0.674</td>
+      <td>0.733</td>
+      <td>0.611</td>
+      <td>0.667</td>
+      <td>0.544</td>
+    </tr>
+    <tr>
+      <td>GAM logistic</td>
+      <td>inference</td>
+      <td>0.674</td>
+      <td>0.733</td>
+      <td>0.611</td>
+      <td>0.667</td>
+      <td>0.436</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (tuned)</td>
+      <td>prediction</td>
+      <td>0.674</td>
+      <td>0.733</td>
+      <td>0.688</td>
+      <td>0.727</td>
+      <td>0.496</td>
+    </tr>
+    <tr>
+      <td>SVM (tuned)</td>
+      <td>prediction</td>
+      <td>0.670</td>
+      <td>0.667</td>
+      <td>0.556</td>
+      <td>0.606</td>
+      <td>0.409</td>
+    </tr>
+    <tr>
+      <td>Elastic net logistic</td>
+      <td>inference</td>
+      <td>0.667</td>
+      <td>0.733</td>
+      <td>0.733</td>
+      <td>0.758</td>
+      <td>0.541</td>
+    </tr>
+    <tr>
+      <td>Gradient boosting (untuned)</td>
+      <td>prediction</td>
+      <td>0.659</td>
+      <td>0.733</td>
+      <td>0.688</td>
+      <td>0.727</td>
+      <td>0.602</td>
+    </tr>
+    <tr>
+      <td>Logistic stepwise AIC</td>
+      <td>inference</td>
+      <td>0.656</td>
+      <td>0.733</td>
+      <td>0.611</td>
+      <td>0.667</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Logistic all</td>
+      <td>inference</td>
+      <td>0.630</td>
+      <td>0.733</td>
+      <td>0.579</td>
+      <td>0.636</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>kNN (tuned)</td>
+      <td>prediction</td>
+      <td>0.609</td>
+      <td>0.467</td>
+      <td>0.778</td>
+      <td>0.697</td>
+      <td>0.700</td>
+    </tr>
+  </tbody>
+</table>
+<p class=cap>Compact models on consensus covariates:</p>
+<table class="dataframe tbl">
+  <thead>
+    <tr style="text-align: right;">
+      <th>n_terms</th>
+      <th>terms</th>
+      <th>cutoff</th>
+      <th>ROC_AUC</th>
+      <th>Recall</th>
+      <th>Precision</th>
+      <th>Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>cognitive_function</td>
+      <td>0.504</td>
+      <td>0.731</td>
+      <td>0.733</td>
+      <td>0.733</td>
+      <td>0.758</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>cognitive_function+myotonia_severity</td>
+      <td>0.503</td>
+      <td>0.681</td>
+      <td>0.600</td>
+      <td>0.692</td>
+      <td>0.697</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>cognitive_function+myotonia_severity+ck_level</td>
+      <td>0.524</td>
+      <td>0.715</td>
+      <td>0.600</td>
+      <td>0.643</td>
+      <td>0.667</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Real signal vs noise</h2><div class=grid>
+<div><img src='figures/stability_continuous_Mexiletine.png'></div>
+<div><img src='figures/stability_continuous_Oligonucleotide.png'></div>
+<div><img src='figures/stability_continuous_Tideglusib.png'></div>
+<div><img src='figures/stability_binary_Mexiletine.png'></div>
+<div><img src='figures/stability_binary_Oligonucleotide.png'></div>
+<div><img src='figures/stability_binary_Tideglusib.png'></div>
+</div>
+<h2>Stratification — where the forest bends</h2><div class=grid>
+<div><img src='figures/pd_Mexiletine.png'>
+<pre class=cap>arm: Mexiletine
+leading numeric consensus term: ctg_repeats
+data-chosen threshold (depth-1 tree): ctg_repeats &gt; 448.5
+enriched subgroup mean improvement: 0.467  (other subgroup: 0.344)
+subgroup size in training: 24/96
+test R2, single linear term (ctg_repeats): +0.163
+test R2, single indicator 1[ctg_repeats &gt; 448]: +0.138
+</pre>
+</div>
+<div><img src='figures/pd_Oligonucleotide.png'>
+<pre class=cap>arm: Oligonucleotide
+leading numeric consensus term: ctg_repeats
+data-chosen threshold (depth-1 tree): ctg_repeats &gt; 346.5
+enriched subgroup mean improvement: 2.026  (other subgroup: 0.384)
+subgroup size in training: 41/102
+test R2, single linear term (ctg_repeats): +0.002
+test R2, single indicator 1[ctg_repeats &gt; 346]: -0.071
+</pre>
+</div>
+<div><img src='figures/pd_Tideglusib.png'>
+<pre class=cap>arm: Tideglusib
+leading numeric consensus term: cognitive_function
+data-chosen threshold (depth-1 tree): cognitive_function &lt;= -0.505
+enriched subgroup mean improvement: 8.277  (other subgroup: 3.457)
+subgroup size in training: 48/102
+test R2, single linear term (cognitive_function): +0.233
+test R2, single indicator 1[cognitive_function &lt;= -0.505]: +0.377
+</pre>
+</div>
+</div>
+<h2>Split sensitivity</h2><pre># Split-sensitivity verdict
+
+- Across 20 seeds, the median per-method SD of test R² is **0.131** — rankings inside this band are ties.
+  - Mexiletine: R² SD ranges 0.074–0.260 (widest: Gradient boosting (untuned)).
+  - Oligonucleotide: R² SD ranges 0.064–0.176 (widest: OLS all).
+  - Tideglusib: R² SD ranges 0.093–0.181 (widest: OLS all).
+
+- Cross-seed selection frequency (covariate stability):
+  - Mexiletine: myotonia_severity 85%, disease_duration 75%, insulin_resistance 60%, ctg_repeats 56%, sex 42%
+  - Oligonucleotide: ctg_repeats 90%, disease_duration 77%, family_history 65%, somatic_mosaicism_index 57%, myotonia_severity 40%
+  - Tideglusib: cognitive_function 100%, disease_duration 93%, cataracts 40%, ctg_repeats 28%, muscle_strength 27%
+
+- Leading R² by scheme (same arm, different split):
+  - Mexiletine: fold5 +0.19, single80 -0.01, single75 +0.14
+  - Oligonucleotide: fold5 +0.06, single80 +0.01, single75 +0.02
+  - Tideglusib: fold5 +0.26, single80 +0.30, single75 +0.35
+</pre>

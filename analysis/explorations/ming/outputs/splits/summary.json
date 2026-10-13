@@ -1,0 +1,46 @@
+{
+  "seed": 2026,
+  "arms": {
+    "Mexiletine": {
+      "fold1_test_n": 33,
+      "train_n": 128
+    },
+    "Oligonucleotide": {
+      "fold1_test_n": 34,
+      "train_n": 136
+    },
+    "Tideglusib": {
+      "fold1_test_n": 34,
+      "train_n": 135
+    }
+  },
+  "fold_counts": {
+    "1": {
+      "Mexiletine": 33,
+      "Oligonucleotide": 34,
+      "Tideglusib": 34
+    },
+    "2": {
+      "Mexiletine": 32,
+      "Oligonucleotide": 34,
+      "Tideglusib": 34
+    },
+    "3": {
+      "Mexiletine": 32,
+      "Oligonucleotide": 34,
+      "Tideglusib": 34
+    },
+    "4": {
+      "Mexiletine": 32,
+      "Oligonucleotide": 34,
+      "Tideglusib": 34
+    },
+    "5": {
+      "Mexiletine": 32,
+      "Oligonucleotide": 34,
+      "Tideglusib": 33
+    }
+  },
+  "fold1_sha256": "8b3fb2cb33c48f168d0b0e582b7c84f11ffaf661456a1bf51966f9ae20096924",
+  "fold1_n": 101
+}

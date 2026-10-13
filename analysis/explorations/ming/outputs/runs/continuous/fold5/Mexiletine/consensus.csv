@@ -1,0 +1,17 @@
+term,inference_kept_rate,ml_top5_rate,consensus,in_consensus
+ctg_repeats,0.875,0.9285714285714286,0.9017857142857143,True
+myotonia_severity,0.5,1.0,0.75,True
+disease_duration,0.5,0.8571428571428571,0.6785714285714286,True
+somatic_mosaicism_index,0.25,0.5,0.375,False
+sex,0.125,0.35714285714285715,0.24107142857142858,False
+age_at_onset,0.0,0.42857142857142855,0.21428571428571427,False
+muscle_strength,0.0,0.2857142857142857,0.14285714285714285,False
+phenotype,0.0,0.2857142857142857,0.14285714285714285,False
+insulin_resistance,0.125,0.14285714285714285,0.13392857142857142,False
+cognitive_function,0.0,0.21428571428571427,0.10714285714285714,False
+pr_interval,0.125,0.0,0.0625,False
+ck_level,0.0,0.0,0.0,False
+bmi,0.0,0.0,0.0,False
+family_history,0.0,0.0,0.0,False
+cataracts,0.0,0.0,0.0,False
+smoking_status,0.0,0.0,0.0,False

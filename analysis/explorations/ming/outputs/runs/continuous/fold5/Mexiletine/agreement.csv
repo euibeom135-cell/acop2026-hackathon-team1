@@ -1,0 +1,65 @@
+method_a,method_b,jaccard
+OLS all,OLS all,1.0
+OLS all,Stepwise AIC,0.0
+OLS all,Stepwise BIC,0.0
+OLS all,Best subset,0.0
+OLS all,LASSO,0.0
+OLS all,Elastic net,0.0
+OLS all,Ridge,0.0
+OLS all,GAM,0.0
+Stepwise AIC,OLS all,0.0
+Stepwise AIC,Stepwise AIC,1.0
+Stepwise AIC,Stepwise BIC,0.5
+Stepwise AIC,Best subset,0.5
+Stepwise AIC,LASSO,0.6666666666666666
+Stepwise AIC,Elastic net,0.6666666666666666
+Stepwise AIC,Ridge,0.4
+Stepwise AIC,GAM,0.16666666666666666
+Stepwise BIC,OLS all,0.0
+Stepwise BIC,Stepwise AIC,0.5
+Stepwise BIC,Stepwise BIC,1.0
+Stepwise BIC,Best subset,1.0
+Stepwise BIC,LASSO,0.3333333333333333
+Stepwise BIC,Elastic net,0.3333333333333333
+Stepwise BIC,Ridge,0.2
+Stepwise BIC,GAM,0.2
+Best subset,OLS all,0.0
+Best subset,Stepwise AIC,0.5
+Best subset,Stepwise BIC,1.0
+Best subset,Best subset,1.0
+Best subset,LASSO,0.3333333333333333
+Best subset,Elastic net,0.3333333333333333
+Best subset,Ridge,0.2
+Best subset,GAM,0.2
+LASSO,OLS all,0.0
+LASSO,Stepwise AIC,0.6666666666666666
+LASSO,Stepwise BIC,0.3333333333333333
+LASSO,Best subset,0.3333333333333333
+LASSO,LASSO,1.0
+LASSO,Elastic net,1.0
+LASSO,Ridge,0.6
+LASSO,GAM,0.3333333333333333
+Elastic net,OLS all,0.0
+Elastic net,Stepwise AIC,0.6666666666666666
+Elastic net,Stepwise BIC,0.3333333333333333
+Elastic net,Best subset,0.3333333333333333
+Elastic net,LASSO,1.0
+Elastic net,Elastic net,1.0
+Elastic net,Ridge,0.6
+Elastic net,GAM,0.3333333333333333
+Ridge,OLS all,0.0
+Ridge,Stepwise AIC,0.4
+Ridge,Stepwise BIC,0.2
+Ridge,Best subset,0.2
+Ridge,LASSO,0.6
+Ridge,Elastic net,0.6
+Ridge,Ridge,1.0
+Ridge,GAM,0.42857142857142855
+GAM,OLS all,0.0
+GAM,Stepwise AIC,0.16666666666666666
+GAM,Stepwise BIC,0.2
+GAM,Best subset,0.2
+GAM,LASSO,0.3333333333333333
+GAM,Elastic net,0.3333333333333333
+GAM,Ridge,0.42857142857142855
+GAM,GAM,1.0

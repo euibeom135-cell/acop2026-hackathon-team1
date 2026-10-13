@@ -1,0 +1,101 @@
+method,tier,R2,RMSE,MAE,seed,kept
+OLS all,inference,0.013125018563788338,3.061714219104944,2.568477930176828,2026,disease_duration;cognitive_function;ck_level;phenotype;cataracts
+LASSO,inference,0.21394862584358265,2.732492931498764,2.2147558661378475,2026,ctg_repeats;disease_duration;cognitive_function;ck_level;insulin_resistance
+Ridge,inference,0.13709224336847103,2.862963214884442,2.3869013672592128,2026,cognitive_function;disease_duration;cataracts;smoking_status;ctg_repeats
+Random forest,prediction,0.30547633002339425,2.56848543467705,2.236340740740743,2026,
+Gradient boosting (untuned),prediction,0.14554744591167834,2.848902312144565,2.495779327669808,2026,
+OLS all,inference,0.027457803390911195,3.0553566760803434,2.6822868217650577,2027,disease_duration;muscle_strength;cognitive_function;insulin_resistance
+LASSO,inference,0.12528184437778567,2.8976221967357483,2.520052313410656,2027,cognitive_function
+Ridge,inference,0.1551719859595515,2.847684311373034,2.4680592206849266,2027,cognitive_function;disease_duration;insulin_resistance;cataracts;muscle_strength
+Random forest,prediction,0.280239695176849,2.6284615906140485,2.070629629629629,2027,
+Gradient boosting (untuned),prediction,0.2162326316564086,2.7428450780281937,2.073498318012412,2027,
+OLS all,inference,0.4199537503273816,2.3007829818172048,1.6620109205382174,2028,disease_duration;muscle_strength;cognitive_function
+LASSO,inference,0.4236357572428291,2.2934689223778544,1.8654899405170111,2028,ctg_repeats;disease_duration;myotonia_severity;cognitive_function
+Ridge,inference,0.4103864981883437,2.319679875767271,1.7691822967951796,2028,cognitive_function;disease_duration;cataracts;albumin;ctg_repeats
+Random forest,prediction,0.6246344732014824,1.8508513380484015,1.4780592592592598,2028,
+Gradient boosting (untuned),prediction,0.572795118685123,1.9745241413465395,1.5635134078216917,2028,
+OLS all,inference,0.3145113930225302,2.52317870401756,2.0262296363078116,2029,disease_duration;cognitive_function;phenotype
+LASSO,inference,0.32388755505960565,2.505863180306942,2.1215727705409186,2029,ctg_repeats;disease_duration;cognitive_function
+Ridge,inference,0.32612266756348185,2.501717773185691,2.1892850241464608,2029,cognitive_function;disease_duration;ctg_repeats;smoking_status;pr_interval
+Random forest,prediction,0.49574279232676033,2.1640831684572492,1.7479037037036975,2029,
+Gradient boosting (untuned),prediction,0.3125797781938413,2.526731192523159,2.0471054606900667,2029,
+OLS all,inference,0.04142913220639888,2.677043112955566,2.2341213925660197,2030,disease_duration;muscle_strength;cognitive_function;insulin_resistance;cataracts
+LASSO,inference,0.42585383425472845,2.071831762594177,1.6971334193413354,2030,ctg_repeats;disease_duration;myotonia_severity;cognitive_function;insulin_resistance
+Ridge,inference,0.209821402730078,2.4305574093573106,2.057626021548746,2030,cognitive_function;disease_duration;cataracts;smoking_status;muscle_strength
+Random forest,prediction,0.5337727080154573,1.866990459615766,1.3684518518518487,2030,
+Gradient boosting (untuned),prediction,0.552872646961667,1.8283480449556797,1.5117701398127583,2030,
+OLS all,inference,0.2862537933407523,2.7286297928605676,2.141138661458197,2031,disease_duration;muscle_strength;cognitive_function;cataracts
+LASSO,inference,0.42897639194698634,2.440617618538891,1.946587732062593,2031,disease_duration;myotonia_severity;cognitive_function;insulin_resistance
+Ridge,inference,0.3901154073035258,2.5222988459955236,2.052204401803294,2031,cognitive_function;disease_duration;myotonia_severity;muscle_strength;cataracts
+Random forest,prediction,0.5830436079236876,2.0855376196470212,1.7446592592592591,2031,
+Gradient boosting (untuned),prediction,0.44544988327962465,2.405155227033071,1.9986856819038576,2031,
+OLS all,inference,-0.0862866054381457,3.2696999449362036,2.5415016492156877,2032,age_at_onset;disease_duration;muscle_strength;cognitive_function;phenotype
+LASSO,inference,0.2298290133578772,2.753146140016633,2.230155314834976,2032,ctg_repeats;disease_duration;cognitive_function;insulin_resistance
+Ridge,inference,-0.04533144739247863,3.207470683896196,2.480029008245995,2032,phenotype;disease_duration;cognitive_function;muscle_strength;age_at_onset
+Random forest,prediction,0.2802195329536613,2.6615566611929835,2.233022222222223,2032,
+Gradient boosting (untuned),prediction,0.08041939371512208,3.008365430665291,2.3978690803259664,2032,
+OLS all,inference,0.4180936590655523,2.7420031261951094,2.2000264638906755,2033,disease_duration;cognitive_function;cataracts
+LASSO,inference,0.3342158948191467,2.93297331797246,2.311437215382053,2033,cognitive_function
+Ridge,inference,0.41722209745941086,2.7440558022861916,2.1835097432593744,2033,cognitive_function;cataracts;disease_duration;albumin;family_history
+Random forest,prediction,0.6193353189554853,2.2177505350141544,1.7139629629629654,2033,
+Gradient boosting (untuned),prediction,0.585712801816455,2.313620679890682,1.8736082429167211,2033,
+OLS all,inference,0.37527783165945183,2.7225741382637794,2.1540493663962748,2034,disease_duration;muscle_strength;cognitive_function;cataracts
+LASSO,inference,0.4272345350161074,2.606901778405207,2.0242162927639615,2034,ctg_repeats;disease_duration;myotonia_severity;cognitive_function
+Ridge,inference,0.41716423259871094,2.6297190596622944,2.0393082157505233,2034,cognitive_function;disease_duration;cataracts;muscle_strength;family_history
+Random forest,prediction,0.5621584317200179,2.2792646325482218,1.842977777777779,2034,
+Gradient boosting (untuned),prediction,0.48836200059776436,2.4638692208129855,1.9889955157079213,2034,
+OLS all,inference,0.05896806773191687,2.9697070937978265,2.4605098151721014,2035,age_at_onset;disease_duration;cognitive_function;ck_level;phenotype;cataracts
+LASSO,inference,0.3928157278179162,2.385457551426043,1.805999439429665,2035,disease_duration;myotonia_severity;cognitive_function;insulin_resistance
+Ridge,inference,0.2888717953305687,2.5815788119782557,2.053175247179237,2035,cognitive_function;cataracts;disease_duration;myotonia_severity;smoking_status
+Random forest,prediction,0.4386016611553799,2.2937548382025867,1.8229407407407416,2035,
+Gradient boosting (untuned),prediction,0.3742040254367365,2.4217416926386823,1.9275710610659937,2035,
+OLS all,inference,0.25236705177186936,2.7866419217184797,2.207220302543663,2036,age_at_onset;disease_duration;muscle_strength;cognitive_function;cataracts
+LASSO,inference,0.39486131620817333,2.507058154866466,1.9576147331752864,2036,disease_duration;cognitive_function
+Ridge,inference,0.3865531969228262,2.5242095399673876,1.9383582677176672,2036,cognitive_function;disease_duration;cataracts;smoking_status;insulin_resistance
+Random forest,prediction,0.6361777056197709,1.943934395707532,1.511829629629629,2036,
+Gradient boosting (untuned),prediction,0.41921605801062745,2.456089848390043,1.9735499655256552,2036,
+OLS all,inference,0.38289082992404555,2.3321900639737714,1.8918636147478436,2037,disease_duration;muscle_strength;cognitive_function
+LASSO,inference,0.39677023464411354,2.305814268198001,1.8582270968626589,2037,ctg_repeats;disease_duration;cognitive_function
+Ridge,inference,0.4488344828966645,2.20406277717129,1.815748578632821,2037,cognitive_function;disease_duration;muscle_strength;smoking_status;insulin_resistance
+Random forest,prediction,0.5056962757910122,2.087276012201339,1.7259037037037055,2037,
+Gradient boosting (untuned),prediction,0.3169741279110966,2.453587316857546,2.0566929454649077,2037,
+OLS all,inference,0.3107043863949732,2.720281884773098,2.213564291662042,2038,disease_duration;cognitive_function
+LASSO,inference,0.2682092646363674,2.8028806505826043,2.3461758689316414,2038,cognitive_function
+Ridge,inference,0.3285496116775768,2.68483818960543,2.2799493087037326,2038,cognitive_function;disease_duration;insulin_resistance;family_history;ck_level
+Random forest,prediction,0.5124791803868558,2.2877456356276435,1.8198444444444435,2038,
+Gradient boosting (untuned),prediction,0.4533068987583604,2.4226068940999483,1.9720097267855257,2038,
+OLS all,inference,0.3670260260470073,2.238941414934433,1.8765539585892403,2039,disease_duration;cognitive_function
+LASSO,inference,0.4332081695090889,2.1186615940570195,1.8334664100437754,2039,ctg_repeats;disease_duration;cognitive_function;ck_level;insulin_resistance;albumin
+Ridge,inference,0.3593321329895891,2.2525076479672013,1.9309912799756075,2039,cognitive_function;disease_duration;ctg_repeats;insulin_resistance;ck_level
+Random forest,prediction,0.34096578325198246,2.2845663982795834,1.723859259259258,2039,
+Gradient boosting (untuned),prediction,0.20613424058885255,2.507398365167446,1.8726062523214233,2039,
+OLS all,inference,0.4224173783409736,2.601562496251007,2.039740226401479,2040,disease_duration;cognitive_function
+LASSO,inference,0.3663618436327275,2.724883036333537,2.124878415229629,2040,disease_duration;myotonia_severity;cognitive_function;albumin
+Ridge,inference,0.3791771771714607,2.69718689876386,2.12549119952814,2040,cognitive_function;disease_duration;albumin;cataracts;myotonia_severity
+Random forest,prediction,0.48560642382738384,2.455132710601745,2.0592666666666655,2040,
+Gradient boosting (untuned),prediction,0.19082715285657004,3.079270595839733,2.534854442288514,2040,
+OLS all,inference,0.5445557446354929,2.029120135395349,1.6301684852055618,2041,disease_duration;muscle_strength;cognitive_function
+LASSO,inference,0.40571409986574003,2.3178635150657607,1.873719991241905,2041,ctg_repeats;myotonia_severity;cognitive_function
+Ridge,inference,0.3966543012066336,2.3354644273331693,1.8466254264170576,2041,cognitive_function;insulin_resistance;disease_duration;ck_level;myotonia_severity
+Random forest,prediction,0.4330502813208418,2.2639269962709596,1.7993555555555545,2041,
+Gradient boosting (untuned),prediction,0.3459115422949892,2.4316910085321672,2.0585236632019193,2041,
+OLS all,inference,0.4358897537299611,2.4561080026179973,1.9464258019440266,2042,disease_duration;muscle_strength;cognitive_function;cataracts
+LASSO,inference,0.47572791218193966,2.3677935563628703,1.9413211240996366,2042,ctg_repeats;disease_duration;cognitive_function;ck_level
+Ridge,inference,0.4621233482984676,2.398318251158329,1.9096172689783173,2042,cognitive_function;disease_duration;cataracts;ctg_repeats;smoking_status
+Random forest,prediction,0.6901702666115948,1.8202331218219743,1.476259259259258,2042,
+Gradient boosting (untuned),prediction,0.4497382932905236,2.425772741190577,1.9332115141928663,2042,
+OLS all,inference,0.29716012440975537,2.615359838631822,2.234937608365514,2043,disease_duration;cognitive_function;ck_level;cataracts
+LASSO,inference,0.3901400813394924,2.436230071541365,1.9927438148604835,2043,ctg_repeats;disease_duration;cognitive_function;ck_level;insulin_resistance
+Ridge,inference,0.29714332565184887,2.6153910936415135,2.112895888760868,2043,cognitive_function;disease_duration;cataracts;ck_level;ctg_repeats
+Random forest,prediction,0.530133079791959,2.138408584455753,1.6392740740740706,2043,
+Gradient boosting (untuned),prediction,0.405916278167225,2.4045127273133855,1.7774732528592925,2043,
+OLS all,inference,0.3792468220430265,2.6259063585072497,2.0388230860185748,2044,disease_duration;cognitive_function;albumin
+LASSO,inference,0.3154814497620606,2.7574799921090514,2.317771663884921,2044,disease_duration;myotonia_severity;cognitive_function;albumin
+Ridge,inference,0.33050267817420864,2.72705678351634,2.2774219767681196,2044,cognitive_function;disease_duration;cataracts;albumin;myotonia_severity
+Random forest,prediction,0.4956851562646647,2.36684945147044,1.8467703703703693,2044,
+Gradient boosting (untuned),prediction,0.49949192254469243,2.357899576105408,1.9330010476018986,2044,
+OLS all,inference,0.5082685481249793,2.1878772127395214,1.7013783820405968,2045,disease_duration;cognitive_function;ck_level;cataracts
+LASSO,inference,0.4811951249158746,2.247299605599539,1.7771465422195802,2045,disease_duration;myotonia_severity;cognitive_function;ck_level
+Ridge,inference,0.5048214930339319,2.1955323692529265,1.7452704357400337,2045,cognitive_function;disease_duration;ck_level;myotonia_severity;cataracts
+Random forest,prediction,0.46048857044297664,2.2917079757084964,1.793051851851854,2045,
+Gradient boosting (untuned),prediction,0.3793231796679949,2.458055670731427,1.909314371003309,2045,

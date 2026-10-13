@@ -1,0 +1,334 @@
+method,term,kind,value,kept,rank,top5
+OLS all,ctg_repeats,coef,0.2987338837465227,False,,
+OLS all,somatic_mosaicism_index,coef,-0.029223596327418687,False,,
+OLS all,age_at_onset,coef,-0.6711291692734299,False,,
+OLS all,disease_duration,coef,-1.6678322450085195,True,,
+OLS all,myotonia_severity,coef,0.0816762527255216,False,,
+OLS all,muscle_strength,coef,-0.9853965439172866,True,,
+OLS all,pr_interval,coef,0.1718738972399377,False,,
+OLS all,cognitive_function,coef,-2.182747219421253,True,,
+OLS all,ck_level,coef,-0.13534536135621084,False,,
+OLS all,insulin_resistance,coef,0.44771854127621774,False,,
+OLS all,albumin,coef,0.1377994594288447,False,,
+OLS all,bmi,coef,-0.2831665325255883,False,,
+OLS all,phenotype,coef,2.8966723960848837,False,,
+OLS all,sex,coef,-0.22703222272731688,False,,
+OLS all,family_history,coef,0.16049450808658577,False,,
+OLS all,cataracts,coef,1.178260060989017,False,,
+OLS all,smoking_status,coef,-1.016070870442027,False,,
+OLS all,cognitive_function,perm_importance,0.7424689437562383,,1.0,True
+OLS all,disease_duration,perm_importance,0.6938143445785319,,2.0,True
+OLS all,muscle_strength,perm_importance,0.2115237807530274,,3.0,True
+OLS all,phenotype,perm_importance,0.19734330776824827,,4.0,True
+OLS all,age_at_onset,perm_importance,0.10698248323762558,,5.0,True
+OLS all,cataracts,perm_importance,0.06540597268476687,,6.0,False
+OLS all,ck_level,perm_importance,0.041087947267430744,,7.0,False
+OLS all,albumin,perm_importance,0.023323639292029064,,8.0,False
+OLS all,sex,perm_importance,0.009718637060576652,,9.0,False
+OLS all,somatic_mosaicism_index,perm_importance,0.009164065065200778,,10.0,False
+OLS all,pr_interval,perm_importance,-4.901681420576565e-05,,11.0,False
+OLS all,family_history,perm_importance,-0.0052888786512800936,,12.0,False
+OLS all,myotonia_severity,perm_importance,-0.01731672100646208,,13.0,False
+OLS all,insulin_resistance,perm_importance,-0.03026994047474203,,14.0,False
+OLS all,ctg_repeats,perm_importance,-0.03217425065470065,,15.0,False
+OLS all,bmi,perm_importance,-0.05987603339315676,,16.0,False
+OLS all,smoking_status,perm_importance,-0.0632400805272686,,17.0,False
+Stepwise AIC,cognitive_function,coef,-1.5877612539530612,True,,
+Stepwise AIC,smoking_status,coef,-2.0559843320245164,True,,
+Stepwise AIC,disease_duration,coef,0.4224358861183321,True,,
+Stepwise AIC,cataracts,coef,1.2852994254061512,True,,
+Stepwise AIC,muscle_strength,coef,-1.0226868059210417,True,,
+Stepwise AIC,insulin_resistance,coef,0.3307680511125713,True,,
+Stepwise AIC,cognitive_function,perm_importance,0.7223086182629344,,1.0,True
+Stepwise AIC,disease_duration,perm_importance,0.6397157972385574,,2.0,True
+Stepwise AIC,muscle_strength,perm_importance,0.22749894628527495,,3.0,True
+Stepwise AIC,cataracts,perm_importance,0.05645842351530631,,4.0,True
+Stepwise AIC,ctg_repeats,perm_importance,0.0,,5.0,True
+Stepwise AIC,somatic_mosaicism_index,perm_importance,0.0,,6.0,False
+Stepwise AIC,age_at_onset,perm_importance,0.0,,7.0,False
+Stepwise AIC,myotonia_severity,perm_importance,0.0,,8.0,False
+Stepwise AIC,pr_interval,perm_importance,0.0,,9.0,False
+Stepwise AIC,ck_level,perm_importance,0.0,,10.0,False
+Stepwise AIC,albumin,perm_importance,0.0,,11.0,False
+Stepwise AIC,bmi,perm_importance,0.0,,12.0,False
+Stepwise AIC,phenotype,perm_importance,0.0,,13.0,False
+Stepwise AIC,sex,perm_importance,0.0,,14.0,False
+Stepwise AIC,family_history,perm_importance,0.0,,15.0,False
+Stepwise AIC,insulin_resistance,perm_importance,-0.027463302110096094,,16.0,False
+Stepwise AIC,smoking_status,perm_importance,-0.056868929344102134,,17.0,False
+Stepwise BIC,cognitive_function,coef,0.6483568385572489,True,,
+Stepwise BIC,ctg_repeats,coef,-1.878094373247959,True,,
+Stepwise BIC,cognitive_function,perm_importance,0.5912313158966073,,1.0,True
+Stepwise BIC,somatic_mosaicism_index,perm_importance,0.0,,2.0,True
+Stepwise BIC,age_at_onset,perm_importance,0.0,,3.0,True
+Stepwise BIC,disease_duration,perm_importance,0.0,,4.0,True
+Stepwise BIC,myotonia_severity,perm_importance,0.0,,5.0,True
+Stepwise BIC,muscle_strength,perm_importance,0.0,,6.0,False
+Stepwise BIC,pr_interval,perm_importance,0.0,,7.0,False
+Stepwise BIC,ck_level,perm_importance,0.0,,8.0,False
+Stepwise BIC,insulin_resistance,perm_importance,0.0,,9.0,False
+Stepwise BIC,albumin,perm_importance,0.0,,10.0,False
+Stepwise BIC,bmi,perm_importance,0.0,,11.0,False
+Stepwise BIC,phenotype,perm_importance,0.0,,12.0,False
+Stepwise BIC,sex,perm_importance,0.0,,13.0,False
+Stepwise BIC,family_history,perm_importance,0.0,,14.0,False
+Stepwise BIC,cataracts,perm_importance,0.0,,15.0,False
+Stepwise BIC,smoking_status,perm_importance,0.0,,16.0,False
+Stepwise BIC,ctg_repeats,perm_importance,-0.025631254472931374,,17.0,False
+Best subset,cognitive_function,coef,0.6483568385572489,True,,
+Best subset,ctg_repeats,coef,-1.878094373247959,True,,
+Best subset,cognitive_function,perm_importance,0.5912313158966073,,1.0,True
+Best subset,somatic_mosaicism_index,perm_importance,0.0,,2.0,True
+Best subset,age_at_onset,perm_importance,0.0,,3.0,True
+Best subset,disease_duration,perm_importance,0.0,,4.0,True
+Best subset,myotonia_severity,perm_importance,0.0,,5.0,True
+Best subset,muscle_strength,perm_importance,0.0,,6.0,False
+Best subset,pr_interval,perm_importance,0.0,,7.0,False
+Best subset,ck_level,perm_importance,0.0,,8.0,False
+Best subset,insulin_resistance,perm_importance,0.0,,9.0,False
+Best subset,albumin,perm_importance,0.0,,10.0,False
+Best subset,bmi,perm_importance,0.0,,11.0,False
+Best subset,phenotype,perm_importance,0.0,,12.0,False
+Best subset,sex,perm_importance,0.0,,13.0,False
+Best subset,family_history,perm_importance,0.0,,14.0,False
+Best subset,cataracts,perm_importance,0.0,,15.0,False
+Best subset,smoking_status,perm_importance,0.0,,16.0,False
+Best subset,ctg_repeats,perm_importance,-0.025631254472931374,,17.0,False
+LASSO,ctg_repeats,coef,0.32601645709303473,True,,
+LASSO,somatic_mosaicism_index,coef,0.0,False,,
+LASSO,age_at_onset,coef,0.0,False,,
+LASSO,disease_duration,coef,-0.8019068665430077,True,,
+LASSO,myotonia_severity,coef,0.0954903923036445,True,,
+LASSO,muscle_strength,coef,-0.2545649379056076,True,,
+LASSO,pr_interval,coef,0.15544634979405056,True,,
+LASSO,cognitive_function,coef,-1.8924179818074647,True,,
+LASSO,ck_level,coef,-0.0,False,,
+LASSO,insulin_resistance,coef,0.32534538335076923,True,,
+LASSO,albumin,coef,0.022592130055182753,True,,
+LASSO,bmi,coef,-0.18393505099764143,True,,
+LASSO,phenotype,coef,0.04219187620998502,True,,
+LASSO,sex,coef,-0.0,False,,
+LASSO,family_history,coef,0.0,False,,
+LASSO,cataracts,coef,0.6227141282070247,True,,
+LASSO,smoking_status,coef,-0.6736629126525826,True,,
+LASSO,cognitive_function,perm_importance,0.6014811090135351,,1.0,True
+LASSO,disease_duration,perm_importance,0.18212751661853305,,2.0,True
+LASSO,cataracts,perm_importance,0.01911821696707115,,3.0,True
+LASSO,muscle_strength,perm_importance,0.01589467314664438,,4.0,True
+LASSO,albumin,perm_importance,0.001949765580562751,,5.0,True
+LASSO,phenotype,perm_importance,0.0011305753639169413,,6.0,False
+LASSO,somatic_mosaicism_index,perm_importance,0.0,,7.0,False
+LASSO,age_at_onset,perm_importance,0.0,,8.0,False
+LASSO,ck_level,perm_importance,0.0,,9.0,False
+LASSO,sex,perm_importance,0.0,,10.0,False
+LASSO,family_history,perm_importance,0.0,,11.0,False
+LASSO,pr_interval,perm_importance,-0.00793407891492572,,12.0,False
+LASSO,insulin_resistance,perm_importance,-0.015086661790702015,,13.0,False
+LASSO,myotonia_severity,perm_importance,-0.01825847107774061,,14.0,False
+LASSO,ctg_repeats,perm_importance,-0.028133937340861913,,15.0,False
+LASSO,bmi,perm_importance,-0.029537716236009048,,16.0,False
+LASSO,smoking_status,perm_importance,-0.03787649797397679,,17.0,False
+Elastic net,ctg_repeats,coef,0.32314688655351403,True,,
+Elastic net,somatic_mosaicism_index,coef,0.0,False,,
+Elastic net,age_at_onset,coef,0.0,False,,
+Elastic net,disease_duration,coef,-0.7850658754402288,True,,
+Elastic net,myotonia_severity,coef,0.10572826678775503,True,,
+Elastic net,muscle_strength,coef,-0.23912063543984705,True,,
+Elastic net,pr_interval,coef,0.15411793186980244,True,,
+Elastic net,cognitive_function,coef,-1.8814429691598238,True,,
+Elastic net,ck_level,coef,-0.0,False,,
+Elastic net,insulin_resistance,coef,0.32324630434032037,True,,
+Elastic net,albumin,coef,0.022196373541738094,True,,
+Elastic net,bmi,coef,-0.1806238519028133,True,,
+Elastic net,phenotype,coef,0.040938587682374905,True,,
+Elastic net,sex,coef,-0.0,False,,
+Elastic net,family_history,coef,0.0,False,,
+Elastic net,cataracts,coef,0.6038014950796805,True,,
+Elastic net,smoking_status,coef,-0.6562031521018968,True,,
+Elastic net,cognitive_function,perm_importance,0.5973631988729958,,1.0,True
+Elastic net,disease_duration,perm_importance,0.1749178804522035,,2.0,True
+Elastic net,cataracts,perm_importance,0.018274471451619395,,3.0,True
+Elastic net,muscle_strength,perm_importance,0.014198874058143074,,4.0,True
+Elastic net,albumin,perm_importance,0.0018992150296670395,,5.0,True
+Elastic net,phenotype,perm_importance,0.0011115982332986385,,6.0,False
+Elastic net,somatic_mosaicism_index,perm_importance,0.0,,7.0,False
+Elastic net,age_at_onset,perm_importance,0.0,,8.0,False
+Elastic net,ck_level,perm_importance,0.0,,9.0,False
+Elastic net,sex,perm_importance,0.0,,10.0,False
+Elastic net,family_history,perm_importance,0.0,,11.0,False
+Elastic net,pr_interval,perm_importance,-0.007979983265848306,,12.0,False
+Elastic net,insulin_resistance,perm_importance,-0.014655421897859799,,13.0,False
+Elastic net,myotonia_severity,perm_importance,-0.019999601038802113,,14.0,False
+Elastic net,ctg_repeats,perm_importance,-0.028211397780718562,,15.0,False
+Elastic net,bmi,perm_importance,-0.028851877445958657,,16.0,False
+Elastic net,smoking_status,perm_importance,-0.036907268432325155,,17.0,False
+Ridge,ctg_repeats,coef,0.3037363385012817,True,,
+Ridge,somatic_mosaicism_index,coef,0.08873456027647524,False,,
+Ridge,age_at_onset,coef,0.031174045616495366,False,,
+Ridge,disease_duration,coef,-0.6763960703651365,True,,
+Ridge,myotonia_severity,coef,0.2555467301155277,False,,
+Ridge,muscle_strength,coef,-0.1750567659581938,False,,
+Ridge,pr_interval,coef,0.12972523546681025,False,,
+Ridge,cognitive_function,coef,-1.6265190453653198,True,,
+Ridge,ck_level,coef,-0.01748829599837201,False,,
+Ridge,insulin_resistance,coef,0.2975828949604631,False,,
+Ridge,albumin,coef,0.07007086927368178,False,,
+Ridge,bmi,coef,-0.18950349109221937,False,,
+Ridge,phenotype,coef,0.17536423421751693,False,,
+Ridge,sex,coef,0.022604201640382064,False,,
+Ridge,family_history,coef,0.14891154166342038,False,,
+Ridge,cataracts,coef,0.4351896469466461,True,,
+Ridge,smoking_status,coef,-0.47555840606736005,True,,
+Ridge,cognitive_function,perm_importance,0.49941656019004227,,1.0,True
+Ridge,disease_duration,perm_importance,0.13305510062039483,,2.0,True
+Ridge,cataracts,perm_importance,0.01051814327826201,,3.0,True
+Ridge,phenotype,perm_importance,0.008451126532965808,,4.0,True
+Ridge,muscle_strength,perm_importance,0.006985348743256553,,5.0,True
+Ridge,albumin,perm_importance,0.0066350171896288335,,6.0,False
+Ridge,ck_level,perm_importance,0.005015508088434417,,7.0,False
+Ridge,age_at_onset,perm_importance,0.0019369501397928535,,8.0,False
+Ridge,sex,perm_importance,-0.0005244223326839103,,9.0,False
+Ridge,pr_interval,perm_importance,-0.005526752361207049,,10.0,False
+Ridge,family_history,perm_importance,-0.00902457014445614,,11.0,False
+Ridge,insulin_resistance,perm_importance,-0.013274304429665085,,12.0,False
+Ridge,somatic_mosaicism_index,perm_importance,-0.0245698647426566,,13.0,False
+Ridge,bmi,perm_importance,-0.029407077606782267,,14.0,False
+Ridge,smoking_status,perm_importance,-0.02984803667199064,,15.0,False
+Ridge,ctg_repeats,perm_importance,-0.03438739542310268,,16.0,False
+Ridge,myotonia_severity,perm_importance,-0.04205995868143404,,17.0,False
+GAM,ctg_repeats,coef,0.614282963447794,False,,
+GAM,somatic_mosaicism_index,coef,0.5242406967469448,False,,
+GAM,age_at_onset,coef,0.2681974575724362,False,,
+GAM,disease_duration,coef,1.2764025893218545,True,,
+GAM,myotonia_severity,coef,0.9786739380164587,True,,
+GAM,muscle_strength,coef,1.583774369371966,True,,
+GAM,pr_interval,coef,0.3708821484081296,False,,
+GAM,cognitive_function,coef,3.5940874677128014,True,,
+GAM,ck_level,coef,0.13136703311676065,False,,
+GAM,insulin_resistance,coef,0.8410115750532948,False,,
+GAM,albumin,coef,0.19307509422436378,False,,
+GAM,bmi,coef,0.9081733327064591,True,,
+GAM,phenotype,coef,0.3550786334941106,False,,
+GAM,sex,coef,0.25108646017870495,False,,
+GAM,family_history,coef,0.2680796962568747,False,,
+GAM,cataracts,coef,0.717178990692221,False,,
+GAM,smoking_status,coef,0.42657414307138347,False,,
+GAM,cognitive_function,perm_importance,0.3555595741254297,,1.0,True
+GAM,muscle_strength,perm_importance,0.0527403780090849,,2.0,True
+GAM,disease_duration,perm_importance,0.02777424004943297,,3.0,True
+GAM,cataracts,perm_importance,0.012568375184249142,,4.0,True
+GAM,pr_interval,perm_importance,0.007969652709243857,,5.0,True
+GAM,albumin,perm_importance,0.0031237237706625842,,6.0,False
+GAM,ck_level,perm_importance,0.0012540233578752392,,7.0,False
+GAM,age_at_onset,perm_importance,0.0010268861936728157,,8.0,False
+GAM,phenotype,perm_importance,-0.003628631551349021,,9.0,False
+GAM,sex,perm_importance,-0.008728644962737103,,10.0,False
+GAM,family_history,perm_importance,-0.017623769739191154,,11.0,False
+GAM,insulin_resistance,perm_importance,-0.02187149438075029,,12.0,False
+GAM,smoking_status,perm_importance,-0.02527701111286887,,13.0,False
+GAM,ctg_repeats,perm_importance,-0.027021893346377484,,14.0,False
+GAM,bmi,perm_importance,-0.031360396874327165,,15.0,False
+GAM,somatic_mosaicism_index,perm_importance,-0.04064929479631421,,16.0,False
+GAM,myotonia_severity,perm_importance,-0.043500524262524355,,17.0,False
+Random forest,cognitive_function,perm_importance,0.9414520791776197,,1.0,True
+Random forest,muscle_strength,perm_importance,0.052484620085575306,,2.0,True
+Random forest,ck_level,perm_importance,0.0077994051436672705,,3.0,True
+Random forest,age_at_onset,perm_importance,0.004927836151279441,,4.0,True
+Random forest,albumin,perm_importance,0.004852477813099609,,5.0,True
+Random forest,disease_duration,perm_importance,0.001019211974777673,,6.0,False
+Random forest,sex,perm_importance,-0.0005548898506266886,,7.0,False
+Random forest,somatic_mosaicism_index,perm_importance,-0.0010955617386493254,,8.0,False
+Random forest,smoking_status,perm_importance,-0.0013266309525163833,,9.0,False
+Random forest,phenotype,perm_importance,-0.0021085917599885096,,10.0,False
+Random forest,ctg_repeats,perm_importance,-0.004023433249959551,,11.0,False
+Random forest,cataracts,perm_importance,-0.0061555380420572296,,12.0,False
+Random forest,family_history,perm_importance,-0.015930406196187952,,13.0,False
+Random forest,insulin_resistance,perm_importance,-0.0236654270756348,,14.0,False
+Random forest,myotonia_severity,perm_importance,-0.02390538464727211,,15.0,False
+Random forest,bmi,perm_importance,-0.025229597111579023,,16.0,False
+Random forest,pr_interval,perm_importance,-0.0320311436783138,,17.0,False
+Gradient boosting (untuned),cognitive_function,perm_importance,0.8489669015868675,,1.0,True
+Gradient boosting (untuned),disease_duration,perm_importance,0.062342599746033255,,2.0,True
+Gradient boosting (untuned),age_at_onset,perm_importance,0.03917152185851498,,3.0,True
+Gradient boosting (untuned),pr_interval,perm_importance,0.013047499316917417,,4.0,True
+Gradient boosting (untuned),myotonia_severity,perm_importance,0.009073521091434455,,5.0,True
+Gradient boosting (untuned),family_history,perm_importance,0.0077271733410355205,,6.0,False
+Gradient boosting (untuned),sex,perm_importance,-0.0015767053578467193,,7.0,False
+Gradient boosting (untuned),ck_level,perm_importance,-0.0024709487089357106,,8.0,False
+Gradient boosting (untuned),insulin_resistance,perm_importance,-0.003951750964412354,,9.0,False
+Gradient boosting (untuned),phenotype,perm_importance,-0.0059459015705360775,,10.0,False
+Gradient boosting (untuned),ctg_repeats,perm_importance,-0.006361587649252309,,11.0,False
+Gradient boosting (untuned),cataracts,perm_importance,-0.0124442279213266,,12.0,False
+Gradient boosting (untuned),albumin,perm_importance,-0.012479880988966852,,13.0,False
+Gradient boosting (untuned),bmi,perm_importance,-0.018036765330663,,14.0,False
+Gradient boosting (untuned),muscle_strength,perm_importance,-0.020674058355790538,,15.0,False
+Gradient boosting (untuned),smoking_status,perm_importance,-0.04170880116671422,,16.0,False
+Gradient boosting (untuned),somatic_mosaicism_index,perm_importance,-0.08492549756755167,,17.0,False
+Gradient boosting (tuned),cognitive_function,perm_importance,0.841413266154546,,1.0,True
+Gradient boosting (tuned),disease_duration,perm_importance,0.04670294601314104,,2.0,True
+Gradient boosting (tuned),age_at_onset,perm_importance,0.03732899009618425,,3.0,True
+Gradient boosting (tuned),family_history,perm_importance,0.010364594277874778,,4.0,True
+Gradient boosting (tuned),myotonia_severity,perm_importance,0.003828979204830213,,5.0,True
+Gradient boosting (tuned),albumin,perm_importance,-0.001294289638774454,,6.0,False
+Gradient boosting (tuned),phenotype,perm_importance,-0.0021048206290104287,,7.0,False
+Gradient boosting (tuned),sex,perm_importance,-0.0029693845090944413,,8.0,False
+Gradient boosting (tuned),ctg_repeats,perm_importance,-0.004954457757996356,,9.0,False
+Gradient boosting (tuned),pr_interval,perm_importance,-0.005419529195705697,,10.0,False
+Gradient boosting (tuned),ck_level,perm_importance,-0.006080860275599831,,11.0,False
+Gradient boosting (tuned),cataracts,perm_importance,-0.00843519219447587,,12.0,False
+Gradient boosting (tuned),smoking_status,perm_importance,-0.015427057411657308,,13.0,False
+Gradient boosting (tuned),muscle_strength,perm_importance,-0.016412535745454076,,14.0,False
+Gradient boosting (tuned),insulin_resistance,perm_importance,-0.019159383400255116,,15.0,False
+Gradient boosting (tuned),bmi,perm_importance,-0.02587010391448476,,16.0,False
+Gradient boosting (tuned),somatic_mosaicism_index,perm_importance,-0.0587513085407006,,17.0,False
+SVM (tuned),cognitive_function,perm_importance,0.3799560532300945,,1.0,True
+SVM (tuned),disease_duration,perm_importance,0.0575489085752527,,2.0,True
+SVM (tuned),pr_interval,perm_importance,0.012774366794533781,,3.0,True
+SVM (tuned),albumin,perm_importance,0.0077545413277775145,,4.0,True
+SVM (tuned),family_history,perm_importance,0.006493964377080547,,5.0,True
+SVM (tuned),muscle_strength,perm_importance,0.002061385479906469,,6.0,False
+SVM (tuned),sex,perm_importance,0.0020202647502904404,,7.0,False
+SVM (tuned),bmi,perm_importance,0.0018355872638146308,,8.0,False
+SVM (tuned),age_at_onset,perm_importance,0.001439574363372592,,9.0,False
+SVM (tuned),myotonia_severity,perm_importance,-0.0023902227569489896,,10.0,False
+SVM (tuned),insulin_resistance,perm_importance,-0.0028122839466144744,,11.0,False
+SVM (tuned),somatic_mosaicism_index,perm_importance,-0.010823309551934451,,12.0,False
+SVM (tuned),smoking_status,perm_importance,-0.010956029207626033,,13.0,False
+SVM (tuned),cataracts,perm_importance,-0.02198752502863246,,14.0,False
+SVM (tuned),ctg_repeats,perm_importance,-0.024457101281106126,,15.0,False
+SVM (tuned),phenotype,perm_importance,-0.026314313417826297,,16.0,False
+SVM (tuned),ck_level,perm_importance,-0.03351194200025945,,17.0,False
+kNN (tuned),cognitive_function,perm_importance,0.20690747286262132,,1.0,True
+kNN (tuned),disease_duration,perm_importance,0.031076439874303176,,2.0,True
+kNN (tuned),family_history,perm_importance,-0.002157535867949234,,3.0,True
+kNN (tuned),muscle_strength,perm_importance,-0.0030993703099094216,,4.0,True
+kNN (tuned),sex,perm_importance,-0.01159150737450253,,5.0,True
+kNN (tuned),cataracts,perm_importance,-0.014620258898833205,,6.0,False
+kNN (tuned),smoking_status,perm_importance,-0.014984360803326468,,7.0,False
+kNN (tuned),insulin_resistance,perm_importance,-0.023626767966981453,,8.0,False
+kNN (tuned),albumin,perm_importance,-0.04105239592116719,,9.0,False
+kNN (tuned),phenotype,perm_importance,-0.04286029422435748,,10.0,False
+kNN (tuned),pr_interval,perm_importance,-0.04348665154205912,,11.0,False
+kNN (tuned),ck_level,perm_importance,-0.06092948992192839,,12.0,False
+kNN (tuned),age_at_onset,perm_importance,-0.0669315363513624,,13.0,False
+kNN (tuned),ctg_repeats,perm_importance,-0.07996725584648122,,14.0,False
+kNN (tuned),somatic_mosaicism_index,perm_importance,-0.08610566457673774,,15.0,False
+kNN (tuned),bmi,perm_importance,-0.09057467317620634,,16.0,False
+kNN (tuned),myotonia_severity,perm_importance,-0.13689513155191735,,17.0,False
+MLP (tuned),cognitive_function,perm_importance,0.2752852012547346,,1.0,True
+MLP (tuned),age_at_onset,perm_importance,0.15002547270442798,,2.0,True
+MLP (tuned),ck_level,perm_importance,0.06156898599609807,,3.0,True
+MLP (tuned),ctg_repeats,perm_importance,0.059399966329765505,,4.0,True
+MLP (tuned),myotonia_severity,perm_importance,0.051849955534713,,5.0,True
+MLP (tuned),disease_duration,perm_importance,0.04916476323337987,,6.0,False
+MLP (tuned),muscle_strength,perm_importance,0.04128619058156844,,7.0,False
+MLP (tuned),smoking_status,perm_importance,0.04040735611190797,,8.0,False
+MLP (tuned),phenotype,perm_importance,0.022297594869431846,,9.0,False
+MLP (tuned),albumin,perm_importance,0.021795356215529103,,10.0,False
+MLP (tuned),somatic_mosaicism_index,perm_importance,0.01185622664155137,,11.0,False
+MLP (tuned),sex,perm_importance,0.011460275876131576,,12.0,False
+MLP (tuned),insulin_resistance,perm_importance,0.011305580375762769,,13.0,False
+MLP (tuned),bmi,perm_importance,-0.003568916774532216,,14.0,False
+MLP (tuned),pr_interval,perm_importance,-0.01625902910804582,,15.0,False
+MLP (tuned),cataracts,perm_importance,-0.01828001551120998,,16.0,False
+MLP (tuned),family_history,perm_importance,-0.04432899350549783,,17.0,False

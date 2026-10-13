@@ -1,0 +1,87 @@
+method,term,kind,value,kept
+OLS all,ctg_repeats,coef,0.012894182418163778,False
+OLS all,somatic_mosaicism_index,coef,-0.03001657570717139,False
+OLS all,age_at_onset,coef,0.04385436787470116,False
+OLS all,disease_duration,coef,-0.039229584490211626,False
+OLS all,myotonia_severity,coef,0.05304867384365895,False
+OLS all,muscle_strength,coef,-0.017695995130878092,False
+OLS all,pr_interval,coef,-0.006677201168242698,False
+OLS all,cognitive_function,coef,-0.0020627289839979367,False
+OLS all,ck_level,coef,0.0071995970420386315,False
+OLS all,insulin_resistance,coef,-0.0134630594972476,False
+OLS all,bmi,coef,-0.013814600994774134,False
+OLS all,phenotype,coef,-0.14808622544719446,False
+OLS all,sex,coef,0.023737570861848953,False
+OLS all,family_history,coef,0.019700151241567654,False
+OLS all,cataracts,coef,0.042269575935002995,False
+OLS all,smoking_status,coef,0.02394885495861178,False
+Stepwise AIC,myotonia_severity,coef,-0.030810005765281,True
+Stepwise AIC,disease_duration,coef,0.054855685361090645,True
+Stepwise BIC,myotonia_severity,coef,-0.030810005765281,True
+Stepwise BIC,disease_duration,coef,0.054855685361090645,True
+Best subset,myotonia_severity,coef,-0.030810005765281,True
+Best subset,disease_duration,coef,0.054855685361090645,True
+LASSO,ctg_repeats,coef,0.0,False
+LASSO,somatic_mosaicism_index,coef,-0.0,False
+LASSO,age_at_onset,coef,-0.0,False
+LASSO,disease_duration,coef,-0.01842862432919341,True
+LASSO,myotonia_severity,coef,0.04247422317185875,True
+LASSO,muscle_strength,coef,-0.0,False
+LASSO,pr_interval,coef,-0.0,False
+LASSO,cognitive_function,coef,-0.0,False
+LASSO,ck_level,coef,0.0,False
+LASSO,insulin_resistance,coef,-0.0,False
+LASSO,bmi,coef,-0.0,False
+LASSO,phenotype,coef,0.0,False
+LASSO,sex,coef,0.0,False
+LASSO,family_history,coef,0.0,False
+LASSO,cataracts,coef,0.0,False
+LASSO,smoking_status,coef,0.0,False
+Elastic net,ctg_repeats,coef,0.0,False
+Elastic net,somatic_mosaicism_index,coef,-0.0,False
+Elastic net,age_at_onset,coef,-0.0,False
+Elastic net,disease_duration,coef,-0.01842195429189885,True
+Elastic net,myotonia_severity,coef,0.0424412339478381,True
+Elastic net,muscle_strength,coef,-0.0,False
+Elastic net,pr_interval,coef,-0.0,False
+Elastic net,cognitive_function,coef,-0.0,False
+Elastic net,ck_level,coef,0.0,False
+Elastic net,insulin_resistance,coef,-0.0,False
+Elastic net,bmi,coef,-0.0,False
+Elastic net,phenotype,coef,0.0,False
+Elastic net,sex,coef,0.0,False
+Elastic net,family_history,coef,0.0,False
+Elastic net,cataracts,coef,0.0,False
+Elastic net,smoking_status,coef,0.0,False
+Ridge,ctg_repeats,coef,0.011732706207671839,True
+Ridge,somatic_mosaicism_index,coef,0.001735828723996897,False
+Ridge,age_at_onset,coef,-0.004585395953561018,True
+Ridge,disease_duration,coef,-0.011771843825110902,True
+Ridge,myotonia_severity,coef,0.015017788436305631,True
+Ridge,muscle_strength,coef,0.0006156572073838122,False
+Ridge,pr_interval,coef,-0.00017940593915123258,False
+Ridge,cognitive_function,coef,-0.0025190355382865254,False
+Ridge,ck_level,coef,0.00017228696420715567,False
+Ridge,insulin_resistance,coef,-0.005091880338557045,True
+Ridge,bmi,coef,-0.0013579460329497103,False
+Ridge,phenotype,coef,-0.0035941239811471356,False
+Ridge,sex,coef,0.004451789501138124,False
+Ridge,family_history,coef,0.0014426434182437803,False
+Ridge,cataracts,coef,0.000993176149911382,False
+Ridge,smoking_status,coef,0.0034050207322770154,False
+GAM,ctg_repeats,coef,0.028791929944665316,True
+GAM,somatic_mosaicism_index,coef,0.015430112003927033,False
+GAM,age_at_onset,coef,0.0125370805468634,False
+GAM,disease_duration,coef,0.019361824314180532,True
+GAM,myotonia_severity,coef,0.03696590058729861,True
+GAM,muscle_strength,coef,0.018127131906834182,False
+GAM,pr_interval,coef,0.02133792761384114,True
+GAM,cognitive_function,coef,0.008010159030099525,False
+GAM,ck_level,coef,0.017422748607622624,False
+GAM,insulin_resistance,coef,0.013025542709290487,False
+GAM,bmi,coef,0.008155109099919764,False
+GAM,phenotype,coef,0.020701739615958562,True
+GAM,sex,coef,0.01742216129208441,False
+GAM,family_history,coef,0.006874613506467148,False
+GAM,cataracts,coef,0.001983231400341218,False
+GAM,smoking_status,coef,0.012516243315940674,False
