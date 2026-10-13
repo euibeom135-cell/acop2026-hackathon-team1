@@ -1,0 +1,21 @@
+feature,parent,domain,numeric
+log_ctg,ctg_repeats,Genetic burden,True
+somatic_mosaicism_index,somatic_mosaicism_index,Genetic burden,True
+age_at_onset,age_at_onset,Disease stage,True
+disease_duration,disease_duration,Disease stage,True
+myotonia_severity,myotonia_severity,Muscle,True
+muscle_strength,muscle_strength,Muscle,True
+pr_interval,pr_interval,Cardiac,True
+cognitive_function,cognitive_function,CNS,True
+ck_level,ck_level,Muscle,True
+insulin_resistance,insulin_resistance,Metabolic,True
+albumin,albumin,Systemic/PK,True
+bmi,bmi,Systemic/PK,True
+sex_Male,sex,Demographic,False
+cataracts_Yes,cataracts,Ophthalmic,False
+family_history_Yes,family_history,Demographic,False
+family_history_Unknown,family_history,Demographic,False
+smoking_status_Former,smoking_status,Systemic/PK,False
+smoking_status_Current,smoking_status,Systemic/PK,False
+phenotype_adult_onset,phenotype,Disease stage,False
+phenotype_juvenile_onset,phenotype,Disease stage,False

@@ -1,0 +1,239 @@
+"method","rep","row","pred"
+"lm / glm (all covariates)",0,0,0.578496653160297
+"lm / glm (all covariates)",0,1,0.404988331318205
+"lm / glm (all covariates)",0,2,0.690016847911068
+"lm / glm (all covariates)",0,3,0.308652591097093
+"lm / glm (all covariates)",0,4,0.201487951152346
+"lm / glm (all covariates)",0,5,0.642659909052257
+"lm / glm (all covariates)",0,6,0.758821277192368
+"lm / glm (all covariates)",0,7,0.0695390026683943
+"lm / glm (all covariates)",0,8,0.473533023849499
+"lm / glm (all covariates)",0,9,0.150834895635004
+"lm / glm (all covariates)",0,10,0.0609091674536092
+"lm / glm (all covariates)",0,11,0.744710378439205
+"lm / glm (all covariates)",0,12,0.942881659232
+"lm / glm (all covariates)",0,13,0.832303504809979
+"lm / glm (all covariates)",0,14,0.0726010245156504
+"lm / glm (all covariates)",0,15,0.605470176976139
+"lm / glm (all covariates)",0,16,0.3795968069696
+"lm / glm (all covariates)",0,17,0.703297828901567
+"lm / glm (all covariates)",0,18,0.358421426612984
+"lm / glm (all covariates)",0,19,0.86283576226114
+"lm / glm (all covariates)",0,20,0.270499167620965
+"lm / glm (all covariates)",0,21,0.187651140726107
+"lm / glm (all covariates)",0,22,0.117394470202671
+"lm / glm (all covariates)",0,23,0.397273854834605
+"lm / glm (all covariates)",0,24,0.19241022848402
+"lm / glm (all covariates)",0,25,0.947647989435884
+"lm / glm (all covariates)",0,26,0.898460600824482
+"lm / glm (all covariates)",0,27,0.653502506961937
+"lm / glm (all covariates)",0,28,0.838046797974496
+"lm / glm (all covariates)",0,29,0.422369752146356
+"lm / glm (all covariates)",0,30,0.502159808328632
+"lm / glm (all covariates)",0,31,0.31669935032507
+"lm / glm (all covariates)",0,32,0.607929903983277
+"lm / glm (all covariates)",0,33,0.33128544879876
+"Stepwise both (BIC)",0,0,0.301005902440759
+"Stepwise both (BIC)",0,1,0.264793355856143
+"Stepwise both (BIC)",0,2,0.624240325136953
+"Stepwise both (BIC)",0,3,0.463164607443779
+"Stepwise both (BIC)",0,4,0.292717705083382
+"Stepwise both (BIC)",0,5,0.795974821678236
+"Stepwise both (BIC)",0,6,0.497842934158586
+"Stepwise both (BIC)",0,7,0.188773668994788
+"Stepwise both (BIC)",0,8,0.376369210696407
+"Stepwise both (BIC)",0,9,0.591121846968333
+"Stepwise both (BIC)",0,10,0.174038700230383
+"Stepwise both (BIC)",0,11,0.566929162923873
+"Stepwise both (BIC)",0,12,0.678271200644195
+"Stepwise both (BIC)",0,13,0.802347744922009
+"Stepwise both (BIC)",0,14,0.399939790580539
+"Stepwise both (BIC)",0,15,0.731833552796066
+"Stepwise both (BIC)",0,16,0.344349986216277
+"Stepwise both (BIC)",0,17,0.547336687067865
+"Stepwise both (BIC)",0,18,0.139989495530743
+"Stepwise both (BIC)",0,19,0.628885843758047
+"Stepwise both (BIC)",0,20,0.665137793862293
+"Stepwise both (BIC)",0,21,0.268676570840787
+"Stepwise both (BIC)",0,22,0.130698741081774
+"Stepwise both (BIC)",0,23,0.296845089024832
+"Stepwise both (BIC)",0,24,0.268676570840787
+"Stepwise both (BIC)",0,25,0.673923343141415
+"Stepwise both (BIC)",0,26,0.768967280453694
+"Stepwise both (BIC)",0,27,0.775946349095342
+"Stepwise both (BIC)",0,28,0.678271200644195
+"Stepwise both (BIC)",0,29,0.40950616915376
+"Stepwise both (BIC)",0,30,0.719983968987129
+"Stepwise both (BIC)",0,31,0.165642048801489
+"Stepwise both (BIC)",0,32,0.678271200644195
+"Stepwise both (BIC)",0,33,0.288624152981916
+"Ridge (glmnet)",0,0,0.502006540751015
+"Ridge (glmnet)",0,1,0.283173432292748
+"Ridge (glmnet)",0,2,0.488235552875347
+"Ridge (glmnet)",0,3,0.508597459942629
+"Ridge (glmnet)",0,4,0.293250635926685
+"Ridge (glmnet)",0,5,0.632198726762054
+"Ridge (glmnet)",0,6,0.651891530501284
+"Ridge (glmnet)",0,7,0.243627173709634
+"Ridge (glmnet)",0,8,0.607500071598206
+"Ridge (glmnet)",0,9,0.288454877701025
+"Ridge (glmnet)",0,10,0.125771404713833
+"Ridge (glmnet)",0,11,0.535037729770337
+"Ridge (glmnet)",0,12,0.695981031889712
+"Ridge (glmnet)",0,13,0.745639377579081
+"Ridge (glmnet)",0,14,0.347705973947966
+"Ridge (glmnet)",0,15,0.671506908724131
+"Ridge (glmnet)",0,16,0.387005582048055
+"Ridge (glmnet)",0,17,0.562135688937906
+"Ridge (glmnet)",0,18,0.327757183099982
+"Ridge (glmnet)",0,19,0.724101232367037
+"Ridge (glmnet)",0,20,0.518183079552142
+"Ridge (glmnet)",0,21,0.287003288570663
+"Ridge (glmnet)",0,22,0.211208442981952
+"Ridge (glmnet)",0,23,0.366441589177696
+"Ridge (glmnet)",0,24,0.338443706954945
+"Ridge (glmnet)",0,25,0.723232231239288
+"Ridge (glmnet)",0,26,0.727538019982979
+"Ridge (glmnet)",0,27,0.620780674970235
+"Ridge (glmnet)",0,28,0.672061093667918
+"Ridge (glmnet)",0,29,0.495390567065164
+"Ridge (glmnet)",0,30,0.489828594511772
+"Ridge (glmnet)",0,31,0.366382301130154
+"Ridge (glmnet)",0,32,0.418004983059527
+"Ridge (glmnet)",0,33,0.275874354390545
+"LASSO (glmnet, lambda.min)",0,0,0.382186289586347
+"LASSO (glmnet, lambda.min)",0,1,0.294688182806001
+"LASSO (glmnet, lambda.min)",0,2,0.555592522353418
+"LASSO (glmnet, lambda.min)",0,3,0.508449337728688
+"LASSO (glmnet, lambda.min)",0,4,0.343104150571451
+"LASSO (glmnet, lambda.min)",0,5,0.720733102708703
+"LASSO (glmnet, lambda.min)",0,6,0.551130639914562
+"LASSO (glmnet, lambda.min)",0,7,0.232674920956056
+"LASSO (glmnet, lambda.min)",0,8,0.441969515723486
+"LASSO (glmnet, lambda.min)",0,9,0.500015623361653
+"LASSO (glmnet, lambda.min)",0,10,0.206788199344476
+"LASSO (glmnet, lambda.min)",0,11,0.555871413604056
+"LASSO (glmnet, lambda.min)",0,12,0.63467682297013
+"LASSO (glmnet, lambda.min)",0,13,0.73877793954684
+"LASSO (glmnet, lambda.min)",0,14,0.445715300806536
+"LASSO (glmnet, lambda.min)",0,15,0.688085571295167
+"LASSO (glmnet, lambda.min)",0,16,0.344309681081446
+"LASSO (glmnet, lambda.min)",0,17,0.549028386699642
+"LASSO (glmnet, lambda.min)",0,18,0.239400820180166
+"LASSO (glmnet, lambda.min)",0,19,0.621434930768629
+"LASSO (glmnet, lambda.min)",0,20,0.586691774813351
+"LASSO (glmnet, lambda.min)",0,21,0.315362212858906
+"LASSO (glmnet, lambda.min)",0,22,0.225231455294629
+"LASSO (glmnet, lambda.min)",0,23,0.327335910908776
+"LASSO (glmnet, lambda.min)",0,24,0.30703631265529
+"LASSO (glmnet, lambda.min)",0,25,0.637570764066348
+"LASSO (glmnet, lambda.min)",0,26,0.708120409521297
+"LASSO (glmnet, lambda.min)",0,27,0.701571808060055
+"LASSO (glmnet, lambda.min)",0,28,0.613417073089802
+"LASSO (glmnet, lambda.min)",0,29,0.425247472530321
+"LASSO (glmnet, lambda.min)",0,30,0.626666793839146
+"LASSO (glmnet, lambda.min)",0,31,0.285273291595306
+"LASSO (glmnet, lambda.min)",0,32,0.568063598437945
+"LASSO (glmnet, lambda.min)",0,33,0.347393763991778
+"Elastic net (glmnet, alpha=.5)",0,0,0.405508768964398
+"Elastic net (glmnet, alpha=.5)",0,1,0.30085908766881
+"Elastic net (glmnet, alpha=.5)",0,2,0.530443608204736
+"Elastic net (glmnet, alpha=.5)",0,3,0.522585753986957
+"Elastic net (glmnet, alpha=.5)",0,4,0.334862842493949
+"Elastic net (glmnet, alpha=.5)",0,5,0.70070551563583
+"Elastic net (glmnet, alpha=.5)",0,6,0.578436821118842
+"Elastic net (glmnet, alpha=.5)",0,7,0.251824110684313
+"Elastic net (glmnet, alpha=.5)",0,8,0.520392025746196
+"Elastic net (glmnet, alpha=.5)",0,9,0.430831510323323
+"Elastic net (glmnet, alpha=.5)",0,10,0.146388739545262
+"Elastic net (glmnet, alpha=.5)",0,11,0.544262496974178
+"Elastic net (glmnet, alpha=.5)",0,12,0.647822222067033
+"Elastic net (glmnet, alpha=.5)",0,13,0.739289097517614
+"Elastic net (glmnet, alpha=.5)",0,14,0.392307406188087
+"Elastic net (glmnet, alpha=.5)",0,15,0.709084308441655
+"Elastic net (glmnet, alpha=.5)",0,16,0.32380742556963
+"Elastic net (glmnet, alpha=.5)",0,17,0.55424865180928
+"Elastic net (glmnet, alpha=.5)",0,18,0.282940179500733
+"Elastic net (glmnet, alpha=.5)",0,19,0.670753308996496
+"Elastic net (glmnet, alpha=.5)",0,20,0.58074978591506
+"Elastic net (glmnet, alpha=.5)",0,21,0.298339319914907
+"Elastic net (glmnet, alpha=.5)",0,22,0.213683911423698
+"Elastic net (glmnet, alpha=.5)",0,23,0.298036915136787
+"Elastic net (glmnet, alpha=.5)",0,24,0.313556841556163
+"Elastic net (glmnet, alpha=.5)",0,25,0.665819338104509
+"Elastic net (glmnet, alpha=.5)",0,26,0.712888377459842
+"Elastic net (glmnet, alpha=.5)",0,27,0.680714182465609
+"Elastic net (glmnet, alpha=.5)",0,28,0.61864159015151
+"Elastic net (glmnet, alpha=.5)",0,29,0.45318458347268
+"Elastic net (glmnet, alpha=.5)",0,30,0.580022060838769
+"Elastic net (glmnet, alpha=.5)",0,31,0.296773040451774
+"Elastic net (glmnet, alpha=.5)",0,32,0.531809366240726
+"Elastic net (glmnet, alpha=.5)",0,33,0.322643931360247
+"GAM (mgcv, s(k=5), REML, select)",0,0,0.464289420045736
+"GAM (mgcv, s(k=5), REML, select)",0,1,0.198542695308621
+"GAM (mgcv, s(k=5), REML, select)",0,2,0.399834250902472
+"GAM (mgcv, s(k=5), REML, select)",0,3,0.652372295133576
+"GAM (mgcv, s(k=5), REML, select)",0,4,0.205408144041637
+"GAM (mgcv, s(k=5), REML, select)",0,5,0.711165546658015
+"GAM (mgcv, s(k=5), REML, select)",0,6,0.892670782011025
+"GAM (mgcv, s(k=5), REML, select)",0,7,0.146087677175927
+"GAM (mgcv, s(k=5), REML, select)",0,8,0.549250833521515
+"GAM (mgcv, s(k=5), REML, select)",0,9,0.238073673285171
+"GAM (mgcv, s(k=5), REML, select)",0,10,0.0607116731443156
+"GAM (mgcv, s(k=5), REML, select)",0,11,0.644913141394409
+"GAM (mgcv, s(k=5), REML, select)",0,12,0.920445773326501
+"GAM (mgcv, s(k=5), REML, select)",0,13,0.66447539016165
+"GAM (mgcv, s(k=5), REML, select)",0,14,0.304372462161406
+"GAM (mgcv, s(k=5), REML, select)",0,15,0.901857553242146
+"GAM (mgcv, s(k=5), REML, select)",0,16,0.461299295246747
+"GAM (mgcv, s(k=5), REML, select)",0,17,0.406003818101539
+"GAM (mgcv, s(k=5), REML, select)",0,18,0.090219009929238
+"GAM (mgcv, s(k=5), REML, select)",0,19,0.760153290260671
+"GAM (mgcv, s(k=5), REML, select)",0,20,0.240814877381134
+"GAM (mgcv, s(k=5), REML, select)",0,21,0.0134339997361431
+"GAM (mgcv, s(k=5), REML, select)",0,22,0.114020285826415
+"GAM (mgcv, s(k=5), REML, select)",0,23,0.363791444546931
+"GAM (mgcv, s(k=5), REML, select)",0,24,0.0266841880128192
+"GAM (mgcv, s(k=5), REML, select)",0,25,0.84988997872343
+"GAM (mgcv, s(k=5), REML, select)",0,26,0.85613152141654
+"GAM (mgcv, s(k=5), REML, select)",0,27,0.823049734660315
+"GAM (mgcv, s(k=5), REML, select)",0,28,0.816699023026
+"GAM (mgcv, s(k=5), REML, select)",0,29,0.526899914663688
+"GAM (mgcv, s(k=5), REML, select)",0,30,0.618247167604773
+"GAM (mgcv, s(k=5), REML, select)",0,31,0.197040698348173
+"GAM (mgcv, s(k=5), REML, select)",0,32,0.859516320082335
+"GAM (mgcv, s(k=5), REML, select)",0,33,0.125105111486044
+"PCR (prcomp, k by 5-fold CV)",0,0,0.363038913784177
+"PCR (prcomp, k by 5-fold CV)",0,1,0.236906558369203
+"PCR (prcomp, k by 5-fold CV)",0,2,0.595703467074868
+"PCR (prcomp, k by 5-fold CV)",0,3,0.471726475132084
+"PCR (prcomp, k by 5-fold CV)",0,4,0.267483725322704
+"PCR (prcomp, k by 5-fold CV)",0,5,0.723559571110721
+"PCR (prcomp, k by 5-fold CV)",0,6,0.491849115988323
+"PCR (prcomp, k by 5-fold CV)",0,7,0.236932238033614
+"PCR (prcomp, k by 5-fold CV)",0,8,0.558344447241624
+"PCR (prcomp, k by 5-fold CV)",0,9,0.273991946856359
+"PCR (prcomp, k by 5-fold CV)",0,10,0.054860257564324
+"PCR (prcomp, k by 5-fold CV)",0,11,0.573021763969619
+"PCR (prcomp, k by 5-fold CV)",0,12,0.759142740464176
+"PCR (prcomp, k by 5-fold CV)",0,13,0.808442093249443
+"PCR (prcomp, k by 5-fold CV)",0,14,0.203934814029585
+"PCR (prcomp, k by 5-fold CV)",0,15,0.830871105066784
+"PCR (prcomp, k by 5-fold CV)",0,16,0.386899267675701
+"PCR (prcomp, k by 5-fold CV)",0,17,0.559429952685935
+"PCR (prcomp, k by 5-fold CV)",0,18,0.221379652911714
+"PCR (prcomp, k by 5-fold CV)",0,19,0.741055027129403
+"PCR (prcomp, k by 5-fold CV)",0,20,0.641979493510632
+"PCR (prcomp, k by 5-fold CV)",0,21,0.277407905442173
+"PCR (prcomp, k by 5-fold CV)",0,22,0.114256055703951
+"PCR (prcomp, k by 5-fold CV)",0,23,0.194281538340249
+"PCR (prcomp, k by 5-fold CV)",0,24,0.330624438810222
+"PCR (prcomp, k by 5-fold CV)",0,25,0.726425320553069
+"PCR (prcomp, k by 5-fold CV)",0,26,0.752443624993184
+"PCR (prcomp, k by 5-fold CV)",0,27,0.760389359173375
+"PCR (prcomp, k by 5-fold CV)",0,28,0.638327757364588
+"PCR (prcomp, k by 5-fold CV)",0,29,0.577414773776985
+"PCR (prcomp, k by 5-fold CV)",0,30,0.544950233179056
+"PCR (prcomp, k by 5-fold CV)",0,31,0.164949893808914
+"PCR (prcomp, k by 5-fold CV)",0,32,0.595594853602455
+"PCR (prcomp, k by 5-fold CV)",0,33,0.261466541926069

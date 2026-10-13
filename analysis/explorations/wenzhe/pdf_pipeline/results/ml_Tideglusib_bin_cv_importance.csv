@@ -1,0 +1,1401 @@
+method,fold,term,importance
+Logistic regression (untuned),0,log_ctg,-0.010989010989011084
+Logistic regression (untuned),0,somatic_mosaicism_index,-0.05494505494505506
+Logistic regression (untuned),0,age_at_onset,-0.04835164835164842
+Logistic regression (untuned),0,disease_duration,0.10329670329670322
+Logistic regression (untuned),0,myotonia_severity,-0.010989010989011061
+Logistic regression (untuned),0,muscle_strength,-0.05934065934065937
+Logistic regression (untuned),0,pr_interval,0.013186813186813117
+Logistic regression (untuned),0,cognitive_function,0.2241758241758241
+Logistic regression (untuned),0,ck_level,-0.08681318681318691
+Logistic regression (untuned),0,insulin_resistance,-0.027472527472527552
+Logistic regression (untuned),0,albumin,0.0032967032967032408
+Logistic regression (untuned),0,bmi,0.004395604395604336
+Logistic regression (untuned),0,sex_Male,0.0
+Logistic regression (untuned),0,cataracts_Yes,-0.006593406593406681
+Logistic regression (untuned),0,family_history_Yes,0.00219780219780219
+Logistic regression (untuned),0,family_history_Unknown,0.020879120879120826
+Logistic regression (untuned),0,smoking_status_Former,-0.01978021978021982
+Logistic regression (untuned),0,smoking_status_Current,0.0032967032967032408
+Logistic regression (untuned),0,phenotype_adult_onset,0.002197802197802123
+Logistic regression (untuned),0,phenotype_juvenile_onset,-8.881784197001253e-17
+Logistic regression (untuned),1,log_ctg,0.01538461538461533
+Logistic regression (untuned),1,somatic_mosaicism_index,-0.06703296703296713
+Logistic regression (untuned),1,age_at_onset,0.027472527472527396
+Logistic regression (untuned),1,disease_duration,-0.012087912087912201
+Logistic regression (untuned),1,myotonia_severity,0.04835164835164825
+Logistic regression (untuned),1,muscle_strength,0.05274725274725267
+Logistic regression (untuned),1,pr_interval,0.002197802197802168
+Logistic regression (untuned),1,cognitive_function,0.1813186813186812
+Logistic regression (untuned),1,ck_level,0.015384615384615285
+Logistic regression (untuned),1,insulin_resistance,0.00879120879120876
+Logistic regression (untuned),1,albumin,0.0010989010989010505
+Logistic regression (untuned),1,bmi,-0.023076923076923172
+Logistic regression (untuned),1,sex_Male,0.0
+Logistic regression (untuned),1,cataracts_Yes,0.006593406593406526
+Logistic regression (untuned),1,family_history_Yes,-0.007692307692307732
+Logistic regression (untuned),1,family_history_Unknown,-0.020879120879120916
+Logistic regression (untuned),1,smoking_status_Former,0.004395604395604336
+Logistic regression (untuned),1,smoking_status_Current,-0.037362637362637494
+Logistic regression (untuned),1,phenotype_adult_onset,0.006593406593406547
+Logistic regression (untuned),1,phenotype_juvenile_onset,0.008791208791208737
+Logistic regression (untuned),2,log_ctg,-0.03406593406593408
+Logistic regression (untuned),2,somatic_mosaicism_index,-0.003296703296703307
+Logistic regression (untuned),2,age_at_onset,-0.02087912087912085
+Logistic regression (untuned),2,disease_duration,0.015384615384615353
+Logistic regression (untuned),2,myotonia_severity,0.07802197802197801
+Logistic regression (untuned),2,muscle_strength,0.04835164835164836
+Logistic regression (untuned),2,pr_interval,-0.03296703296703294
+Logistic regression (untuned),2,cognitive_function,0.24945054945054945
+Logistic regression (untuned),2,ck_level,-0.0197802197802198
+Logistic regression (untuned),2,insulin_resistance,-0.0010989010989010505
+Logistic regression (untuned),2,albumin,4.4408920985006264e-17
+Logistic regression (untuned),2,bmi,0.016483516483516515
+Logistic regression (untuned),2,sex_Male,-0.0043956043956043574
+Logistic regression (untuned),2,cataracts_Yes,-0.015384615384615418
+Logistic regression (untuned),2,family_history_Yes,-0.00219780219780219
+Logistic regression (untuned),2,family_history_Unknown,-0.009890109890109966
+Logistic regression (untuned),2,smoking_status_Former,-0.06263736263736257
+Logistic regression (untuned),2,smoking_status_Current,-0.03516483516483515
+Logistic regression (untuned),2,phenotype_adult_onset,-0.01648351648351649
+Logistic regression (untuned),2,phenotype_juvenile_onset,-0.001098901098901095
+Logistic regression (untuned),3,log_ctg,0.003296703296703374
+Logistic regression (untuned),3,somatic_mosaicism_index,0.0010989010989011171
+Logistic regression (untuned),3,age_at_onset,0.0065934065934066585
+Logistic regression (untuned),3,disease_duration,0.05934065934065942
+Logistic regression (untuned),3,myotonia_severity,0.0802197802197803
+Logistic regression (untuned),3,muscle_strength,-0.01978021978021962
+Logistic regression (untuned),3,pr_interval,0.012087912087912156
+Logistic regression (untuned),3,cognitive_function,0.19450549450549456
+Logistic regression (untuned),3,ck_level,0.018681318681318792
+Logistic regression (untuned),3,insulin_resistance,0.002197802197802279
+Logistic regression (untuned),3,albumin,-0.018681318681318636
+Logistic regression (untuned),3,bmi,-0.010989010989010927
+Logistic regression (untuned),3,sex_Male,-0.01318681318681314
+Logistic regression (untuned),3,cataracts_Yes,0.0054945054945054975
+Logistic regression (untuned),3,family_history_Yes,0.0
+Logistic regression (untuned),3,family_history_Unknown,0.0065934065934066585
+Logistic regression (untuned),3,smoking_status_Former,0.005494505494505519
+Logistic regression (untuned),3,smoking_status_Current,0.010989010989011038
+Logistic regression (untuned),3,phenotype_adult_onset,-0.0043956043956043574
+Logistic regression (untuned),3,phenotype_juvenile_onset,-0.0054945054945054524
+Logistic regression (untuned),4,log_ctg,-0.01208791208791209
+Logistic regression (untuned),4,somatic_mosaicism_index,-0.013186813186813228
+Logistic regression (untuned),4,age_at_onset,-0.005494505494505475
+Logistic regression (untuned),4,disease_duration,0.0043956043956043574
+Logistic regression (untuned),4,myotonia_severity,0.01978021978021973
+Logistic regression (untuned),4,muscle_strength,0.019780219780219745
+Logistic regression (untuned),4,pr_interval,-0.025274725274725306
+Logistic regression (untuned),4,cognitive_function,0.13406593406593403
+Logistic regression (untuned),4,ck_level,-0.034065934065934125
+Logistic regression (untuned),4,insulin_resistance,-0.016483516483516515
+Logistic regression (untuned),4,albumin,-0.00439560439560438
+Logistic regression (untuned),4,bmi,-0.0021978021978022342
+Logistic regression (untuned),4,sex_Male,-0.012087912087912111
+Logistic regression (untuned),4,cataracts_Yes,0.015384615384615375
+Logistic regression (untuned),4,family_history_Yes,-0.046153846153846156
+Logistic regression (untuned),4,family_history_Unknown,-0.08351648351648355
+Logistic regression (untuned),4,smoking_status_Former,0.008791208791208783
+Logistic regression (untuned),4,smoking_status_Current,-0.001098901098901095
+Logistic regression (untuned),4,phenotype_adult_onset,0.008791208791208783
+Logistic regression (untuned),4,phenotype_juvenile_onset,-0.003296703296703307
+"Logistic regression (tuned, GridSearchCV)",0,log_ctg,-0.0010989010989011616
+"Logistic regression (tuned, GridSearchCV)",0,somatic_mosaicism_index,-0.0076923076923077535
+"Logistic regression (tuned, GridSearchCV)",0,age_at_onset,-0.007692307692307776
+"Logistic regression (tuned, GridSearchCV)",0,disease_duration,0.024175824175824156
+"Logistic regression (tuned, GridSearchCV)",0,myotonia_severity,0.01318681318681314
+"Logistic regression (tuned, GridSearchCV)",0,muscle_strength,-0.0065934065934066585
+"Logistic regression (tuned, GridSearchCV)",0,pr_interval,0.018681318681318636
+"Logistic regression (tuned, GridSearchCV)",0,cognitive_function,0.1703296703296703
+"Logistic regression (tuned, GridSearchCV)",0,ck_level,-0.03186813186813189
+"Logistic regression (tuned, GridSearchCV)",0,insulin_resistance,-0.0021978021978022568
+"Logistic regression (tuned, GridSearchCV)",0,albumin,0.009890109890109855
+"Logistic regression (tuned, GridSearchCV)",0,bmi,0.00659340659340657
+"Logistic regression (tuned, GridSearchCV)",0,sex_Male,0.00439560439560438
+"Logistic regression (tuned, GridSearchCV)",0,cataracts_Yes,0.001098901098901095
+"Logistic regression (tuned, GridSearchCV)",0,family_history_Yes,0.0
+"Logistic regression (tuned, GridSearchCV)",0,family_history_Unknown,0.007692307692307665
+"Logistic regression (tuned, GridSearchCV)",0,smoking_status_Former,0.00219780219780219
+"Logistic regression (tuned, GridSearchCV)",0,smoking_status_Current,0.00219780219780219
+"Logistic regression (tuned, GridSearchCV)",0,phenotype_adult_onset,0.007692307692307665
+"Logistic regression (tuned, GridSearchCV)",0,phenotype_juvenile_onset,0.005494505494505475
+"Logistic regression (tuned, GridSearchCV)",1,log_ctg,0.06813186813186814
+"Logistic regression (tuned, GridSearchCV)",1,somatic_mosaicism_index,0.0043956043956044025
+"Logistic regression (tuned, GridSearchCV)",1,age_at_onset,0.04395604395604395
+"Logistic regression (tuned, GridSearchCV)",1,disease_duration,0.010989010989011016
+"Logistic regression (tuned, GridSearchCV)",1,myotonia_severity,0.10109890109890111
+"Logistic regression (tuned, GridSearchCV)",1,muscle_strength,-0.006593406593406614
+"Logistic regression (tuned, GridSearchCV)",1,pr_interval,0.013186813186813228
+"Logistic regression (tuned, GridSearchCV)",1,cognitive_function,0.23186813186813185
+"Logistic regression (tuned, GridSearchCV)",1,ck_level,0.03626373626373629
+"Logistic regression (tuned, GridSearchCV)",1,insulin_resistance,0.003296703296703285
+"Logistic regression (tuned, GridSearchCV)",1,albumin,0.016483516483516536
+"Logistic regression (tuned, GridSearchCV)",1,bmi,0.02197802197802199
+"Logistic regression (tuned, GridSearchCV)",1,sex_Male,0.0054945054945054975
+"Logistic regression (tuned, GridSearchCV)",1,cataracts_Yes,0.013186813186813185
+"Logistic regression (tuned, GridSearchCV)",1,family_history_Yes,0.014285714285714301
+"Logistic regression (tuned, GridSearchCV)",1,family_history_Unknown,0.007692307692307732
+"Logistic regression (tuned, GridSearchCV)",1,smoking_status_Former,0.018681318681318705
+"Logistic regression (tuned, GridSearchCV)",1,smoking_status_Current,0.0032967032967033292
+"Logistic regression (tuned, GridSearchCV)",1,phenotype_adult_onset,0.015384615384615441
+"Logistic regression (tuned, GridSearchCV)",1,phenotype_juvenile_onset,0.004395604395604447
+"Logistic regression (tuned, GridSearchCV)",2,log_ctg,-0.03406593406593408
+"Logistic regression (tuned, GridSearchCV)",2,somatic_mosaicism_index,-0.003296703296703307
+"Logistic regression (tuned, GridSearchCV)",2,age_at_onset,-0.02087912087912085
+"Logistic regression (tuned, GridSearchCV)",2,disease_duration,0.015384615384615353
+"Logistic regression (tuned, GridSearchCV)",2,myotonia_severity,0.07802197802197801
+"Logistic regression (tuned, GridSearchCV)",2,muscle_strength,0.04835164835164836
+"Logistic regression (tuned, GridSearchCV)",2,pr_interval,-0.03296703296703294
+"Logistic regression (tuned, GridSearchCV)",2,cognitive_function,0.24945054945054945
+"Logistic regression (tuned, GridSearchCV)",2,ck_level,-0.0197802197802198
+"Logistic regression (tuned, GridSearchCV)",2,insulin_resistance,-0.0010989010989010505
+"Logistic regression (tuned, GridSearchCV)",2,albumin,4.4408920985006264e-17
+"Logistic regression (tuned, GridSearchCV)",2,bmi,0.016483516483516515
+"Logistic regression (tuned, GridSearchCV)",2,sex_Male,-0.0043956043956043574
+"Logistic regression (tuned, GridSearchCV)",2,cataracts_Yes,-0.015384615384615418
+"Logistic regression (tuned, GridSearchCV)",2,family_history_Yes,-0.00219780219780219
+"Logistic regression (tuned, GridSearchCV)",2,family_history_Unknown,-0.009890109890109966
+"Logistic regression (tuned, GridSearchCV)",2,smoking_status_Former,-0.06263736263736257
+"Logistic regression (tuned, GridSearchCV)",2,smoking_status_Current,-0.03516483516483515
+"Logistic regression (tuned, GridSearchCV)",2,phenotype_adult_onset,-0.01648351648351649
+"Logistic regression (tuned, GridSearchCV)",2,phenotype_juvenile_onset,-0.001098901098901095
+"Logistic regression (tuned, GridSearchCV)",3,log_ctg,-0.015384615384615375
+"Logistic regression (tuned, GridSearchCV)",3,somatic_mosaicism_index,-0.027472527472527465
+"Logistic regression (tuned, GridSearchCV)",3,age_at_onset,0.0054945054945054975
+"Logistic regression (tuned, GridSearchCV)",3,disease_duration,0.015384615384615375
+"Logistic regression (tuned, GridSearchCV)",3,myotonia_severity,-0.014285714285714323
+"Logistic regression (tuned, GridSearchCV)",3,muscle_strength,-0.001098901098901095
+"Logistic regression (tuned, GridSearchCV)",3,pr_interval,0.006593406593406637
+"Logistic regression (tuned, GridSearchCV)",3,cognitive_function,0.12967032967032968
+"Logistic regression (tuned, GridSearchCV)",3,ck_level,0.0
+"Logistic regression (tuned, GridSearchCV)",3,insulin_resistance,0.0
+"Logistic regression (tuned, GridSearchCV)",3,albumin,-0.009890109890109855
+"Logistic regression (tuned, GridSearchCV)",3,bmi,-0.023076923076923106
+"Logistic regression (tuned, GridSearchCV)",3,sex_Male,-0.003296703296703285
+"Logistic regression (tuned, GridSearchCV)",3,cataracts_Yes,0.0
+"Logistic regression (tuned, GridSearchCV)",3,family_history_Yes,0.0
+"Logistic regression (tuned, GridSearchCV)",3,family_history_Unknown,0.0
+"Logistic regression (tuned, GridSearchCV)",3,smoking_status_Former,0.001098901098901095
+"Logistic regression (tuned, GridSearchCV)",3,smoking_status_Current,0.0
+"Logistic regression (tuned, GridSearchCV)",3,phenotype_adult_onset,-0.00219780219780219
+"Logistic regression (tuned, GridSearchCV)",3,phenotype_juvenile_onset,0.001098901098901095
+"Logistic regression (tuned, GridSearchCV)",4,log_ctg,0.02197802197802201
+"Logistic regression (tuned, GridSearchCV)",4,somatic_mosaicism_index,0.0340659340659341
+"Logistic regression (tuned, GridSearchCV)",4,age_at_onset,0.01868131868131877
+"Logistic regression (tuned, GridSearchCV)",4,disease_duration,0.010989010989011061
+"Logistic regression (tuned, GridSearchCV)",4,myotonia_severity,0.0494505494505495
+"Logistic regression (tuned, GridSearchCV)",4,muscle_strength,0.029670329670329742
+"Logistic regression (tuned, GridSearchCV)",4,pr_interval,-0.004395604395604336
+"Logistic regression (tuned, GridSearchCV)",4,cognitive_function,0.1703296703296704
+"Logistic regression (tuned, GridSearchCV)",4,ck_level,-0.021978021978021966
+"Logistic regression (tuned, GridSearchCV)",4,insulin_resistance,0.0054945054945054975
+"Logistic regression (tuned, GridSearchCV)",4,albumin,0.006593406593406637
+"Logistic regression (tuned, GridSearchCV)",4,bmi,0.02747252747252753
+"Logistic regression (tuned, GridSearchCV)",4,sex_Male,2.2204460492503132e-17
+"Logistic regression (tuned, GridSearchCV)",4,cataracts_Yes,0.0032967032967033518
+"Logistic regression (tuned, GridSearchCV)",4,family_history_Yes,-0.014285714285714235
+"Logistic regression (tuned, GridSearchCV)",4,family_history_Unknown,-0.021978021978021945
+"Logistic regression (tuned, GridSearchCV)",4,smoking_status_Former,0.010989010989011016
+"Logistic regression (tuned, GridSearchCV)",4,smoking_status_Current,-0.005494505494505475
+"Logistic regression (tuned, GridSearchCV)",4,phenotype_adult_onset,0.006593406593406614
+"Logistic regression (tuned, GridSearchCV)",4,phenotype_juvenile_onset,0.004395604395604447
+Decision tree (untuned),0,log_ctg,0.0
+Decision tree (untuned),0,somatic_mosaicism_index,0.0
+Decision tree (untuned),0,age_at_onset,0.02417582417582418
+Decision tree (untuned),0,disease_duration,0.0
+Decision tree (untuned),0,myotonia_severity,0.03626373626373627
+Decision tree (untuned),0,muscle_strength,0.08791208791208797
+Decision tree (untuned),0,pr_interval,0.0
+Decision tree (untuned),0,cognitive_function,0.06648351648351655
+Decision tree (untuned),0,ck_level,0.0
+Decision tree (untuned),0,insulin_resistance,0.0
+Decision tree (untuned),0,albumin,0.01758241758241763
+Decision tree (untuned),0,bmi,0.0
+Decision tree (untuned),0,sex_Male,0.0
+Decision tree (untuned),0,cataracts_Yes,0.0
+Decision tree (untuned),0,family_history_Yes,0.0
+Decision tree (untuned),0,family_history_Unknown,0.0
+Decision tree (untuned),0,smoking_status_Former,0.0
+Decision tree (untuned),0,smoking_status_Current,0.0
+Decision tree (untuned),0,phenotype_adult_onset,0.0
+Decision tree (untuned),0,phenotype_juvenile_onset,0.0
+Decision tree (untuned),1,log_ctg,-0.03626373626373627
+Decision tree (untuned),1,somatic_mosaicism_index,0.0
+Decision tree (untuned),1,age_at_onset,0.0
+Decision tree (untuned),1,disease_duration,0.0
+Decision tree (untuned),1,myotonia_severity,0.0
+Decision tree (untuned),1,muscle_strength,-0.007692307692307709
+Decision tree (untuned),1,pr_interval,0.0
+Decision tree (untuned),1,cognitive_function,0.13461538461538466
+Decision tree (untuned),1,ck_level,0.0
+Decision tree (untuned),1,insulin_resistance,-0.002197802197802212
+Decision tree (untuned),1,albumin,0.0
+Decision tree (untuned),1,bmi,0.0
+Decision tree (untuned),1,sex_Male,0.0
+Decision tree (untuned),1,cataracts_Yes,0.0
+Decision tree (untuned),1,family_history_Yes,0.0
+Decision tree (untuned),1,family_history_Unknown,-0.051648351648351645
+Decision tree (untuned),1,smoking_status_Former,0.0
+Decision tree (untuned),1,smoking_status_Current,0.0
+Decision tree (untuned),1,phenotype_adult_onset,0.0
+Decision tree (untuned),1,phenotype_juvenile_onset,0.0
+Decision tree (untuned),2,log_ctg,0.0
+Decision tree (untuned),2,somatic_mosaicism_index,0.0
+Decision tree (untuned),2,age_at_onset,0.0
+Decision tree (untuned),2,disease_duration,0.0
+Decision tree (untuned),2,myotonia_severity,0.06153846153846156
+Decision tree (untuned),2,muscle_strength,0.054395604395604466
+Decision tree (untuned),2,pr_interval,0.014285714285714346
+Decision tree (untuned),2,cognitive_function,0.29010989010989024
+Decision tree (untuned),2,ck_level,0.0
+Decision tree (untuned),2,insulin_resistance,0.0
+Decision tree (untuned),2,albumin,0.0
+Decision tree (untuned),2,bmi,0.0
+Decision tree (untuned),2,sex_Male,0.0
+Decision tree (untuned),2,cataracts_Yes,0.0
+Decision tree (untuned),2,family_history_Yes,0.0
+Decision tree (untuned),2,family_history_Unknown,0.0
+Decision tree (untuned),2,smoking_status_Former,0.0
+Decision tree (untuned),2,smoking_status_Current,0.0
+Decision tree (untuned),2,phenotype_adult_onset,0.0
+Decision tree (untuned),2,phenotype_juvenile_onset,0.0
+Decision tree (untuned),3,log_ctg,0.0
+Decision tree (untuned),3,somatic_mosaicism_index,0.0
+Decision tree (untuned),3,age_at_onset,0.0
+Decision tree (untuned),3,disease_duration,0.0
+Decision tree (untuned),3,myotonia_severity,-0.03791208791208789
+Decision tree (untuned),3,muscle_strength,0.006043956043956
+Decision tree (untuned),3,pr_interval,0.0
+Decision tree (untuned),3,cognitive_function,0.2670329670329671
+Decision tree (untuned),3,ck_level,0.0
+Decision tree (untuned),3,insulin_resistance,0.0
+Decision tree (untuned),3,albumin,0.0
+Decision tree (untuned),3,bmi,0.0
+Decision tree (untuned),3,sex_Male,-0.001098901098901095
+Decision tree (untuned),3,cataracts_Yes,0.0
+Decision tree (untuned),3,family_history_Yes,0.0
+Decision tree (untuned),3,family_history_Unknown,0.0
+Decision tree (untuned),3,smoking_status_Former,0.0
+Decision tree (untuned),3,smoking_status_Current,0.0
+Decision tree (untuned),3,phenotype_adult_onset,0.0
+Decision tree (untuned),3,phenotype_juvenile_onset,0.0
+Decision tree (untuned),4,log_ctg,0.0
+Decision tree (untuned),4,somatic_mosaicism_index,-0.0032967032967032408
+Decision tree (untuned),4,age_at_onset,0.0
+Decision tree (untuned),4,disease_duration,0.0
+Decision tree (untuned),4,myotonia_severity,0.0
+Decision tree (untuned),4,muscle_strength,0.06373626373626384
+Decision tree (untuned),4,pr_interval,0.0
+Decision tree (untuned),4,cognitive_function,0.23956043956043965
+Decision tree (untuned),4,ck_level,0.0
+Decision tree (untuned),4,insulin_resistance,0.0
+Decision tree (untuned),4,albumin,0.0
+Decision tree (untuned),4,bmi,0.0
+Decision tree (untuned),4,sex_Male,0.0
+Decision tree (untuned),4,cataracts_Yes,0.0
+Decision tree (untuned),4,family_history_Yes,0.0
+Decision tree (untuned),4,family_history_Unknown,0.05549450549450552
+Decision tree (untuned),4,smoking_status_Former,0.0
+Decision tree (untuned),4,smoking_status_Current,0.0
+Decision tree (untuned),4,phenotype_adult_onset,0.0
+Decision tree (untuned),4,phenotype_juvenile_onset,0.0
+"Decision tree (tuned, GridSearchCV)",0,log_ctg,0.0
+"Decision tree (tuned, GridSearchCV)",0,somatic_mosaicism_index,0.0
+"Decision tree (tuned, GridSearchCV)",0,age_at_onset,0.03736263736263732
+"Decision tree (tuned, GridSearchCV)",0,disease_duration,0.0
+"Decision tree (tuned, GridSearchCV)",0,myotonia_severity,0.0
+"Decision tree (tuned, GridSearchCV)",0,muscle_strength,-0.006593406593406637
+"Decision tree (tuned, GridSearchCV)",0,pr_interval,0.0
+"Decision tree (tuned, GridSearchCV)",0,cognitive_function,0.3373626373626372
+"Decision tree (tuned, GridSearchCV)",0,ck_level,0.0
+"Decision tree (tuned, GridSearchCV)",0,insulin_resistance,0.0
+"Decision tree (tuned, GridSearchCV)",0,albumin,0.0
+"Decision tree (tuned, GridSearchCV)",0,bmi,0.0
+"Decision tree (tuned, GridSearchCV)",0,sex_Male,0.02032967032967019
+"Decision tree (tuned, GridSearchCV)",0,cataracts_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",0,family_history_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",0,family_history_Unknown,0.0
+"Decision tree (tuned, GridSearchCV)",0,smoking_status_Former,0.0
+"Decision tree (tuned, GridSearchCV)",0,smoking_status_Current,0.0
+"Decision tree (tuned, GridSearchCV)",0,phenotype_adult_onset,0.0
+"Decision tree (tuned, GridSearchCV)",0,phenotype_juvenile_onset,0.0
+"Decision tree (tuned, GridSearchCV)",1,log_ctg,0.0
+"Decision tree (tuned, GridSearchCV)",1,somatic_mosaicism_index,0.0
+"Decision tree (tuned, GridSearchCV)",1,age_at_onset,0.0
+"Decision tree (tuned, GridSearchCV)",1,disease_duration,0.0
+"Decision tree (tuned, GridSearchCV)",1,myotonia_severity,0.0
+"Decision tree (tuned, GridSearchCV)",1,muscle_strength,0.0098901098901099
+"Decision tree (tuned, GridSearchCV)",1,pr_interval,0.0
+"Decision tree (tuned, GridSearchCV)",1,cognitive_function,0.26428571428571435
+"Decision tree (tuned, GridSearchCV)",1,ck_level,0.0
+"Decision tree (tuned, GridSearchCV)",1,insulin_resistance,0.0
+"Decision tree (tuned, GridSearchCV)",1,albumin,0.0
+"Decision tree (tuned, GridSearchCV)",1,bmi,0.0
+"Decision tree (tuned, GridSearchCV)",1,sex_Male,0.0
+"Decision tree (tuned, GridSearchCV)",1,cataracts_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",1,family_history_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",1,family_history_Unknown,-0.003296703296703263
+"Decision tree (tuned, GridSearchCV)",1,smoking_status_Former,0.0
+"Decision tree (tuned, GridSearchCV)",1,smoking_status_Current,0.0
+"Decision tree (tuned, GridSearchCV)",1,phenotype_adult_onset,0.0
+"Decision tree (tuned, GridSearchCV)",1,phenotype_juvenile_onset,0.0
+"Decision tree (tuned, GridSearchCV)",2,log_ctg,0.0
+"Decision tree (tuned, GridSearchCV)",2,somatic_mosaicism_index,-0.014285714285714212
+"Decision tree (tuned, GridSearchCV)",2,age_at_onset,0.0
+"Decision tree (tuned, GridSearchCV)",2,disease_duration,0.0
+"Decision tree (tuned, GridSearchCV)",2,myotonia_severity,0.0
+"Decision tree (tuned, GridSearchCV)",2,muscle_strength,0.0
+"Decision tree (tuned, GridSearchCV)",2,pr_interval,0.0
+"Decision tree (tuned, GridSearchCV)",2,cognitive_function,0.3065934065934068
+"Decision tree (tuned, GridSearchCV)",2,ck_level,0.0
+"Decision tree (tuned, GridSearchCV)",2,insulin_resistance,0.0
+"Decision tree (tuned, GridSearchCV)",2,albumin,0.013736263736263821
+"Decision tree (tuned, GridSearchCV)",2,bmi,-0.0543956043956042
+"Decision tree (tuned, GridSearchCV)",2,sex_Male,0.0
+"Decision tree (tuned, GridSearchCV)",2,cataracts_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",2,family_history_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",2,family_history_Unknown,0.0
+"Decision tree (tuned, GridSearchCV)",2,smoking_status_Former,0.0
+"Decision tree (tuned, GridSearchCV)",2,smoking_status_Current,0.0
+"Decision tree (tuned, GridSearchCV)",2,phenotype_adult_onset,0.0
+"Decision tree (tuned, GridSearchCV)",2,phenotype_juvenile_onset,0.0
+"Decision tree (tuned, GridSearchCV)",3,log_ctg,-0.014835164835164782
+"Decision tree (tuned, GridSearchCV)",3,somatic_mosaicism_index,0.030219780219780223
+"Decision tree (tuned, GridSearchCV)",3,age_at_onset,0.0
+"Decision tree (tuned, GridSearchCV)",3,disease_duration,0.0
+"Decision tree (tuned, GridSearchCV)",3,myotonia_severity,-0.01813186813186809
+"Decision tree (tuned, GridSearchCV)",3,muscle_strength,0.0
+"Decision tree (tuned, GridSearchCV)",3,pr_interval,0.014285714285714346
+"Decision tree (tuned, GridSearchCV)",3,cognitive_function,0.28846153846153855
+"Decision tree (tuned, GridSearchCV)",3,ck_level,0.0
+"Decision tree (tuned, GridSearchCV)",3,insulin_resistance,0.0
+"Decision tree (tuned, GridSearchCV)",3,albumin,0.0
+"Decision tree (tuned, GridSearchCV)",3,bmi,0.0
+"Decision tree (tuned, GridSearchCV)",3,sex_Male,0.0
+"Decision tree (tuned, GridSearchCV)",3,cataracts_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",3,family_history_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",3,family_history_Unknown,0.0
+"Decision tree (tuned, GridSearchCV)",3,smoking_status_Former,0.0
+"Decision tree (tuned, GridSearchCV)",3,smoking_status_Current,0.0
+"Decision tree (tuned, GridSearchCV)",3,phenotype_adult_onset,0.0
+"Decision tree (tuned, GridSearchCV)",3,phenotype_juvenile_onset,0.0
+"Decision tree (tuned, GridSearchCV)",4,log_ctg,0.0
+"Decision tree (tuned, GridSearchCV)",4,somatic_mosaicism_index,0.015934065934065923
+"Decision tree (tuned, GridSearchCV)",4,age_at_onset,-0.003296703296703285
+"Decision tree (tuned, GridSearchCV)",4,disease_duration,0.0
+"Decision tree (tuned, GridSearchCV)",4,myotonia_severity,0.0
+"Decision tree (tuned, GridSearchCV)",4,muscle_strength,0.0
+"Decision tree (tuned, GridSearchCV)",4,pr_interval,0.0
+"Decision tree (tuned, GridSearchCV)",4,cognitive_function,0.3087912087912088
+"Decision tree (tuned, GridSearchCV)",4,ck_level,0.0
+"Decision tree (tuned, GridSearchCV)",4,insulin_resistance,0.0
+"Decision tree (tuned, GridSearchCV)",4,albumin,0.0
+"Decision tree (tuned, GridSearchCV)",4,bmi,0.0
+"Decision tree (tuned, GridSearchCV)",4,sex_Male,-0.003296703296703307
+"Decision tree (tuned, GridSearchCV)",4,cataracts_Yes,0.0
+"Decision tree (tuned, GridSearchCV)",4,family_history_Yes,-0.009340659340659353
+"Decision tree (tuned, GridSearchCV)",4,family_history_Unknown,0.0
+"Decision tree (tuned, GridSearchCV)",4,smoking_status_Former,0.0
+"Decision tree (tuned, GridSearchCV)",4,smoking_status_Current,0.0
+"Decision tree (tuned, GridSearchCV)",4,phenotype_adult_onset,0.0
+"Decision tree (tuned, GridSearchCV)",4,phenotype_juvenile_onset,0.0
+Random forest (untuned),0,log_ctg,-0.03296703296703292
+Random forest (untuned),0,somatic_mosaicism_index,-0.01758241758241754
+Random forest (untuned),0,age_at_onset,0.001648351648351687
+Random forest (untuned),0,disease_duration,-0.00879120879120876
+Random forest (untuned),0,myotonia_severity,-0.02527472527472514
+Random forest (untuned),0,muscle_strength,-0.02087912087912074
+Random forest (untuned),0,pr_interval,0.006043956043956089
+Random forest (untuned),0,cognitive_function,0.20604395604395612
+Random forest (untuned),0,ck_level,-0.009890109890109789
+Random forest (untuned),0,insulin_resistance,0.001648351648351709
+Random forest (untuned),0,albumin,-0.010439560439560357
+Random forest (untuned),0,bmi,-0.02197802197802188
+Random forest (untuned),0,sex_Male,-0.007692307692307709
+Random forest (untuned),0,cataracts_Yes,-0.0060439560439560225
+Random forest (untuned),0,family_history_Yes,-0.0005494505494505475
+Random forest (untuned),0,family_history_Unknown,0.0032967032967033292
+Random forest (untuned),0,smoking_status_Former,-0.009340659340659373
+Random forest (untuned),0,smoking_status_Current,0.0
+Random forest (untuned),0,phenotype_adult_onset,0.0
+Random forest (untuned),0,phenotype_juvenile_onset,-0.0027472527472527375
+Random forest (untuned),1,log_ctg,0.018681318681318747
+Random forest (untuned),1,somatic_mosaicism_index,0.03131868131868134
+Random forest (untuned),1,age_at_onset,0.010439560439560491
+Random forest (untuned),1,disease_duration,0.019780219780219866
+Random forest (untuned),1,myotonia_severity,0.03516483516483522
+Random forest (untuned),1,muscle_strength,0.02142857142857153
+Random forest (untuned),1,pr_interval,-0.001098901098901006
+Random forest (untuned),1,cognitive_function,0.23461538461538467
+Random forest (untuned),1,ck_level,0.010989010989010995
+Random forest (untuned),1,insulin_resistance,0.001098901098901206
+Random forest (untuned),1,albumin,0.001098901098901184
+Random forest (untuned),1,bmi,0.007692307692307776
+Random forest (untuned),1,sex_Male,0.003296703296703374
+Random forest (untuned),1,cataracts_Yes,0.0021978021978022342
+Random forest (untuned),1,family_history_Yes,-0.006043956043955956
+Random forest (untuned),1,family_history_Unknown,-0.0005494505494505253
+Random forest (untuned),1,smoking_status_Former,0.0071428571428572285
+Random forest (untuned),1,smoking_status_Current,0.0027472527472527817
+Random forest (untuned),1,phenotype_adult_onset,0.0027472527472528264
+Random forest (untuned),1,phenotype_juvenile_onset,-0.001648351648351598
+Random forest (untuned),2,log_ctg,0.0032967032967033518
+Random forest (untuned),2,somatic_mosaicism_index,0.0005494505494506141
+Random forest (untuned),2,age_at_onset,-0.023076923076922995
+Random forest (untuned),2,disease_duration,0.007692307692307732
+Random forest (untuned),2,myotonia_severity,0.024175824175824267
+Random forest (untuned),2,muscle_strength,0.036813186813186904
+Random forest (untuned),2,pr_interval,4.4408920985006264e-17
+Random forest (untuned),2,cognitive_function,0.33296703296703306
+Random forest (untuned),2,ck_level,-0.009890109890109832
+Random forest (untuned),2,insulin_resistance,0.001098901098901206
+Random forest (untuned),2,albumin,0.012087912087912201
+Random forest (untuned),2,bmi,-0.0005494505494505253
+Random forest (untuned),2,sex_Male,0.013186813186813251
+Random forest (untuned),2,cataracts_Yes,0.0010989010989011394
+Random forest (untuned),2,family_history_Yes,-0.005494505494505408
+Random forest (untuned),2,family_history_Unknown,0.003296703296703307
+Random forest (untuned),2,smoking_status_Former,-0.004945054945054905
+Random forest (untuned),2,smoking_status_Current,-0.0010989010989010284
+Random forest (untuned),2,phenotype_adult_onset,-0.007692307692307665
+Random forest (untuned),2,phenotype_juvenile_onset,-0.013736263736263687
+Random forest (untuned),3,log_ctg,-0.01978021978021971
+Random forest (untuned),3,somatic_mosaicism_index,-0.01153846153846152
+Random forest (untuned),3,age_at_onset,0.006593406593406614
+Random forest (untuned),3,disease_duration,2.2204460492503132e-17
+Random forest (untuned),3,myotonia_severity,-0.00494505494505495
+Random forest (untuned),3,muscle_strength,0.017582417582417565
+Random forest (untuned),3,pr_interval,-0.0027472527472527596
+Random forest (untuned),3,cognitive_function,0.2417582417582417
+Random forest (untuned),3,ck_level,-0.018131868131868113
+Random forest (untuned),3,insulin_resistance,0.02087912087912085
+Random forest (untuned),3,albumin,0.015384615384615375
+Random forest (untuned),3,bmi,0.0010989010989011171
+Random forest (untuned),3,sex_Male,-0.01813186813186809
+Random forest (untuned),3,cataracts_Yes,0.0016483516483516425
+Random forest (untuned),3,family_history_Yes,0.008241758241758212
+Random forest (untuned),3,family_history_Unknown,0.003296703296703285
+Random forest (untuned),3,smoking_status_Former,-0.0005494505494505475
+Random forest (untuned),3,smoking_status_Current,-0.0005494505494505253
+Random forest (untuned),3,phenotype_adult_onset,-0.0005494505494505475
+Random forest (untuned),3,phenotype_juvenile_onset,-0.0049450549450549275
+Random forest (untuned),4,log_ctg,0.034065934065934056
+Random forest (untuned),4,somatic_mosaicism_index,0.0032967032967032408
+Random forest (untuned),4,age_at_onset,-0.003296703296703307
+Random forest (untuned),4,disease_duration,0.01373626373626371
+Random forest (untuned),4,myotonia_severity,0.02637362637362639
+Random forest (untuned),4,muscle_strength,0.040659340659340626
+Random forest (untuned),4,pr_interval,0.008791208791208715
+Random forest (untuned),4,cognitive_function,0.27692307692307694
+Random forest (untuned),4,ck_level,0.013736263736263687
+Random forest (untuned),4,insulin_resistance,-0.012087912087912111
+Random forest (untuned),4,albumin,-0.0010989010989010729
+Random forest (untuned),4,bmi,0.021428571428571373
+Random forest (untuned),4,sex_Male,-0.0065934065934065925
+Random forest (untuned),4,cataracts_Yes,0.0005494505494505475
+Random forest (untuned),4,family_history_Yes,-0.0054945054945054975
+Random forest (untuned),4,family_history_Unknown,-0.02472527472527477
+Random forest (untuned),4,smoking_status_Former,-0.013736263736263687
+Random forest (untuned),4,smoking_status_Current,-0.0005494505494505475
+Random forest (untuned),4,phenotype_adult_onset,0.0
+Random forest (untuned),4,phenotype_juvenile_onset,-0.0027472527472527596
+"Random forest (tuned, GridSearchCV)",0,log_ctg,-0.015384615384615396
+"Random forest (tuned, GridSearchCV)",0,somatic_mosaicism_index,-0.01648351648351649
+"Random forest (tuned, GridSearchCV)",0,age_at_onset,0.012087912087912068
+"Random forest (tuned, GridSearchCV)",0,disease_duration,-2.2204460492503132e-17
+"Random forest (tuned, GridSearchCV)",0,myotonia_severity,-0.025274725274725317
+"Random forest (tuned, GridSearchCV)",0,muscle_strength,0.0076923076923076875
+"Random forest (tuned, GridSearchCV)",0,pr_interval,0.02417582417582418
+"Random forest (tuned, GridSearchCV)",0,cognitive_function,0.24395604395604392
+"Random forest (tuned, GridSearchCV)",0,ck_level,0.005494505494505475
+"Random forest (tuned, GridSearchCV)",0,insulin_resistance,0.014285714285714301
+"Random forest (tuned, GridSearchCV)",0,albumin,-0.0054945054945055635
+"Random forest (tuned, GridSearchCV)",0,bmi,-0.005494505494505475
+"Random forest (tuned, GridSearchCV)",0,sex_Male,-0.001098901098901095
+"Random forest (tuned, GridSearchCV)",0,cataracts_Yes,0.0
+"Random forest (tuned, GridSearchCV)",0,family_history_Yes,0.005494505494505475
+"Random forest (tuned, GridSearchCV)",0,family_history_Unknown,0.0
+"Random forest (tuned, GridSearchCV)",0,smoking_status_Former,0.0
+"Random forest (tuned, GridSearchCV)",0,smoking_status_Current,0.0
+"Random forest (tuned, GridSearchCV)",0,phenotype_adult_onset,0.0
+"Random forest (tuned, GridSearchCV)",0,phenotype_juvenile_onset,0.0021978021978022342
+"Random forest (tuned, GridSearchCV)",1,log_ctg,0.03296703296703303
+"Random forest (tuned, GridSearchCV)",1,somatic_mosaicism_index,0.012087912087912179
+"Random forest (tuned, GridSearchCV)",1,age_at_onset,-0.012087912087912045
+"Random forest (tuned, GridSearchCV)",1,disease_duration,0.002197802197802212
+"Random forest (tuned, GridSearchCV)",1,myotonia_severity,0.010989010989011061
+"Random forest (tuned, GridSearchCV)",1,muscle_strength,0.013186813186813274
+"Random forest (tuned, GridSearchCV)",1,pr_interval,0.012087912087912111
+"Random forest (tuned, GridSearchCV)",1,cognitive_function,0.20769230769230776
+"Random forest (tuned, GridSearchCV)",1,ck_level,0.0
+"Random forest (tuned, GridSearchCV)",1,insulin_resistance,0.0010989010989011394
+"Random forest (tuned, GridSearchCV)",1,albumin,4.4408920985006264e-17
+"Random forest (tuned, GridSearchCV)",1,bmi,0.00219780219780219
+"Random forest (tuned, GridSearchCV)",1,sex_Male,0.0
+"Random forest (tuned, GridSearchCV)",1,cataracts_Yes,0.0
+"Random forest (tuned, GridSearchCV)",1,family_history_Yes,0.00219780219780219
+"Random forest (tuned, GridSearchCV)",1,family_history_Unknown,0.003296703296703285
+"Random forest (tuned, GridSearchCV)",1,smoking_status_Former,0.0
+"Random forest (tuned, GridSearchCV)",1,smoking_status_Current,0.001098901098901095
+"Random forest (tuned, GridSearchCV)",1,phenotype_adult_onset,0.0
+"Random forest (tuned, GridSearchCV)",1,phenotype_juvenile_onset,-0.002197802197802057
+"Random forest (tuned, GridSearchCV)",2,log_ctg,-0.01648351648351658
+"Random forest (tuned, GridSearchCV)",2,somatic_mosaicism_index,-0.012087912087912179
+"Random forest (tuned, GridSearchCV)",2,age_at_onset,-6.661338147750939e-17
+"Random forest (tuned, GridSearchCV)",2,disease_duration,0.00659340659340657
+"Random forest (tuned, GridSearchCV)",2,myotonia_severity,-0.009890109890109966
+"Random forest (tuned, GridSearchCV)",2,muscle_strength,0.031868131868131776
+"Random forest (tuned, GridSearchCV)",2,pr_interval,-0.014285714285714391
+"Random forest (tuned, GridSearchCV)",2,cognitive_function,0.2868131868131867
+"Random forest (tuned, GridSearchCV)",2,ck_level,-0.004395604395604491
+"Random forest (tuned, GridSearchCV)",2,insulin_resistance,-0.001098901098901206
+"Random forest (tuned, GridSearchCV)",2,albumin,0.0043956043956043574
+"Random forest (tuned, GridSearchCV)",2,bmi,-0.0010989010989012281
+"Random forest (tuned, GridSearchCV)",2,sex_Male,0.002197802197802123
+"Random forest (tuned, GridSearchCV)",2,cataracts_Yes,0.005494505494505475
+"Random forest (tuned, GridSearchCV)",2,family_history_Yes,0.001098901098901095
+"Random forest (tuned, GridSearchCV)",2,family_history_Unknown,0.00219780219780219
+"Random forest (tuned, GridSearchCV)",2,smoking_status_Former,-0.0076923076923077535
+"Random forest (tuned, GridSearchCV)",2,smoking_status_Current,-0.004395604395604491
+"Random forest (tuned, GridSearchCV)",2,phenotype_adult_onset,-0.0021978021978023453
+"Random forest (tuned, GridSearchCV)",2,phenotype_juvenile_onset,-0.0010989010989011394
+"Random forest (tuned, GridSearchCV)",3,log_ctg,-0.006593406593406614
+"Random forest (tuned, GridSearchCV)",3,somatic_mosaicism_index,0.012087912087912045
+"Random forest (tuned, GridSearchCV)",3,age_at_onset,0.020879120879120805
+"Random forest (tuned, GridSearchCV)",3,disease_duration,0.012087912087912045
+"Random forest (tuned, GridSearchCV)",3,myotonia_severity,0.007692307692307642
+"Random forest (tuned, GridSearchCV)",3,muscle_strength,0.025274725274725206
+"Random forest (tuned, GridSearchCV)",3,pr_interval,0.00659340659340657
+"Random forest (tuned, GridSearchCV)",3,cognitive_function,0.2582417582417582
+"Random forest (tuned, GridSearchCV)",3,ck_level,-4.4408920985006264e-17
+"Random forest (tuned, GridSearchCV)",3,insulin_resistance,0.023076923076923016
+"Random forest (tuned, GridSearchCV)",3,albumin,0.018681318681318636
+"Random forest (tuned, GridSearchCV)",3,bmi,0.01538461538461533
+"Random forest (tuned, GridSearchCV)",3,sex_Male,-0.00219780219780219
+"Random forest (tuned, GridSearchCV)",3,cataracts_Yes,0.00439560439560438
+"Random forest (tuned, GridSearchCV)",3,family_history_Yes,0.009890109890109855
+"Random forest (tuned, GridSearchCV)",3,family_history_Unknown,0.003296703296703285
+"Random forest (tuned, GridSearchCV)",3,smoking_status_Former,-0.001098901098901095
+"Random forest (tuned, GridSearchCV)",3,smoking_status_Current,0.003296703296703285
+"Random forest (tuned, GridSearchCV)",3,phenotype_adult_onset,0.0
+"Random forest (tuned, GridSearchCV)",3,phenotype_juvenile_onset,-0.003296703296703285
+"Random forest (tuned, GridSearchCV)",4,log_ctg,0.019780219780219776
+"Random forest (tuned, GridSearchCV)",4,somatic_mosaicism_index,-0.015384615384615375
+"Random forest (tuned, GridSearchCV)",4,age_at_onset,-0.013186813186813185
+"Random forest (tuned, GridSearchCV)",4,disease_duration,0.0043956043956044025
+"Random forest (tuned, GridSearchCV)",4,myotonia_severity,0.00219780219780219
+"Random forest (tuned, GridSearchCV)",4,muscle_strength,0.034065934065934056
+"Random forest (tuned, GridSearchCV)",4,pr_interval,-0.010989010989010995
+"Random forest (tuned, GridSearchCV)",4,cognitive_function,0.2549450549450549
+"Random forest (tuned, GridSearchCV)",4,ck_level,-0.007692307692307709
+"Random forest (tuned, GridSearchCV)",4,insulin_resistance,-0.003296703296703285
+"Random forest (tuned, GridSearchCV)",4,albumin,-0.0065934065934065925
+"Random forest (tuned, GridSearchCV)",4,bmi,-0.0054945054945054975
+"Random forest (tuned, GridSearchCV)",4,sex_Male,-0.005494505494505475
+"Random forest (tuned, GridSearchCV)",4,cataracts_Yes,-0.003296703296703285
+"Random forest (tuned, GridSearchCV)",4,family_history_Yes,-0.012087912087912111
+"Random forest (tuned, GridSearchCV)",4,family_history_Unknown,-0.030769230769230816
+"Random forest (tuned, GridSearchCV)",4,smoking_status_Former,-0.00439560439560438
+"Random forest (tuned, GridSearchCV)",4,smoking_status_Current,-0.00219780219780219
+"Random forest (tuned, GridSearchCV)",4,phenotype_adult_onset,-0.002197802197802212
+"Random forest (tuned, GridSearchCV)",4,phenotype_juvenile_onset,0.001098901098901095
+SVM (RBF) (untuned),0,log_ctg,0.018681318681318636
+SVM (RBF) (untuned),0,somatic_mosaicism_index,-0.020879120879120937
+SVM (RBF) (untuned),0,age_at_onset,-0.0065934065934067036
+SVM (RBF) (untuned),0,disease_duration,0.060439560439560405
+SVM (RBF) (untuned),0,myotonia_severity,0.024175824175824135
+SVM (RBF) (untuned),0,muscle_strength,0.029670329670329655
+SVM (RBF) (untuned),0,pr_interval,0.007692307692307621
+SVM (RBF) (untuned),0,cognitive_function,0.19560439560439555
+SVM (RBF) (untuned),0,ck_level,-0.024175824175824246
+SVM (RBF) (untuned),0,insulin_resistance,0.038461538461538394
+SVM (RBF) (untuned),0,albumin,-0.012087912087912179
+SVM (RBF) (untuned),0,bmi,-0.005494505494505586
+SVM (RBF) (untuned),0,sex_Male,0.009890109890109855
+SVM (RBF) (untuned),0,cataracts_Yes,0.005494505494505475
+SVM (RBF) (untuned),0,family_history_Yes,0.005494505494505475
+SVM (RBF) (untuned),0,family_history_Unknown,0.003296703296703285
+SVM (RBF) (untuned),0,smoking_status_Former,0.0010989010989010729
+SVM (RBF) (untuned),0,smoking_status_Current,0.01318681318681314
+SVM (RBF) (untuned),0,phenotype_adult_onset,0.0043956043956043574
+SVM (RBF) (untuned),0,phenotype_juvenile_onset,0.00219780219780219
+SVM (RBF) (untuned),1,log_ctg,0.02637362637362639
+SVM (RBF) (untuned),1,somatic_mosaicism_index,-0.0021978021978022568
+SVM (RBF) (untuned),1,age_at_onset,-0.0010989010989011171
+SVM (RBF) (untuned),1,disease_duration,-0.009890109890109943
+SVM (RBF) (untuned),1,myotonia_severity,0.05824175824175819
+SVM (RBF) (untuned),1,muscle_strength,0.036263736263736246
+SVM (RBF) (untuned),1,pr_interval,-0.02637362637362637
+SVM (RBF) (untuned),1,cognitive_function,0.112087912087912
+SVM (RBF) (untuned),1,ck_level,-0.015384615384615418
+SVM (RBF) (untuned),1,insulin_resistance,-0.0010989010989011616
+SVM (RBF) (untuned),1,albumin,-0.014285714285714346
+SVM (RBF) (untuned),1,bmi,-0.014285714285714258
+SVM (RBF) (untuned),1,sex_Male,0.007692307692307665
+SVM (RBF) (untuned),1,cataracts_Yes,-0.0054945054945055635
+SVM (RBF) (untuned),1,family_history_Yes,-0.016483516483516515
+SVM (RBF) (untuned),1,family_history_Unknown,-0.0065934065934065925
+SVM (RBF) (untuned),1,smoking_status_Former,0.005494505494505475
+SVM (RBF) (untuned),1,smoking_status_Current,-0.0065934065934065925
+SVM (RBF) (untuned),1,phenotype_adult_onset,-0.015384615384615418
+SVM (RBF) (untuned),1,phenotype_juvenile_onset,-0.0098901098901099
+SVM (RBF) (untuned),2,log_ctg,0.014285714285714346
+SVM (RBF) (untuned),2,somatic_mosaicism_index,-0.031868131868131866
+SVM (RBF) (untuned),2,age_at_onset,-0.016483516483516425
+SVM (RBF) (untuned),2,disease_duration,0.002197802197802212
+SVM (RBF) (untuned),2,myotonia_severity,0.03076923076923086
+SVM (RBF) (untuned),2,muscle_strength,0.053846153846153856
+SVM (RBF) (untuned),2,pr_interval,-0.05494505494505488
+SVM (RBF) (untuned),2,cognitive_function,0.14065934065934071
+SVM (RBF) (untuned),2,ck_level,-0.004395604395604336
+SVM (RBF) (untuned),2,insulin_resistance,0.05054945054945059
+SVM (RBF) (untuned),2,albumin,-0.0010989010989010729
+SVM (RBF) (untuned),2,bmi,-0.016483516483516446
+SVM (RBF) (untuned),2,sex_Male,-0.016483516483516425
+SVM (RBF) (untuned),2,cataracts_Yes,-0.00439560439560438
+SVM (RBF) (untuned),2,family_history_Yes,-0.005494505494505475
+SVM (RBF) (untuned),2,family_history_Unknown,0.0021978021978022342
+SVM (RBF) (untuned),2,smoking_status_Former,-0.038461538461538415
+SVM (RBF) (untuned),2,smoking_status_Current,-0.025274725274725206
+SVM (RBF) (untuned),2,phenotype_adult_onset,-0.03296703296703292
+SVM (RBF) (untuned),2,phenotype_juvenile_onset,-0.008791208791208826
+SVM (RBF) (untuned),3,log_ctg,-0.0032967032967032408
+SVM (RBF) (untuned),3,somatic_mosaicism_index,-0.007692307692307642
+SVM (RBF) (untuned),3,age_at_onset,-0.0032967032967032408
+SVM (RBF) (untuned),3,disease_duration,0.040659340659340716
+SVM (RBF) (untuned),3,myotonia_severity,0.0395604395604396
+SVM (RBF) (untuned),3,muscle_strength,0.009890109890109966
+SVM (RBF) (untuned),3,pr_interval,0.015384615384615486
+SVM (RBF) (untuned),3,cognitive_function,0.16373626373626377
+SVM (RBF) (untuned),3,ck_level,0.013186813186813251
+SVM (RBF) (untuned),3,insulin_resistance,-0.016483516483516404
+SVM (RBF) (untuned),3,albumin,0.02857142857142867
+SVM (RBF) (untuned),3,bmi,0.0065934065934066585
+SVM (RBF) (untuned),3,sex_Male,-0.0021978021978021458
+SVM (RBF) (untuned),3,cataracts_Yes,0.0010989010989011394
+SVM (RBF) (untuned),3,family_history_Yes,0.007692307692307732
+SVM (RBF) (untuned),3,family_history_Unknown,0.0
+SVM (RBF) (untuned),3,smoking_status_Former,-0.00219780219780219
+SVM (RBF) (untuned),3,smoking_status_Current,0.006593406593406614
+SVM (RBF) (untuned),3,phenotype_adult_onset,-0.00219780219780219
+SVM (RBF) (untuned),3,phenotype_juvenile_onset,-0.00219780219780219
+SVM (RBF) (untuned),4,log_ctg,0.05714285714285718
+SVM (RBF) (untuned),4,somatic_mosaicism_index,-0.006593406593406547
+SVM (RBF) (untuned),4,age_at_onset,-0.00659340659340657
+SVM (RBF) (untuned),4,disease_duration,0.04175824175824183
+SVM (RBF) (untuned),4,myotonia_severity,0.05934065934065937
+SVM (RBF) (untuned),4,muscle_strength,0.051648351648351666
+SVM (RBF) (untuned),4,pr_interval,-0.0054945054945054524
+SVM (RBF) (untuned),4,cognitive_function,0.12857142857142864
+SVM (RBF) (untuned),4,ck_level,-0.015384615384615353
+SVM (RBF) (untuned),4,insulin_resistance,0.018681318681318726
+SVM (RBF) (untuned),4,albumin,0.01978021978021982
+SVM (RBF) (untuned),4,bmi,0.04835164835164836
+SVM (RBF) (untuned),4,sex_Male,0.007692307692307732
+SVM (RBF) (untuned),4,cataracts_Yes,0.0010989010989011394
+SVM (RBF) (untuned),4,family_history_Yes,-0.027472527472527375
+SVM (RBF) (untuned),4,family_history_Unknown,-0.03736263736263725
+SVM (RBF) (untuned),4,smoking_status_Former,-0.0010989010989010729
+SVM (RBF) (untuned),4,smoking_status_Current,0.001098901098901095
+SVM (RBF) (untuned),4,phenotype_adult_onset,-0.007692307692307665
+SVM (RBF) (untuned),4,phenotype_juvenile_onset,0.001098901098901095
+"SVM (RBF) (tuned, GridSearchCV)",0,log_ctg,0.018681318681318636
+"SVM (RBF) (tuned, GridSearchCV)",0,somatic_mosaicism_index,-0.020879120879120937
+"SVM (RBF) (tuned, GridSearchCV)",0,age_at_onset,-0.0065934065934067036
+"SVM (RBF) (tuned, GridSearchCV)",0,disease_duration,0.060439560439560405
+"SVM (RBF) (tuned, GridSearchCV)",0,myotonia_severity,0.024175824175824135
+"SVM (RBF) (tuned, GridSearchCV)",0,muscle_strength,0.029670329670329655
+"SVM (RBF) (tuned, GridSearchCV)",0,pr_interval,0.007692307692307621
+"SVM (RBF) (tuned, GridSearchCV)",0,cognitive_function,0.19560439560439555
+"SVM (RBF) (tuned, GridSearchCV)",0,ck_level,-0.024175824175824246
+"SVM (RBF) (tuned, GridSearchCV)",0,insulin_resistance,0.038461538461538394
+"SVM (RBF) (tuned, GridSearchCV)",0,albumin,-0.012087912087912179
+"SVM (RBF) (tuned, GridSearchCV)",0,bmi,-0.005494505494505586
+"SVM (RBF) (tuned, GridSearchCV)",0,sex_Male,0.009890109890109855
+"SVM (RBF) (tuned, GridSearchCV)",0,cataracts_Yes,0.005494505494505475
+"SVM (RBF) (tuned, GridSearchCV)",0,family_history_Yes,0.005494505494505475
+"SVM (RBF) (tuned, GridSearchCV)",0,family_history_Unknown,0.003296703296703285
+"SVM (RBF) (tuned, GridSearchCV)",0,smoking_status_Former,0.0010989010989010729
+"SVM (RBF) (tuned, GridSearchCV)",0,smoking_status_Current,0.01318681318681314
+"SVM (RBF) (tuned, GridSearchCV)",0,phenotype_adult_onset,0.0043956043956043574
+"SVM (RBF) (tuned, GridSearchCV)",0,phenotype_juvenile_onset,0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",1,log_ctg,0.012087912087912045
+"SVM (RBF) (tuned, GridSearchCV)",1,somatic_mosaicism_index,0.01538461538461533
+"SVM (RBF) (tuned, GridSearchCV)",1,age_at_onset,0.026373626373626346
+"SVM (RBF) (tuned, GridSearchCV)",1,disease_duration,0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",1,myotonia_severity,0.04835164835164829
+"SVM (RBF) (tuned, GridSearchCV)",1,muscle_strength,0.007692307692307665
+"SVM (RBF) (tuned, GridSearchCV)",1,pr_interval,-0.005494505494505475
+"SVM (RBF) (tuned, GridSearchCV)",1,cognitive_function,0.10439560439560433
+"SVM (RBF) (tuned, GridSearchCV)",1,ck_level,0.0032967032967032408
+"SVM (RBF) (tuned, GridSearchCV)",1,insulin_resistance,0.0010989010989010729
+"SVM (RBF) (tuned, GridSearchCV)",1,albumin,0.0010989010989010505
+"SVM (RBF) (tuned, GridSearchCV)",1,bmi,-0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",1,sex_Male,0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",1,cataracts_Yes,0.0
+"SVM (RBF) (tuned, GridSearchCV)",1,family_history_Yes,-0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",1,family_history_Unknown,-0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",1,smoking_status_Former,0.005494505494505475
+"SVM (RBF) (tuned, GridSearchCV)",1,smoking_status_Current,-0.001098901098901095
+"SVM (RBF) (tuned, GridSearchCV)",1,phenotype_adult_onset,-0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",1,phenotype_juvenile_onset,-0.012087912087912156
+"SVM (RBF) (tuned, GridSearchCV)",2,log_ctg,-0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",2,somatic_mosaicism_index,-0.012087912087912045
+"SVM (RBF) (tuned, GridSearchCV)",2,age_at_onset,-0.008791208791208783
+"SVM (RBF) (tuned, GridSearchCV)",2,disease_duration,0.01648351648351647
+"SVM (RBF) (tuned, GridSearchCV)",2,myotonia_severity,0.0494505494505495
+"SVM (RBF) (tuned, GridSearchCV)",2,muscle_strength,0.03626373626373629
+"SVM (RBF) (tuned, GridSearchCV)",2,pr_interval,-0.029670329670329676
+"SVM (RBF) (tuned, GridSearchCV)",2,cognitive_function,0.1945054945054945
+"SVM (RBF) (tuned, GridSearchCV)",2,ck_level,-0.002197802197802168
+"SVM (RBF) (tuned, GridSearchCV)",2,insulin_resistance,0.0758241758241758
+"SVM (RBF) (tuned, GridSearchCV)",2,albumin,0.0021978021978022342
+"SVM (RBF) (tuned, GridSearchCV)",2,bmi,-0.02087912087912085
+"SVM (RBF) (tuned, GridSearchCV)",2,sex_Male,0.01098901098901095
+"SVM (RBF) (tuned, GridSearchCV)",2,cataracts_Yes,-0.008791208791208737
+"SVM (RBF) (tuned, GridSearchCV)",2,family_history_Yes,-0.006593406593406614
+"SVM (RBF) (tuned, GridSearchCV)",2,family_history_Unknown,-0.008791208791208805
+"SVM (RBF) (tuned, GridSearchCV)",2,smoking_status_Former,-0.04175824175824176
+"SVM (RBF) (tuned, GridSearchCV)",2,smoking_status_Current,-0.02087912087912087
+"SVM (RBF) (tuned, GridSearchCV)",2,phenotype_adult_onset,-0.01758241758241752
+"SVM (RBF) (tuned, GridSearchCV)",2,phenotype_juvenile_onset,0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",3,log_ctg,-0.018681318681318636
+"SVM (RBF) (tuned, GridSearchCV)",3,somatic_mosaicism_index,-0.006593406593406503
+"SVM (RBF) (tuned, GridSearchCV)",3,age_at_onset,2.2204460492503132e-17
+"SVM (RBF) (tuned, GridSearchCV)",3,disease_duration,0.047252747252747286
+"SVM (RBF) (tuned, GridSearchCV)",3,myotonia_severity,0.031868131868131935
+"SVM (RBF) (tuned, GridSearchCV)",3,muscle_strength,0.013186813186813228
+"SVM (RBF) (tuned, GridSearchCV)",3,pr_interval,0.01208791208791209
+"SVM (RBF) (tuned, GridSearchCV)",3,cognitive_function,0.14835164835164844
+"SVM (RBF) (tuned, GridSearchCV)",3,ck_level,0.0032967032967033292
+"SVM (RBF) (tuned, GridSearchCV)",3,insulin_resistance,-0.036263736263736204
+"SVM (RBF) (tuned, GridSearchCV)",3,albumin,0.03076923076923086
+"SVM (RBF) (tuned, GridSearchCV)",3,bmi,0.01868131868131868
+"SVM (RBF) (tuned, GridSearchCV)",3,sex_Male,0.01758241758241761
+"SVM (RBF) (tuned, GridSearchCV)",3,cataracts_Yes,0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",3,family_history_Yes,0.005494505494505475
+"SVM (RBF) (tuned, GridSearchCV)",3,family_history_Unknown,0.00659340659340657
+"SVM (RBF) (tuned, GridSearchCV)",3,smoking_status_Former,0.002197802197802212
+"SVM (RBF) (tuned, GridSearchCV)",3,smoking_status_Current,0.005494505494505475
+"SVM (RBF) (tuned, GridSearchCV)",3,phenotype_adult_onset,-0.003296703296703285
+"SVM (RBF) (tuned, GridSearchCV)",3,phenotype_juvenile_onset,-0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",4,log_ctg,0.03076923076923066
+"SVM (RBF) (tuned, GridSearchCV)",4,somatic_mosaicism_index,0.013186813186813163
+"SVM (RBF) (tuned, GridSearchCV)",4,age_at_onset,-0.004395604395604447
+"SVM (RBF) (tuned, GridSearchCV)",4,disease_duration,0.03076923076923068
+"SVM (RBF) (tuned, GridSearchCV)",4,myotonia_severity,0.05384615384615381
+"SVM (RBF) (tuned, GridSearchCV)",4,muscle_strength,0.0373626373626373
+"SVM (RBF) (tuned, GridSearchCV)",4,pr_interval,0.012087912087912045
+"SVM (RBF) (tuned, GridSearchCV)",4,cognitive_function,0.09999999999999995
+"SVM (RBF) (tuned, GridSearchCV)",4,ck_level,-0.017582417582417652
+"SVM (RBF) (tuned, GridSearchCV)",4,insulin_resistance,0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",4,albumin,0.0021978021978021458
+"SVM (RBF) (tuned, GridSearchCV)",4,bmi,0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",4,sex_Male,-0.0021978021978022342
+"SVM (RBF) (tuned, GridSearchCV)",4,cataracts_Yes,0.00219780219780219
+"SVM (RBF) (tuned, GridSearchCV)",4,family_history_Yes,-0.00439560439560438
+"SVM (RBF) (tuned, GridSearchCV)",4,family_history_Unknown,-0.013186813186813228
+"SVM (RBF) (tuned, GridSearchCV)",4,smoking_status_Former,-8.881784197001253e-17
+"SVM (RBF) (tuned, GridSearchCV)",4,smoking_status_Current,0.0
+"SVM (RBF) (tuned, GridSearchCV)",4,phenotype_adult_onset,0.0
+"SVM (RBF) (tuned, GridSearchCV)",4,phenotype_juvenile_onset,0.0
+KNN (untuned),0,log_ctg,0.02527472527472523
+KNN (untuned),0,somatic_mosaicism_index,-0.03791208791208789
+KNN (untuned),0,age_at_onset,-0.025274725274725317
+KNN (untuned),0,disease_duration,0.06813186813186808
+KNN (untuned),0,myotonia_severity,0.045054945054945075
+KNN (untuned),0,muscle_strength,0.02307692307692304
+KNN (untuned),0,pr_interval,0.018131868131868113
+KNN (untuned),0,cognitive_function,0.13241758241758242
+KNN (untuned),0,ck_level,-0.06593406593406596
+KNN (untuned),0,insulin_resistance,0.022527472527472513
+KNN (untuned),0,albumin,-0.038461538461538505
+KNN (untuned),0,bmi,-0.05274725274725274
+KNN (untuned),0,sex_Male,-0.009890109890109878
+KNN (untuned),0,cataracts_Yes,-2.2204460492503132e-17
+KNN (untuned),0,family_history_Yes,0.005494505494505475
+KNN (untuned),0,family_history_Unknown,-0.023626373626373563
+KNN (untuned),0,smoking_status_Former,-0.003296703296703307
+KNN (untuned),0,smoking_status_Current,0.00219780219780219
+KNN (untuned),0,phenotype_adult_onset,-0.007692307692307709
+KNN (untuned),0,phenotype_juvenile_onset,0.0
+KNN (untuned),1,log_ctg,-0.001648351648351598
+KNN (untuned),1,somatic_mosaicism_index,0.016483516483516536
+KNN (untuned),1,age_at_onset,-0.02417582417582409
+KNN (untuned),1,disease_duration,-0.00824175824175819
+KNN (untuned),1,myotonia_severity,0.011538461538461586
+KNN (untuned),1,muscle_strength,0.08021978021978031
+KNN (untuned),1,pr_interval,-0.0038461538461537657
+KNN (untuned),1,cognitive_function,0.10109890109890118
+KNN (untuned),1,ck_level,0.014285714285714369
+KNN (untuned),1,insulin_resistance,0.0038461538461538546
+KNN (untuned),1,albumin,0.023076923076923127
+KNN (untuned),1,bmi,0.030769230769230792
+KNN (untuned),1,sex_Male,0.01593406593406601
+KNN (untuned),1,cataracts_Yes,0.0021978021978022568
+KNN (untuned),1,family_history_Yes,-0.0016483516483515315
+KNN (untuned),1,family_history_Unknown,-0.0027472527472527375
+KNN (untuned),1,smoking_status_Former,-0.005494505494505408
+KNN (untuned),1,smoking_status_Current,0.0038461538461538767
+KNN (untuned),1,phenotype_adult_onset,-0.0027472527472526933
+KNN (untuned),1,phenotype_juvenile_onset,0.0065934065934066585
+KNN (untuned),2,log_ctg,0.014285714285714301
+KNN (untuned),2,somatic_mosaicism_index,-0.03736263736263741
+KNN (untuned),2,age_at_onset,-0.020879120879120916
+KNN (untuned),2,disease_duration,-0.011538461538461543
+KNN (untuned),2,myotonia_severity,0.028571428571428536
+KNN (untuned),2,muscle_strength,0.0038461538461538546
+KNN (untuned),2,pr_interval,-0.036813186813186814
+KNN (untuned),2,cognitive_function,0.10604395604395603
+KNN (untuned),2,ck_level,-0.01813186813186818
+KNN (untuned),2,insulin_resistance,0.06208791208791209
+KNN (untuned),2,albumin,0.03241758241758241
+KNN (untuned),2,bmi,-0.011538461538461563
+KNN (untuned),2,sex_Male,-0.036813186813186814
+KNN (untuned),2,cataracts_Yes,0.0038461538461538767
+KNN (untuned),2,family_history_Yes,0.027472527472527486
+KNN (untuned),2,family_history_Unknown,0.010989010989010995
+KNN (untuned),2,smoking_status_Former,-0.034615384615384624
+KNN (untuned),2,smoking_status_Current,-0.011538461538461543
+KNN (untuned),2,phenotype_adult_onset,-0.007692307692307732
+KNN (untuned),2,phenotype_juvenile_onset,-0.02087912087912087
+KNN (untuned),3,log_ctg,0.00439560439560438
+KNN (untuned),3,somatic_mosaicism_index,0.02802197802197808
+KNN (untuned),3,age_at_onset,-0.012637362637362638
+KNN (untuned),3,disease_duration,-0.004945054945054905
+KNN (untuned),3,myotonia_severity,-0.008241758241758167
+KNN (untuned),3,muscle_strength,-0.006593406593406526
+KNN (untuned),3,pr_interval,-0.01538461538461533
+KNN (untuned),3,cognitive_function,0.0582417582417583
+KNN (untuned),3,ck_level,0.042857142857142885
+KNN (untuned),3,insulin_resistance,-0.060439560439560405
+KNN (untuned),3,albumin,-0.00824175824175819
+KNN (untuned),3,bmi,0.003296703296703374
+KNN (untuned),3,sex_Male,0.008241758241758258
+KNN (untuned),3,cataracts_Yes,-0.005494505494505475
+KNN (untuned),3,family_history_Yes,0.011538461538461543
+KNN (untuned),3,family_history_Unknown,0.006043956043956045
+KNN (untuned),3,smoking_status_Former,0.009340659340659353
+KNN (untuned),3,smoking_status_Current,-0.009890109890109832
+KNN (untuned),3,phenotype_adult_onset,0.0060439560439560225
+KNN (untuned),3,phenotype_juvenile_onset,0.0
+KNN (untuned),4,log_ctg,0.07197802197802194
+KNN (untuned),4,somatic_mosaicism_index,-0.020329670329670414
+KNN (untuned),4,age_at_onset,-0.010989010989011016
+KNN (untuned),4,disease_duration,0.008241758241758147
+KNN (untuned),4,myotonia_severity,0.03351648351648344
+KNN (untuned),4,muscle_strength,-0.03296703296703303
+KNN (untuned),4,pr_interval,-0.022527472527472604
+KNN (untuned),4,cognitive_function,0.09835164835164831
+KNN (untuned),4,ck_level,-0.03021978021978027
+KNN (untuned),4,insulin_resistance,0.04010989010989006
+KNN (untuned),4,albumin,0.025274725274725206
+KNN (untuned),4,bmi,-0.05274725274725278
+KNN (untuned),4,sex_Male,-0.012637362637362703
+KNN (untuned),4,cataracts_Yes,-0.03571428571428579
+KNN (untuned),4,family_history_Yes,-0.012637362637362749
+KNN (untuned),4,family_history_Unknown,-0.020879120879120937
+KNN (untuned),4,smoking_status_Former,-0.019780219780219887
+KNN (untuned),4,smoking_status_Current,-0.0005494505494505475
+KNN (untuned),4,phenotype_adult_onset,-0.012637362637362658
+KNN (untuned),4,phenotype_juvenile_onset,0.00219780219780219
+"KNN (tuned, GridSearchCV)",0,log_ctg,0.03516483516483515
+"KNN (tuned, GridSearchCV)",0,somatic_mosaicism_index,0.034065934065934014
+"KNN (tuned, GridSearchCV)",0,age_at_onset,-8.881784197001253e-17
+"KNN (tuned, GridSearchCV)",0,disease_duration,0.04835164835164833
+"KNN (tuned, GridSearchCV)",0,myotonia_severity,0.031868131868131845
+"KNN (tuned, GridSearchCV)",0,muscle_strength,0.04175824175824174
+"KNN (tuned, GridSearchCV)",0,pr_interval,0.047252747252747265
+"KNN (tuned, GridSearchCV)",0,cognitive_function,0.1593406593406593
+"KNN (tuned, GridSearchCV)",0,ck_level,0.012087912087912111
+"KNN (tuned, GridSearchCV)",0,insulin_resistance,0.05164835164835162
+"KNN (tuned, GridSearchCV)",0,albumin,0.02087912087912085
+"KNN (tuned, GridSearchCV)",0,bmi,-0.007692307692307709
+"KNN (tuned, GridSearchCV)",0,sex_Male,0.03516483516483515
+"KNN (tuned, GridSearchCV)",0,cataracts_Yes,0.015384615384615396
+"KNN (tuned, GridSearchCV)",0,family_history_Yes,0.020879120879120826
+"KNN (tuned, GridSearchCV)",0,family_history_Unknown,0.03296703296703292
+"KNN (tuned, GridSearchCV)",0,smoking_status_Former,0.01538461538461533
+"KNN (tuned, GridSearchCV)",0,smoking_status_Current,0.0021978021978022342
+"KNN (tuned, GridSearchCV)",0,phenotype_adult_onset,0.0010989010989011394
+"KNN (tuned, GridSearchCV)",0,phenotype_juvenile_onset,0.0
+"KNN (tuned, GridSearchCV)",1,log_ctg,0.06208791208791211
+"KNN (tuned, GridSearchCV)",1,somatic_mosaicism_index,0.017582417582417475
+"KNN (tuned, GridSearchCV)",1,age_at_onset,0.011538461538461497
+"KNN (tuned, GridSearchCV)",1,disease_duration,0.020329670329670303
+"KNN (tuned, GridSearchCV)",1,myotonia_severity,0.0692307692307692
+"KNN (tuned, GridSearchCV)",1,muscle_strength,0.01758241758241752
+"KNN (tuned, GridSearchCV)",1,pr_interval,0.008241758241758235
+"KNN (tuned, GridSearchCV)",1,cognitive_function,0.13241758241758247
+"KNN (tuned, GridSearchCV)",1,ck_level,0.017032967032967018
+"KNN (tuned, GridSearchCV)",1,insulin_resistance,0.04120879120879117
+"KNN (tuned, GridSearchCV)",1,albumin,0.030219780219780203
+"KNN (tuned, GridSearchCV)",1,bmi,-0.02692307692307696
+"KNN (tuned, GridSearchCV)",1,sex_Male,0.00824175824175819
+"KNN (tuned, GridSearchCV)",1,cataracts_Yes,0.004945054945054861
+"KNN (tuned, GridSearchCV)",1,family_history_Yes,0.0049450549450549275
+"KNN (tuned, GridSearchCV)",1,family_history_Unknown,-0.0038461538461538767
+"KNN (tuned, GridSearchCV)",1,smoking_status_Former,0.0010989010989010505
+"KNN (tuned, GridSearchCV)",1,smoking_status_Current,0.0016483516483516204
+"KNN (tuned, GridSearchCV)",1,phenotype_adult_onset,0.009890109890109855
+"KNN (tuned, GridSearchCV)",1,phenotype_juvenile_onset,0.007692307692307642
+"KNN (tuned, GridSearchCV)",2,log_ctg,0.020879120879120937
+"KNN (tuned, GridSearchCV)",2,somatic_mosaicism_index,-0.009890109890109855
+"KNN (tuned, GridSearchCV)",2,age_at_onset,-0.01428571428571428
+"KNN (tuned, GridSearchCV)",2,disease_duration,0.003296703296703307
+"KNN (tuned, GridSearchCV)",2,myotonia_severity,0.010989010989011016
+"KNN (tuned, GridSearchCV)",2,muscle_strength,0.013186813186813185
+"KNN (tuned, GridSearchCV)",2,pr_interval,-0.010989010989010927
+"KNN (tuned, GridSearchCV)",2,cognitive_function,0.12747252747252746
+"KNN (tuned, GridSearchCV)",2,ck_level,-0.010989010989010973
+"KNN (tuned, GridSearchCV)",2,insulin_resistance,0.06483516483516487
+"KNN (tuned, GridSearchCV)",2,albumin,-0.017582417582417586
+"KNN (tuned, GridSearchCV)",2,bmi,-0.007692307692307665
+"KNN (tuned, GridSearchCV)",2,sex_Male,-0.03736263736263738
+"KNN (tuned, GridSearchCV)",2,cataracts_Yes,-0.003296703296703263
+"KNN (tuned, GridSearchCV)",2,family_history_Yes,-0.009890109890109832
+"KNN (tuned, GridSearchCV)",2,family_history_Unknown,-0.014285714285714258
+"KNN (tuned, GridSearchCV)",2,smoking_status_Former,-0.00659340659340657
+"KNN (tuned, GridSearchCV)",2,smoking_status_Current,-0.00879120879120876
+"KNN (tuned, GridSearchCV)",2,phenotype_adult_onset,0.003296703296703285
+"KNN (tuned, GridSearchCV)",2,phenotype_juvenile_onset,0.0
+"KNN (tuned, GridSearchCV)",3,log_ctg,0.03296703296703298
+"KNN (tuned, GridSearchCV)",3,somatic_mosaicism_index,0.04835164835164836
+"KNN (tuned, GridSearchCV)",3,age_at_onset,0.06153846153846152
+"KNN (tuned, GridSearchCV)",3,disease_duration,-0.014285714285714235
+"KNN (tuned, GridSearchCV)",3,myotonia_severity,0.045054945054945075
+"KNN (tuned, GridSearchCV)",3,muscle_strength,0.0032967032967033292
+"KNN (tuned, GridSearchCV)",3,pr_interval,0.013186813186813185
+"KNN (tuned, GridSearchCV)",3,cognitive_function,0.12197802197802199
+"KNN (tuned, GridSearchCV)",3,ck_level,0.03516483516483517
+"KNN (tuned, GridSearchCV)",3,insulin_resistance,-0.004395604395604336
+"KNN (tuned, GridSearchCV)",3,albumin,0.040659340659340716
+"KNN (tuned, GridSearchCV)",3,bmi,0.004395604395604424
+"KNN (tuned, GridSearchCV)",3,sex_Male,-0.018681318681318705
+"KNN (tuned, GridSearchCV)",3,cataracts_Yes,0.008791208791208826
+"KNN (tuned, GridSearchCV)",3,family_history_Yes,0.0
+"KNN (tuned, GridSearchCV)",3,family_history_Unknown,-0.0054945054945054975
+"KNN (tuned, GridSearchCV)",3,smoking_status_Former,0.0054945054945054975
+"KNN (tuned, GridSearchCV)",3,smoking_status_Current,0.0010989010989011171
+"KNN (tuned, GridSearchCV)",3,phenotype_adult_onset,0.0043956043956044025
+"KNN (tuned, GridSearchCV)",3,phenotype_juvenile_onset,0.01648351648351647
+"KNN (tuned, GridSearchCV)",4,log_ctg,0.002197802197802123
+"KNN (tuned, GridSearchCV)",4,somatic_mosaicism_index,-0.03516483516483522
+"KNN (tuned, GridSearchCV)",4,age_at_onset,-0.010439560439560491
+"KNN (tuned, GridSearchCV)",4,disease_duration,0.039010989010988914
+"KNN (tuned, GridSearchCV)",4,myotonia_severity,0.049999999999999975
+"KNN (tuned, GridSearchCV)",4,muscle_strength,0.05604395604395598
+"KNN (tuned, GridSearchCV)",4,pr_interval,-0.026923076923076984
+"KNN (tuned, GridSearchCV)",4,cognitive_function,0.10934065934065931
+"KNN (tuned, GridSearchCV)",4,ck_level,-0.03351648351648358
+"KNN (tuned, GridSearchCV)",4,insulin_resistance,0.016483516483516425
+"KNN (tuned, GridSearchCV)",4,albumin,0.019230769230769162
+"KNN (tuned, GridSearchCV)",4,bmi,-0.03186813186813191
+"KNN (tuned, GridSearchCV)",4,sex_Male,0.008791208791208715
+"KNN (tuned, GridSearchCV)",4,cataracts_Yes,-0.007142857142857162
+"KNN (tuned, GridSearchCV)",4,family_history_Yes,0.022527472527472427
+"KNN (tuned, GridSearchCV)",4,family_history_Unknown,0.0049450549450548165
+"KNN (tuned, GridSearchCV)",4,smoking_status_Former,-2.2204460492503132e-17
+"KNN (tuned, GridSearchCV)",4,smoking_status_Current,0.0005494505494505475
+"KNN (tuned, GridSearchCV)",4,phenotype_adult_onset,-0.0043956043956044685
+"KNN (tuned, GridSearchCV)",4,phenotype_juvenile_onset,-0.008791208791208848
+XGBoost (untuned),0,log_ctg,-0.02197802197802192
+XGBoost (untuned),0,somatic_mosaicism_index,-0.010989010989010973
+XGBoost (untuned),0,age_at_onset,-0.009890109890109855
+XGBoost (untuned),0,disease_duration,-0.002197802197802168
+XGBoost (untuned),0,myotonia_severity,-0.02087912087912087
+XGBoost (untuned),0,muscle_strength,-0.03516483516483515
+XGBoost (untuned),0,pr_interval,0.00219780219780219
+XGBoost (untuned),0,cognitive_function,0.25054945054945055
+XGBoost (untuned),0,ck_level,-0.01758241758241754
+XGBoost (untuned),0,insulin_resistance,0.02197802197802199
+XGBoost (untuned),0,albumin,-0.012087912087912045
+XGBoost (untuned),0,bmi,6.661338147750939e-17
+XGBoost (untuned),0,sex_Male,0.0021978021978022342
+XGBoost (untuned),0,cataracts_Yes,0.005494505494505542
+XGBoost (untuned),0,family_history_Yes,0.0
+XGBoost (untuned),0,family_history_Unknown,0.0
+XGBoost (untuned),0,smoking_status_Former,-0.003296703296703263
+XGBoost (untuned),0,smoking_status_Current,0.0
+XGBoost (untuned),0,phenotype_adult_onset,0.0
+XGBoost (untuned),0,phenotype_juvenile_onset,0.0
+XGBoost (untuned),1,log_ctg,0.04505494505494503
+XGBoost (untuned),1,somatic_mosaicism_index,0.014285714285714235
+XGBoost (untuned),1,age_at_onset,0.008791208791208783
+XGBoost (untuned),1,disease_duration,-0.0010989010989011616
+XGBoost (untuned),1,myotonia_severity,-0.02087912087912085
+XGBoost (untuned),1,muscle_strength,0.01648351648351647
+XGBoost (untuned),1,pr_interval,-0.03626373626373629
+XGBoost (untuned),1,cognitive_function,0.23516483516483513
+XGBoost (untuned),1,ck_level,0.0076923076923076875
+XGBoost (untuned),1,insulin_resistance,-0.002197802197802212
+XGBoost (untuned),1,albumin,-0.03296703296703294
+XGBoost (untuned),1,bmi,-0.007692307692307709
+XGBoost (untuned),1,sex_Male,0.015384615384615396
+XGBoost (untuned),1,cataracts_Yes,0.00439560439560438
+XGBoost (untuned),1,family_history_Yes,-0.02747252747252744
+XGBoost (untuned),1,family_history_Unknown,-0.010989010989010995
+XGBoost (untuned),1,smoking_status_Former,0.00659340659340657
+XGBoost (untuned),1,smoking_status_Current,0.0
+XGBoost (untuned),1,phenotype_adult_onset,0.0
+XGBoost (untuned),1,phenotype_juvenile_onset,0.0
+XGBoost (untuned),2,log_ctg,0.02197802197802188
+XGBoost (untuned),2,somatic_mosaicism_index,-0.0065934065934067036
+XGBoost (untuned),2,age_at_onset,0.003296703296703174
+XGBoost (untuned),2,disease_duration,-0.007692307692307732
+XGBoost (untuned),2,myotonia_severity,-0.015384615384615464
+XGBoost (untuned),2,muscle_strength,0.042857142857142774
+XGBoost (untuned),2,pr_interval,0.010989010989010905
+XGBoost (untuned),2,cognitive_function,0.33296703296703284
+XGBoost (untuned),2,ck_level,0.005494505494505431
+XGBoost (untuned),2,insulin_resistance,-0.0043956043956044685
+XGBoost (untuned),2,albumin,0.0263736263736263
+XGBoost (untuned),2,bmi,-0.0043956043956044685
+XGBoost (untuned),2,sex_Male,0.005494505494505475
+XGBoost (untuned),2,cataracts_Yes,-0.004395604395604491
+XGBoost (untuned),2,family_history_Yes,0.02087912087912076
+XGBoost (untuned),2,family_history_Unknown,0.0
+XGBoost (untuned),2,smoking_status_Former,-0.027472527472527576
+XGBoost (untuned),2,smoking_status_Current,0.0
+XGBoost (untuned),2,phenotype_adult_onset,-0.004395604395604491
+XGBoost (untuned),2,phenotype_juvenile_onset,0.0
+XGBoost (untuned),3,log_ctg,-0.018681318681318705
+XGBoost (untuned),3,somatic_mosaicism_index,0.018681318681318705
+XGBoost (untuned),3,age_at_onset,0.012087912087912068
+XGBoost (untuned),3,disease_duration,0.010989010989010905
+XGBoost (untuned),3,myotonia_severity,0.00659340659340657
+XGBoost (untuned),3,muscle_strength,-0.027472527472527486
+XGBoost (untuned),3,pr_interval,0.00879120879120876
+XGBoost (untuned),3,cognitive_function,0.29560439560439555
+XGBoost (untuned),3,ck_level,0.01758241758241752
+XGBoost (untuned),3,insulin_resistance,0.0065934065934065925
+XGBoost (untuned),3,albumin,0.02747252747252744
+XGBoost (untuned),3,bmi,0.0032967032967032408
+XGBoost (untuned),3,sex_Male,-0.0021978021978022568
+XGBoost (untuned),3,cataracts_Yes,0.0032967032967032408
+XGBoost (untuned),3,family_history_Yes,0.0
+XGBoost (untuned),3,family_history_Unknown,0.003296703296703285
+XGBoost (untuned),3,smoking_status_Former,0.0
+XGBoost (untuned),3,smoking_status_Current,0.0
+XGBoost (untuned),3,phenotype_adult_onset,-0.0010989010989011171
+XGBoost (untuned),3,phenotype_juvenile_onset,0.0
+XGBoost (untuned),4,log_ctg,0.03516483516483517
+XGBoost (untuned),4,somatic_mosaicism_index,-0.0098901098901099
+XGBoost (untuned),4,age_at_onset,0.0054945054945054975
+XGBoost (untuned),4,disease_duration,-0.009890109890109855
+XGBoost (untuned),4,myotonia_severity,-0.009890109890109832
+XGBoost (untuned),4,muscle_strength,0.014285714285714301
+XGBoost (untuned),4,pr_interval,-0.007692307692307665
+XGBoost (untuned),4,cognitive_function,0.28241758241758247
+XGBoost (untuned),4,ck_level,0.012087912087912111
+XGBoost (untuned),4,insulin_resistance,-0.0043956043956044025
+XGBoost (untuned),4,albumin,0.02967032967032972
+XGBoost (untuned),4,bmi,0.0197802197802198
+XGBoost (untuned),4,sex_Male,-0.015384615384615375
+XGBoost (untuned),4,cataracts_Yes,0.0
+XGBoost (untuned),4,family_history_Yes,-0.01648351648351647
+XGBoost (untuned),4,family_history_Unknown,-0.012087912087912045
+XGBoost (untuned),4,smoking_status_Former,0.0
+XGBoost (untuned),4,smoking_status_Current,0.0
+XGBoost (untuned),4,phenotype_adult_onset,-0.00219780219780219
+XGBoost (untuned),4,phenotype_juvenile_onset,0.0
+"XGBoost (tuned, GridSearchCV)",0,log_ctg,-0.024175824175824156
+"XGBoost (tuned, GridSearchCV)",0,somatic_mosaicism_index,-0.02197802197802199
+"XGBoost (tuned, GridSearchCV)",0,age_at_onset,-0.012087912087912156
+"XGBoost (tuned, GridSearchCV)",0,disease_duration,0.0
+"XGBoost (tuned, GridSearchCV)",0,myotonia_severity,-0.029670329670329676
+"XGBoost (tuned, GridSearchCV)",0,muscle_strength,-0.019780219780219776
+"XGBoost (tuned, GridSearchCV)",0,pr_interval,-2.2204460492503132e-17
+"XGBoost (tuned, GridSearchCV)",0,cognitive_function,0.24505494505494507
+"XGBoost (tuned, GridSearchCV)",0,ck_level,-0.013186813186813163
+"XGBoost (tuned, GridSearchCV)",0,insulin_resistance,-0.00439560439560438
+"XGBoost (tuned, GridSearchCV)",0,albumin,-0.013186813186813206
+"XGBoost (tuned, GridSearchCV)",0,bmi,0.0
+"XGBoost (tuned, GridSearchCV)",0,sex_Male,0.0
+"XGBoost (tuned, GridSearchCV)",0,cataracts_Yes,0.0
+"XGBoost (tuned, GridSearchCV)",0,family_history_Yes,0.0
+"XGBoost (tuned, GridSearchCV)",0,family_history_Unknown,0.0
+"XGBoost (tuned, GridSearchCV)",0,smoking_status_Former,0.0
+"XGBoost (tuned, GridSearchCV)",0,smoking_status_Current,0.0
+"XGBoost (tuned, GridSearchCV)",0,phenotype_adult_onset,0.0
+"XGBoost (tuned, GridSearchCV)",0,phenotype_juvenile_onset,0.0
+"XGBoost (tuned, GridSearchCV)",1,log_ctg,0.01758241758241752
+"XGBoost (tuned, GridSearchCV)",1,somatic_mosaicism_index,0.00879120879120876
+"XGBoost (tuned, GridSearchCV)",1,age_at_onset,0.0054945054945053865
+"XGBoost (tuned, GridSearchCV)",1,disease_duration,-0.008791208791208848
+"XGBoost (tuned, GridSearchCV)",1,myotonia_severity,-0.029670329670329742
+"XGBoost (tuned, GridSearchCV)",1,muscle_strength,0.020879120879120826
+"XGBoost (tuned, GridSearchCV)",1,pr_interval,0.007692307692307665
+"XGBoost (tuned, GridSearchCV)",1,cognitive_function,0.17802197802197794
+"XGBoost (tuned, GridSearchCV)",1,ck_level,0.01538461538461533
+"XGBoost (tuned, GridSearchCV)",1,insulin_resistance,-0.003296703296703418
+"XGBoost (tuned, GridSearchCV)",1,albumin,-0.015384615384615464
+"XGBoost (tuned, GridSearchCV)",1,bmi,-0.007692307692307709
+"XGBoost (tuned, GridSearchCV)",1,sex_Male,0.0054945054945053865
+"XGBoost (tuned, GridSearchCV)",1,cataracts_Yes,-0.0032967032967033292
+"XGBoost (tuned, GridSearchCV)",1,family_history_Yes,-0.01868131868131877
+"XGBoost (tuned, GridSearchCV)",1,family_history_Unknown,-0.0010989010989011171
+"XGBoost (tuned, GridSearchCV)",1,smoking_status_Former,0.0021978021978021458
+"XGBoost (tuned, GridSearchCV)",1,smoking_status_Current,0.0
+"XGBoost (tuned, GridSearchCV)",1,phenotype_adult_onset,0.0
+"XGBoost (tuned, GridSearchCV)",1,phenotype_juvenile_onset,0.0
+"XGBoost (tuned, GridSearchCV)",2,log_ctg,-0.017582417582417475
+"XGBoost (tuned, GridSearchCV)",2,somatic_mosaicism_index,-0.02197802197802192
+"XGBoost (tuned, GridSearchCV)",2,age_at_onset,-0.02087912087912074
+"XGBoost (tuned, GridSearchCV)",2,disease_duration,-0.007692307692307642
+"XGBoost (tuned, GridSearchCV)",2,myotonia_severity,-0.03296703296703296
+"XGBoost (tuned, GridSearchCV)",2,muscle_strength,0.025274725274725362
+"XGBoost (tuned, GridSearchCV)",2,pr_interval,-0.035164835164835
+"XGBoost (tuned, GridSearchCV)",2,cognitive_function,0.30989010989011
+"XGBoost (tuned, GridSearchCV)",2,ck_level,-0.0010989010989010284
+"XGBoost (tuned, GridSearchCV)",2,insulin_resistance,-0.02087912087912076
+"XGBoost (tuned, GridSearchCV)",2,albumin,-0.01868131868131855
+"XGBoost (tuned, GridSearchCV)",2,bmi,-0.009890109890109789
+"XGBoost (tuned, GridSearchCV)",2,sex_Male,-0.0043956043956043574
+"XGBoost (tuned, GridSearchCV)",2,cataracts_Yes,-0.020879120879120715
+"XGBoost (tuned, GridSearchCV)",2,family_history_Yes,0.0
+"XGBoost (tuned, GridSearchCV)",2,family_history_Unknown,0.0
+"XGBoost (tuned, GridSearchCV)",2,smoking_status_Former,-0.014285714285714235
+"XGBoost (tuned, GridSearchCV)",2,smoking_status_Current,-0.0065934065934064815
+"XGBoost (tuned, GridSearchCV)",2,phenotype_adult_onset,0.0
+"XGBoost (tuned, GridSearchCV)",2,phenotype_juvenile_onset,0.0
+"XGBoost (tuned, GridSearchCV)",3,log_ctg,-0.020879120879120784
+"XGBoost (tuned, GridSearchCV)",3,somatic_mosaicism_index,0.014285714285714369
+"XGBoost (tuned, GridSearchCV)",3,age_at_onset,0.015384615384615486
+"XGBoost (tuned, GridSearchCV)",3,disease_duration,0.014285714285714369
+"XGBoost (tuned, GridSearchCV)",3,myotonia_severity,0.003296703296703374
+"XGBoost (tuned, GridSearchCV)",3,muscle_strength,-0.020879120879120805
+"XGBoost (tuned, GridSearchCV)",3,pr_interval,-0.014285714285714212
+"XGBoost (tuned, GridSearchCV)",3,cognitive_function,0.2802197802197803
+"XGBoost (tuned, GridSearchCV)",3,ck_level,0.020879120879120916
+"XGBoost (tuned, GridSearchCV)",3,insulin_resistance,0.01758241758241763
+"XGBoost (tuned, GridSearchCV)",3,albumin,0.018681318681318726
+"XGBoost (tuned, GridSearchCV)",3,bmi,0.009890109890109943
+"XGBoost (tuned, GridSearchCV)",3,sex_Male,2.2204460492503132e-17
+"XGBoost (tuned, GridSearchCV)",3,cataracts_Yes,0.0054945054945055635
+"XGBoost (tuned, GridSearchCV)",3,family_history_Yes,0.001098901098901095
+"XGBoost (tuned, GridSearchCV)",3,family_history_Unknown,0.003296703296703307
+"XGBoost (tuned, GridSearchCV)",3,smoking_status_Former,0.0
+"XGBoost (tuned, GridSearchCV)",3,smoking_status_Current,-0.001098901098901095
+"XGBoost (tuned, GridSearchCV)",3,phenotype_adult_onset,-0.00219780219780219
+"XGBoost (tuned, GridSearchCV)",3,phenotype_juvenile_onset,0.0
+"XGBoost (tuned, GridSearchCV)",4,log_ctg,0.015384615384615375
+"XGBoost (tuned, GridSearchCV)",4,somatic_mosaicism_index,-0.017582417582417586
+"XGBoost (tuned, GridSearchCV)",4,age_at_onset,-0.0076923076923076875
+"XGBoost (tuned, GridSearchCV)",4,disease_duration,-0.003296703296703285
+"XGBoost (tuned, GridSearchCV)",4,myotonia_severity,-2.2204460492503132e-17
+"XGBoost (tuned, GridSearchCV)",4,muscle_strength,0.00879120879120876
+"XGBoost (tuned, GridSearchCV)",4,pr_interval,0.0021978021978021458
+"XGBoost (tuned, GridSearchCV)",4,cognitive_function,0.3131868131868132
+"XGBoost (tuned, GridSearchCV)",4,ck_level,0.002197802197802168
+"XGBoost (tuned, GridSearchCV)",4,insulin_resistance,0.009890109890109855
+"XGBoost (tuned, GridSearchCV)",4,albumin,0.005494505494505475
+"XGBoost (tuned, GridSearchCV)",4,bmi,0.001098901098901095
+"XGBoost (tuned, GridSearchCV)",4,sex_Male,-0.01208791208791209
+"XGBoost (tuned, GridSearchCV)",4,cataracts_Yes,0.00219780219780219
+"XGBoost (tuned, GridSearchCV)",4,family_history_Yes,0.007692307692307665
+"XGBoost (tuned, GridSearchCV)",4,family_history_Unknown,-0.016483516483516536
+"XGBoost (tuned, GridSearchCV)",4,smoking_status_Former,-0.00219780219780219
+"XGBoost (tuned, GridSearchCV)",4,smoking_status_Current,0.0
+"XGBoost (tuned, GridSearchCV)",4,phenotype_adult_onset,0.0
+"XGBoost (tuned, GridSearchCV)",4,phenotype_juvenile_onset,0.0
+"MLP (16,) (untuned)",0,log_ctg,-0.015384615384615396
+"MLP (16,) (untuned)",0,somatic_mosaicism_index,-0.027472527472527465
+"MLP (16,) (untuned)",0,age_at_onset,-0.047252747252747265
+"MLP (16,) (untuned)",0,disease_duration,0.03516483516483517
+"MLP (16,) (untuned)",0,myotonia_severity,0.05714285714285716
+"MLP (16,) (untuned)",0,muscle_strength,-0.015384615384615375
+"MLP (16,) (untuned)",0,pr_interval,-0.015384615384615418
+"MLP (16,) (untuned)",0,cognitive_function,0.22527472527472528
+"MLP (16,) (untuned)",0,ck_level,-0.06483516483516485
+"MLP (16,) (untuned)",0,insulin_resistance,0.03186813186813189
+"MLP (16,) (untuned)",0,albumin,-0.031868131868131866
+"MLP (16,) (untuned)",0,bmi,-0.013186813186813185
+"MLP (16,) (untuned)",0,sex_Male,-0.0054945054945054975
+"MLP (16,) (untuned)",0,cataracts_Yes,-0.01868131868131868
+"MLP (16,) (untuned)",0,family_history_Yes,0.007692307692307642
+"MLP (16,) (untuned)",0,family_history_Unknown,0.010989010989010973
+"MLP (16,) (untuned)",0,smoking_status_Former,-0.009890109890109878
+"MLP (16,) (untuned)",0,smoking_status_Current,-0.038461538461538415
+"MLP (16,) (untuned)",0,phenotype_adult_onset,-0.01428571428571428
+"MLP (16,) (untuned)",0,phenotype_juvenile_onset,-0.00439560439560438
+"MLP (16,) (untuned)",1,log_ctg,0.010989010989010973
+"MLP (16,) (untuned)",1,somatic_mosaicism_index,-0.05274725274725276
+"MLP (16,) (untuned)",1,age_at_onset,0.0054945054945054975
+"MLP (16,) (untuned)",1,disease_duration,0.004395604395604336
+"MLP (16,) (untuned)",1,myotonia_severity,0.03956043956043953
+"MLP (16,) (untuned)",1,muscle_strength,0.09780219780219779
+"MLP (16,) (untuned)",1,pr_interval,-0.02197802197802199
+"MLP (16,) (untuned)",1,cognitive_function,0.10989010989010983
+"MLP (16,) (untuned)",1,ck_level,0.027472527472527465
+"MLP (16,) (untuned)",1,insulin_resistance,0.053846153846153835
+"MLP (16,) (untuned)",1,albumin,-0.0065934065934065925
+"MLP (16,) (untuned)",1,bmi,-0.038461538461538505
+"MLP (16,) (untuned)",1,sex_Male,-0.004395604395604447
+"MLP (16,) (untuned)",1,cataracts_Yes,0.017582417582417565
+"MLP (16,) (untuned)",1,family_history_Yes,-0.020879120879120916
+"MLP (16,) (untuned)",1,family_history_Unknown,-0.001098901098901095
+"MLP (16,) (untuned)",1,smoking_status_Former,-0.009890109890109921
+"MLP (16,) (untuned)",1,smoking_status_Current,-0.049450549450549476
+"MLP (16,) (untuned)",1,phenotype_adult_onset,-0.015384615384615418
+"MLP (16,) (untuned)",1,phenotype_juvenile_onset,-0.023076923076923085
+"MLP (16,) (untuned)",2,log_ctg,0.025274725274725206
+"MLP (16,) (untuned)",2,somatic_mosaicism_index,0.007692307692307642
+"MLP (16,) (untuned)",2,age_at_onset,-0.028571428571428626
+"MLP (16,) (untuned)",2,disease_duration,0.007692307692307598
+"MLP (16,) (untuned)",2,myotonia_severity,0.049450549450549365
+"MLP (16,) (untuned)",2,muscle_strength,0.07472527472527461
+"MLP (16,) (untuned)",2,pr_interval,-0.009890109890109966
+"MLP (16,) (untuned)",2,cognitive_function,0.13626373626373617
+"MLP (16,) (untuned)",2,ck_level,0.001098901098901006
+"MLP (16,) (untuned)",2,insulin_resistance,0.14065934065934055
+"MLP (16,) (untuned)",2,albumin,0.031868131868131755
+"MLP (16,) (untuned)",2,bmi,0.03296703296703289
+"MLP (16,) (untuned)",2,sex_Male,0.003296703296703218
+"MLP (16,) (untuned)",2,cataracts_Yes,-0.0065934065934067036
+"MLP (16,) (untuned)",2,family_history_Yes,-0.029670329670329697
+"MLP (16,) (untuned)",2,family_history_Unknown,-0.001098901098901095
+"MLP (16,) (untuned)",2,smoking_status_Former,-0.023076923076923172
+"MLP (16,) (untuned)",2,smoking_status_Current,-0.04175824175824183
+"MLP (16,) (untuned)",2,phenotype_adult_onset,-0.005494505494505586
+"MLP (16,) (untuned)",2,phenotype_juvenile_onset,0.002197802197802101
+"MLP (16,) (untuned)",3,log_ctg,0.0010989010989010505
+"MLP (16,) (untuned)",3,somatic_mosaicism_index,0.0043956043956043574
+"MLP (16,) (untuned)",3,age_at_onset,0.012087912087912045
+"MLP (16,) (untuned)",3,disease_duration,0.04395604395604387
+"MLP (16,) (untuned)",3,myotonia_severity,0.03736263736263727
+"MLP (16,) (untuned)",3,muscle_strength,-0.020879120879120982
+"MLP (16,) (untuned)",3,pr_interval,-0.005494505494505519
+"MLP (16,) (untuned)",3,cognitive_function,0.08681318681318675
+"MLP (16,) (untuned)",3,ck_level,-0.012087912087912111
+"MLP (16,) (untuned)",3,insulin_resistance,-0.020879120879120916
+"MLP (16,) (untuned)",3,albumin,-0.013186813186813296
+"MLP (16,) (untuned)",3,bmi,0.007692307692307621
+"MLP (16,) (untuned)",3,sex_Male,0.02417582417582411
+"MLP (16,) (untuned)",3,cataracts_Yes,0.008791208791208737
+"MLP (16,) (untuned)",3,family_history_Yes,-0.00879120879120876
+"MLP (16,) (untuned)",3,family_history_Unknown,-0.003296703296703307
+"MLP (16,) (untuned)",3,smoking_status_Former,0.009890109890109832
+"MLP (16,) (untuned)",3,smoking_status_Current,0.018681318681318615
+"MLP (16,) (untuned)",3,phenotype_adult_onset,0.002197802197802168
+"MLP (16,) (untuned)",3,phenotype_juvenile_onset,0.003296703296703263
+"MLP (16,) (untuned)",4,log_ctg,0.014285714285714258
+"MLP (16,) (untuned)",4,somatic_mosaicism_index,-0.029670329670329676
+"MLP (16,) (untuned)",4,age_at_onset,0.01868131868131866
+"MLP (16,) (untuned)",4,disease_duration,0.013186813186813185
+"MLP (16,) (untuned)",4,myotonia_severity,0.0659340659340659
+"MLP (16,) (untuned)",4,muscle_strength,0.06483516483516477
+"MLP (16,) (untuned)",4,pr_interval,0.028571428571428536
+"MLP (16,) (untuned)",4,cognitive_function,0.178021978021978
+"MLP (16,) (untuned)",4,ck_level,0.02087912087912085
+"MLP (16,) (untuned)",4,insulin_resistance,0.01098901098901095
+"MLP (16,) (untuned)",4,albumin,0.010989010989010973
+"MLP (16,) (untuned)",4,bmi,0.054945054945054916
+"MLP (16,) (untuned)",4,sex_Male,0.0054945054945054524
+"MLP (16,) (untuned)",4,cataracts_Yes,0.05164835164835161
+"MLP (16,) (untuned)",4,family_history_Yes,-0.023076923076923106
+"MLP (16,) (untuned)",4,family_history_Unknown,-0.1351648351648352
+"MLP (16,) (untuned)",4,smoking_status_Former,-0.017582417582417586
+"MLP (16,) (untuned)",4,smoking_status_Current,-0.014285714285714323
+"MLP (16,) (untuned)",4,phenotype_adult_onset,-0.0032967032967033292
+"MLP (16,) (untuned)",4,phenotype_juvenile_onset,0.01098901098901095
+"MLP (16,) (tuned, GridSearchCV)",0,log_ctg,-0.024175824175824135
+"MLP (16,) (tuned, GridSearchCV)",0,somatic_mosaicism_index,-0.03296703296703296
+"MLP (16,) (tuned, GridSearchCV)",0,age_at_onset,-0.03516483516483513
+"MLP (16,) (tuned, GridSearchCV)",0,disease_duration,0.07032967032967037
+"MLP (16,) (tuned, GridSearchCV)",0,myotonia_severity,0.04505494505494512
+"MLP (16,) (tuned, GridSearchCV)",0,muscle_strength,-0.004395604395604313
+"MLP (16,) (tuned, GridSearchCV)",0,pr_interval,-0.018681318681318615
+"MLP (16,) (tuned, GridSearchCV)",0,cognitive_function,0.2263736263736264
+"MLP (16,) (tuned, GridSearchCV)",0,ck_level,-0.05934065934065931
+"MLP (16,) (tuned, GridSearchCV)",0,insulin_resistance,0.03736263736263743
+"MLP (16,) (tuned, GridSearchCV)",0,albumin,-0.012087912087912
+"MLP (16,) (tuned, GridSearchCV)",0,bmi,0.003296703296703374
+"MLP (16,) (tuned, GridSearchCV)",0,sex_Male,-0.02307692307692304
+"MLP (16,) (tuned, GridSearchCV)",0,cataracts_Yes,8.881784197001253e-17
+"MLP (16,) (tuned, GridSearchCV)",0,family_history_Yes,-0.02197802197802188
+"MLP (16,) (tuned, GridSearchCV)",0,family_history_Unknown,8.881784197001253e-17
+"MLP (16,) (tuned, GridSearchCV)",0,smoking_status_Former,-0.015384615384615353
+"MLP (16,) (tuned, GridSearchCV)",0,smoking_status_Current,-0.014285714285714146
+"MLP (16,) (tuned, GridSearchCV)",0,phenotype_adult_onset,-0.014285714285714235
+"MLP (16,) (tuned, GridSearchCV)",0,phenotype_juvenile_onset,-0.008791208791208694
+"MLP (16,) (tuned, GridSearchCV)",1,log_ctg,0.03296703296703298
+"MLP (16,) (tuned, GridSearchCV)",1,somatic_mosaicism_index,-0.01428571428571428
+"MLP (16,) (tuned, GridSearchCV)",1,age_at_onset,0.06703296703296702
+"MLP (16,) (tuned, GridSearchCV)",1,disease_duration,0.01098901098901095
+"MLP (16,) (tuned, GridSearchCV)",1,myotonia_severity,0.08241758241758239
+"MLP (16,) (tuned, GridSearchCV)",1,muscle_strength,0.14945054945054942
+"MLP (16,) (tuned, GridSearchCV)",1,pr_interval,-0.009890109890109878
+"MLP (16,) (tuned, GridSearchCV)",1,cognitive_function,0.16813186813186815
+"MLP (16,) (tuned, GridSearchCV)",1,ck_level,0.045054945054945096
+"MLP (16,) (tuned, GridSearchCV)",1,insulin_resistance,0.10439560439560443
+"MLP (16,) (tuned, GridSearchCV)",1,albumin,0.012087912087912022
+"MLP (16,) (tuned, GridSearchCV)",1,bmi,-0.0043956043956043574
+"MLP (16,) (tuned, GridSearchCV)",1,sex_Male,0.007692307692307709
+"MLP (16,) (tuned, GridSearchCV)",1,cataracts_Yes,0.04835164835164833
+"MLP (16,) (tuned, GridSearchCV)",1,family_history_Yes,-0.008791208791208805
+"MLP (16,) (tuned, GridSearchCV)",1,family_history_Unknown,-0.007692307692307665
+"MLP (16,) (tuned, GridSearchCV)",1,smoking_status_Former,0.003296703296703307
+"MLP (16,) (tuned, GridSearchCV)",1,smoking_status_Current,-0.021978021978021945
+"MLP (16,) (tuned, GridSearchCV)",1,phenotype_adult_onset,0.002197802197802212
+"MLP (16,) (tuned, GridSearchCV)",1,phenotype_juvenile_onset,0.0054945054945054975
+"MLP (16,) (tuned, GridSearchCV)",2,log_ctg,0.025274725274725206
+"MLP (16,) (tuned, GridSearchCV)",2,somatic_mosaicism_index,0.007692307692307642
+"MLP (16,) (tuned, GridSearchCV)",2,age_at_onset,-0.028571428571428626
+"MLP (16,) (tuned, GridSearchCV)",2,disease_duration,0.007692307692307598
+"MLP (16,) (tuned, GridSearchCV)",2,myotonia_severity,0.049450549450549365
+"MLP (16,) (tuned, GridSearchCV)",2,muscle_strength,0.07472527472527461
+"MLP (16,) (tuned, GridSearchCV)",2,pr_interval,-0.009890109890109966
+"MLP (16,) (tuned, GridSearchCV)",2,cognitive_function,0.13626373626373617
+"MLP (16,) (tuned, GridSearchCV)",2,ck_level,0.001098901098901006
+"MLP (16,) (tuned, GridSearchCV)",2,insulin_resistance,0.14065934065934055
+"MLP (16,) (tuned, GridSearchCV)",2,albumin,0.031868131868131755
+"MLP (16,) (tuned, GridSearchCV)",2,bmi,0.03296703296703289
+"MLP (16,) (tuned, GridSearchCV)",2,sex_Male,0.003296703296703218
+"MLP (16,) (tuned, GridSearchCV)",2,cataracts_Yes,-0.0065934065934067036
+"MLP (16,) (tuned, GridSearchCV)",2,family_history_Yes,-0.029670329670329697
+"MLP (16,) (tuned, GridSearchCV)",2,family_history_Unknown,-0.001098901098901095
+"MLP (16,) (tuned, GridSearchCV)",2,smoking_status_Former,-0.023076923076923172
+"MLP (16,) (tuned, GridSearchCV)",2,smoking_status_Current,-0.04175824175824183
+"MLP (16,) (tuned, GridSearchCV)",2,phenotype_adult_onset,-0.005494505494505586
+"MLP (16,) (tuned, GridSearchCV)",2,phenotype_juvenile_onset,0.002197802197802101
+"MLP (16,) (tuned, GridSearchCV)",3,log_ctg,-0.01978021978021973
+"MLP (16,) (tuned, GridSearchCV)",3,somatic_mosaicism_index,-0.013186813186813185
+"MLP (16,) (tuned, GridSearchCV)",3,age_at_onset,0.017582417582417586
+"MLP (16,) (tuned, GridSearchCV)",3,disease_duration,0.026373626373626412
+"MLP (16,) (tuned, GridSearchCV)",3,myotonia_severity,0.049450549450549455
+"MLP (16,) (tuned, GridSearchCV)",3,muscle_strength,2.2204460492503132e-17
+"MLP (16,) (tuned, GridSearchCV)",3,pr_interval,-0.00219780219780219
+"MLP (16,) (tuned, GridSearchCV)",3,cognitive_function,0.1307692307692308
+"MLP (16,) (tuned, GridSearchCV)",3,ck_level,-0.014285714285714258
+"MLP (16,) (tuned, GridSearchCV)",3,insulin_resistance,0.0054945054945054975
+"MLP (16,) (tuned, GridSearchCV)",3,albumin,2.2204460492503132e-17
+"MLP (16,) (tuned, GridSearchCV)",3,bmi,0.002197802197802212
+"MLP (16,) (tuned, GridSearchCV)",3,sex_Male,-0.007692307692307665
+"MLP (16,) (tuned, GridSearchCV)",3,cataracts_Yes,-2.2204460492503132e-17
+"MLP (16,) (tuned, GridSearchCV)",3,family_history_Yes,-0.003296703296703285
+"MLP (16,) (tuned, GridSearchCV)",3,family_history_Unknown,0.020879120879120895
+"MLP (16,) (tuned, GridSearchCV)",3,smoking_status_Former,0.00439560439560438
+"MLP (16,) (tuned, GridSearchCV)",3,smoking_status_Current,0.0098901098901099
+"MLP (16,) (tuned, GridSearchCV)",3,phenotype_adult_onset,0.00219780219780219
+"MLP (16,) (tuned, GridSearchCV)",3,phenotype_juvenile_onset,-0.020879120879120895
+"MLP (16,) (tuned, GridSearchCV)",4,log_ctg,0.06593406593406596
+"MLP (16,) (tuned, GridSearchCV)",4,somatic_mosaicism_index,-0.015384615384615375
+"MLP (16,) (tuned, GridSearchCV)",4,age_at_onset,0.025274725274725296
+"MLP (16,) (tuned, GridSearchCV)",4,disease_duration,0.025274725274725275
+"MLP (16,) (tuned, GridSearchCV)",4,myotonia_severity,0.05714285714285714
+"MLP (16,) (tuned, GridSearchCV)",4,muscle_strength,0.07802197802197801
+"MLP (16,) (tuned, GridSearchCV)",4,pr_interval,0.042857142857142885
+"MLP (16,) (tuned, GridSearchCV)",4,cognitive_function,0.12197802197802202
+"MLP (16,) (tuned, GridSearchCV)",4,ck_level,-0.01868131868131866
+"MLP (16,) (tuned, GridSearchCV)",4,insulin_resistance,0.018681318681318726
+"MLP (16,) (tuned, GridSearchCV)",4,albumin,-0.0010989010989010729
+"MLP (16,) (tuned, GridSearchCV)",4,bmi,0.061538461538461584
+"MLP (16,) (tuned, GridSearchCV)",4,sex_Male,0.0032967032967033292
+"MLP (16,) (tuned, GridSearchCV)",4,cataracts_Yes,0.013186813186813228
+"MLP (16,) (tuned, GridSearchCV)",4,family_history_Yes,0.0032967032967033292
+"MLP (16,) (tuned, GridSearchCV)",4,family_history_Unknown,-0.0714285714285714
+"MLP (16,) (tuned, GridSearchCV)",4,smoking_status_Former,-0.007692307692307665
+"MLP (16,) (tuned, GridSearchCV)",4,smoking_status_Current,0.008791208791208805
+"MLP (16,) (tuned, GridSearchCV)",4,phenotype_adult_onset,-0.009890109890109855
+"MLP (16,) (tuned, GridSearchCV)",4,phenotype_juvenile_onset,0.001098901098901095

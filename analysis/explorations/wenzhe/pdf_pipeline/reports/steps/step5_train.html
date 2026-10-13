@@ -1,0 +1,1060 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>DM1 Step 5: Train</title><style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:1180px;margin:1.2em auto;line-height:1.5;padding:0 1em;color:#222}
+.t{border-collapse:collapse;font-size:12.5px;margin:.4em 0}.t td,.t th{border:1px solid #ccc;padding:3px 8px;text-align:left;vertical-align:top}.t th{background:#f3f5f8}
+.box{background:#f4f7fb;border-left:4px solid #3a6ea5;padding:.4em 1em;margin:1em 0}.warn{background:#fff8e1;border-left:4px solid #e0a800;padding:.4em 1em;margin:1em 0}
+.note{color:#555;font-size:13px}.cap{font-weight:600;margin:.9em 0 0}h2{border-bottom:2px solid var(--c);padding-bottom:2px;margin-top:1.6em}h3{margin-bottom:.2em}
+.strip{display:flex;gap:8px;margin:.5em 0 1em;flex-wrap:wrap}.cell{flex:1;min-width:140px;text-decoration:none;color:#222;background:var(--bg);border-radius:10px;padding:8px 10px;border:2px solid transparent;font-size:12px}
+.cell.on{border-color:var(--c)}.cell .n{display:inline-block;background:var(--c);color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;margin-right:6px}
+.nav{display:flex;justify-content:space-between;margin:.8em 0}.nav a{color:#3a6ea5;text-decoration:none}details{margin:.5em 0}summary{cursor:pointer;color:#3a6ea5}
+.foot{color:#555;font-size:12px;border-top:1px solid #ddd;margin-top:2em;padding-top:.6em}.sig{background:#bfe3c8}.bor{background:#fbe7a6}.noi{color:#777}.req td:first-child{width:32%}</style></head><body style='--c:#6c5ce7'><div class="strip"><a href="step1_understand.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">1</span><b>Understand</b></a><a href="step2_split_cv.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">2</span><b>Split / Cross-validation</b></a><a href="step3_preprocess.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">3</span><b>Preprocess</b></a><a href="step4_select.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">4</span><b>Select</b></a><a href="step5_train.html" class="cell on" style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">5</span><b>Train</b></a><a href="step6_evaluate.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">6</span><b>Evaluate</b></a></div><div class="nav"><a href="step4_select.html">&larr; Step 4: Select</a><span><a href="index.html">Index</a> &middot; <a href="../summary.html">Summary</a></span><a href="step6_evaluate.html">Step 6: Evaluate &rarr;</a></div><h1 style='color:#6c5ce7'>Step 5 &middot; Fit and tune on the training set only</h1><div class="box">Covariate methods and ML methods are fitted and compared by repeated CV on TRAIN. Nothing here uses the test set.</div><h2>PDF requirements for this step</h2><table class="dataframe t req">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Kickoff says</th>
+      <th>What we did</th>
+      <th>Where</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fit and tune using the training set only</td>
+      <td>Every number on this page is repeated 5-fold x3 CV on TRAIN; the test set is not read</td>
+      <td>5.1-5.4</td>
+    </tr>
+    <tr>
+      <td>Show untuned and tuned results</td>
+      <td>Each ML method has an untuned and a tuned (small GridSearchCV) row; table 5.2 shows untuned &rarr; tuned</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>Keep grids small / coarse on small arms</td>
+      <td>Grids of 5-12 combinations, inner 3-fold</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>Stepwise lists selected terms; LASSO and elastic net list non-zero coefficients</td>
+      <td>Retained terms of each selector (full-train fit)</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>Per-method 'watch out'</td>
+      <td>One line per method taken from the kickoff method slides</td>
+      <td>5.1, 5.2</td>
+    </tr>
+  </tbody>
+</table><h2>5.1 Covariate track: CV scoreboard</h2>
+<p>Metric: repeated 5-fold x3 CV on TRAIN (mean &plusmn; SD over the 3 repeats; the SD is small because the folds repeat the same patients, it is not a confidence interval). Bold = best covariate model of that arm.</p>
+<p class=cap>Continuous outcome: CV RMSE (original units; lower is better)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Settings</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+      <th>Watch out (kickoff)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lm / glm (all)</td>
+      <td>lm (continuous) / binomial glm (label), all columns</td>
+      <td>0.842 &plusmn; 0.021</td>
+      <td>1.692 &plusmn; 0.052</td>
+      <td>2.642 &plusmn; 0.086</td>
+      <td>Assumes linear effects; sensitive to outliers; will not capture non-linear effects.</td>
+    </tr>
+    <tr>
+      <td>Stepwise (BIC)</td>
+      <td>MASS::stepAIC, direction both, penalty log(n)</td>
+      <td>0.811 &plusmn; 0.003</td>
+      <td>1.531 &plusmn; 0.030</td>
+      <td>2.446 &plusmn; 0.019</td>
+      <td>Unstable: a slightly different dataset can select a very different set; do not treat the final model as the truth.</td>
+    </tr>
+    <tr>
+      <td>Best subset (BIC)</td>
+      <td>leaps::regsubsets, exhaustive, nvmax 10, lowest BIC (continuous only)</td>
+      <td>0.802 &plusmn; 0.006</td>
+      <td>1.531 &plusmn; 0.030</td>
+      <td>2.458 &plusmn; 0.035</td>
+      <td>Costly beyond about 20-25 covariates; choose by BIC, not R2.</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>glmnet alpha=0, lambda by 10-fold CV</td>
+      <td>0.832 &plusmn; 0.019</td>
+      <td>1.517 &plusmn; 0.008</td>
+      <td>2.567 &plusmn; 0.030</td>
+      <td>Needs CV for lambda; keeps every covariate (shrunk, never zero).</td>
+    </tr>
+    <tr>
+      <td>LASSO</td>
+      <td>glmnet alpha=1, lambda.min by 10-fold CV</td>
+      <td><b>0.795 &plusmn; 0.003</b></td>
+      <td>1.515 &plusmn; 0.011</td>
+      <td>2.486 &plusmn; 0.056</td>
+      <td>Can arbitrarily drop one of two highly correlated covariates; important variables may vanish.</td>
+    </tr>
+    <tr>
+      <td>Elastic net</td>
+      <td>glmnet alpha=0.5, lambda.min by 10-fold CV</td>
+      <td>0.799 &plusmn; 0.007</td>
+      <td>1.511 &plusmn; 0.008</td>
+      <td>2.515 &plusmn; 0.045</td>
+      <td>Needs CV for lambda; mixes the ridge and LASSO behaviour.</td>
+    </tr>
+    <tr>
+      <td>GAM</td>
+      <td>mgcv: s(x, k=5) per numeric covariate, dummies linear, REML, select=TRUE</td>
+      <td>0.815 &plusmn; 0.019</td>
+      <td>1.669 &plusmn; 0.045</td>
+      <td><b>2.422 &plusmn; 0.056</b></td>
+      <td>Harder to interpret; k too small misses patterns, too large overfits.</td>
+    </tr>
+    <tr>
+      <td>PCR</td>
+      <td>prcomp on the design, number of components (max 12) by 5-fold CV</td>
+      <td>0.885 &plusmn; 0.034</td>
+      <td><b>1.511 &plusmn; 0.025</b></td>
+      <td>2.672 &plusmn; 0.050</td>
+      <td>Components are hard to interpret clinically; PCA is unsupervised.</td>
+    </tr>
+    <tr>
+      <td>Mean only</td>
+      <td>-</td>
+      <td>1.357 &plusmn; 0.003</td>
+      <td>1.599 &plusmn; 0.002</td>
+      <td>3.006 &plusmn; 0.014</td>
+      <td>Reference: predicts the training mean for everyone.</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Responder label: CV ROC-AUC (higher is better)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Settings</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+      <th>Watch out (kickoff)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lm / glm (all)</td>
+      <td>lm (continuous) / binomial glm (label), all columns</td>
+      <td>0.621 &plusmn; 0.027</td>
+      <td>0.632 &plusmn; 0.021</td>
+      <td>0.708 &plusmn; 0.041</td>
+      <td>Assumes linear effects; sensitive to outliers; will not capture non-linear effects.</td>
+    </tr>
+    <tr>
+      <td>Stepwise (BIC)</td>
+      <td>MASS::stepAIC, direction both, penalty log(n)</td>
+      <td>0.647 &plusmn; 0.033</td>
+      <td><b>0.692 &plusmn; 0.043</b></td>
+      <td>0.759 &plusmn; 0.026</td>
+      <td>Unstable: a slightly different dataset can select a very different set; do not treat the final model as the truth.</td>
+    </tr>
+    <tr>
+      <td>Ridge</td>
+      <td>glmnet alpha=0, lambda by 10-fold CV</td>
+      <td>0.664 &plusmn; 0.040</td>
+      <td>0.688 &plusmn; 0.014</td>
+      <td>0.730 &plusmn; 0.017</td>
+      <td>Needs CV for lambda; keeps every covariate (shrunk, never zero).</td>
+    </tr>
+    <tr>
+      <td>LASSO</td>
+      <td>glmnet alpha=1, lambda.min by 10-fold CV</td>
+      <td>0.656 &plusmn; 0.021</td>
+      <td>0.679 &plusmn; 0.025</td>
+      <td><b>0.773 &plusmn; 0.003</b></td>
+      <td>Can arbitrarily drop one of two highly correlated covariates; important variables may vanish.</td>
+    </tr>
+    <tr>
+      <td>Elastic net</td>
+      <td>glmnet alpha=0.5, lambda.min by 10-fold CV</td>
+      <td>0.666 &plusmn; 0.030</td>
+      <td>0.679 &plusmn; 0.015</td>
+      <td>0.768 &plusmn; 0.009</td>
+      <td>Needs CV for lambda; mixes the ridge and LASSO behaviour.</td>
+    </tr>
+    <tr>
+      <td>GAM</td>
+      <td>mgcv: s(x, k=5) per numeric covariate, dummies linear, REML, select=TRUE</td>
+      <td>0.625 &plusmn; 0.029</td>
+      <td>0.680 &plusmn; 0.047</td>
+      <td>0.728 &plusmn; 0.033</td>
+      <td>Harder to interpret; k too small misses patterns, too large overfits.</td>
+    </tr>
+    <tr>
+      <td>PCR</td>
+      <td>prcomp on the design, number of components (max 12) by 5-fold CV</td>
+      <td><b>0.695 &plusmn; 0.024</b></td>
+      <td>0.675 &plusmn; 0.019</td>
+      <td>0.704 &plusmn; 0.019</td>
+      <td>Components are hard to interpret clinically; PCA is unsupervised.</td>
+    </tr>
+    <tr>
+      <td>Prevalence only</td>
+      <td>-</td>
+      <td>0.480 &plusmn; 0.000</td>
+      <td>0.493 &plusmn; 0.000</td>
+      <td>0.500 &plusmn; 0.000</td>
+      <td>Reference: predicts the training responder share (AUC 0.5).</td>
+    </tr>
+  </tbody>
+</table>
+<h2>5.2 ML track: untuned &rarr; tuned</h2>
+<p>Each cell shows CV untuned &rarr; tuned. Tuning is an inner 3-fold grid search inside each outer fold. Support-vector and MLP regressors standardise the target internally and predict in original units.</p>
+<p class=cap>Continuous outcome: CV RMSE (lower is better)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Untuned</th>
+      <th>Tuned grid (inner 3-fold)</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+      <th>Watch out (kickoff)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Decision tree</td>
+      <td>max_depth 3</td>
+      <td>max_depth {2,3,5,None} x min_samples_leaf {1,5,10}</td>
+      <td>0.986 &rarr; 0.963</td>
+      <td>1.798 &rarr; 1.612</td>
+      <td>2.234 &rarr; 2.255</td>
+      <td>A deep tree memorises noise; limit the depth.</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>300 trees</td>
+      <td>same grid as tree</td>
+      <td>0.860 &rarr; 0.842</td>
+      <td>1.559 &rarr; 1.495</td>
+      <td>2.222 &rarr; 2.201</td>
+      <td>Harder to read; the vote hides the individual rules.</td>
+    </tr>
+    <tr>
+      <td>SVM (RBF)</td>
+      <td>RBF kernel, defaults</td>
+      <td>C {0.1,1,10} x gamma {scale,0.01,0.1}</td>
+      <td>0.874 &rarr; 0.853</td>
+      <td>1.588 &rarr; 1.559</td>
+      <td>2.453 &rarr; 2.459</td>
+      <td>Hard to explain to clinicians.</td>
+    </tr>
+    <tr>
+      <td>KNN</td>
+      <td>k = 7</td>
+      <td>k {3,5,7,11,15,21} x weights {uniform,distance}</td>
+      <td>0.954 &rarr; 0.946</td>
+      <td>1.564 &rarr; 1.554</td>
+      <td>2.607 &rarr; 2.588</td>
+      <td>Noise covariates dilute similarity and can mislead the neighbours.</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>200 trees, depth 3</td>
+      <td>depth {2,3,4} x trees {100,300} x lr {0.03,0.1}, subsample 0.8</td>
+      <td>0.940 &rarr; 0.839</td>
+      <td>1.805 &rarr; 1.580</td>
+      <td>2.382 &rarr; 2.160</td>
+      <td>Many settings; with few patients it overfits quickly.</td>
+    </tr>
+    <tr>
+      <td>MLP (16,)</td>
+      <td>one hidden layer of 16</td>
+      <td>hidden {8,16,32} x alpha {1e-4,1e-2,1}</td>
+      <td>0.885 &rarr; 0.843</td>
+      <td>1.952 &rarr; 1.741</td>
+      <td>3.000 &rarr; 2.585</td>
+      <td>Least transparent; small arms limit what it can learn.</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Responder label: CV ROC-AUC (higher is better)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Method</th>
+      <th>Untuned</th>
+      <th>Tuned grid (inner 3-fold)</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+      <th>Watch out (kickoff)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logistic regression</td>
+      <td>max_iter 2000</td>
+      <td>C in {0.01, 0.1, 1, 10, 100}</td>
+      <td>0.627 &rarr; 0.682</td>
+      <td>0.646 &rarr; 0.700</td>
+      <td>0.719 &rarr; 0.716</td>
+      <td>Assumes straight-line effects; can miss interactions.</td>
+    </tr>
+    <tr>
+      <td>Decision tree</td>
+      <td>max_depth 3</td>
+      <td>max_depth {2,3,5,None} x min_samples_leaf {1,5,10}</td>
+      <td>0.628 &rarr; 0.600</td>
+      <td>0.562 &rarr; 0.554</td>
+      <td>0.721 &rarr; 0.761</td>
+      <td>A deep tree memorises noise; limit the depth.</td>
+    </tr>
+    <tr>
+      <td>Random forest</td>
+      <td>300 trees</td>
+      <td>same grid as tree</td>
+      <td>0.637 &rarr; 0.674</td>
+      <td>0.603 &rarr; 0.649</td>
+      <td>0.799 &rarr; 0.803</td>
+      <td>Harder to read; the vote hides the individual rules.</td>
+    </tr>
+    <tr>
+      <td>SVM (RBF)</td>
+      <td>RBF kernel, defaults</td>
+      <td>C {0.1,1,10} x gamma {scale,0.01,0.1}</td>
+      <td>0.574 &rarr; 0.565</td>
+      <td>0.606 &rarr; 0.630</td>
+      <td>0.767 &rarr; 0.682</td>
+      <td>Hard to explain to clinicians.</td>
+    </tr>
+    <tr>
+      <td>KNN</td>
+      <td>k = 7</td>
+      <td>k {3,5,7,11,15,21} x weights {uniform,distance}</td>
+      <td>0.582 &rarr; 0.636</td>
+      <td>0.628 &rarr; 0.628</td>
+      <td>0.712 &rarr; 0.765</td>
+      <td>Noise covariates dilute similarity and can mislead the neighbours.</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>200 trees, depth 3</td>
+      <td>depth {2,3,4} x trees {100,300} x lr {0.03,0.1}, subsample 0.8</td>
+      <td>0.550 &rarr; 0.611</td>
+      <td>0.581 &rarr; 0.606</td>
+      <td>0.783 &rarr; 0.778</td>
+      <td>Many settings; with few patients it overfits quickly.</td>
+    </tr>
+    <tr>
+      <td>MLP (16,)</td>
+      <td>one hidden layer of 16</td>
+      <td>hidden {8,16,32} x alpha {1e-4,1e-2,1}</td>
+      <td>0.541 &rarr; 0.571</td>
+      <td>0.609 &rarr; 0.632</td>
+      <td>0.699 &rarr; 0.732</td>
+      <td>Least transparent; small arms limit what it can learn.</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">Tuning helped most continuous-outcome rows (largest for XGBoost and the MLP) but was mixed for the label, where several tuned rows are no better or worse (for example Tideglusib SVM 0.767 &rarr; 0.682).</p>
+<h2>5.3 CV scoreboard figure</h2><img src="figs/s5_cv_scoreboard.png" alt="s5_cv_scoreboard" style="max-width:100%">
+<h2>5.4 Retained terms (selection methods, full-train fit)</h2>
+<p class=cap>Non-zero coefficients (z-scored numeric, 0/1 dummies; sign on the raw outcome scale) or selected terms. PCR: number of components kept</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Outcome</th>
+      <th>Arm</th>
+      <th>LASSO</th>
+      <th>Elastic net</th>
+      <th>Stepwise (BIC)</th>
+      <th>Best subset</th>
+      <th>GAM terms (p&lt;0.05)</th>
+      <th>PCR components</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>continuous outcome</td>
+      <td>Mexiletine</td>
+      <td>Disease duration (+0.12); Myotonia severity (-1.01); Cognitive function (+0.07); Creatine kinase (-0.03)</td>
+      <td>Somatic mosaicism (-0.01); Disease duration (+0.13); Myotonia severity (-0.97); Cognitive function (+0.08); Creatine kinase (-0.04)</td>
+      <td>Myotonia severity (-1.08); Disease duration (+0.16)</td>
+      <td>Disease duration (+0.16); Myotonia severity (-1.08)</td>
+      <td>log10 CTG repeats; Myotonia severity; PR interval; Family history = Yes; Family history = Unknown</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>continuous outcome</td>
+      <td>Oligonucleotide</td>
+      <td>log10 CTG repeats (+0.43); Disease duration (+0.11); Myotonia severity (+0.08); Cognitive function (+0.02)</td>
+      <td>log10 CTG repeats (+0.42); Somatic mosaicism (+0.03); Disease duration (+0.15); Myotonia severity (+0.14); Cognitive function (+0.08); BMI (-0.02); Family history = Yes (-0.11)</td>
+      <td>log10 CTG repeats (+0.62); Family history = Yes (-0.61)</td>
+      <td>log10 CTG repeats (+0.62); Family history = Yes (-0.61)</td>
+      <td>log10 CTG repeats; Disease duration; PR interval; Creatine kinase; Family history = Yes</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>continuous outcome</td>
+      <td>Tideglusib</td>
+      <td>Somatic mosaicism (+0.21); Disease duration (-0.31); Myotonia severity (+0.07); Cognitive function (-1.48)</td>
+      <td>Somatic mosaicism (+0.21); Disease duration (-0.32); Myotonia severity (+0.10); Cognitive function (-1.40)</td>
+      <td>Disease duration (-1.17); Muscle strength (-0.83); Cognitive function (-1.70)</td>
+      <td>Disease duration (-1.17); Muscle strength (-0.83); Cognitive function (-1.70)</td>
+      <td>Age at onset; Disease duration; Muscle strength; Cognitive function</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>responder label</td>
+      <td>Mexiletine</td>
+      <td>log10 CTG repeats (+0.25); Myotonia severity (+0.30); Muscle strength (+0.01); Cognitive function (-0.06)</td>
+      <td>log10 CTG repeats (+0.21); Age at onset (-0.03); Myotonia severity (+0.24); Cognitive function (-0.06)</td>
+      <td>Myotonia severity (+0.93); Family history = Yes (+2.21); Family history = Unknown (+2.39)</td>
+      <td>n/a (continuous only)</td>
+      <td>Family history = Yes; Family history = Unknown; Phenotype = juvenile onset</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>responder label</td>
+      <td>Oligonucleotide</td>
+      <td>log10 CTG repeats (+0.61); Disease duration (+0.25); Myotonia severity (+0.07); Cognitive function (+0.07); Creatine kinase (-0.05)</td>
+      <td>log10 CTG repeats (+0.44); Disease duration (+0.18); Myotonia severity (+0.17); Muscle strength (-0.06); Cognitive function (+0.05); Creatine kinase (-0.05)</td>
+      <td>log10 CTG repeats (+0.91); Disease duration (+0.48)</td>
+      <td>n/a (continuous only)</td>
+      <td>log10 CTG repeats; Age at onset; Disease duration; Creatine kinase; Albumin</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>responder label</td>
+      <td>Tideglusib</td>
+      <td>Myotonia severity (+0.15); Cognitive function (-0.86)</td>
+      <td>Somatic mosaicism (+0.01); Disease duration (-0.02); Myotonia severity (+0.24); PR interval (-0.10); Cognitive function (-0.83); Creatine kinase (-0.07)</td>
+      <td>Cognitive function (-1.27)</td>
+      <td>n/a (continuous only)</td>
+      <td>Muscle strength; Cognitive function</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">For Mexiletine the continuous outcome is a change where more negative is better, so a negative coefficient means a better response. Different selectors keep different sets: this is expected with correlated covariates and is why Step 6.5 asks several selectors, resampling and a shuffled-outcome null before calling a covariate signal.</p>
+<h2>5.5 Primary models chosen by CV only</h2>
+<p>Per arm and outcome the best covariate model and the best ML model (tuned and untuned rows pooled) are picked by TRAIN CV alone, before any test row exists in the analysis. These are the models carried into Step 6.</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Arm</th>
+      <th>Outcome</th>
+      <th>CV metric</th>
+      <th>Primary covariate model</th>
+      <th>Primary ML model</th>
+      <th>Baseline</th>
+      <th>Both beat baseline in CV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mexiletine</td>
+      <td>continuous outcome</td>
+      <td>RMSE</td>
+      <td>LASSO (0.795)</td>
+      <td>XGBoost (tuned) (0.839)</td>
+      <td>Mean only (1.357)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Mexiletine</td>
+      <td>responder label</td>
+      <td>AUC</td>
+      <td>PCR (0.695)</td>
+      <td>Logistic regression (tuned) (0.682)</td>
+      <td>Prevalence only (0.480)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotide</td>
+      <td>continuous outcome</td>
+      <td>RMSE</td>
+      <td>PCR (1.511)</td>
+      <td>Random forest (tuned) (1.495)</td>
+      <td>Mean only (1.599)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotide</td>
+      <td>responder label</td>
+      <td>AUC</td>
+      <td>Stepwise (BIC) (0.692)</td>
+      <td>Logistic regression (tuned) (0.700)</td>
+      <td>Prevalence only (0.493)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Tideglusib</td>
+      <td>continuous outcome</td>
+      <td>RMSE</td>
+      <td>GAM (2.422)</td>
+      <td>XGBoost (tuned) (2.160)</td>
+      <td>Mean only (3.006)</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Tideglusib</td>
+      <td>responder label</td>
+      <td>AUC</td>
+      <td>LASSO (0.773)</td>
+      <td>Random forest (tuned) (0.803)</td>
+      <td>Prevalence only (0.500)</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+<h2>5.6 Method-by-method (training diagnostics)</h2>
+<p>One collapsible block per method. All figures use TRAIN only: the fitted-model diagnostics come from the full-train fit, and every prediction panel is the out-of-fold CV prediction (averaged over the 3 CV repeats; observed = the training patient's own value). ML blocks show the untuned and tuned variants together. No test number appears here.</p>
+<h3>Covariate track</h3><details><summary><b>lm / glm (all covariates)</b></summary><h4>lm / glm (all covariates)</h4><p><b>Settings:</b> lm (continuous) / binomial glm (label), all columns. <b>Watch out:</b> Assumes linear effects; sensitive to outliers; will not capture non-linear effects.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>M[[&quot;lm / glm (all covariates)&quot;]] &lt;- function(d, nd) { m &lt;- FIT(rhs(fnames(d)), d); list(pred = prd(m, nd), terms = terms_of(m)) }</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.842 &plusmn; 0.021</td>
+      <td>1.692 &plusmn; 0.052</td>
+      <td>2.642 &plusmn; 0.086</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.621 &plusmn; 0.027</td>
+      <td>0.632 &plusmn; 0.021</td>
+      <td>0.708 &plusmn; 0.041</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><img src="figs/s5_lm_glm_all_coef.png" alt="s5_lm_glm_all_coef" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_lm_glm_all_pred.png" alt="s5_lm_glm_all_pred" style="max-width:100%"><p class="note">Retained terms: all covariates (no selection; full model).</p></details><details><summary><b>Stepwise both (BIC)</b></summary><h4>Stepwise both (BIC)</h4><p><b>Settings:</b> MASS::stepAIC, direction both, penalty log(n). <b>Watch out:</b> Unstable: a slightly different dataset can select a very different set; do not treat the final model as the truth.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>M[[&quot;Stepwise both (BIC)&quot;]] &lt;- function(d, nd) {
+  full &lt;- FIT(rhs(fnames(d)), d); m &lt;- stepAIC(full, direction = &quot;both&quot;, trace = 0, k = log(nrow(d))); list(pred = prd(m, nd), terms = terms_of(m)) }</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.811 &plusmn; 0.003</td>
+      <td>1.531 &plusmn; 0.030</td>
+      <td>2.446 &plusmn; 0.019</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.647 &plusmn; 0.033</td>
+      <td>0.692 &plusmn; 0.043</td>
+      <td>0.759 &plusmn; 0.026</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><img src="figs/s5_stepwise_bic_coef.png" alt="s5_stepwise_bic_coef" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_stepwise_bic_pred.png" alt="s5_stepwise_bic_pred" style="max-width:100%"><p class=note><b>Retained terms (full-train):</b><br>Mexiletine continuous outcome: Myotonia severity (-1.08), Disease duration (+0.16)<br>Oligonucleotide continuous outcome: log10 CTG repeats (+0.62), Family history = Yes (-0.61)<br>Tideglusib continuous outcome: Disease duration (-1.17), Muscle strength (-0.83), Cognitive function (-1.70)<br>Mexiletine responder label: Myotonia severity (+0.93), Family history = Yes (+2.21), Family history = Unknown (+2.39)<br>Oligonucleotide responder label: log10 CTG repeats (+0.91), Disease duration (+0.48)<br>Tideglusib responder label: Cognitive function (-1.27)</p></details><details><summary><b>Best subset (leaps, BIC, nvmax=10)</b></summary><h4>Best subset (leaps, BIC, nvmax=10)</h4><p><b>Settings:</b> leaps::regsubsets, exhaustive, nvmax 10, lowest BIC (continuous only). <b>Watch out:</b> Costly beyond about 20-25 covariates; choose by BIC, not R2.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>if (task == &quot;reg&quot;) M[[&quot;Best subset (leaps, BIC, nvmax=10)&quot;]] &lt;- function(d, nd) {
+  fs &lt;- fnames(d); rs &lt;- regsubsets(x = as.matrix(d[fs]), y = d$.t, nvmax = 10, really.big = TRUE, method = &quot;exhaustive&quot;); s &lt;- summary(rs); id &lt;- which.min(s$bic)
+  co &lt;- coef(rs, id); xn &lt;- cbind(1, as.matrix(nd[names(co)[-1]])); list(pred = as.numeric(xn %*% co), terms = co[-1]) }</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.802 &plusmn; 0.006</td>
+      <td>1.531 &plusmn; 0.030</td>
+      <td>2.458 &plusmn; 0.035</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><img src="figs/s5_best_subset_bic_coef.png" alt="s5_best_subset_bic_coef" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_best_subset_bic_pred.png" alt="s5_best_subset_bic_pred" style="max-width:100%"><p class=note><b>Retained terms (full-train):</b><br>Mexiletine continuous outcome: Disease duration (+0.16), Myotonia severity (-1.08)<br>Oligonucleotide continuous outcome: log10 CTG repeats (+0.62), Family history = Yes (-0.61)<br>Tideglusib continuous outcome: Disease duration (-1.17), Muscle strength (-0.83), Cognitive function (-1.70)<br>Mexiletine responder label: n/a<br>Oligonucleotide responder label: n/a<br>Tideglusib responder label: n/a</p></details><details><summary><b>Ridge (glmnet)</b></summary><h4>Ridge (glmnet)</h4><p><b>Settings:</b> glmnet alpha=0, lambda by 10-fold CV. <b>Watch out:</b> Needs CV for lambda; keeps every covariate (shrunk, never zero).</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>gn &lt;- function(alpha) function(d, nd) {
+  set.seed(1); cvm &lt;- gn_fit(d, task, alpha); fs &lt;- fnames(d); s &lt;- &quot;lambda.min&quot;
+  p &lt;- as.numeric(predict(cvm, as.matrix(nd[fs]), s = s, type = &quot;response&quot;)); cf &lt;- as.matrix(coef(cvm, s = s))[-1, 1]; list(pred = p, terms = cf[cf != 0]) }
+M[[&quot;Ridge (glmnet)&quot;]] &lt;- gn(0); M[[&quot;LASSO (glmnet, lambda.min)&quot;]] &lt;- gn(1); M[[&quot;Elastic net (glmnet, alpha=.5)&quot;]] &lt;- gn(0.5)
+# M[[&quot;Ridge (glmnet)&quot;]] &lt;- gn(0)</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.832 &plusmn; 0.019</td>
+      <td>1.517 &plusmn; 0.008</td>
+      <td>2.567 &plusmn; 0.030</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.664 &plusmn; 0.040</td>
+      <td>0.688 &plusmn; 0.014</td>
+      <td>0.730 &plusmn; 0.017</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class=cap>Coefficient path vs log(lambda), lambda.min marked (train-only fit)</p><p class=cap>Continuous outcome</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_glmnet_path_Mexiletine_reg.png" alt="glmnet_path_Mexiletine_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Oligonucleotide_reg.png" alt="glmnet_path_Oligonucleotide_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Tideglusib_reg.png" alt="glmnet_path_Tideglusib_reg.png" style="width:32%;min-width:300px"></div><p class=cap>Responder label</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_glmnet_path_Mexiletine_bin.png" alt="glmnet_path_Mexiletine_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Oligonucleotide_bin.png" alt="glmnet_path_Oligonucleotide_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Tideglusib_bin.png" alt="glmnet_path_Tideglusib_bin.png" style="width:32%;min-width:300px"></div><img src="figs/s5_ridge_coef.png" alt="s5_ridge_coef" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_ridge_pred.png" alt="s5_ridge_pred" style="max-width:100%"><p class="note">Retained terms: all covariates (no selection; ridge shrinks but never zeroes).</p></details><details><summary><b>LASSO (glmnet, lambda.min)</b></summary><h4>LASSO (glmnet, lambda.min)</h4><p><b>Settings:</b> glmnet alpha=1, lambda.min by 10-fold CV. <b>Watch out:</b> Can arbitrarily drop one of two highly correlated covariates; important variables may vanish.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>gn &lt;- function(alpha) function(d, nd) {
+  set.seed(1); cvm &lt;- gn_fit(d, task, alpha); fs &lt;- fnames(d); s &lt;- &quot;lambda.min&quot;
+  p &lt;- as.numeric(predict(cvm, as.matrix(nd[fs]), s = s, type = &quot;response&quot;)); cf &lt;- as.matrix(coef(cvm, s = s))[-1, 1]; list(pred = p, terms = cf[cf != 0]) }
+M[[&quot;Ridge (glmnet)&quot;]] &lt;- gn(0); M[[&quot;LASSO (glmnet, lambda.min)&quot;]] &lt;- gn(1); M[[&quot;Elastic net (glmnet, alpha=.5)&quot;]] &lt;- gn(0.5)
+# M[[&quot;LASSO (glmnet, lambda.min)&quot;]] &lt;- gn(1)</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.795 &plusmn; 0.003</td>
+      <td>1.515 &plusmn; 0.011</td>
+      <td>2.486 &plusmn; 0.056</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.656 &plusmn; 0.021</td>
+      <td>0.679 &plusmn; 0.025</td>
+      <td>0.773 &plusmn; 0.003</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class=cap>Coefficient path vs log(lambda), lambda.min marked (train-only fit)</p><p class=cap>Continuous outcome</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_glmnet_path_Mexiletine_reg.png" alt="glmnet_path_Mexiletine_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Oligonucleotide_reg.png" alt="glmnet_path_Oligonucleotide_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Tideglusib_reg.png" alt="glmnet_path_Tideglusib_reg.png" style="width:32%;min-width:300px"></div><p class=cap>Responder label</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_glmnet_path_Mexiletine_bin.png" alt="glmnet_path_Mexiletine_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Oligonucleotide_bin.png" alt="glmnet_path_Oligonucleotide_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Tideglusib_bin.png" alt="glmnet_path_Tideglusib_bin.png" style="width:32%;min-width:300px"></div><img src="figs/s5_lasso_coef.png" alt="s5_lasso_coef" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_lasso_pred.png" alt="s5_lasso_pred" style="max-width:100%"><p class=note><b>Retained terms (full-train):</b><br>Mexiletine continuous outcome: Disease duration (+0.12), Myotonia severity (-1.01), Cognitive function (+0.07), Creatine kinase (-0.03)<br>Oligonucleotide continuous outcome: log10 CTG repeats (+0.43), Disease duration (+0.11), Myotonia severity (+0.08), Cognitive function (+0.02)<br>Tideglusib continuous outcome: Somatic mosaicism (+0.21), Disease duration (-0.31), Myotonia severity (+0.07), Cognitive function (-1.48)<br>Mexiletine responder label: log10 CTG repeats (+0.25), Myotonia severity (+0.30), Muscle strength (+0.01), Cognitive function (-0.06)<br>Oligonucleotide responder label: log10 CTG repeats (+0.61), Disease duration (+0.25), Myotonia severity (+0.07), Cognitive function (+0.07), Creatine kinase (-0.05)<br>Tideglusib responder label: Myotonia severity (+0.15), Cognitive function (-0.86)</p></details><details><summary><b>Elastic net (glmnet, alpha=.5)</b></summary><h4>Elastic net (glmnet, alpha=.5)</h4><p><b>Settings:</b> glmnet alpha=0.5, lambda.min by 10-fold CV. <b>Watch out:</b> Needs CV for lambda; mixes the ridge and LASSO behaviour.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>gn &lt;- function(alpha) function(d, nd) {
+  set.seed(1); cvm &lt;- gn_fit(d, task, alpha); fs &lt;- fnames(d); s &lt;- &quot;lambda.min&quot;
+  p &lt;- as.numeric(predict(cvm, as.matrix(nd[fs]), s = s, type = &quot;response&quot;)); cf &lt;- as.matrix(coef(cvm, s = s))[-1, 1]; list(pred = p, terms = cf[cf != 0]) }
+M[[&quot;Ridge (glmnet)&quot;]] &lt;- gn(0); M[[&quot;LASSO (glmnet, lambda.min)&quot;]] &lt;- gn(1); M[[&quot;Elastic net (glmnet, alpha=.5)&quot;]] &lt;- gn(0.5)
+# M[[&quot;Elastic net (glmnet, alpha=.5)&quot;]] &lt;- gn(0.5)</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.799 &plusmn; 0.007</td>
+      <td>1.511 &plusmn; 0.008</td>
+      <td>2.515 &plusmn; 0.045</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.666 &plusmn; 0.030</td>
+      <td>0.679 &plusmn; 0.015</td>
+      <td>0.768 &plusmn; 0.009</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class=cap>Coefficient path vs log(lambda), lambda.min marked (train-only fit)</p><p class=cap>Continuous outcome</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_glmnet_path_Mexiletine_reg.png" alt="glmnet_path_Mexiletine_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Oligonucleotide_reg.png" alt="glmnet_path_Oligonucleotide_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Tideglusib_reg.png" alt="glmnet_path_Tideglusib_reg.png" style="width:32%;min-width:300px"></div><p class=cap>Responder label</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_glmnet_path_Mexiletine_bin.png" alt="glmnet_path_Mexiletine_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Oligonucleotide_bin.png" alt="glmnet_path_Oligonucleotide_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_glmnet_path_Tideglusib_bin.png" alt="glmnet_path_Tideglusib_bin.png" style="width:32%;min-width:300px"></div><img src="figs/s5_elastic_net_coef.png" alt="s5_elastic_net_coef" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_elastic_net_pred.png" alt="s5_elastic_net_pred" style="max-width:100%"><p class=note><b>Retained terms (full-train):</b><br>Mexiletine continuous outcome: Somatic mosaicism (-0.01), Disease duration (+0.13), Myotonia severity (-0.97), Cognitive function (+0.08), Creatine kinase (-0.04)<br>Oligonucleotide continuous outcome: log10 CTG repeats (+0.42), Somatic mosaicism (+0.03), Disease duration (+0.15), Myotonia severity (+0.14), Cognitive function (+0.08), BMI (-0.02), Family history = Yes (-0.11)<br>Tideglusib continuous outcome: Somatic mosaicism (+0.21), Disease duration (-0.32), Myotonia severity (+0.10), Cognitive function (-1.40)<br>Mexiletine responder label: log10 CTG repeats (+0.21), Age at onset (-0.03), Myotonia severity (+0.24), Cognitive function (-0.06)<br>Oligonucleotide responder label: log10 CTG repeats (+0.44), Disease duration (+0.18), Myotonia severity (+0.17), Muscle strength (-0.06), Cognitive function (+0.05), Creatine kinase (-0.05)<br>Tideglusib responder label: Somatic mosaicism (+0.01), Disease duration (-0.02), Myotonia severity (+0.24), PR interval (-0.10), Cognitive function (-0.83), Creatine kinase (-0.07)</p></details><details><summary><b>GAM (mgcv, s(k=5), REML, select)</b></summary><h4>GAM (mgcv, s(k=5), REML, select)</h4><p><b>Settings:</b> mgcv: s(x, k=5) per numeric covariate, dummies linear, REML, select=TRUE. <b>Watch out:</b> Harder to interpret; k too small misses patterns, too large overfits.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>M[[&quot;GAM (mgcv, s(k=5), REML, select)&quot;]] &lt;- function(d, nd) {
+  fs &lt;- fnames(d); dm &lt;- fs[sapply(d[fs], isdum)]; ct &lt;- setdiff(fs, dm)
+  m &lt;- gam(as.formula(paste(&quot;.t ~&quot;, paste(c(sprintf(&quot;s(%s, k=5)&quot;, ct), dm), collapse = &quot; + &quot;))), data = d, family = fam, method = &quot;REML&quot;, select = TRUE)
+  st &lt;- summary(m)$s.table; pt &lt;- summary(m)$p.table; sel &lt;- c(gsub(&quot;^s\\(|\\)$&quot;, &quot;&quot;, rownames(st)[st[, ncol(st)] &lt; 0.05]), rownames(pt)[pt[, ncol(pt)] &lt; 0.05 &amp; rownames(pt) != &quot;(Intercept)&quot;])
+  list(pred = as.numeric(predict(m, nd, type = &quot;response&quot;)), terms = setNames(rep(1, length(sel)), sel)) }</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.815 &plusmn; 0.019</td>
+      <td>1.669 &plusmn; 0.045</td>
+      <td>2.422 &plusmn; 0.056</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.625 &plusmn; 0.029</td>
+      <td>0.680 &plusmn; 0.047</td>
+      <td>0.728 &plusmn; 0.033</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class=cap>Partial smooths (train-only fit)</p><p class=cap>Continuous outcome</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_gam_Mexiletine_reg.png" alt="gam_Mexiletine_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_gam_Oligonucleotide_reg.png" alt="gam_Oligonucleotide_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_gam_Tideglusib_reg.png" alt="gam_Tideglusib_reg.png" style="width:32%;min-width:300px"></div><p class=cap>Responder label</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_gam_Mexiletine_bin.png" alt="gam_Mexiletine_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_gam_Oligonucleotide_bin.png" alt="gam_Oligonucleotide_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_gam_Tideglusib_bin.png" alt="gam_Tideglusib_bin.png" style="width:32%;min-width:300px"></div><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_gam_pred.png" alt="s5_gam_pred" style="max-width:100%"><p class="note">Terms with p&lt;0.05 (smooth or dummy), full-train GAM. Mexiletine continuous outcome: log10 CTG repeats; Myotonia severity; PR interval; Family history = Yes; Family history = Unknown | Oligonucleotide continuous outcome: log10 CTG repeats; Disease duration; PR interval; Creatine kinase; Family history = Yes | Tideglusib continuous outcome: Age at onset; Disease duration; Muscle strength; Cognitive function | Mexiletine responder label: Family history = Yes; Family history = Unknown; Phenotype = juvenile onset | Oligonucleotide responder label: log10 CTG repeats; Age at onset; Disease duration; Creatine kinase; Albumin | Tideglusib responder label: Muscle strength; Cognitive function.</p></details><details><summary><b>PCR (prcomp, k by 5-fold CV)</b></summary><h4>PCR (prcomp, k by 5-fold CV)</h4><p><b>Settings:</b> prcomp on the design, number of components (max 12) by 5-fold CV. <b>Watch out:</b> Components are hard to interpret clinically; PCA is unsupervised.</p><details><summary>Code that ran (r_covariate.R, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>M[[&quot;PCR (prcomp, k by 5-fold CV)&quot;]] &lt;- function(d, nd) {
+  fs &lt;- fnames(d); pc &lt;- prcomp(d[fs], center = TRUE, scale. = FALSE); S &lt;- pc$x; set.seed(1); idx &lt;- sample(rep(1:5, length.out = nrow(d))); kmax &lt;- min(12, ncol(S))
+  lmf &lt;- function(dd) if (task == &quot;reg&quot;) lm(.t ~ ., dd) else glm(.t ~ ., dd, family = binomial)
+  err &lt;- sapply(1:kmax, function(k) mean(sapply(1:5, function(i) { mm &lt;- lmf(data.frame(.t = d$.t[idx != i], S[idx != i, 1:k, drop = FALSE]))
+    p &lt;- predict(mm, data.frame(S[idx == i, 1:k, drop = FALSE]), type = &quot;response&quot;); mean((d$.t[idx == i] - p)^2) })))
+  k &lt;- which.min(err); mm &lt;- lmf(data.frame(.t = d$.t, S[, 1:k, drop = FALSE])); Sn &lt;- predict(pc, nd[fs])
+  list(pred = as.numeric(predict(mm, data.frame(Sn[, 1:k, drop = FALSE]), type = &quot;response&quot;)), terms = setNames(rep(1, k), paste0(&quot;PC&quot;, 1:k))) }</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.885 &plusmn; 0.034</td>
+      <td>1.511 &plusmn; 0.025</td>
+      <td>2.672 &plusmn; 0.050</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.695 &plusmn; 0.024</td>
+      <td>0.675 &plusmn; 0.019</td>
+      <td>0.704 &plusmn; 0.019</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><img src="figs/s5_pca.png" alt="s5_pca" style="max-width:100%"><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_pcr_pred.png" alt="s5_pcr_pred" style="max-width:100%"><p class="note">Components kept by 5-fold CV (full-train fit; maximum 12): Mexiletine continuous outcome: 12; Oligonucleotide continuous outcome: 4; Tideglusib continuous outcome: 9; Mexiletine responder label: 1; Oligonucleotide responder label: 4; Tideglusib responder label: 9. The PCA below is unsupervised; later components are not necessarily dropped.</p></details><details><summary><b>Baselines</b></summary><h4>Baselines</h4><p><b>Reference:</b> mean (continuous) / prevalence (label). Reference: predicts the training mean for everyone. Reference: predicts the training responder share (AUC 0.5).</p><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>1.357 &plusmn; 0.003</td>
+      <td>1.599 &plusmn; 0.002</td>
+      <td>3.006 &plusmn; 0.014</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.480 &plusmn; 0.000</td>
+      <td>0.493 &plusmn; 0.000</td>
+      <td>0.500 &plusmn; 0.000</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class="note">Baselines have no fitted structure.</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_baseline_pred.png" alt="s5_baseline_pred" style="max-width:100%"></details><h3>ML track</h3><details><summary><b>Logistic regression</b></summary><h4>Logistic regression</h4><p><b>Untuned:</b> max_iter 2000. <b>Tuned grid (inner 3-fold):</b> C in {0.01, 0.1, 1, 10, 100}. <b>Watch out:</b> Assumes straight-line effects; can miss interactions.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>if not reg: add(&quot;Logistic regression&quot;, LogisticRegression(max_iter=2000), {&quot;C&quot;: [0.01, 0.1, 1, 10, 100]})
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.627 &plusmn; 0.033</td>
+      <td>0.646 &plusmn; 0.014</td>
+      <td>0.719 &plusmn; 0.028</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.682 &plusmn; 0.025</td>
+      <td>0.700 &plusmn; 0.010</td>
+      <td>0.716 &plusmn; 0.029</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class="note">No natural diagram for this method; see the prediction grid below.</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_logistic_regression_pred.png" alt="s5_logistic_regression_pred" style="max-width:100%"></details><details><summary><b>Decision tree</b></summary><h4>Decision tree</h4><p><b>Untuned:</b> max_depth 3. <b>Tuned grid (inner 3-fold):</b> max_depth {2,3,5,None} x min_samples_leaf {1,5,10}. <b>Watch out:</b> A deep tree memorises noise; limit the depth.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>TREE_GRID = {&quot;max_depth&quot;: [2, 3, 5, None], &quot;min_samples_leaf&quot;: [1, 5, 10]}
+add(&quot;Decision tree&quot;, (DecisionTreeRegressor(max_depth=3, random_state=S) if reg else DecisionTreeClassifier(max_depth=3, random_state=S)), TREE_GRID)
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.986 &plusmn; 0.080</td>
+      <td>1.798 &plusmn; 0.052</td>
+      <td>2.234 &plusmn; 0.125</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.628 &plusmn; 0.028</td>
+      <td>0.562 &plusmn; 0.049</td>
+      <td>0.721 &plusmn; 0.020</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.963 &plusmn; 0.034</td>
+      <td>1.612 &plusmn; 0.048</td>
+      <td>2.255 &plusmn; 0.130</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.600 &plusmn; 0.065</td>
+      <td>0.554 &plusmn; 0.012</td>
+      <td>0.761 &plusmn; 0.011</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class=cap>Fitted tree (train-only fit)</p><p class=cap>Continuous outcome</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_tree_Mexiletine_reg.png" alt="tree_Mexiletine_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_tree_Oligonucleotide_reg.png" alt="tree_Oligonucleotide_reg.png" style="width:32%;min-width:300px"><img src="figs/diag_tree_Tideglusib_reg.png" alt="tree_Tideglusib_reg.png" style="width:32%;min-width:300px"></div><p class=cap>Responder label</p><div style='display:flex;gap:6px;flex-wrap:wrap'><img src="figs/diag_tree_Mexiletine_bin.png" alt="tree_Mexiletine_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_tree_Oligonucleotide_bin.png" alt="tree_Oligonucleotide_bin.png" style="width:32%;min-width:300px"><img src="figs/diag_tree_Tideglusib_bin.png" alt="tree_Tideglusib_bin.png" style="width:32%;min-width:300px"></div><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_decision_tree_pred.png" alt="s5_decision_tree_pred" style="max-width:100%"></details><details><summary><b>Random forest</b></summary><h4>Random forest</h4><p><b>Untuned:</b> 300 trees. <b>Tuned grid (inner 3-fold):</b> same grid as tree. <b>Watch out:</b> Harder to read; the vote hides the individual rules.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>TREE_GRID = {&quot;max_depth&quot;: [2, 3, 5, None], &quot;min_samples_leaf&quot;: [1, 5, 10]}
+add(&quot;Random forest&quot;, (RandomForestRegressor(300, random_state=S, n_jobs=1) if reg else RandomForestClassifier(300, random_state=S, n_jobs=1)), TREE_GRID)
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.860 &plusmn; 0.016</td>
+      <td>1.559 &plusmn; 0.009</td>
+      <td>2.222 &plusmn; 0.015</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.637 &plusmn; 0.030</td>
+      <td>0.603 &plusmn; 0.014</td>
+      <td>0.799 &plusmn; 0.010</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.842 &plusmn; 0.017</td>
+      <td>1.495 &plusmn; 0.018</td>
+      <td>2.201 &plusmn; 0.053</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.674 &plusmn; 0.012</td>
+      <td>0.649 &plusmn; 0.006</td>
+      <td>0.803 &plusmn; 0.005</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><img src="figs/s5_random_forest_imp.png" alt="s5_random_forest_imp" style="max-width:100%"><p class="note">Top term per panel: Mexiletine continuous outcome: Myotonia severity (train verdict SIGNAL); Oligonucleotide continuous outcome: log10 CTG repeats (train verdict SIGNAL); Tideglusib continuous outcome: Cognitive function (train verdict SIGNAL); Mexiletine responder label: Myotonia severity (train verdict BORDERLINE); Oligonucleotide responder label: log10 CTG repeats (train verdict BORDERLINE); Tideglusib responder label: Cognitive function (train verdict SIGNAL).</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_random_forest_pred.png" alt="s5_random_forest_pred" style="max-width:100%"></details><details><summary><b>SVM (RBF)</b></summary><h4>SVM (RBF)</h4><p><b>Untuned:</b> RBF kernel, defaults. <b>Tuned grid (inner 3-fold):</b> C {0.1,1,10} x gamma {scale,0.01,0.1}. <b>Watch out:</b> Hard to explain to clinicians.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>add(&quot;SVM (RBF)&quot;, _ttr(SVR(kernel=&quot;rbf&quot;)), _p(&quot;regressor&quot;, {&quot;C&quot;: [0.1, 1, 10], &quot;gamma&quot;: [&quot;scale&quot;, 0.01, 0.1]}))
+add(&quot;SVM (RBF)&quot;, SVC(kernel=&quot;rbf&quot;, probability=True, random_state=S), {&quot;C&quot;: [0.1, 1, 10], &quot;gamma&quot;: [&quot;scale&quot;, 0.01, 0.1]})
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.874 &plusmn; 0.012</td>
+      <td>1.588 &plusmn; 0.016</td>
+      <td>2.453 &plusmn; 0.055</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.574 &plusmn; 0.075</td>
+      <td>0.606 &plusmn; 0.005</td>
+      <td>0.767 &plusmn; 0.011</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.853 &plusmn; 0.037</td>
+      <td>1.559 &plusmn; 0.042</td>
+      <td>2.459 &plusmn; 0.037</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.565 &plusmn; 0.116</td>
+      <td>0.630 &plusmn; 0.017</td>
+      <td>0.682 &plusmn; 0.016</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class="note">No natural diagram for this method; see the prediction grid below.</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_svm_rbf_pred.png" alt="s5_svm_rbf_pred" style="max-width:100%"></details><details><summary><b>KNN</b></summary><h4>KNN</h4><p><b>Untuned:</b> k = 7. <b>Tuned grid (inner 3-fold):</b> k {3,5,7,11,15,21} x weights {uniform,distance}. <b>Watch out:</b> Noise covariates dilute similarity and can mislead the neighbours.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>add(&quot;KNN&quot;, KNeighborsRegressor(7), {&quot;n_neighbors&quot;: [3, 5, 7, 11, 15, 21], &quot;weights&quot;: [&quot;uniform&quot;, &quot;distance&quot;]})
+add(&quot;KNN&quot;, KNeighborsClassifier(7), {&quot;n_neighbors&quot;: [3, 5, 7, 11, 15, 21], &quot;weights&quot;: [&quot;uniform&quot;, &quot;distance&quot;]})
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.954 &plusmn; 0.021</td>
+      <td>1.564 &plusmn; 0.015</td>
+      <td>2.607 &plusmn; 0.083</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.582 &plusmn; 0.033</td>
+      <td>0.628 &plusmn; 0.011</td>
+      <td>0.712 &plusmn; 0.029</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.946 &plusmn; 0.037</td>
+      <td>1.554 &plusmn; 0.035</td>
+      <td>2.588 &plusmn; 0.056</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.636 &plusmn; 0.046</td>
+      <td>0.628 &plusmn; 0.021</td>
+      <td>0.765 &plusmn; 0.010</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class="note">No natural diagram for this method; see the prediction grid below.</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_knn_pred.png" alt="s5_knn_pred" style="max-width:100%"></details><details><summary><b>XGBoost</b></summary><h4>XGBoost</h4><p><b>Untuned:</b> 200 trees, depth 3. <b>Tuned grid (inner 3-fold):</b> depth {2,3,4} x trees {100,300} x lr {0.03,0.1}, subsample 0.8. <b>Watch out:</b> Many settings; with few patients it overfits quickly.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>add(&quot;XGBoost&quot;, XGBRegressor(n_estimators=200, max_depth=3, random_state=S, n_jobs=1), {&quot;max_depth&quot;: [2, 3, 4], &quot;n_estimators&quot;: [100, 300], &quot;learning_rate&quot;: [.03, .1], &quot;subsample&quot;: [.8]})
+add(&quot;XGBoost&quot;, XGBClassifier(n_estimators=200, max_depth=3, random_state=S, n_jobs=1), {&quot;max_depth&quot;: [2, 3, 4], &quot;n_estimators&quot;: [100, 300], &quot;learning_rate&quot;: [.03, .1], &quot;subsample&quot;: [.8]})
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.940 &plusmn; 0.025</td>
+      <td>1.805 &plusmn; 0.056</td>
+      <td>2.382 &plusmn; 0.040</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.550 &plusmn; 0.012</td>
+      <td>0.581 &plusmn; 0.043</td>
+      <td>0.783 &plusmn; 0.012</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.839 &plusmn; 0.036</td>
+      <td>1.580 &plusmn; 0.031</td>
+      <td>2.160 &plusmn; 0.030</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.611 &plusmn; 0.010</td>
+      <td>0.606 &plusmn; 0.008</td>
+      <td>0.778 &plusmn; 0.007</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><img src="figs/s5_xgboost_imp.png" alt="s5_xgboost_imp" style="max-width:100%"><p class="note">Top term per panel: Mexiletine continuous outcome: Myotonia severity (train verdict SIGNAL); Oligonucleotide continuous outcome: log10 CTG repeats (train verdict SIGNAL); Tideglusib continuous outcome: Cognitive function (train verdict SIGNAL); Mexiletine responder label: Myotonia severity (train verdict BORDERLINE); Oligonucleotide responder label: log10 CTG repeats (train verdict BORDERLINE); Tideglusib responder label: Cognitive function (train verdict SIGNAL).</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_xgboost_pred.png" alt="s5_xgboost_pred" style="max-width:100%"></details><details><summary><b>MLP (16,)</b></summary><h4>MLP (16,)</h4><p><b>Untuned:</b> one hidden layer of 16. <b>Tuned grid (inner 3-fold):</b> hidden {8,16,32} x alpha {1e-4,1e-2,1}. <b>Watch out:</b> Least transparent; small arms limit what it can learn.</p><details><summary>Code that ran (ml_models.py, excerpt)</summary><pre style='font-size:11px;background:#f6f8fa;padding:.5em;overflow-x:auto'>add(&quot;MLP (16,)&quot;, _ttr(MLPRegressor(hidden_layer_sizes=(16,), max_iter=3000, random_state=S)), _p(&quot;regressor&quot;, {&quot;hidden_layer_sizes&quot;: [(8,), (16,), (32,)], &quot;alpha&quot;: [1e-4, 1e-2, 1.0]}))
+add(&quot;MLP (16,)&quot;, MLPClassifier(hidden_layer_sizes=(16,), max_iter=3000, random_state=S), {&quot;hidden_layer_sizes&quot;: [(8,), (16,), (32,)], &quot;alpha&quot;: [1e-4, 1e-2, 1.0]})
+out.append((f&quot;{r[&#x27;name&#x27;]} (tuned, GridSearchCV)&quot;, (lambda r=r, cv=cv: GridSearchCV(mk(r), {f&quot;est__{k}&quot;: v for k, v in r[&quot;grid&quot;].items()}, scoring=r[&quot;scoring&quot;], cv=cv, n_jobs=1)), True, r))</pre></details><p class=cap>CV result (train, repeated 5-fold x3; mean &plusmn; SD)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variant</th>
+      <th>Outcome</th>
+      <th>Mexiletine</th>
+      <th>Oligonucleotide</th>
+      <th>Tideglusib</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>untuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.885 &plusmn; 0.032</td>
+      <td>1.952 &plusmn; 0.092</td>
+      <td>3.000 &plusmn; 0.083</td>
+    </tr>
+    <tr>
+      <td>untuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.541 &plusmn; 0.018</td>
+      <td>0.609 &plusmn; 0.008</td>
+      <td>0.699 &plusmn; 0.023</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>continuous outcome (CV RMSE)</td>
+      <td>0.843 &plusmn; 0.014</td>
+      <td>1.741 &plusmn; 0.090</td>
+      <td>2.585 &plusmn; 0.166</td>
+    </tr>
+    <tr>
+      <td>tuned</td>
+      <td>responder label (CV AUC)</td>
+      <td>0.571 &plusmn; 0.016</td>
+      <td>0.632 &plusmn; 0.013</td>
+      <td>0.732 &plusmn; 0.015</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Characteristic figure</p><p class="note">No natural diagram for this method; see the prediction grid below.</p><p class=cap>Out-of-fold prediction: continuous outcome obs vs pred (top), responder-label ROC (bottom)</p><img src="figs/s5_mlp_16_pred.png" alt="s5_mlp_16_pred" style="max-width:100%"></details><div class="nav"><a href="step4_select.html">&larr; Step 4: Select</a><span><a href="index.html">Index</a> &middot; <a href="../summary.html">Summary</a></span><a href="step6_evaluate.html">Step 6: Evaluate &rarr;</a></div><p class=foot>AI tool disclosure (kickoff checklist): Claude Code (Anthropic) was used to write the analysis code (R and Python), to generate these pages, and to draft the text; every number on these pages is read from results/*.csv produced by the scripts in pdf_pipeline/src. Data are simulated; results do not describe real patients or approved therapies.</p></body></html>

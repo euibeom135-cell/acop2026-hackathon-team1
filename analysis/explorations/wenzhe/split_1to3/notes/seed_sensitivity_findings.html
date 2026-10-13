@@ -1,0 +1,6 @@
+<!doctype html><meta charset=utf-8><title>Seed sensitivity notes</title><body style="font-family:system-ui;max-width:900px;margin:2em auto">
+<h1>20-seed sensitivity + concise report (2026-10-12)</h1><ul>
+<li>Request (teammate feedback forwarded by user): add 20-seed sensitivity; cleaner report with main results per method, goodness of fit, covariates retained (significant and clinically meaningful), plain-language variable names.</li>
+<li>Implementation: split_1to3/seed_sensitivity/ (seed_split.py same re-randomised 1:3 design, master seeds 101-120; r_seed.R per-covariate p/non-zero evidence; seed_run.py; run_seeds.sh; clean_report.py). ~1 min per seed. Retained = selected in >=70% of 20 splits; ML via permutation importance (95% CI>0 and >=10% of top).</li>
+<li>Findings: myotonia_severity 20/20 methods (Mex), log_ctg 16/20 (Oligo), cognitive_function 20/20 (Tide); Tide disease_duration 14/20 (weak prior; needs validation). Test R2 means: Mex ~0.65, Oligo ~0.14 best, Tide ~0.53 best. Best ML (RF tuned 0.41 mean R2) ~ best covariate (smoothing spline 0.40); ML average lower because MLP/KNN/SVM weak.</li>
+<li>Caveats: the 20 splits reuse the same 500 patients (not independent); stepwise p-values are post-selection; classification cutoff = prevalence-matched (label-free), not Youden (no CV in the seed runs).</li></ul></body>

@@ -1,0 +1,646 @@
+"method","rep","row","pred"
+"lm / glm (all covariates)",0,0,0.415496427029798
+"lm / glm (all covariates)",0,1,0.842743856773369
+"lm / glm (all covariates)",0,2,0.372958560120307
+"lm / glm (all covariates)",0,3,0.0213755194149884
+"lm / glm (all covariates)",0,4,0.178940820982134
+"lm / glm (all covariates)",0,5,0.25451709350581
+"lm / glm (all covariates)",0,6,0.697793625458879
+"lm / glm (all covariates)",0,7,0.487399645115095
+"lm / glm (all covariates)",0,8,0.302354071885225
+"lm / glm (all covariates)",0,9,0.53186932862275
+"lm / glm (all covariates)",0,10,0.0546998241173657
+"lm / glm (all covariates)",0,11,0.180977046110901
+"lm / glm (all covariates)",0,12,0.848320770313618
+"lm / glm (all covariates)",0,13,0.489409525837951
+"lm / glm (all covariates)",0,14,0.695501937700179
+"lm / glm (all covariates)",0,15,0.0932919986872787
+"lm / glm (all covariates)",0,16,0.0774373507187865
+"lm / glm (all covariates)",0,17,0.196925536715951
+"lm / glm (all covariates)",0,18,0.676487327137275
+"lm / glm (all covariates)",0,19,0.303860518547665
+"lm / glm (all covariates)",0,20,0.332102878585359
+"lm / glm (all covariates)",0,21,0.0598783431348026
+"lm / glm (all covariates)",0,22,0.269057503531016
+"lm / glm (all covariates)",0,23,0.228061204132186
+"lm / glm (all covariates)",0,24,0.335577602767517
+"lm / glm (all covariates)",0,25,0.0281829708919688
+"lm / glm (all covariates)",0,26,0.332150260562137
+"lm / glm (all covariates)",0,27,0.934563960336614
+"lm / glm (all covariates)",0,28,0.586598097063676
+"lm / glm (all covariates)",0,29,0.32620415513069
+"lm / glm (all covariates)",0,30,0.865891083345716
+"lm / glm (all covariates)",0,31,0.725015457225185
+"lm / glm (all covariates)",0,32,0.459444755884694
+"lm / glm (all covariates)",0,33,0.480037646211342
+"lm / glm (all covariates)",0,34,0.192487287806234
+"lm / glm (all covariates)",0,35,0.615569714159004
+"lm / glm (all covariates)",0,36,0.65431786355854
+"lm / glm (all covariates)",0,37,0.917537492129645
+"lm / glm (all covariates)",0,38,0.223779540254257
+"lm / glm (all covariates)",0,39,0.344895407114716
+"lm / glm (all covariates)",0,40,0.839633054987491
+"lm / glm (all covariates)",0,41,0.357335624993906
+"lm / glm (all covariates)",0,42,0.87161748406389
+"Stepwise forward (AIC)",0,0,0.442759029855054
+"Stepwise forward (AIC)",0,1,0.575146724484504
+"Stepwise forward (AIC)",0,2,0.532402525012462
+"Stepwise forward (AIC)",0,3,0.14760603152732
+"Stepwise forward (AIC)",0,4,0.225259294575549
+"Stepwise forward (AIC)",0,5,0.275318625139094
+"Stepwise forward (AIC)",0,6,0.400375780186666
+"Stepwise forward (AIC)",0,7,0.611446059916926
+"Stepwise forward (AIC)",0,8,0.587210599644166
+"Stepwise forward (AIC)",0,9,0.470979226057876
+"Stepwise forward (AIC)",0,10,0.107842685036836
+"Stepwise forward (AIC)",0,11,0.146001791083998
+"Stepwise forward (AIC)",0,12,0.881797811753874
+"Stepwise forward (AIC)",0,13,0.566160075445863
+"Stepwise forward (AIC)",0,14,0.519175055360469
+"Stepwise forward (AIC)",0,15,0.137479263227246
+"Stepwise forward (AIC)",0,16,0.068499865881036
+"Stepwise forward (AIC)",0,17,0.372211458492572
+"Stepwise forward (AIC)",0,18,0.770072495590512
+"Stepwise forward (AIC)",0,19,0.388528823120333
+"Stepwise forward (AIC)",0,20,0.293291146525662
+"Stepwise forward (AIC)",0,21,0.120194507968036
+"Stepwise forward (AIC)",0,22,0.465960349247848
+"Stepwise forward (AIC)",0,23,0.214126217860842
+"Stepwise forward (AIC)",0,24,0.241865315058827
+"Stepwise forward (AIC)",0,25,0.0958927817152332
+"Stepwise forward (AIC)",0,26,0.67612040621648
+"Stepwise forward (AIC)",0,27,0.696140432074904
+"Stepwise forward (AIC)",0,28,0.780554405842221
+"Stepwise forward (AIC)",0,29,0.515826116368977
+"Stepwise forward (AIC)",0,30,0.604433680154693
+"Stepwise forward (AIC)",0,31,0.701085975729372
+"Stepwise forward (AIC)",0,32,0.447911787450044
+"Stepwise forward (AIC)",0,33,0.647430769195363
+"Stepwise forward (AIC)",0,34,0.171897246940183
+"Stepwise forward (AIC)",0,35,0.648490553256393
+"Stepwise forward (AIC)",0,36,0.622998104621414
+"Stepwise forward (AIC)",0,37,0.8547637085231
+"Stepwise forward (AIC)",0,38,0.135193784292707
+"Stepwise forward (AIC)",0,39,0.173905984606965
+"Stepwise forward (AIC)",0,40,0.710355763083479
+"Stepwise forward (AIC)",0,41,0.453247814880405
+"Stepwise forward (AIC)",0,42,0.710939279107207
+"Stepwise backward (AIC)",0,0,0.427323206240537
+"Stepwise backward (AIC)",0,1,0.572119535427859
+"Stepwise backward (AIC)",0,2,0.493004431767849
+"Stepwise backward (AIC)",0,3,0.0988062940490849
+"Stepwise backward (AIC)",0,4,0.213720249747872
+"Stepwise backward (AIC)",0,5,0.267578773386921
+"Stepwise backward (AIC)",0,6,0.648926182793091
+"Stepwise backward (AIC)",0,7,0.574890729267737
+"Stepwise backward (AIC)",0,8,0.469613623053077
+"Stepwise backward (AIC)",0,9,0.438645880753925
+"Stepwise backward (AIC)",0,10,0.103903632516769
+"Stepwise backward (AIC)",0,11,0.142580391515774
+"Stepwise backward (AIC)",0,12,0.886520559537697
+"Stepwise backward (AIC)",0,13,0.446114450933081
+"Stepwise backward (AIC)",0,14,0.497077261730724
+"Stepwise backward (AIC)",0,15,0.13142088616614
+"Stepwise backward (AIC)",0,16,0.03998110812765
+"Stepwise backward (AIC)",0,17,0.371551149302458
+"Stepwise backward (AIC)",0,18,0.756121058340597
+"Stepwise backward (AIC)",0,19,0.355344259732536
+"Stepwise backward (AIC)",0,20,0.201987382665391
+"Stepwise backward (AIC)",0,21,0.298313427181983
+"Stepwise backward (AIC)",0,22,0.342963396927426
+"Stepwise backward (AIC)",0,23,0.190437515695841
+"Stepwise backward (AIC)",0,24,0.225634442143682
+"Stepwise backward (AIC)",0,25,0.0866960110265758
+"Stepwise backward (AIC)",0,26,0.564425776025678
+"Stepwise backward (AIC)",0,27,0.884366001640431
+"Stepwise backward (AIC)",0,28,0.692086983246345
+"Stepwise backward (AIC)",0,29,0.476772617753383
+"Stepwise backward (AIC)",0,30,0.818760676163268
+"Stepwise backward (AIC)",0,31,0.699049824435615
+"Stepwise backward (AIC)",0,32,0.419579833694727
+"Stepwise backward (AIC)",0,33,0.604019483878547
+"Stepwise backward (AIC)",0,34,0.142562530070522
+"Stepwise backward (AIC)",0,35,0.639198137670372
+"Stepwise backward (AIC)",0,36,0.597469748129983
+"Stepwise backward (AIC)",0,37,0.860716351299192
+"Stepwise backward (AIC)",0,38,0.125332119121865
+"Stepwise backward (AIC)",0,39,0.151761213715026
+"Stepwise backward (AIC)",0,40,0.703617398318313
+"Stepwise backward (AIC)",0,41,0.349026289242508
+"Stepwise backward (AIC)",0,42,0.703343271919848
+"Stepwise both (AIC)",0,0,0.427323206240537
+"Stepwise both (AIC)",0,1,0.572119535427859
+"Stepwise both (AIC)",0,2,0.493004431767849
+"Stepwise both (AIC)",0,3,0.0988062940490849
+"Stepwise both (AIC)",0,4,0.213720249747872
+"Stepwise both (AIC)",0,5,0.267578773386921
+"Stepwise both (AIC)",0,6,0.648926182793091
+"Stepwise both (AIC)",0,7,0.574890729267737
+"Stepwise both (AIC)",0,8,0.469613623053077
+"Stepwise both (AIC)",0,9,0.438645880753925
+"Stepwise both (AIC)",0,10,0.103903632516769
+"Stepwise both (AIC)",0,11,0.142580391515774
+"Stepwise both (AIC)",0,12,0.886520559537697
+"Stepwise both (AIC)",0,13,0.446114450933081
+"Stepwise both (AIC)",0,14,0.497077261730724
+"Stepwise both (AIC)",0,15,0.13142088616614
+"Stepwise both (AIC)",0,16,0.03998110812765
+"Stepwise both (AIC)",0,17,0.371551149302458
+"Stepwise both (AIC)",0,18,0.756121058340597
+"Stepwise both (AIC)",0,19,0.355344259732536
+"Stepwise both (AIC)",0,20,0.201987382665391
+"Stepwise both (AIC)",0,21,0.298313427181983
+"Stepwise both (AIC)",0,22,0.342963396927426
+"Stepwise both (AIC)",0,23,0.190437515695841
+"Stepwise both (AIC)",0,24,0.225634442143682
+"Stepwise both (AIC)",0,25,0.0866960110265758
+"Stepwise both (AIC)",0,26,0.564425776025678
+"Stepwise both (AIC)",0,27,0.884366001640431
+"Stepwise both (AIC)",0,28,0.692086983246345
+"Stepwise both (AIC)",0,29,0.476772617753383
+"Stepwise both (AIC)",0,30,0.818760676163268
+"Stepwise both (AIC)",0,31,0.699049824435615
+"Stepwise both (AIC)",0,32,0.419579833694727
+"Stepwise both (AIC)",0,33,0.604019483878547
+"Stepwise both (AIC)",0,34,0.142562530070522
+"Stepwise both (AIC)",0,35,0.639198137670372
+"Stepwise both (AIC)",0,36,0.597469748129983
+"Stepwise both (AIC)",0,37,0.860716351299192
+"Stepwise both (AIC)",0,38,0.125332119121865
+"Stepwise both (AIC)",0,39,0.151761213715026
+"Stepwise both (AIC)",0,40,0.703617398318313
+"Stepwise both (AIC)",0,41,0.349026289242508
+"Stepwise both (AIC)",0,42,0.703343271919848
+"Stepwise both (BIC)",0,0,0.381878196044555
+"Stepwise both (BIC)",0,1,0.529907006647864
+"Stepwise both (BIC)",0,2,0.586549180494277
+"Stepwise both (BIC)",0,3,0.105821854523535
+"Stepwise both (BIC)",0,4,0.238408893390448
+"Stepwise both (BIC)",0,5,0.259822595331761
+"Stepwise both (BIC)",0,6,0.443702155980514
+"Stepwise both (BIC)",0,7,0.689101155889999
+"Stepwise both (BIC)",0,8,0.515719558735553
+"Stepwise both (BIC)",0,9,0.505304092795968
+"Stepwise both (BIC)",0,10,0.10816353761864
+"Stepwise both (BIC)",0,11,0.10644135354939
+"Stepwise both (BIC)",0,12,0.872340527698483
+"Stepwise both (BIC)",0,13,0.5056940639063
+"Stepwise both (BIC)",0,14,0.534245460603806
+"Stepwise both (BIC)",0,15,0.129761745830758
+"Stepwise both (BIC)",0,16,0.10050297804318
+"Stepwise both (BIC)",0,17,0.287346781663856
+"Stepwise both (BIC)",0,18,0.739173597360245
+"Stepwise both (BIC)",0,19,0.415234386966537
+"Stepwise both (BIC)",0,20,0.312623068536121
+"Stepwise both (BIC)",0,21,0.137953156968468
+"Stepwise both (BIC)",0,22,0.474814480694904
+"Stepwise both (BIC)",0,23,0.287678299399555
+"Stepwise both (BIC)",0,24,0.276521673303525
+"Stepwise both (BIC)",0,25,0.0960192933286762
+"Stepwise both (BIC)",0,26,0.582354761914018
+"Stepwise both (BIC)",0,27,0.640565297894194
+"Stepwise both (BIC)",0,28,0.755079018644721
+"Stepwise both (BIC)",0,29,0.535482487709523
+"Stepwise both (BIC)",0,30,0.583291456639038
+"Stepwise both (BIC)",0,31,0.666327355027896
+"Stepwise both (BIC)",0,32,0.422790189234539
+"Stepwise both (BIC)",0,33,0.744689750955059
+"Stepwise both (BIC)",0,34,0.267670932526684
+"Stepwise both (BIC)",0,35,0.592376205386722
+"Stepwise both (BIC)",0,36,0.636239805420321
+"Stepwise both (BIC)",0,37,0.834429324862846
+"Stepwise both (BIC)",0,38,0.17087456071721
+"Stepwise both (BIC)",0,39,0.310735390967413
+"Stepwise both (BIC)",0,40,0.654037659916662
+"Stepwise both (BIC)",0,41,0.371474514603154
+"Stepwise both (BIC)",0,42,0.635535477565439
+"Ridge (glmnet)",0,0,0.441042411190609
+"Ridge (glmnet)",0,1,0.584884579678341
+"Ridge (glmnet)",0,2,0.5147634777453
+"Ridge (glmnet)",0,3,0.195243846974076
+"Ridge (glmnet)",0,4,0.315008497416196
+"Ridge (glmnet)",0,5,0.241033568600613
+"Ridge (glmnet)",0,6,0.473987020899212
+"Ridge (glmnet)",0,7,0.587085651788143
+"Ridge (glmnet)",0,8,0.479235382532162
+"Ridge (glmnet)",0,9,0.449403501031579
+"Ridge (glmnet)",0,10,0.214661499305249
+"Ridge (glmnet)",0,11,0.285887331397038
+"Ridge (glmnet)",0,12,0.686043445729878
+"Ridge (glmnet)",0,13,0.434710581056153
+"Ridge (glmnet)",0,14,0.538677652030802
+"Ridge (glmnet)",0,15,0.164741039034047
+"Ridge (glmnet)",0,16,0.213947946518418
+"Ridge (glmnet)",0,17,0.340870749429655
+"Ridge (glmnet)",0,18,0.625406003312732
+"Ridge (glmnet)",0,19,0.354695882132385
+"Ridge (glmnet)",0,20,0.377720380165055
+"Ridge (glmnet)",0,21,0.30721358839171
+"Ridge (glmnet)",0,22,0.442977400349396
+"Ridge (glmnet)",0,23,0.365666156335944
+"Ridge (glmnet)",0,24,0.384834166689799
+"Ridge (glmnet)",0,25,0.151085452177627
+"Ridge (glmnet)",0,26,0.601308443738633
+"Ridge (glmnet)",0,27,0.634597574412512
+"Ridge (glmnet)",0,28,0.624526601085268
+"Ridge (glmnet)",0,29,0.480244472496986
+"Ridge (glmnet)",0,30,0.544248710451106
+"Ridge (glmnet)",0,31,0.545923350099515
+"Ridge (glmnet)",0,32,0.425975100385036
+"Ridge (glmnet)",0,33,0.56082587808511
+"Ridge (glmnet)",0,34,0.275031124313295
+"Ridge (glmnet)",0,35,0.496148948219063
+"Ridge (glmnet)",0,36,0.461696751851949
+"Ridge (glmnet)",0,37,0.687807974791626
+"Ridge (glmnet)",0,38,0.248876159571005
+"Ridge (glmnet)",0,39,0.27930513615151
+"Ridge (glmnet)",0,40,0.628233888106325
+"Ridge (glmnet)",0,41,0.465507361223695
+"Ridge (glmnet)",0,42,0.627175383271485
+"LASSO (glmnet, lambda.min)",0,0,0.406148933683301
+"LASSO (glmnet, lambda.min)",0,1,0.499608653700879
+"LASSO (glmnet, lambda.min)",0,2,0.543257870566077
+"LASSO (glmnet, lambda.min)",0,3,0.198055674761617
+"LASSO (glmnet, lambda.min)",0,4,0.296388181198587
+"LASSO (glmnet, lambda.min)",0,5,0.324873331261627
+"LASSO (glmnet, lambda.min)",0,6,0.434733634518161
+"LASSO (glmnet, lambda.min)",0,7,0.597198851889526
+"LASSO (glmnet, lambda.min)",0,8,0.490091707528104
+"LASSO (glmnet, lambda.min)",0,9,0.463522675900151
+"LASSO (glmnet, lambda.min)",0,10,0.200752227772297
+"LASSO (glmnet, lambda.min)",0,11,0.192661945936949
+"LASSO (glmnet, lambda.min)",0,12,0.703542152079425
+"LASSO (glmnet, lambda.min)",0,13,0.462687715510165
+"LASSO (glmnet, lambda.min)",0,14,0.486219093504389
+"LASSO (glmnet, lambda.min)",0,15,0.209525447696715
+"LASSO (glmnet, lambda.min)",0,16,0.199999418807207
+"LASSO (glmnet, lambda.min)",0,17,0.348906423159074
+"LASSO (glmnet, lambda.min)",0,18,0.641897797117996
+"LASSO (glmnet, lambda.min)",0,19,0.432891880818278
+"LASSO (glmnet, lambda.min)",0,20,0.3510460520909
+"LASSO (glmnet, lambda.min)",0,21,0.229225240725699
+"LASSO (glmnet, lambda.min)",0,22,0.457972590883683
+"LASSO (glmnet, lambda.min)",0,23,0.354649941403579
+"LASSO (glmnet, lambda.min)",0,24,0.338778248320621
+"LASSO (glmnet, lambda.min)",0,25,0.19655824246425
+"LASSO (glmnet, lambda.min)",0,26,0.557393555218406
+"LASSO (glmnet, lambda.min)",0,27,0.566017701190774
+"LASSO (glmnet, lambda.min)",0,28,0.629831940969816
+"LASSO (glmnet, lambda.min)",0,29,0.515643526158971
+"LASSO (glmnet, lambda.min)",0,30,0.509175786445263
+"LASSO (glmnet, lambda.min)",0,31,0.569279532410593
+"LASSO (glmnet, lambda.min)",0,32,0.417303456547287
+"LASSO (glmnet, lambda.min)",0,33,0.622993303400699
+"LASSO (glmnet, lambda.min)",0,34,0.32546012294664
+"LASSO (glmnet, lambda.min)",0,35,0.527779325460632
+"LASSO (glmnet, lambda.min)",0,36,0.566553095250472
+"LASSO (glmnet, lambda.min)",0,37,0.675304560752484
+"LASSO (glmnet, lambda.min)",0,38,0.249992771919834
+"LASSO (glmnet, lambda.min)",0,39,0.324347168358911
+"LASSO (glmnet, lambda.min)",0,40,0.57480251806917
+"LASSO (glmnet, lambda.min)",0,41,0.381818439040703
+"LASSO (glmnet, lambda.min)",0,42,0.59748717729329
+"LASSO (glmnet, lambda.1se)",0,0,0.422371900528461
+"LASSO (glmnet, lambda.1se)",0,1,0.460351429808908
+"LASSO (glmnet, lambda.1se)",0,2,0.504347300557957
+"LASSO (glmnet, lambda.1se)",0,3,0.293540701657486
+"LASSO (glmnet, lambda.1se)",0,4,0.338721450099302
+"LASSO (glmnet, lambda.1se)",0,5,0.362781466697072
+"LASSO (glmnet, lambda.1se)",0,6,0.435935960421143
+"LASSO (glmnet, lambda.1se)",0,7,0.521237846504429
+"LASSO (glmnet, lambda.1se)",0,8,0.469529659044119
+"LASSO (glmnet, lambda.1se)",0,9,0.443315871388098
+"LASSO (glmnet, lambda.1se)",0,10,0.281996606455458
+"LASSO (glmnet, lambda.1se)",0,11,0.283074904211217
+"LASSO (glmnet, lambda.1se)",0,12,0.532565569012523
+"LASSO (glmnet, lambda.1se)",0,13,0.443991776035027
+"LASSO (glmnet, lambda.1se)",0,14,0.451893769307008
+"LASSO (glmnet, lambda.1se)",0,15,0.285374006172953
+"LASSO (glmnet, lambda.1se)",0,16,0.291295424351676
+"LASSO (glmnet, lambda.1se)",0,17,0.384369640533726
+"LASSO (glmnet, lambda.1se)",0,18,0.557750322671331
+"LASSO (glmnet, lambda.1se)",0,19,0.442257638967754
+"LASSO (glmnet, lambda.1se)",0,20,0.373789270824949
+"LASSO (glmnet, lambda.1se)",0,21,0.294862423841706
+"LASSO (glmnet, lambda.1se)",0,22,0.44294810718201
+"LASSO (glmnet, lambda.1se)",0,23,0.388897329415396
+"LASSO (glmnet, lambda.1se)",0,24,0.372273442551848
+"LASSO (glmnet, lambda.1se)",0,25,0.297975824485334
+"LASSO (glmnet, lambda.1se)",0,26,0.525465507053367
+"LASSO (glmnet, lambda.1se)",0,27,0.488523164633963
+"LASSO (glmnet, lambda.1se)",0,28,0.528307692434515
+"LASSO (glmnet, lambda.1se)",0,29,0.497101086308124
+"LASSO (glmnet, lambda.1se)",0,30,0.468060478422777
+"LASSO (glmnet, lambda.1se)",0,31,0.488804115899783
+"LASSO (glmnet, lambda.1se)",0,32,0.427014618340234
+"LASSO (glmnet, lambda.1se)",0,33,0.531361146524327
+"LASSO (glmnet, lambda.1se)",0,34,0.373162304742897
+"LASSO (glmnet, lambda.1se)",0,35,0.479725659111292
+"LASSO (glmnet, lambda.1se)",0,36,0.508826824279722
+"LASSO (glmnet, lambda.1se)",0,37,0.523494369622672
+"LASSO (glmnet, lambda.1se)",0,38,0.308771764311124
+"LASSO (glmnet, lambda.1se)",0,39,0.336704037068654
+"LASSO (glmnet, lambda.1se)",0,40,0.508654625824383
+"LASSO (glmnet, lambda.1se)",0,41,0.393354245981714
+"LASSO (glmnet, lambda.1se)",0,42,0.543742934197709
+"Elastic net (glmnet, alpha=.5)",0,0,0.407426688167949
+"Elastic net (glmnet, alpha=.5)",0,1,0.517853213329346
+"Elastic net (glmnet, alpha=.5)",0,2,0.544900194160529
+"Elastic net (glmnet, alpha=.5)",0,3,0.190530479575006
+"Elastic net (glmnet, alpha=.5)",0,4,0.291238905410499
+"Elastic net (glmnet, alpha=.5)",0,5,0.308304400058987
+"Elastic net (glmnet, alpha=.5)",0,6,0.42701554073262
+"Elastic net (glmnet, alpha=.5)",0,7,0.580539746638767
+"Elastic net (glmnet, alpha=.5)",0,8,0.50976800780175
+"Elastic net (glmnet, alpha=.5)",0,9,0.430790985470202
+"Elastic net (glmnet, alpha=.5)",0,10,0.201264652160034
+"Elastic net (glmnet, alpha=.5)",0,11,0.198476105944396
+"Elastic net (glmnet, alpha=.5)",0,12,0.710039071993866
+"Elastic net (glmnet, alpha=.5)",0,13,0.468081211982983
+"Elastic net (glmnet, alpha=.5)",0,14,0.491878805232661
+"Elastic net (glmnet, alpha=.5)",0,15,0.190841209431424
+"Elastic net (glmnet, alpha=.5)",0,16,0.203232083178857
+"Elastic net (glmnet, alpha=.5)",0,17,0.347562622261354
+"Elastic net (glmnet, alpha=.5)",0,18,0.627857871049857
+"Elastic net (glmnet, alpha=.5)",0,19,0.410244632311913
+"Elastic net (glmnet, alpha=.5)",0,20,0.354253984132731
+"Elastic net (glmnet, alpha=.5)",0,21,0.235334872714669
+"Elastic net (glmnet, alpha=.5)",0,22,0.464647617286507
+"Elastic net (glmnet, alpha=.5)",0,23,0.361523255165244
+"Elastic net (glmnet, alpha=.5)",0,24,0.346843481042638
+"Elastic net (glmnet, alpha=.5)",0,25,0.179777416450069
+"Elastic net (glmnet, alpha=.5)",0,26,0.596778203654995
+"Elastic net (glmnet, alpha=.5)",0,27,0.601882272935122
+"Elastic net (glmnet, alpha=.5)",0,28,0.652659504758647
+"Elastic net (glmnet, alpha=.5)",0,29,0.500622932847927
+"Elastic net (glmnet, alpha=.5)",0,30,0.516103360827195
+"Elastic net (glmnet, alpha=.5)",0,31,0.584483234085637
+"Elastic net (glmnet, alpha=.5)",0,32,0.398633347583258
+"Elastic net (glmnet, alpha=.5)",0,33,0.589972709860984
+"Elastic net (glmnet, alpha=.5)",0,34,0.283717489434937
+"Elastic net (glmnet, alpha=.5)",0,35,0.509608845021678
+"Elastic net (glmnet, alpha=.5)",0,36,0.541435307719065
+"Elastic net (glmnet, alpha=.5)",0,37,0.675207426950086
+"Elastic net (glmnet, alpha=.5)",0,38,0.252463640145704
+"Elastic net (glmnet, alpha=.5)",0,39,0.294056810532389
+"Elastic net (glmnet, alpha=.5)",0,40,0.58349651764137
+"Elastic net (glmnet, alpha=.5)",0,41,0.411588078118125
+"Elastic net (glmnet, alpha=.5)",0,42,0.619358495137648
+"Polynomial deg-2 (top-4 covariates)",0,0,0.382937263301756
+"Polynomial deg-2 (top-4 covariates)",0,1,0.513519939439326
+"Polynomial deg-2 (top-4 covariates)",0,2,0.629992854190508
+"Polynomial deg-2 (top-4 covariates)",0,3,0.0878458735314735
+"Polynomial deg-2 (top-4 covariates)",0,4,0.253780812319918
+"Polynomial deg-2 (top-4 covariates)",0,5,0.286455087082782
+"Polynomial deg-2 (top-4 covariates)",0,6,0.415458866451545
+"Polynomial deg-2 (top-4 covariates)",0,7,0.717360162891619
+"Polynomial deg-2 (top-4 covariates)",0,8,0.539763974043756
+"Polynomial deg-2 (top-4 covariates)",0,9,0.489579545456959
+"Polynomial deg-2 (top-4 covariates)",0,10,0.133137701173037
+"Polynomial deg-2 (top-4 covariates)",0,11,0.079559559600785
+"Polynomial deg-2 (top-4 covariates)",0,12,0.87400071131793
+"Polynomial deg-2 (top-4 covariates)",0,13,0.474886277954312
+"Polynomial deg-2 (top-4 covariates)",0,14,0.54645906126142
+"Polynomial deg-2 (top-4 covariates)",0,15,0.119101215405972
+"Polynomial deg-2 (top-4 covariates)",0,16,0.129679210373884
+"Polynomial deg-2 (top-4 covariates)",0,17,0.298113944130047
+"Polynomial deg-2 (top-4 covariates)",0,18,0.782460904463994
+"Polynomial deg-2 (top-4 covariates)",0,19,0.43710440623124
+"Polynomial deg-2 (top-4 covariates)",0,20,0.348914656604656
+"Polynomial deg-2 (top-4 covariates)",0,21,0.187900834899763
+"Polynomial deg-2 (top-4 covariates)",0,22,0.491557852138809
+"Polynomial deg-2 (top-4 covariates)",0,23,0.297353090495083
+"Polynomial deg-2 (top-4 covariates)",0,24,0.293702305015579
+"Polynomial deg-2 (top-4 covariates)",0,25,0.0946886010360203
+"Polynomial deg-2 (top-4 covariates)",0,26,0.64588488777726
+"Polynomial deg-2 (top-4 covariates)",0,27,0.574627930243473
+"Polynomial deg-2 (top-4 covariates)",0,28,0.782538965453419
+"Polynomial deg-2 (top-4 covariates)",0,29,0.585961392748847
+"Polynomial deg-2 (top-4 covariates)",0,30,0.57923253692785
+"Polynomial deg-2 (top-4 covariates)",0,31,0.667101913482059
+"Polynomial deg-2 (top-4 covariates)",0,32,0.350305646891073
+"Polynomial deg-2 (top-4 covariates)",0,33,0.782367055394032
+"Polynomial deg-2 (top-4 covariates)",0,34,0.240355312792767
+"Polynomial deg-2 (top-4 covariates)",0,35,0.634401605575154
+"Polynomial deg-2 (top-4 covariates)",0,36,0.672937663400152
+"Polynomial deg-2 (top-4 covariates)",0,37,0.829316200482631
+"Polynomial deg-2 (top-4 covariates)",0,38,0.203768953537245
+"Polynomial deg-2 (top-4 covariates)",0,39,0.363991519483778
+"Polynomial deg-2 (top-4 covariates)",0,40,0.679230784838442
+"Polynomial deg-2 (top-4 covariates)",0,41,0.349233917784021
+"Polynomial deg-2 (top-4 covariates)",0,42,0.626624769445913
+"Piecewise: cut() tertile bins (top-4 covariates)",0,0,0.367346611647164
+"Piecewise: cut() tertile bins (top-4 covariates)",0,1,0.666097480087949
+"Piecewise: cut() tertile bins (top-4 covariates)",0,2,0.533857792357492
+"Piecewise: cut() tertile bins (top-4 covariates)",0,3,0.123268115799034
+"Piecewise: cut() tertile bins (top-4 covariates)",0,4,0.442182416836451
+"Piecewise: cut() tertile bins (top-4 covariates)",0,5,0.442182416836451
+"Piecewise: cut() tertile bins (top-4 covariates)",0,6,0.498228033416706
+"Piecewise: cut() tertile bins (top-4 covariates)",0,7,0.79735471065578
+"Piecewise: cut() tertile bins (top-4 covariates)",0,8,0.533857792357492
+"Piecewise: cut() tertile bins (top-4 covariates)",0,9,0.401606094025016
+"Piecewise: cut() tertile bins (top-4 covariates)",0,10,0.442182416836451
+"Piecewise: cut() tertile bins (top-4 covariates)",0,11,0.123268115799034
+"Piecewise: cut() tertile bins (top-4 covariates)",0,12,0.7635733555247
+"Piecewise: cut() tertile bins (top-4 covariates)",0,13,0.449842722551337
+"Piecewise: cut() tertile bins (top-4 covariates)",0,14,0.775678488721765
+"Piecewise: cut() tertile bins (top-4 covariates)",0,15,0.103766506967086
+"Piecewise: cut() tertile bins (top-4 covariates)",0,16,0.139540363839053
+"Piecewise: cut() tertile bins (top-4 covariates)",0,17,0.100387435057557
+"Piecewise: cut() tertile bins (top-4 covariates)",0,18,0.44597157449557
+"Piecewise: cut() tertile bins (top-4 covariates)",0,19,0.50610363813288
+"Piecewise: cut() tertile bins (top-4 covariates)",0,20,0.442182416836451
+"Piecewise: cut() tertile bins (top-4 covariates)",0,21,0.357803813437582
+"Piecewise: cut() tertile bins (top-4 covariates)",0,22,0.367346611647164
+"Piecewise: cut() tertile bins (top-4 covariates)",0,23,0.0727275838036728
+"Piecewise: cut() tertile bins (top-4 covariates)",0,24,0.357803813437582
+"Piecewise: cut() tertile bins (top-4 covariates)",0,25,0.123268115799034
+"Piecewise: cut() tertile bins (top-4 covariates)",0,26,0.494314621241608
+"Piecewise: cut() tertile bins (top-4 covariates)",0,27,0.743530734524081
+"Piecewise: cut() tertile bins (top-4 covariates)",0,28,0.79735471065578
+"Piecewise: cut() tertile bins (top-4 covariates)",0,29,0.581724588894257
+"Piecewise: cut() tertile bins (top-4 covariates)",0,30,0.449842722551337
+"Piecewise: cut() tertile bins (top-4 covariates)",0,31,0.708489301573972
+"Piecewise: cut() tertile bins (top-4 covariates)",0,32,0.498228033416706
+"Piecewise: cut() tertile bins (top-4 covariates)",0,33,0.533857792357492
+"Piecewise: cut() tertile bins (top-4 covariates)",0,34,0.42249752053655
+"Piecewise: cut() tertile bins (top-4 covariates)",0,35,0.577368912002974
+"Piecewise: cut() tertile bins (top-4 covariates)",0,36,0.397849864537673
+"Piecewise: cut() tertile bins (top-4 covariates)",0,37,0.743530734524081
+"Piecewise: cut() tertile bins (top-4 covariates)",0,38,0.442182416836451
+"Piecewise: cut() tertile bins (top-4 covariates)",0,39,0.442182416836451
+"Piecewise: cut() tertile bins (top-4 covariates)",0,40,0.79735471065578
+"Piecewise: cut() tertile bins (top-4 covariates)",0,41,0.293061378405261
+"Piecewise: cut() tertile bins (top-4 covariates)",0,42,0.44597157449557
+"Regression spline bs(df=4) (top-4 covariates)",0,0,0.55393816749428
+"Regression spline bs(df=4) (top-4 covariates)",0,1,0.471218406836441
+"Regression spline bs(df=4) (top-4 covariates)",0,2,0.43253491770385
+"Regression spline bs(df=4) (top-4 covariates)",0,3,0.00051104638924371
+"Regression spline bs(df=4) (top-4 covariates)",0,4,0.450211637059185
+"Regression spline bs(df=4) (top-4 covariates)",0,5,0.227368831635549
+"Regression spline bs(df=4) (top-4 covariates)",0,6,0.412076299207158
+"Regression spline bs(df=4) (top-4 covariates)",0,7,0.546507146408283
+"Regression spline bs(df=4) (top-4 covariates)",0,8,0.400147261899783
+"Regression spline bs(df=4) (top-4 covariates)",0,9,0.613585333772375
+"Regression spline bs(df=4) (top-4 covariates)",0,10,0.224776455169584
+"Regression spline bs(df=4) (top-4 covariates)",0,11,0.00024474071239857
+"Regression spline bs(df=4) (top-4 covariates)",0,12,0.793386581301552
+"Regression spline bs(df=4) (top-4 covariates)",0,13,0.458047894299153
+"Regression spline bs(df=4) (top-4 covariates)",0,14,0.546860195727955
+"Regression spline bs(df=4) (top-4 covariates)",0,15,0.0819686241652614
+"Regression spline bs(df=4) (top-4 covariates)",0,16,0.0217109828508067
+"Regression spline bs(df=4) (top-4 covariates)",0,17,0.231467057128926
+"Regression spline bs(df=4) (top-4 covariates)",0,18,0.950961763899621
+"Regression spline bs(df=4) (top-4 covariates)",0,19,0.569868740696399
+"Regression spline bs(df=4) (top-4 covariates)",0,20,0.4113402531806
+"Regression spline bs(df=4) (top-4 covariates)",0,21,0.0725016900636598
+"Regression spline bs(df=4) (top-4 covariates)",0,22,0.487495926549427
+"Regression spline bs(df=4) (top-4 covariates)",0,23,0.134161201416744
+"Regression spline bs(df=4) (top-4 covariates)",0,24,0.204769209254199
+"Regression spline bs(df=4) (top-4 covariates)",0,25,0.0787576344484229
+"Regression spline bs(df=4) (top-4 covariates)",0,26,0.708043425833775
+"Regression spline bs(df=4) (top-4 covariates)",0,27,0.887741203598388
+"Regression spline bs(df=4) (top-4 covariates)",0,28,0.823861402582527
+"Regression spline bs(df=4) (top-4 covariates)",0,29,0.820982986837425
+"Regression spline bs(df=4) (top-4 covariates)",0,30,0.791328724999052
+"Regression spline bs(df=4) (top-4 covariates)",0,31,0.650314239748384
+"Regression spline bs(df=4) (top-4 covariates)",0,32,0.0196779535801479
+"Regression spline bs(df=4) (top-4 covariates)",0,33,0.964192759609718
+"Regression spline bs(df=4) (top-4 covariates)",0,34,0.333613435678925
+"Regression spline bs(df=4) (top-4 covariates)",0,35,0.621758254082274
+"Regression spline bs(df=4) (top-4 covariates)",0,36,0.417926387873023
+"Regression spline bs(df=4) (top-4 covariates)",0,37,0.910400237184302
+"Regression spline bs(df=4) (top-4 covariates)",0,38,0.2028136492589
+"Regression spline bs(df=4) (top-4 covariates)",0,39,0.375362285216731
+"Regression spline bs(df=4) (top-4 covariates)",0,40,0.443371446200783
+"Regression spline bs(df=4) (top-4 covariates)",0,41,0.643923019852974
+"Regression spline bs(df=4) (top-4 covariates)",0,42,0.329708668548208
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,0,0.482569399878425
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,1,0.434251365974646
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,2,0.621598019181678
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,3,0.223003139625756
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,4,0.243847460846597
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,5,0.265147917346745
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,6,0.546252003181509
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,7,0.624564429263695
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,8,0.568066757464691
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,9,0.544233589070359
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,10,0.0676277094375482
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,11,0.192218665674696
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,12,0.545580988731558
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,13,0.560580634117163
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,14,0.501660978441515
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,15,0.153976369022994
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,16,0.116345454058571
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,17,0.338967800036176
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,18,0.718656299951385
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,19,0.524574104758512
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,20,0.313331325765016
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,21,0.0391939154786196
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,22,0.489374859133302
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,23,0.323253282958081
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,24,0.280979003647981
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,25,0.20290425560596
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,26,0.666576801490994
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,27,0.439418998421969
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,28,0.637964731066094
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,29,0.64711880795554
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,30,0.603028428844721
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,31,0.50875569200896
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,32,0.562473062318196
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,33,0.691896425701825
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,34,0.400804240951826
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,35,0.561843826545673
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,36,0.612483825895061
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,37,0.52089665116097
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,38,0.134151387055582
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,39,0.215652924275712
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,40,0.594869276508288
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,41,0.410165805553371
+"Smoothing spline (top-1 covariate, cv=TRUE)",0,42,0.627981765606879
+"GAM (mgcv, s(k=5), REML, select)",0,0,0.32595505236043
+"GAM (mgcv, s(k=5), REML, select)",0,1,0.605567229439692
+"GAM (mgcv, s(k=5), REML, select)",0,2,0.38092733127482
+"GAM (mgcv, s(k=5), REML, select)",0,3,0.0445971676261193
+"GAM (mgcv, s(k=5), REML, select)",0,4,0.150958835561225
+"GAM (mgcv, s(k=5), REML, select)",0,5,0.331947259204469
+"GAM (mgcv, s(k=5), REML, select)",0,6,0.518158337605497
+"GAM (mgcv, s(k=5), REML, select)",0,7,0.708786809881105
+"GAM (mgcv, s(k=5), REML, select)",0,8,0.127060664577678
+"GAM (mgcv, s(k=5), REML, select)",0,9,0.335458479861004
+"GAM (mgcv, s(k=5), REML, select)",0,10,0.0525409854129011
+"GAM (mgcv, s(k=5), REML, select)",0,11,0.162202825761422
+"GAM (mgcv, s(k=5), REML, select)",0,12,0.858429300361296
+"GAM (mgcv, s(k=5), REML, select)",0,13,0.187690047379252
+"GAM (mgcv, s(k=5), REML, select)",0,14,0.808571611572119
+"GAM (mgcv, s(k=5), REML, select)",0,15,0.0245677596202486
+"GAM (mgcv, s(k=5), REML, select)",0,16,0.049001589380495
+"GAM (mgcv, s(k=5), REML, select)",0,17,0.118091535540462
+"GAM (mgcv, s(k=5), REML, select)",0,18,0.989438598914677
+"GAM (mgcv, s(k=5), REML, select)",0,19,0.233788414207753
+"GAM (mgcv, s(k=5), REML, select)",0,20,0.0692775155360124
+"GAM (mgcv, s(k=5), REML, select)",0,21,0.326039104318837
+"GAM (mgcv, s(k=5), REML, select)",0,22,0.098175040802879
+"GAM (mgcv, s(k=5), REML, select)",0,23,0.297716076105171
+"GAM (mgcv, s(k=5), REML, select)",0,24,0.14545506912874
+"GAM (mgcv, s(k=5), REML, select)",0,25,0.136558914714993
+"GAM (mgcv, s(k=5), REML, select)",0,26,0.309823487300963
+"GAM (mgcv, s(k=5), REML, select)",0,27,0.991178490614387
+"GAM (mgcv, s(k=5), REML, select)",0,28,0.883512337021473
+"GAM (mgcv, s(k=5), REML, select)",0,29,0.508900875577658
+"GAM (mgcv, s(k=5), REML, select)",0,30,0.758626454356064
+"GAM (mgcv, s(k=5), REML, select)",0,31,0.725291351914091
+"GAM (mgcv, s(k=5), REML, select)",0,32,0.414584054643054
+"GAM (mgcv, s(k=5), REML, select)",0,33,0.699665696125148
+"GAM (mgcv, s(k=5), REML, select)",0,34,0.0745828143069176
+"GAM (mgcv, s(k=5), REML, select)",0,35,0.729007318301973
+"GAM (mgcv, s(k=5), REML, select)",0,36,0.375047865689119
+"GAM (mgcv, s(k=5), REML, select)",0,37,0.85202430187355
+"GAM (mgcv, s(k=5), REML, select)",0,38,0.368312400513384
+"GAM (mgcv, s(k=5), REML, select)",0,39,0.661651137108163
+"GAM (mgcv, s(k=5), REML, select)",0,40,0.688963768055285
+"GAM (mgcv, s(k=5), REML, select)",0,41,0.152121659847561
+"GAM (mgcv, s(k=5), REML, select)",0,42,0.696867029222641
+"PCR (prcomp, k by 5-fold CV)",0,0,0.295314797223045
+"PCR (prcomp, k by 5-fold CV)",0,1,0.54792897900304
+"PCR (prcomp, k by 5-fold CV)",0,2,0.555056800760351
+"PCR (prcomp, k by 5-fold CV)",0,3,0.15350886903234
+"PCR (prcomp, k by 5-fold CV)",0,4,0.29391265973866
+"PCR (prcomp, k by 5-fold CV)",0,5,0.219293270242609
+"PCR (prcomp, k by 5-fold CV)",0,6,0.466767823683354
+"PCR (prcomp, k by 5-fold CV)",0,7,0.686015910296647
+"PCR (prcomp, k by 5-fold CV)",0,8,0.498983276194578
+"PCR (prcomp, k by 5-fold CV)",0,9,0.391209581621357
+"PCR (prcomp, k by 5-fold CV)",0,10,0.16043961674803
+"PCR (prcomp, k by 5-fold CV)",0,11,0.167335576329775
+"PCR (prcomp, k by 5-fold CV)",0,12,0.724077354265091
+"PCR (prcomp, k by 5-fold CV)",0,13,0.500145190011964
+"PCR (prcomp, k by 5-fold CV)",0,14,0.413806817910057
+"PCR (prcomp, k by 5-fold CV)",0,15,0.125720475749212
+"PCR (prcomp, k by 5-fold CV)",0,16,0.233997915119482
+"PCR (prcomp, k by 5-fold CV)",0,17,0.337789982916286
+"PCR (prcomp, k by 5-fold CV)",0,18,0.795050334662362
+"PCR (prcomp, k by 5-fold CV)",0,19,0.283486835714968
+"PCR (prcomp, k by 5-fold CV)",0,20,0.345205763133941
+"PCR (prcomp, k by 5-fold CV)",0,21,0.49492523011431
+"PCR (prcomp, k by 5-fold CV)",0,22,0.525920792341324
+"PCR (prcomp, k by 5-fold CV)",0,23,0.342097349767202
+"PCR (prcomp, k by 5-fold CV)",0,24,0.352828251910488
+"PCR (prcomp, k by 5-fold CV)",0,25,0.126725733365771
+"PCR (prcomp, k by 5-fold CV)",0,26,0.753339909930465
+"PCR (prcomp, k by 5-fold CV)",0,27,0.585634997653806
+"PCR (prcomp, k by 5-fold CV)",0,28,0.722241574820356
+"PCR (prcomp, k by 5-fold CV)",0,29,0.571156303737722
+"PCR (prcomp, k by 5-fold CV)",0,30,0.541567369460711
+"PCR (prcomp, k by 5-fold CV)",0,31,0.563012784434075
+"PCR (prcomp, k by 5-fold CV)",0,32,0.420541066228831
+"PCR (prcomp, k by 5-fold CV)",0,33,0.666270544942593
+"PCR (prcomp, k by 5-fold CV)",0,34,0.238420466758269
+"PCR (prcomp, k by 5-fold CV)",0,35,0.496918701410009
+"PCR (prcomp, k by 5-fold CV)",0,36,0.550909517466033
+"PCR (prcomp, k by 5-fold CV)",0,37,0.729564377926755
+"PCR (prcomp, k by 5-fold CV)",0,38,0.165771329002542
+"PCR (prcomp, k by 5-fold CV)",0,39,0.213787126018968
+"PCR (prcomp, k by 5-fold CV)",0,40,0.588339246695148
+"PCR (prcomp, k by 5-fold CV)",0,41,0.441547894455624
+"PCR (prcomp, k by 5-fold CV)",0,42,0.672046599694691

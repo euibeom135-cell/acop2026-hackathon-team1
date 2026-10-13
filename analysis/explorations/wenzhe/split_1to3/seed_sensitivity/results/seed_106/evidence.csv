@@ -1,0 +1,1206 @@
+covariate,selected,imp,seed,arm,task,method,p,coef,kind
+age_at_onset,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+bmi,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+cataracts,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+ck_level,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+cognitive_function,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+disease_duration,False,0.02284155197442267,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+family_history,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+insulin_resistance,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+log_ctg,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+muscle_strength,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+myotonia_severity,True,1.0460071532114508,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+phenotype,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+pr_interval,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+sex,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+smoking_status,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0,106,Mexiletine,reg,Decision tree (tuned),,,perm_importance
+age_at_onset,False,-0.00044913845788669413,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+bmi,False,0.0005131740805218499,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+cataracts,False,0.0,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+ck_level,False,-0.0024793025404462265,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+cognitive_function,False,0.004240052030654129,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+disease_duration,False,0.020557064580621655,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+family_history,False,0.0025069035383140812,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+insulin_resistance,False,0.0027884934115994576,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+log_ctg,False,-0.008964883474573821,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+muscle_strength,False,0.004449793127010287,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+myotonia_severity,True,0.9004224005355729,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+phenotype,False,0.00016267894504073954,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+pr_interval,False,-0.0004000067632469573,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+sex,False,0.0003167189234402512,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+smoking_status,False,0.00018204342745119505,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.002594097755928432,106,Mexiletine,reg,Random forest (tuned),,,perm_importance
+age_at_onset,False,-0.003359770996681688,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+bmi,False,0.0015558118631163853,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+cataracts,False,-0.034053556766915266,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+ck_level,False,-0.00803707376223422,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+cognitive_function,False,-0.007424473963981515,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+disease_duration,True,0.0765681954085831,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+family_history,False,0.05295182774855274,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+insulin_resistance,False,0.015792930516989167,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+log_ctg,False,0.0384845676060458,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+muscle_strength,False,-0.007616263773197729,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+myotonia_severity,True,0.7216964601160746,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+phenotype,False,0.023430550446035047,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+pr_interval,False,5.629993895622798e-06,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+sex,False,0.020321182422015048,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+smoking_status,False,-0.015289054875090902,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.034257257355598134,106,Mexiletine,reg,SVM (RBF) (tuned),,,perm_importance
+age_at_onset,True,0.01686021725343525,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+bmi,False,-0.0039622676456791016,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+cataracts,False,-0.004366886134164016,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+ck_level,True,0.021656716660323504,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+cognitive_function,False,-0.0006511816210444277,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+disease_duration,True,0.023352810145240266,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+family_history,True,0.03392500880119047,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+insulin_resistance,False,-0.009181688906295038,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+log_ctg,True,0.06868884395051186,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+muscle_strength,False,0.00940723131580109,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+myotonia_severity,True,0.13880977650610435,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+phenotype,True,0.02373520199467813,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+pr_interval,False,-0.00016025311858023362,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+sex,True,0.031820074267056145,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+smoking_status,False,0.0021107008666002127,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.036229596455785724,106,Mexiletine,reg,KNN (tuned),,,perm_importance
+age_at_onset,False,0.0001588859991637548,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+bmi,False,-0.0006892311970953247,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+cataracts,False,0.0,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+ck_level,False,-0.0019900478440711576,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+cognitive_function,False,0.0041493941721120866,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+disease_duration,False,0.03156233126484918,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+family_history,False,0.0,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+insulin_resistance,False,-0.001524389134408094,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+log_ctg,False,0.026384755082785823,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+muscle_strength,False,0.003119382681192007,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+myotonia_severity,True,0.708121202352695,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+phenotype,False,0.001693433370451919,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+pr_interval,False,0.003970819029778777,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+sex,False,-0.000871438360577953,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+smoking_status,False,0.0,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0007307138166506632,106,Mexiletine,reg,XGBoost (tuned),,,perm_importance
+age_at_onset,True,0.0920578553595817,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+bmi,False,0.014219612090189682,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+cataracts,False,0.007722469674546856,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+ck_level,False,-0.007250233089008601,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,False,0.04705640883299888,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,0.1325081487809598,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+family_history,False,0.04392419035583431,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+insulin_resistance,False,0.022671103024341797,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+log_ctg,True,0.07839431399555416,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+muscle_strength,False,0.041434700564472446,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+myotonia_severity,True,0.7681400344743742,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+phenotype,True,0.08546578428051291,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+pr_interval,False,0.02778246874892734,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+sex,False,0.05841114820741396,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+smoking_status,False,0.04037822276259301,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+somatic_mosaicism_index,False,0.06878516172220192,106,Mexiletine,reg,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,,106,Mexiletine,reg,"Best subset (leaps, BIC, nvmax=10)",0.0161210868458422,0.169639096374279,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,"Best subset (leaps, BIC, nvmax=10)",1.5107110328614999e-29,-1.05854067718445,p_or_nonzero
+cataracts,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,-0.0193584675926962,p_or_nonzero
+cognitive_function,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,0.0333289676156173,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,0.130318667339053,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,-0.0517143291510583,p_or_nonzero
+insulin_resistance,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,0.0168592470137734,p_or_nonzero
+log_ctg,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,-0.015520314376456,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,-0.932133982810755,p_or_nonzero
+somatic_mosaicism_index,True,,106,Mexiletine,reg,"Elastic net (glmnet, alpha=.5)",,-0.0531264288586722,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.934292210227939,,p_or_nonzero
+bmi,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.554488320778671,,p_or_nonzero
+cataracts,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.511552194651633,-0.0488272990779578,p_or_nonzero
+ck_level,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.406976773320368,,p_or_nonzero
+cognitive_function,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.922339860182884,,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.0498584766014244,,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.0045711322822045,-0.2809566676058095,p_or_nonzero
+insulin_resistance,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.428537356496723,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.112948243407739,,p_or_nonzero
+muscle_strength,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.063953996169059,,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.0,,p_or_nonzero
+phenotype,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.395222345437802,-0.101156895300636,p_or_nonzero
+pr_interval,True,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.0068723471117009,,p_or_nonzero
+sex,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.738890831979461,-0.0229086545965801,p_or_nonzero
+smoking_status,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.652489584445574,0.02623118880183185,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,reg,"GAM (mgcv, s(k=5), REML, select)",0.405660114226195,,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,"LASSO (glmnet, lambda.1se)",,-0.789765384780469,p_or_nonzero
+cognitive_function,True,,106,Mexiletine,reg,"LASSO (glmnet, lambda.min)",,0.0106812410479812,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,"LASSO (glmnet, lambda.min)",,0.114892154161335,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,"LASSO (glmnet, lambda.min)",,-0.0345094595578864,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,"LASSO (glmnet, lambda.min)",,-0.992775856956523,p_or_nonzero
+somatic_mosaicism_index,True,,106,Mexiletine,reg,"LASSO (glmnet, lambda.min)",,-0.0159675421366876,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,reg,Piecewise: cut() tertile bins (top-4 covariates),0.614636972145585,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,reg,Piecewise: cut() tertile bins (top-4 covariates),0.344285681604982,,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Piecewise: cut() tertile bins (top-4 covariates),1.59802969329347e-06,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,reg,Piecewise: cut() tertile bins (top-4 covariates),0.787839047464459,,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,reg,Polynomial deg-2 (top-4 covariates),0.540375141669773,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,reg,Polynomial deg-2 (top-4 covariates),0.480692795483523,,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Polynomial deg-2 (top-4 covariates),2.7616922510277e-10,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,reg,Polynomial deg-2 (top-4 covariates),0.199544459984989,,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,reg,Regression spline bs(df=4) (top-4 covariates),0.787098039542542,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,reg,Regression spline bs(df=4) (top-4 covariates),0.145020091337286,,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Regression spline bs(df=4) (top-4 covariates),1.11652161438929e-08,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,reg,Regression spline bs(df=4) (top-4 covariates),0.64218453143751,,p_or_nonzero
+age_at_onset,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.030957023198363,p_or_nonzero
+bmi,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.0146841720853355,p_or_nonzero
+cataracts,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.0979818516783428,p_or_nonzero
+ck_level,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.0563785545579003,p_or_nonzero
+cognitive_function,True,,106,Mexiletine,reg,Ridge (glmnet),,0.0805140661698824,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,Ridge (glmnet),,0.197427961891481,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.1742886129720215,p_or_nonzero
+insulin_resistance,True,,106,Mexiletine,reg,Ridge (glmnet),,0.0732060869813771,p_or_nonzero
+log_ctg,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.100411425494028,p_or_nonzero
+muscle_strength,True,,106,Mexiletine,reg,Ridge (glmnet),,0.0058260661018074,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.869221917450433,p_or_nonzero
+phenotype,True,,106,Mexiletine,reg,Ridge (glmnet),,0.01001333088300125,p_or_nonzero
+pr_interval,True,,106,Mexiletine,reg,Ridge (glmnet),,0.0015508606918152,p_or_nonzero
+sex,True,,106,Mexiletine,reg,Ridge (glmnet),,0.0030417428579668,p_or_nonzero
+smoking_status,True,,106,Mexiletine,reg,Ridge (glmnet),,0.0008899387984752007,p_or_nonzero
+somatic_mosaicism_index,True,,106,Mexiletine,reg,Ridge (glmnet),,-0.082320787873481,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,"Smoothing spline (top-1 covariate, cv=TRUE)",3.5152501814426e-30,,p_or_nonzero
+cataracts,False,,106,Mexiletine,reg,Stepwise backward (AIC),0.068458688381462,-0.138246998412884,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,Stepwise backward (AIC),0.002382828783212,0.230863271167657,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,Stepwise backward (AIC),0.005209110021292,-0.27132577547592,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Stepwise backward (AIC),1.08315750456403e-30,-1.10045265687926,p_or_nonzero
+cataracts,False,,106,Mexiletine,reg,Stepwise both (AIC),0.068458688381462,-0.138246998412884,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,Stepwise both (AIC),0.002382828783212,0.230863271167657,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,Stepwise both (AIC),0.005209110021292,-0.27132577547592,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Stepwise both (AIC),1.08315750456403e-30,-1.10045265687926,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,Stepwise both (BIC),0.0161210868458422,0.169639096374279,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Stepwise both (BIC),1.5107110328614999e-29,-1.05854067718445,p_or_nonzero
+cataracts,False,,106,Mexiletine,reg,Stepwise forward (AIC),0.068458688381462,-0.138246998412884,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,Stepwise forward (AIC),0.002382828783212,0.230863271167657,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,Stepwise forward (AIC),0.005209110021292,-0.27132577547592,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,Stepwise forward (AIC),1.08315750456406e-30,-1.10045265687926,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,reg,lm / glm (all covariates),0.989932382140188,0.0022352679528315,p_or_nonzero
+bmi,False,,106,Mexiletine,reg,lm / glm (all covariates),0.936204134582375,-0.0060362311422149,p_or_nonzero
+cataracts,False,,106,Mexiletine,reg,lm / glm (all covariates),0.0924759540712398,-0.14197518874329,p_or_nonzero
+ck_level,False,,106,Mexiletine,reg,lm / glm (all covariates),0.321400910461124,-0.0757014585210716,p_or_nonzero
+cognitive_function,False,,106,Mexiletine,reg,lm / glm (all covariates),0.399173968002392,0.0652631477296799,p_or_nonzero
+disease_duration,True,,106,Mexiletine,reg,lm / glm (all covariates),0.0319911889843818,0.286346139368774,p_or_nonzero
+family_history,True,,106,Mexiletine,reg,lm / glm (all covariates),0.0119604471564766,-0.279710502717437,p_or_nonzero
+insulin_resistance,False,,106,Mexiletine,reg,lm / glm (all covariates),0.457391465289676,0.0669725866708429,p_or_nonzero
+log_ctg,False,,106,Mexiletine,reg,lm / glm (all covariates),0.361480430609438,0.169251757049867,p_or_nonzero
+muscle_strength,False,,106,Mexiletine,reg,lm / glm (all covariates),0.61930105886434,0.0644311025660877,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,reg,lm / glm (all covariates),3.5866274901098e-12,-1.18478020768285,p_or_nonzero
+phenotype,False,,106,Mexiletine,reg,lm / glm (all covariates),0.906616613821771,0.0246807675000199,p_or_nonzero
+pr_interval,False,,106,Mexiletine,reg,lm / glm (all covariates),0.80480609692486,-0.0210284864996764,p_or_nonzero
+sex,False,,106,Mexiletine,reg,lm / glm (all covariates),0.610869439487912,0.0424851737826946,p_or_nonzero
+smoking_status,False,,106,Mexiletine,reg,lm / glm (all covariates),0.654893192382825,-0.010820610655453249,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,reg,lm / glm (all covariates),0.526070615744972,-0.062659031890435,p_or_nonzero
+age_at_onset,True,0.00912698412698415,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+bmi,False,-0.005423280423280391,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+cataracts,True,0.0066137566137566385,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+ck_level,False,-0.00952380952380949,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+cognitive_function,True,0.003968253968253998,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+disease_duration,False,-0.00013227513227508924,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+family_history,False,-0.0011904761904761641,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+insulin_resistance,False,-0.014021164021164,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+log_ctg,True,0.029894179894179924,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+muscle_strength,False,0.00039682539682541764,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+myotonia_severity,True,0.035449735449735474,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+phenotype,False,0.0031746031746032076,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+pr_interval,False,0.0009259259259259689,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+sex,False,0.0005291005291005513,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+smoking_status,False,-0.0003968253968253732,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0046296296296296615,106,Mexiletine,bin,Logistic regression (tuned),,,perm_importance
+age_at_onset,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+bmi,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+cataracts,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+ck_level,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+cognitive_function,False,0.020238095238095267,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+disease_duration,True,0.02870370370370375,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+family_history,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+insulin_resistance,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+log_ctg,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+muscle_strength,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+myotonia_severity,True,0.22592592592592603,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+phenotype,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+pr_interval,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+sex,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+smoking_status,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0,106,Mexiletine,bin,Decision tree (tuned),,,perm_importance
+age_at_onset,False,-0.0022486772486772443,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+bmi,False,-0.0003968253968253954,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+cataracts,False,-0.0010582010582010748,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+ck_level,False,-0.0071428571428571504,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+cognitive_function,False,-0.0025132275132275115,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+disease_duration,False,-0.002910052910052924,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+family_history,False,0.0002645502645502562,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+insulin_resistance,False,-0.023544973544973542,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+log_ctg,False,-0.007142857142857134,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+muscle_strength,False,-0.0054232804232804245,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+myotonia_severity,True,0.0593915343915344,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+phenotype,False,-0.00026455026455026175,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+pr_interval,False,-0.005820105820105809,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+sex,False,0.0,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+smoking_status,False,0.0,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.0033068783068782915,106,Mexiletine,bin,Random forest (tuned),,,perm_importance
+age_at_onset,True,0.007142857142857101,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+bmi,True,0.01150793650793649,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+cataracts,True,0.007936507936507919,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+ck_level,False,-0.005423280423280441,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+cognitive_function,True,0.02156084656084653,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+disease_duration,False,-0.008994708994709005,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+family_history,True,0.012566137566137541,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+insulin_resistance,False,-0.012566137566137591,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+log_ctg,True,0.04365079365079362,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+muscle_strength,False,-0.008597883597883622,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+myotonia_severity,True,0.044444444444444405,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+phenotype,True,0.016666666666666646,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+pr_interval,True,0.02817460317460314,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+sex,True,0.03783068783068781,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+smoking_status,True,0.026190476190476153,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.009126984126984117,106,Mexiletine,bin,SVM (RBF) (tuned),,,perm_importance
+age_at_onset,True,0.011772486772486884,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+bmi,False,0.00052910052910064,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+cataracts,False,0.004894179894179995,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+ck_level,False,0.002248677248677383,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+cognitive_function,False,0.005820105820105908,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+disease_duration,False,-0.0013227513227512034,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+family_history,False,-0.004761904761904662,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+insulin_resistance,False,-0.012037037037036924,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+log_ctg,True,0.03783068783068793,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+muscle_strength,False,-0.024735449735449628,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+myotonia_severity,True,0.03743386243386254,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+phenotype,True,0.010185185185185287,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+pr_interval,False,-0.025661375661375562,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+sex,True,0.01521164021164031,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+smoking_status,True,0.01335978835978846,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.025661375661375756,106,Mexiletine,bin,KNN (tuned),,,perm_importance
+age_at_onset,False,0.00039682539682534543,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+bmi,False,0.008201058201058164,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+cataracts,False,0.0,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+ck_level,False,-0.009788359788359841,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+cognitive_function,False,0.0034391534391533694,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+disease_duration,True,0.020899470899470883,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+family_history,False,0.0,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+insulin_resistance,False,-0.02605820105820107,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+log_ctg,True,0.021560846560846537,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+muscle_strength,False,0.0116402116402116,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+myotonia_severity,True,0.12645502645502643,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+phenotype,False,0.0,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+pr_interval,False,0.010449735449735431,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+sex,False,0.0,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+smoking_status,False,0.0009259259259258579,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.006216931216931171,106,Mexiletine,bin,XGBoost (tuned),,,perm_importance
+age_at_onset,True,0.010185185185185191,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+bmi,True,0.022619047619047632,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+cataracts,False,0.0027777777777778013,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+ck_level,False,-0.04140211640211635,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,True,0.035185185185185215,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,0.035185185185185215,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+family_history,True,0.022883597883597902,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+insulin_resistance,False,-0.022619047619047587,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+log_ctg,True,0.048941798941798974,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+muscle_strength,False,-0.006349206349206315,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+myotonia_severity,True,0.05224867724867728,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+phenotype,True,0.0396825396825397,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+pr_interval,True,0.01044973544973547,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+sex,True,0.0433862433862434,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+smoking_status,True,0.017063492063492097,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+somatic_mosaicism_index,True,0.019179894179894214,106,Mexiletine,bin,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,-0.159925944268216,p_or_nonzero
+family_history,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,0.204534468211022,p_or_nonzero
+insulin_resistance,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,-0.0824009976659514,p_or_nonzero
+log_ctg,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,0.407816978315097,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,0.291488348133175,p_or_nonzero
+phenotype,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,0.0177736482460498,p_or_nonzero
+pr_interval,True,,106,Mexiletine,bin,"Elastic net (glmnet, alpha=.5)",,0.0906961644698004,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.755194221063949,,p_or_nonzero
+bmi,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.381420280407521,,p_or_nonzero
+cataracts,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.754037288218789,-0.0954003788817428,p_or_nonzero
+ck_level,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.515345975104722,,p_or_nonzero
+cognitive_function,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.394676765828137,,p_or_nonzero
+disease_duration,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.184058759674792,,p_or_nonzero
+family_history,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.999994894698614,58.5278804485791,p_or_nonzero
+insulin_resistance,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.576128803755304,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.314972812471782,,p_or_nonzero
+muscle_strength,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.235526416858805,,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.014903796787016,,p_or_nonzero
+phenotype,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.136793989213783,0.701589943249258,p_or_nonzero
+pr_interval,True,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.0312319832002638,,p_or_nonzero
+sex,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.675278859285606,0.111379412745624,p_or_nonzero
+smoking_status,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.300759169193481,0.10743809954333175,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,bin,"GAM (mgcv, s(k=5), REML, select)",0.942985449693039,,p_or_nonzero
+log_ctg,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.1se)",,0.146712082104096,p_or_nonzero
+disease_duration,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.min)",,-0.166919040357186,p_or_nonzero
+family_history,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.min)",,0.233797220639986,p_or_nonzero
+insulin_resistance,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.min)",,-0.0656993232107704,p_or_nonzero
+log_ctg,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.min)",,0.559556923322451,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.min)",,0.233510540350972,p_or_nonzero
+pr_interval,True,,106,Mexiletine,bin,"LASSO (glmnet, lambda.min)",,0.0804151320201644,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,bin,Piecewise: cut() tertile bins (top-4 covariates),0.202059891734806,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,bin,Piecewise: cut() tertile bins (top-4 covariates),0.0610422355632569,,p_or_nonzero
+myotonia_severity,False,,106,Mexiletine,bin,Piecewise: cut() tertile bins (top-4 covariates),0.285797302517153,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,bin,Piecewise: cut() tertile bins (top-4 covariates),0.87996014135959,,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,bin,Polynomial deg-2 (top-4 covariates),0.700495259661213,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,bin,Polynomial deg-2 (top-4 covariates),0.253124263539181,,p_or_nonzero
+myotonia_severity,False,,106,Mexiletine,bin,Polynomial deg-2 (top-4 covariates),0.744691843013011,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,bin,Polynomial deg-2 (top-4 covariates),0.580588076340562,,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,bin,Regression spline bs(df=4) (top-4 covariates),0.825687983655441,,p_or_nonzero
+log_ctg,False,,106,Mexiletine,bin,Regression spline bs(df=4) (top-4 covariates),0.40184580712455,,p_or_nonzero
+myotonia_severity,False,,106,Mexiletine,bin,Regression spline bs(df=4) (top-4 covariates),0.919529042774846,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,bin,Regression spline bs(df=4) (top-4 covariates),0.583231885335653,,p_or_nonzero
+age_at_onset,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.0813754016579194,p_or_nonzero
+bmi,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.0524350219792638,p_or_nonzero
+cataracts,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.0560304752900604,p_or_nonzero
+ck_level,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.0542971679202679,p_or_nonzero
+cognitive_function,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.0159398325672092,p_or_nonzero
+disease_duration,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.130517839398545,p_or_nonzero
+family_history,True,,106,Mexiletine,bin,Ridge (glmnet),,0.09106502177541906,p_or_nonzero
+insulin_resistance,True,,106,Mexiletine,bin,Ridge (glmnet),,-0.10577705555121,p_or_nonzero
+log_ctg,True,,106,Mexiletine,bin,Ridge (glmnet),,0.220073050666788,p_or_nonzero
+muscle_strength,True,,106,Mexiletine,bin,Ridge (glmnet),,0.0335985929616223,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,Ridge (glmnet),,0.207172992032255,p_or_nonzero
+phenotype,True,,106,Mexiletine,bin,Ridge (glmnet),,0.055402087739076754,p_or_nonzero
+pr_interval,True,,106,Mexiletine,bin,Ridge (glmnet),,0.129648031059903,p_or_nonzero
+sex,True,,106,Mexiletine,bin,Ridge (glmnet),,0.0260868442216399,p_or_nonzero
+smoking_status,True,,106,Mexiletine,bin,Ridge (glmnet),,0.01477462708004085,p_or_nonzero
+somatic_mosaicism_index,True,,106,Mexiletine,bin,Ridge (glmnet),,0.08825290782025,p_or_nonzero
+log_ctg,True,,106,Mexiletine,bin,"Smoothing spline (top-1 covariate, cv=TRUE)",2.08920975115056e-05,,p_or_nonzero
+disease_duration,True,,106,Mexiletine,bin,Stepwise backward (AIC),0.0480429175621094,-0.643365985104227,p_or_nonzero
+family_history,False,,106,Mexiletine,bin,Stepwise backward (AIC),0.990387392493373,8.492521347475236,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,Stepwise backward (AIC),0.0001602556063129,1.16624827588732,p_or_nonzero
+pr_interval,False,,106,Mexiletine,bin,Stepwise backward (AIC),0.0528454893355895,0.543747796481027,p_or_nonzero
+smoking_status,False,,106,Mexiletine,bin,Stepwise backward (AIC),0.147177695208564,0.350877511567081,p_or_nonzero
+disease_duration,True,,106,Mexiletine,bin,Stepwise both (AIC),0.0480429175621094,-0.643365985104227,p_or_nonzero
+family_history,False,,106,Mexiletine,bin,Stepwise both (AIC),0.990387392493373,8.492521347475236,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,Stepwise both (AIC),0.0001602556063129,1.16624827588732,p_or_nonzero
+pr_interval,False,,106,Mexiletine,bin,Stepwise both (AIC),0.0528454893355895,0.543747796481027,p_or_nonzero
+smoking_status,False,,106,Mexiletine,bin,Stepwise both (AIC),0.147177695208564,0.350877511567081,p_or_nonzero
+family_history,False,,106,Mexiletine,bin,Stepwise both (BIC),0.991192137582814,8.291802740982636,p_or_nonzero
+myotonia_severity,True,,106,Mexiletine,bin,Stepwise both (BIC),5.40054305980421e-05,1.18386289521894,p_or_nonzero
+disease_duration,False,,106,Mexiletine,bin,Stepwise forward (AIC),0.105632766737869,-0.501190956789011,p_or_nonzero
+family_history,False,,106,Mexiletine,bin,Stepwise forward (AIC),0.991546332021228,8.05461705796246,p_or_nonzero
+log_ctg,True,,106,Mexiletine,bin,Stepwise forward (AIC),0.000287958354931,1.17745454643425,p_or_nonzero
+pr_interval,False,,106,Mexiletine,bin,Stepwise forward (AIC),0.124230489088342,0.416346426227301,p_or_nonzero
+age_at_onset,False,,106,Mexiletine,bin,lm / glm (all covariates),0.337201228691211,0.649075511025038,p_or_nonzero
+bmi,False,,106,Mexiletine,bin,lm / glm (all covariates),0.224666903275879,-0.360530568179353,p_or_nonzero
+cataracts,False,,106,Mexiletine,bin,lm / glm (all covariates),0.995169020989366,-0.0020646069217692,p_or_nonzero
+ck_level,False,,106,Mexiletine,bin,lm / glm (all covariates),0.307906210983696,-0.306573183620469,p_or_nonzero
+cognitive_function,False,,106,Mexiletine,bin,lm / glm (all covariates),0.274308178904416,0.31300294087602,p_or_nonzero
+disease_duration,False,,106,Mexiletine,bin,lm / glm (all covariates),0.363447058053803,-0.44570896547327,p_or_nonzero
+family_history,False,,106,Mexiletine,bin,lm / glm (all covariates),0.989356335568029,8.86001724388562,p_or_nonzero
+insulin_resistance,False,,106,Mexiletine,bin,lm / glm (all covariates),0.30436084934136,-0.345969072174467,p_or_nonzero
+log_ctg,False,,106,Mexiletine,bin,lm / glm (all covariates),0.428583607585878,0.628424709814335,p_or_nonzero
+muscle_strength,False,,106,Mexiletine,bin,lm / glm (all covariates),0.906753858950405,0.0519559413989056,p_or_nonzero
+myotonia_severity,False,,106,Mexiletine,bin,lm / glm (all covariates),0.195282275428174,0.759109484055597,p_or_nonzero
+phenotype,False,,106,Mexiletine,bin,lm / glm (all covariates),0.184172780510111,1.182893976622126,p_or_nonzero
+pr_interval,False,,106,Mexiletine,bin,lm / glm (all covariates),0.0599178182740849,0.665620974642018,p_or_nonzero
+sex,False,,106,Mexiletine,bin,lm / glm (all covariates),0.91277578634882,0.0336961578004332,p_or_nonzero
+smoking_status,False,,106,Mexiletine,bin,lm / glm (all covariates),0.354959936054365,0.035115361614394006,p_or_nonzero
+somatic_mosaicism_index,False,,106,Mexiletine,bin,lm / glm (all covariates),0.481322460452106,-0.251328176113973,p_or_nonzero
+age_at_onset,True,0.02702930698957856,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+albumin,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+bmi,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+cataracts,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+ck_level,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+cognitive_function,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+disease_duration,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+family_history,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+insulin_resistance,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+log_ctg,True,0.11566236953215414,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+muscle_strength,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+myotonia_severity,False,-0.1377142329126539,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+phenotype,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+pr_interval,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+sex,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+smoking_status,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0,106,Oligonucleotide,reg,Decision tree (tuned),,,perm_importance
+age_at_onset,False,-0.0035238356188804997,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+albumin,False,-0.0024119494940734398,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+bmi,False,0.0030551390599455218,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+cataracts,False,-1.6221813552874664e-05,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+ck_level,False,-0.0019454706957823587,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+cognitive_function,False,0.0028626073846921064,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+disease_duration,False,0.004452907429919573,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+family_history,False,0.0,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+insulin_resistance,False,-0.008831546406264356,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+log_ctg,True,0.09033918468491217,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+muscle_strength,False,-0.006961779032048943,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+myotonia_severity,False,-0.02689869157331821,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+phenotype,False,0.0,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+pr_interval,False,-0.008224462915373265,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+sex,False,0.00017551186115003504,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+smoking_status,False,-7.726347633685293e-05,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.021175724022367347,106,Oligonucleotide,reg,Random forest (tuned),,,perm_importance
+age_at_onset,False,-0.032986682420618196,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+albumin,False,-0.006430913872885857,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+bmi,False,-0.02507824857165051,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+cataracts,False,-0.03649150846024105,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+ck_level,False,-0.02386331833708344,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+cognitive_function,False,-0.028230822647536256,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+disease_duration,False,-0.01442654701567292,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+family_history,False,-0.008212766135921434,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+insulin_resistance,False,-0.04202812527292164,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+log_ctg,False,-0.003596388138742357,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+muscle_strength,True,0.02697054871859188,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+myotonia_severity,False,-0.049153144613663324,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+phenotype,False,-0.06424571465076935,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+pr_interval,False,-0.03622505523862276,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+sex,True,0.01378842829683793,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+smoking_status,False,-0.000992683217939705,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.02157901789602019,106,Oligonucleotide,reg,SVM (RBF) (tuned),,,perm_importance
+age_at_onset,True,0.005801554256046682,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+albumin,True,0.012556687071724536,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+bmi,False,-0.015153981488197965,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+cataracts,True,0.02309821336546667,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+ck_level,False,0.001151159781957345,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+cognitive_function,False,0.004374254598322802,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+disease_duration,False,-0.023253704915747388,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+family_history,False,-0.011100412024240692,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+insulin_resistance,False,-0.0028411601704713017,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+log_ctg,True,0.030942986137861405,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+muscle_strength,False,-0.009030270710807442,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+myotonia_severity,True,0.009402937829821045,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+phenotype,False,0.005076942271832618,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+pr_interval,False,-0.016143141817850305,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+sex,True,0.006594507290420259,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+smoking_status,True,0.016711606029276304,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.0029413993952228544,106,Oligonucleotide,reg,KNN (tuned),,,perm_importance
+age_at_onset,False,0.0009884350067489334,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+albumin,False,-0.007864101137293179,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+bmi,True,0.02061485753735116,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+cataracts,False,0.0,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+ck_level,False,0.0026556036094378065,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+cognitive_function,False,0.0007852104318838537,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+disease_duration,False,0.0009202146150400492,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+family_history,False,0.00433850305156237,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+insulin_resistance,False,-0.0005346937837852894,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+log_ctg,True,0.05927802524488442,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+muscle_strength,True,0.010275685735967233,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+myotonia_severity,False,-0.02795289295521537,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+phenotype,False,0.0010091417957909243,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+pr_interval,False,-0.012766234502397444,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+sex,False,0.0005481462755435151,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+smoking_status,False,0.0,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.039255291718844586,106,Oligonucleotide,reg,XGBoost (tuned),,,perm_importance
+age_at_onset,True,0.025841811852967377,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+albumin,True,0.08077791931149951,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+bmi,False,0.017472060819773583,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+cataracts,False,-0.03839648522108925,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+ck_level,True,0.05063850694896662,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,True,0.031903405393920906,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,False,0.007146497220062909,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+family_history,True,0.11596696250320508,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+insulin_resistance,False,0.01751622983478659,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+log_ctg,True,0.0293288712843938,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+muscle_strength,True,0.07362224568929202,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+myotonia_severity,False,-0.11530127784914565,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+phenotype,True,0.1135181191597868,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+pr_interval,False,-0.00973891230397852,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+sex,True,0.023053146512461854,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+smoking_status,True,0.09029897559160098,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+somatic_mosaicism_index,True,0.03725194065725797,106,Oligonucleotide,reg,"MLP (16,) (tuned)",,,perm_importance
+family_history,True,,106,Oligonucleotide,reg,"Best subset (leaps, BIC, nvmax=10)",0.0005110605471988,-0.580356444427279,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,"Best subset (leaps, BIC, nvmax=10)",0.0075696796436878,0.361160949076259,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,"Best subset (leaps, BIC, nvmax=10)",6.96404199069776e-07,0.689747077985189,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,0.0514191068022639,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,-0.224588600268181,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,0.06004994611178,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,0.276839690082255,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,-0.0988883765072653,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,0.156849789555249,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,reg,"Elastic net (glmnet, alpha=.5)",,0.212458603309709,p_or_nonzero
+age_at_onset,True,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.0471336551897662,,p_or_nonzero
+albumin,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.09157154850969,,p_or_nonzero
+bmi,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.595175457700706,,p_or_nonzero
+cataracts,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.664985802453523,-0.0598782924643369,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.617163380811016,,p_or_nonzero
+cognitive_function,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.213249856311284,,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.0325880791648148,,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.0007860439626542,-0.561347419474352,p_or_nonzero
+insulin_resistance,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.163516300936246,,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.0026128201680477,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.846901339642691,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.220162102990368,,p_or_nonzero
+phenotype,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.273368946088614,0.302908852448566,p_or_nonzero
+pr_interval,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.667709397624703,,p_or_nonzero
+sex,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.930121200663968,0.0117778316429904,p_or_nonzero
+smoking_status,False,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.196008049038361,0.11047488598125099,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,reg,"GAM (mgcv, s(k=5), REML, select)",0.0444815073363501,,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.1se)",,-0.0624449639180118,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.1se)",,0.30894610090533,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.1se)",,-0.0247451185222763,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.1se)",,0.0326993040831146,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.1se)",,0.0877842384781823,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,0.0458042733425424,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,-0.240607765235933,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,0.0636120221981981,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,0.317393491991089,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,-0.104010110891518,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,0.127134457606275,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,reg,"LASSO (glmnet, lambda.min)",,0.220181279930638,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,reg,Piecewise: cut() tertile bins (top-4 covariates),0.342902314977627,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,reg,Piecewise: cut() tertile bins (top-4 covariates),0.245020492292204,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,reg,Piecewise: cut() tertile bins (top-4 covariates),0.190244685766331,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,Piecewise: cut() tertile bins (top-4 covariates),0.170699670597455,,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,reg,Polynomial deg-2 (top-4 covariates),0.151590870063079,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,reg,Polynomial deg-2 (top-4 covariates),0.161560059582729,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,reg,Polynomial deg-2 (top-4 covariates),0.434087460462632,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,Polynomial deg-2 (top-4 covariates),0.203244963245914,,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,reg,Regression spline bs(df=4) (top-4 covariates),0.402629464109931,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,reg,Regression spline bs(df=4) (top-4 covariates),0.238132678904885,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,reg,Regression spline bs(df=4) (top-4 covariates),0.704063441763956,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,Regression spline bs(df=4) (top-4 covariates),0.491238798150036,,p_or_nonzero
+age_at_onset,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.0214124540469886,p_or_nonzero
+albumin,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.0515619131970959,p_or_nonzero
+bmi,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.0536645149000745,p_or_nonzero
+cataracts,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.0393809574210108,p_or_nonzero
+ck_level,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.0088714309203694,p_or_nonzero
+cognitive_function,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.046067797687159,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.0893609045696011,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.12098509086339344,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.108049593008662,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.217462941749354,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.123900946546851,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.183952226377133,p_or_nonzero
+phenotype,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.049742148249094606,p_or_nonzero
+pr_interval,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.0812984644303018,p_or_nonzero
+sex,True,,106,Oligonucleotide,reg,Ridge (glmnet),,-0.0231642458081123,p_or_nonzero
+smoking_status,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.042185148995310805,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,reg,Ridge (glmnet),,0.196512544948012,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,"Smoothing spline (top-1 covariate, cv=TRUE)",1.11961466043313e-07,,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,Stepwise backward (AIC),0.000378883057277,-0.5821779711549705,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,Stepwise backward (AIC),0.0177800869794113,0.321425824053035,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,Stepwise backward (AIC),0.0019228250299163,0.517432293873331,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,Stepwise backward (AIC),0.0804869825409099,0.286333153045517,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,Stepwise both (AIC),0.000378883057277,-0.5821779711549705,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,Stepwise both (AIC),0.0177800869794113,0.321425824053035,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,Stepwise both (AIC),0.0019228250299163,0.517432293873331,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,Stepwise both (AIC),0.0804869825409099,0.286333153045517,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,Stepwise both (BIC),0.0005110605471988,-0.580356444427279,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,Stepwise both (BIC),0.0075696796436878,0.361160949076259,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,Stepwise both (BIC),6.96404199069776e-07,0.689747077985189,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,Stepwise forward (AIC),0.000378883057277,-0.5821779711549705,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,reg,Stepwise forward (AIC),0.0177800869794113,0.321425824053035,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,reg,Stepwise forward (AIC),0.0019228250299163,0.517432293873331,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,Stepwise forward (AIC),0.0804869825409099,0.286333153045517,p_or_nonzero
+age_at_onset,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.180195662570448,0.48147860655411,p_or_nonzero
+albumin,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.345477304407751,0.138840444080354,p_or_nonzero
+bmi,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.363959511155384,-0.134332878827113,p_or_nonzero
+cataracts,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.667412652876341,-0.0640342838275423,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.738582195572299,-0.0510804310537058,p_or_nonzero
+cognitive_function,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.427299779049089,0.134952236617358,p_or_nonzero
+disease_duration,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.526269683246221,0.171862035466781,p_or_nonzero
+family_history,True,,106,Oligonucleotide,reg,lm / glm (all covariates),0.0048903635150992,-0.49792313858778003,p_or_nonzero
+insulin_resistance,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.441468534304001,0.139426750390052,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.1584734012608,0.506048189642185,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.688114004840549,-0.116457080577831,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.877623610269876,0.0479805185496288,p_or_nonzero
+phenotype,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.178845945638468,0.4974654822015865,p_or_nonzero
+pr_interval,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.511948562524786,0.0990401814386959,p_or_nonzero
+sex,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.917472478855477,0.0160881270117097,p_or_nonzero
+smoking_status,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.244033292568507,0.1089785156311982,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,reg,lm / glm (all covariates),0.187678260183375,0.237564440277844,p_or_nonzero
+age_at_onset,False,0.007826086956521627,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+albumin,False,-0.000326086956521765,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+bmi,False,-0.0006521739130435633,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+cataracts,False,-0.008043478260869642,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+ck_level,True,0.01380434782608686,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+cognitive_function,False,0.004130434782608633,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+disease_duration,True,0.021413043478260792,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+family_history,False,0.0003260869565216651,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+insulin_resistance,True,0.012282608695652102,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+log_ctg,True,0.06119565217391294,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+muscle_strength,True,0.02282608695652167,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+myotonia_severity,False,-0.0015217391304348626,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+phenotype,True,0.00847826086956512,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+pr_interval,False,-0.00010869565217395128,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+sex,False,0.003152173913043421,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+smoking_status,False,0.0,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.036956521739130346,106,Oligonucleotide,bin,Logistic regression (tuned),,,perm_importance
+age_at_onset,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+albumin,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+bmi,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+cataracts,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+ck_level,False,-0.01820652173913044,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+cognitive_function,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+disease_duration,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+family_history,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+insulin_resistance,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+log_ctg,False,0.02978260869565218,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+muscle_strength,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+myotonia_severity,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+phenotype,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+pr_interval,False,0.0010869565217391658,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+sex,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+smoking_status,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0,106,Oligonucleotide,bin,Decision tree (tuned),,,perm_importance
+age_at_onset,False,-0.0021739130434781984,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+albumin,False,-0.002717391304347794,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+bmi,True,0.008260869565217432,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+cataracts,False,-0.0009782608695651895,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+ck_level,True,0.007608695652173958,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+cognitive_function,False,0.0038043478260870013,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+disease_duration,True,0.009782608695652234,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+family_history,False,0.001521739130434846,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+insulin_resistance,True,0.009021739130434848,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+log_ctg,True,0.04565217391304355,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+muscle_strength,False,0.0026086956521739536,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+myotonia_severity,False,-0.0380434782608695,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+phenotype,False,0.004239130434782618,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+pr_interval,False,0.00010869565217396792,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+sex,False,-0.0009782608695651396,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+smoking_status,False,0.0,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.013478260869565295,106,Oligonucleotide,bin,Random forest (tuned),,,perm_importance
+age_at_onset,False,0.004239130434782565,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+albumin,False,-0.00043478260869571074,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+bmi,False,-0.0014130434782609115,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+cataracts,False,-0.0027173913043478937,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+ck_level,True,0.015108695652173858,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+cognitive_function,False,0.0032608695652173334,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+disease_duration,True,0.014891304347826026,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+family_history,False,-0.014782608695652228,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+insulin_resistance,False,0.002173913043478201,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+log_ctg,True,0.04402173913043472,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+muscle_strength,True,0.018804347826086896,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+myotonia_severity,False,-6.661338147750939e-17,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+phenotype,False,0.00434782608695648,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+pr_interval,False,-0.0014130434782609225,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+sex,True,0.005652173913043434,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+smoking_status,False,0.002173913043478187,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.024021739130434733,106,Oligonucleotide,bin,SVM (RBF) (tuned),,,perm_importance
+age_at_onset,False,-0.03163043478260866,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+albumin,False,-0.016467391304347802,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+bmi,False,-0.011358695652173869,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+cataracts,False,-0.007391304347826052,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+ck_level,False,-0.04119565217391301,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+cognitive_function,False,-0.01739130434782605,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+disease_duration,False,-0.0520652173913043,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+family_history,False,0.0026630434782608957,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+insulin_resistance,False,-0.03527173913043474,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+log_ctg,False,-0.029782608695652146,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+muscle_strength,False,-0.007282608695652143,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+myotonia_severity,False,-0.03815217391304345,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+phenotype,False,0.003315217391304373,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+pr_interval,False,-0.02494565217391299,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+sex,False,-0.03076086956521732,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+smoking_status,False,-0.01798913043478257,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.060489130434782566,106,Oligonucleotide,bin,KNN (tuned),,,perm_importance
+age_at_onset,False,-0.00880434782608699,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+albumin,False,0.0010869565217390743,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+bmi,False,-0.005760869565217458,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+cataracts,False,0.0,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+ck_level,False,-0.008152173913043532,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+cognitive_function,False,-0.007391304347826139,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+disease_duration,False,-0.004239130434782678,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+family_history,False,0.002282608695652122,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+insulin_resistance,False,-0.005978260869565271,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+log_ctg,True,0.04467391304347819,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+muscle_strength,False,-0.003152173913043571,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+myotonia_severity,False,-0.061195652173913116,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+phenotype,False,0.0,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+pr_interval,False,-0.009130434782608781,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+sex,False,-0.001521739130434774,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+smoking_status,False,0.0,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.008043478260869642,106,Oligonucleotide,bin,XGBoost (tuned),,,perm_importance
+age_at_onset,True,0.022282608695652167,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+albumin,False,-0.02586956521739131,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+bmi,True,0.009456521739130447,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+cataracts,False,-0.012282608695652165,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+ck_level,False,-0.045869565217391314,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,True,0.009347826086956524,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,0.014565217391304336,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+family_history,True,0.05184782608695652,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+insulin_resistance,False,-0.05934782608695653,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+log_ctg,False,-0.01630434782608698,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+muscle_strength,True,0.010326086956521735,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+myotonia_severity,False,-0.027500000000000014,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+phenotype,False,-0.02119565217391306,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+pr_interval,False,-0.0029347826086956546,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+sex,False,-0.0008695652173913215,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+smoking_status,True,0.011521739130434795,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+somatic_mosaicism_index,False,-0.03576086956521739,106,Oligonucleotide,bin,"MLP (16,) (tuned)",,,perm_importance
+ck_level,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,-0.127690470290177,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,0.201005867964798,p_or_nonzero
+family_history,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,-0.176651408309303,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,0.29741575649578,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,-0.112548352813455,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,0.428690550399734,p_or_nonzero
+phenotype,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,0.108072556802382,p_or_nonzero
+smoking_status,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,0.0681641463808115,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,bin,"Elastic net (glmnet, alpha=.5)",,0.079901805037457,p_or_nonzero
+age_at_onset,True,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0243152312403927,,p_or_nonzero
+albumin,True,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0181552129557012,,p_or_nonzero
+bmi,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.607481860449131,,p_or_nonzero
+cataracts,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.731792616826016,-0.0893895345236596,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0531803618254736,,p_or_nonzero
+cognitive_function,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.240800380707147,,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0034316729647113,,p_or_nonzero
+family_history,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0719828019067027,-0.5999093160900975,p_or_nonzero
+insulin_resistance,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.335889275527472,,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.529290468360649,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.629925295705611,,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0019747709145825,,p_or_nonzero
+phenotype,True,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0171074075136671,1.621309723709635,p_or_nonzero
+pr_interval,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.740804012779655,,p_or_nonzero
+sex,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.486149029323186,0.177116781124269,p_or_nonzero
+smoking_status,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.0741280305021354,0.2530845717314046,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,bin,"GAM (mgcv, s(k=5), REML, select)",0.279998310526789,,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.1se)",,0.0350530488867469,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.1se)",,0.237998423035884,p_or_nonzero
+ck_level,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,-0.143737530292148,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,0.290268956031456,p_or_nonzero
+family_history,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,-0.189374642065271,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,0.277822719950021,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,-0.0423220500553366,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,0.555945376504763,p_or_nonzero
+phenotype,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,0.126068196275339,p_or_nonzero
+smoking_status,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,0.0880611081098557,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,bin,"LASSO (glmnet, lambda.min)",,0.0579825496521064,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,bin,Piecewise: cut() tertile bins (top-4 covariates),0.3651095223905,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,bin,Piecewise: cut() tertile bins (top-4 covariates),0.10756122873563,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,bin,Piecewise: cut() tertile bins (top-4 covariates),0.186337748534192,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,bin,Piecewise: cut() tertile bins (top-4 covariates),0.588618337823092,,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,bin,Polynomial deg-2 (top-4 covariates),0.496741883890038,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,bin,Polynomial deg-2 (top-4 covariates),0.159287861613446,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,bin,Polynomial deg-2 (top-4 covariates),0.345168793712572,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,bin,Polynomial deg-2 (top-4 covariates),0.15624468281768,,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,bin,Regression spline bs(df=4) (top-4 covariates),0.516855866338713,,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,bin,Regression spline bs(df=4) (top-4 covariates),0.200537023657787,,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,bin,Regression spline bs(df=4) (top-4 covariates),0.473959354348717,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,bin,Regression spline bs(df=4) (top-4 covariates),0.361024555190531,,p_or_nonzero
+age_at_onset,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.102895810937896,p_or_nonzero
+albumin,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.0024438358467315,p_or_nonzero
+bmi,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.0194371078445552,p_or_nonzero
+cataracts,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.0545784269981614,p_or_nonzero
+ck_level,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.109772397071966,p_or_nonzero
+cognitive_function,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.0554389284005131,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.126489653761877,p_or_nonzero
+family_history,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.07653269385075065,p_or_nonzero
+insulin_resistance,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.0729450472310433,p_or_nonzero
+log_ctg,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.211925752270339,p_or_nonzero
+muscle_strength,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.148619421509387,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.247322472581136,p_or_nonzero
+phenotype,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.09068779046084789,p_or_nonzero
+pr_interval,True,,106,Oligonucleotide,bin,Ridge (glmnet),,-0.0021357286652625,p_or_nonzero
+sex,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.0038050633908205,p_or_nonzero
+smoking_status,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.0375977282864314,p_or_nonzero
+somatic_mosaicism_index,True,,106,Oligonucleotide,bin,Ridge (glmnet),,0.124704633381364,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,"Smoothing spline (top-1 covariate, cv=TRUE)",1.14836650796713e-06,,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,bin,Stepwise backward (AIC),0.126782517514179,-0.334452758435917,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,Stepwise backward (AIC),0.0116618278672716,0.556813678194694,p_or_nonzero
+family_history,False,,106,Oligonucleotide,bin,Stepwise backward (AIC),0.108492412599772,-0.341669460848585,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,Stepwise backward (AIC),2.02549520461407e-05,1.05515737274718,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,bin,Stepwise both (AIC),0.126782517514179,-0.334452758435917,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,Stepwise both (AIC),0.0116618278672716,0.556813678194694,p_or_nonzero
+family_history,False,,106,Oligonucleotide,bin,Stepwise both (AIC),0.108492412599772,-0.341669460848585,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,Stepwise both (AIC),2.02549520461407e-05,1.05515737274718,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,Stepwise both (BIC),0.0084207148803759,0.543168958404841,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,Stepwise both (BIC),1.08422569330744e-05,1.06234672940615,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,bin,Stepwise forward (AIC),0.126782517514179,-0.334452758435917,p_or_nonzero
+disease_duration,True,,106,Oligonucleotide,bin,Stepwise forward (AIC),0.0116618278672716,0.556813678194694,p_or_nonzero
+family_history,False,,106,Oligonucleotide,bin,Stepwise forward (AIC),0.108492412599772,-0.341669460848585,p_or_nonzero
+myotonia_severity,True,,106,Oligonucleotide,bin,Stepwise forward (AIC),2.02549520461406e-05,1.05515737274718,p_or_nonzero
+age_at_onset,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.233031686838936,0.808716803512189,p_or_nonzero
+albumin,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.989467323920198,0.0032189943445884,p_or_nonzero
+bmi,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.861274593845301,-0.0426151580098272,p_or_nonzero
+cataracts,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.925762476522656,-0.0247109113716993,p_or_nonzero
+ck_level,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.152647200927367,-0.381916808433753,p_or_nonzero
+cognitive_function,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.239429204967049,0.335481254288932,p_or_nonzero
+disease_duration,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.217671980077391,0.577343681433568,p_or_nonzero
+family_history,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.070873275026468,-0.6363217691243734,p_or_nonzero
+insulin_resistance,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.794876804959917,0.0815546205374516,p_or_nonzero
+log_ctg,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.625906744063583,0.315768475862832,p_or_nonzero
+muscle_strength,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.896502847974834,-0.0638136091577558,p_or_nonzero
+myotonia_severity,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.184996342727252,0.715313139120271,p_or_nonzero
+phenotype,True,,106,Oligonucleotide,bin,lm / glm (all covariates),0.0405151527042724,1.36997034563543,p_or_nonzero
+pr_interval,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.481587780380722,-0.173638690271841,p_or_nonzero
+sex,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.739797201090382,0.0863840435505144,p_or_nonzero
+smoking_status,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.176319528905128,0.1426819642548786,p_or_nonzero
+somatic_mosaicism_index,False,,106,Oligonucleotide,bin,lm / glm (all covariates),0.997080037021311,-0.0011481190032154,p_or_nonzero
+age_at_onset,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+albumin,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+bmi,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+cataracts,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+ck_level,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+cognitive_function,True,1.2405877222058563,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+disease_duration,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+family_history,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+insulin_resistance,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+log_ctg,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+muscle_strength,True,0.9293368118835726,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+myotonia_severity,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+phenotype,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+pr_interval,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+sex,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+smoking_status,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0,106,Tideglusib,reg,Decision tree (tuned),,,perm_importance
+age_at_onset,False,-0.006920472827549018,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+albumin,False,-0.025257263617532933,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+bmi,False,0.0042230646617940956,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+cataracts,False,0.0,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+ck_level,False,0.0032029901130153026,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+cognitive_function,True,1.416617956445463,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+disease_duration,False,0.013320760469458204,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+family_history,False,0.0,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+insulin_resistance,False,0.0018998316842256725,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+log_ctg,False,0.0005266801117579378,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+muscle_strength,True,0.2506707546042418,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+myotonia_severity,False,0.0031049652317539423,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+phenotype,False,0.0,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+pr_interval,False,-0.0008951378337997085,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+sex,False,0.0007495267381915971,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+smoking_status,False,0.0,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0013512020479448327,106,Tideglusib,reg,Random forest (tuned),,,perm_importance
+age_at_onset,False,-0.021922888120661743,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+albumin,False,-0.058501183179999174,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+bmi,False,-0.03014168015382417,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+cataracts,False,-0.01715123091236346,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+ck_level,False,-0.022788626876859296,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+cognitive_function,True,0.45868150660236795,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+disease_duration,True,0.28473675521000974,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+family_history,False,0.03893881450609782,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+insulin_resistance,False,-0.10410825190410447,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+log_ctg,False,0.009724704312177734,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+muscle_strength,True,0.1143818718208645,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+myotonia_severity,True,0.07050469870880893,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+phenotype,False,0.02061976149770863,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+pr_interval,False,-0.012089016287041333,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+sex,False,0.008338795854025683,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+smoking_status,False,-0.04102553304438972,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.04855179035933077,106,Tideglusib,reg,SVM (RBF) (tuned),,,perm_importance
+age_at_onset,False,0.013649637184564157,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+albumin,False,-0.02325147405882073,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+bmi,True,0.03449203871352193,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+cataracts,False,0.0014452970562514045,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+ck_level,False,0.013871882262351587,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+cognitive_function,True,0.17070422900900833,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+disease_duration,True,0.12058577380423126,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+family_history,False,-0.00416555567990462,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+insulin_resistance,False,-0.011795175723643725,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+log_ctg,False,0.00033123824066036975,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+muscle_strength,True,0.121458590471486,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+myotonia_severity,True,0.04228584540150484,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+phenotype,True,0.05682291102108714,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+pr_interval,False,0.01595663411872177,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+sex,False,-0.002659230840178517,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+smoking_status,False,-0.005027358334954646,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.02180115978182573,106,Tideglusib,reg,KNN (tuned),,,perm_importance
+age_at_onset,False,-0.007897348633432943,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+albumin,False,-0.021717805102676336,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+bmi,False,0.0009977782856133376,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+cataracts,False,0.0,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+ck_level,False,-0.001643249442022765,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+cognitive_function,True,1.3068117079281338,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+disease_duration,False,0.012426191139535447,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+family_history,False,0.003930008684854292,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+insulin_resistance,False,-0.0034992454977822883,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+log_ctg,False,-0.01797353833367532,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+muscle_strength,True,0.3682373174824621,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+myotonia_severity,False,0.010906512992500427,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+phenotype,False,0.0,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+pr_interval,False,-0.010645450100725307,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+sex,False,0.0018510867847070678,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+smoking_status,False,0.0,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.0010053257350753242,106,Tideglusib,reg,XGBoost (tuned),,,perm_importance
+age_at_onset,False,0.04364465352059528,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+albumin,False,-0.12778698204187702,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+bmi,True,0.09977881491079085,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+cataracts,True,0.09515212413235281,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+ck_level,False,-0.09788826007116883,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,True,0.7142362443597514,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,0.5461937340694312,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+family_history,False,0.026058961815373816,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+insulin_resistance,False,-0.03808353540983789,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+log_ctg,False,-0.09403834736434577,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+muscle_strength,True,0.3248895766378791,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+myotonia_severity,False,-0.04120905566324971,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+phenotype,False,-0.013398066614939474,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+pr_interval,False,-0.07694212127174857,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+sex,False,-0.05381995333840064,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+smoking_status,False,-0.011632577686276369,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+somatic_mosaicism_index,False,-0.08055226864845107,106,Tideglusib,reg,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,True,,106,Tideglusib,reg,"Best subset (leaps, BIC, nvmax=10)",2.04587217249153e-14,-1.90407355388619,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,"Elastic net (glmnet, alpha=.5)",,-1.46919851981975,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,"Elastic net (glmnet, alpha=.5)",,-0.190918932347765,p_or_nonzero
+insulin_resistance,True,,106,Tideglusib,reg,"Elastic net (glmnet, alpha=.5)",,0.0404484903449939,p_or_nonzero
+log_ctg,True,,106,Tideglusib,reg,"Elastic net (glmnet, alpha=.5)",,0.0766120319173695,p_or_nonzero
+age_at_onset,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.880851640643562,,p_or_nonzero
+albumin,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.208508121773877,,p_or_nonzero
+bmi,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.393895675671678,,p_or_nonzero
+cataracts,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.105129477311852,0.355454462382751,p_or_nonzero
+ck_level,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.084644788917811,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.0,,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.0292614747708664,,p_or_nonzero
+family_history,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.0605026209392628,-0.48372895005224603,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.427521888783598,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.77042589748058,,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.0002901547032556,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.998934196794925,,p_or_nonzero
+phenotype,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.606823299851701,-0.11986238268016065,p_or_nonzero
+pr_interval,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.604143662336118,,p_or_nonzero
+sex,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.83078253147222,0.043102610415867,p_or_nonzero
+smoking_status,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.758770969132871,0.0014642416316029486,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,reg,"GAM (mgcv, s(k=5), REML, select)",0.623238409788506,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,"LASSO (glmnet, lambda.1se)",,-1.1530677090009,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,"LASSO (glmnet, lambda.min)",,-1.53527258504315,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,"LASSO (glmnet, lambda.min)",,-0.122386473938883,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Piecewise: cut() tertile bins (top-4 covariates),1.3967471270425001e-11,,p_or_nonzero
+disease_duration,False,,106,Tideglusib,reg,Piecewise: cut() tertile bins (top-4 covariates),0.174025294749883,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,reg,Piecewise: cut() tertile bins (top-4 covariates),0.992958946969895,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,reg,Piecewise: cut() tertile bins (top-4 covariates),0.313284145251654,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Polynomial deg-2 (top-4 covariates),2.4689165612092896e-11,,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,Polynomial deg-2 (top-4 covariates),0.0075620340047122,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,reg,Polynomial deg-2 (top-4 covariates),0.491725467486607,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,reg,Polynomial deg-2 (top-4 covariates),0.359771554549473,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Regression spline bs(df=4) (top-4 covariates),8.08729757966988e-10,,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,Regression spline bs(df=4) (top-4 covariates),0.0121858073320025,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,reg,Regression spline bs(df=4) (top-4 covariates),0.978673894597568,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,reg,Regression spline bs(df=4) (top-4 covariates),0.907121251987349,,p_or_nonzero
+age_at_onset,True,,106,Tideglusib,reg,Ridge (glmnet),,0.077721666754719,p_or_nonzero
+albumin,True,,106,Tideglusib,reg,Ridge (glmnet),,0.157346796695929,p_or_nonzero
+bmi,True,,106,Tideglusib,reg,Ridge (glmnet),,0.146676082129713,p_or_nonzero
+cataracts,True,,106,Tideglusib,reg,Ridge (glmnet),,0.225758459867579,p_or_nonzero
+ck_level,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.166765162131833,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Ridge (glmnet),,-1.58710338193582,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.670415433834659,p_or_nonzero
+family_history,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.248546176054957,p_or_nonzero
+insulin_resistance,True,,106,Tideglusib,reg,Ridge (glmnet),,0.282072627584844,p_or_nonzero
+log_ctg,True,,106,Tideglusib,reg,Ridge (glmnet),,0.315950773166778,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.290916485030305,p_or_nonzero
+myotonia_severity,True,,106,Tideglusib,reg,Ridge (glmnet),,0.0245786098983942,p_or_nonzero
+phenotype,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.119612046524698,p_or_nonzero
+pr_interval,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.100737856531162,p_or_nonzero
+sex,True,,106,Tideglusib,reg,Ridge (glmnet),,0.14104225646892,p_or_nonzero
+smoking_status,True,,106,Tideglusib,reg,Ridge (glmnet),,0.022373694284571703,p_or_nonzero
+somatic_mosaicism_index,True,,106,Tideglusib,reg,Ridge (glmnet),,-0.0837528108447829,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,"Smoothing spline (top-1 covariate, cv=TRUE)",2.0458721724917202e-14,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Stepwise backward (AIC),7.41517764853019e-14,-1.81491784488188,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,Stepwise backward (AIC),0.0025723898940514,-1.0310520875273,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,reg,Stepwise backward (AIC),0.0656756711148552,0.416960194980632,p_or_nonzero
+muscle_strength,False,,106,Tideglusib,reg,Stepwise backward (AIC),0.0736361411251141,-0.590432997645667,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Stepwise both (AIC),7.41517764853019e-14,-1.81491784488188,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,Stepwise both (AIC),0.0025723898940514,-1.0310520875273,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,reg,Stepwise both (AIC),0.0656756711148552,0.416960194980632,p_or_nonzero
+muscle_strength,False,,106,Tideglusib,reg,Stepwise both (AIC),0.0736361411251141,-0.590432997645667,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Stepwise both (BIC),2.04587217249153e-14,-1.90407355388619,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,Stepwise forward (AIC),7.4151776485301e-14,-1.81491784488188,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,Stepwise forward (AIC),0.0025723898940514,-1.0310520875273,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,reg,Stepwise forward (AIC),0.0656756711148551,0.416960194980632,p_or_nonzero
+muscle_strength,False,,106,Tideglusib,reg,Stepwise forward (AIC),0.0736361411251141,-0.590432997645667,p_or_nonzero
+age_at_onset,False,,106,Tideglusib,reg,lm / glm (all covariates),0.390190637813521,-0.44204072823199,p_or_nonzero
+albumin,False,,106,Tideglusib,reg,lm / glm (all covariates),0.156143276122643,0.35082082693263,p_or_nonzero
+bmi,False,,106,Tideglusib,reg,lm / glm (all covariates),0.376631032043243,0.20500018188909,p_or_nonzero
+cataracts,False,,106,Tideglusib,reg,lm / glm (all covariates),0.113033964449137,0.404633574191767,p_or_nonzero
+ck_level,False,,106,Tideglusib,reg,lm / glm (all covariates),0.132820194284004,-0.353566299802224,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,reg,lm / glm (all covariates),8.49327766517344e-13,-2.00020087697635,p_or_nonzero
+disease_duration,True,,106,Tideglusib,reg,lm / glm (all covariates),0.0015291579808364,-1.48228627777274,p_or_nonzero
+family_history,False,,106,Tideglusib,reg,lm / glm (all covariates),0.0864758026880914,-0.5232402261801276,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,reg,lm / glm (all covariates),0.198219276661479,0.342232556391094,p_or_nonzero
+log_ctg,False,,106,Tideglusib,reg,lm / glm (all covariates),0.271004815707256,0.628927987304527,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,reg,lm / glm (all covariates),0.0222267641938658,-0.959057331636496,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,reg,lm / glm (all covariates),0.478178243071177,-0.39975585563895,p_or_nonzero
+phenotype,False,,106,Tideglusib,reg,lm / glm (all covariates),0.168149044406206,-0.8226039548091855,p_or_nonzero
+pr_interval,False,,106,Tideglusib,reg,lm / glm (all covariates),0.645056661165722,-0.114009656317562,p_or_nonzero
+sex,False,,106,Tideglusib,reg,lm / glm (all covariates),0.573608167560951,0.144211401722092,p_or_nonzero
+smoking_status,False,,106,Tideglusib,reg,lm / glm (all covariates),0.550981328344473,-0.003925845406846498,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,reg,lm / glm (all covariates),0.543879493644298,-0.192214915531308,p_or_nonzero
+age_at_onset,False,-0.028152173913043387,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+albumin,False,0.002065217391304447,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+bmi,False,-0.0014130434782607948,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+cataracts,False,0.015000000000000058,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+ck_level,False,0.02239130434782618,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+cognitive_function,True,0.22630434782608705,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+disease_duration,True,0.10358695652173919,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+family_history,False,0.011956521739130532,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+insulin_resistance,False,-0.0038043478260868626,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+log_ctg,True,0.025326086956521804,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+muscle_strength,False,0.003369565217391396,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+myotonia_severity,True,0.02336956521739138,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+phenotype,False,0.0002173913043478637,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+pr_interval,False,0.013369565217391393,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+sex,False,-0.022934782608695563,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+smoking_status,False,-0.005108695652173795,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.02782608695652165,106,Tideglusib,bin,Logistic regression (tuned),,,perm_importance
+age_at_onset,False,-0.04472826086956531,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+albumin,False,0.008913043478260852,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+bmi,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+cataracts,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+ck_level,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+cognitive_function,True,0.30309782608695646,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+disease_duration,False,0.003913043478260847,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+family_history,False,0.023641304347826,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+insulin_resistance,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+log_ctg,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+muscle_strength,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+myotonia_severity,True,0.057499999999999954,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+phenotype,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+pr_interval,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+sex,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+smoking_status,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+somatic_mosaicism_index,False,0.0,106,Tideglusib,bin,Decision tree (tuned),,,perm_importance
+age_at_onset,False,-0.00891304347826094,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+albumin,False,0.009456521739130374,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+bmi,False,0.003804347826086901,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+cataracts,False,0.0021739130434782206,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+ck_level,False,0.008260869565217367,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+cognitive_function,True,0.21347826086956517,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+disease_duration,False,0.0016304347826086197,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+family_history,False,0.006413043478260766,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+insulin_resistance,False,-0.0017391304347826875,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+log_ctg,False,0.012499999999999923,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+muscle_strength,False,0.01228260869565213,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+myotonia_severity,False,0.005434782608695593,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+phenotype,False,-0.0005434782608696065,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+pr_interval,False,0.004891304347826003,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+sex,False,-0.0075000000000000734,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+smoking_status,False,0.001956521739130396,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.002173913043478326,106,Tideglusib,bin,Random forest (tuned),,,perm_importance
+age_at_onset,False,-0.01478260869565221,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+albumin,False,-0.00184782608695655,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+bmi,False,-0.001521739130434785,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+cataracts,False,0.00434782608695653,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+ck_level,False,0.01239130434782606,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+cognitive_function,True,0.2027173913043478,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+disease_duration,True,0.04652173913043476,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+family_history,True,0.023260869565217362,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+insulin_resistance,False,-0.0046739130434782835,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+log_ctg,True,0.03532608695652173,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+muscle_strength,False,0.007826086956521728,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+myotonia_severity,True,0.05989130434782608,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+phenotype,False,0.01478260869565216,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+pr_interval,True,0.026304347826086934,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+sex,False,-0.02478260869565218,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+smoking_status,False,0.012934782608695622,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.018043478260869578,106,Tideglusib,bin,SVM (RBF) (tuned),,,perm_importance
+age_at_onset,False,-0.0073369565217391245,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+albumin,False,-0.021902173913043443,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+bmi,False,0.006630434782608741,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+cataracts,False,0.004891304347826092,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+ck_level,True,0.010434782608695653,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+cognitive_function,True,0.0861413043478261,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+disease_duration,True,0.061902173913043514,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+family_history,True,0.017391304347826077,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+insulin_resistance,False,0.0014673913043478314,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+log_ctg,True,0.03320652173913043,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+muscle_strength,True,0.03211956521739132,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+myotonia_severity,True,0.03684782608695653,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+phenotype,True,0.03668478260869565,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+pr_interval,False,0.004891304347826081,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+sex,True,0.03869565217391308,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+smoking_status,True,0.019293478260869624,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+somatic_mosaicism_index,True,0.020434782608695672,106,Tideglusib,bin,KNN (tuned),,,perm_importance
+age_at_onset,False,-0.0257608695652174,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+albumin,False,0.0008695652173913215,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+bmi,False,0.0014130434782608503,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+cataracts,False,0.0003260869565217428,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+ck_level,False,0.017282608695652162,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+cognitive_function,True,0.26652173913043475,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+disease_duration,False,0.007282608695652182,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+family_history,False,0.013260869565217343,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+insulin_resistance,False,0.010434782608695648,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+log_ctg,False,0.018369565217391286,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+muscle_strength,False,0.01869565217391304,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+myotonia_severity,False,0.010108695652173916,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+phenotype,False,0.0,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+pr_interval,False,0.008152173913043482,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+sex,False,-0.006847826086956532,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+smoking_status,False,0.0009782608695652118,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+somatic_mosaicism_index,False,-0.006413043478260871,106,Tideglusib,bin,XGBoost (tuned),,,perm_importance
+age_at_onset,False,-0.01978260869565217,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+albumin,False,0.009891304347826096,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+bmi,False,0.00423913043478259,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+cataracts,False,0.01836956521739131,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+ck_level,True,0.02065217391304347,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+cognitive_function,True,0.20152173913043478,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+disease_duration,True,0.042065217391304366,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+family_history,True,0.04750000000000002,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+insulin_resistance,False,0.01836956521739133,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+log_ctg,True,0.040760869565217406,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+muscle_strength,False,0.014673913043478265,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+myotonia_severity,True,0.06760869565217394,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+phenotype,True,0.13119565217391307,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+pr_interval,False,0.0013043478260869657,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+sex,False,0.0030434782608695756,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+smoking_status,True,0.03956521739130437,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+somatic_mosaicism_index,False,0.01684782608695653,106,Tideglusib,bin,"MLP (16,) (tuned)",,,perm_importance
+cataracts,True,,106,Tideglusib,bin,"Elastic net (glmnet, alpha=.5)",,0.0856837134409447,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,"Elastic net (glmnet, alpha=.5)",,-1.02275345312251,p_or_nonzero
+family_history,True,,106,Tideglusib,bin,"Elastic net (glmnet, alpha=.5)",,-0.0753667193131922,p_or_nonzero
+myotonia_severity,True,,106,Tideglusib,bin,"Elastic net (glmnet, alpha=.5)",,0.170960933053789,p_or_nonzero
+age_at_onset,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.496399465577035,,p_or_nonzero
+albumin,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.938924450818107,,p_or_nonzero
+bmi,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.274936454270097,,p_or_nonzero
+cataracts,True,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.0175189616710268,0.723275722533265,p_or_nonzero
+ck_level,True,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.031558490735237,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.0,,p_or_nonzero
+disease_duration,True,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.0452353500140972,,p_or_nonzero
+family_history,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.0505475605116229,-0.527827880368848,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.776240538288476,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.555235486179728,,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.0178636334801481,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.287616503836528,,p_or_nonzero
+phenotype,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.835717113839666,-0.052834556931176294,p_or_nonzero
+pr_interval,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.800813242369397,,p_or_nonzero
+sex,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.560434983881613,0.151533151707516,p_or_nonzero
+smoking_status,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.392748040669599,-0.12731938264724316,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,bin,"GAM (mgcv, s(k=5), REML, select)",0.988236714125324,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,"LASSO (glmnet, lambda.1se)",,-0.649233758222126,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,"LASSO (glmnet, lambda.min)",,-1.0649047595736,p_or_nonzero
+myotonia_severity,True,,106,Tideglusib,bin,"LASSO (glmnet, lambda.min)",,0.0178392728437152,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Piecewise: cut() tertile bins (top-4 covariates),2.2820426680719303e-09,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,bin,Piecewise: cut() tertile bins (top-4 covariates),0.785998321580147,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,bin,Piecewise: cut() tertile bins (top-4 covariates),0.493474333680895,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,bin,Piecewise: cut() tertile bins (top-4 covariates),0.81211007012704,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Polynomial deg-2 (top-4 covariates),6.37184489703549e-10,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,bin,Polynomial deg-2 (top-4 covariates),0.991427519614629,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,bin,Polynomial deg-2 (top-4 covariates),0.312123213193377,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,bin,Polynomial deg-2 (top-4 covariates),0.563463005030184,,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Regression spline bs(df=4) (top-4 covariates),2.77123807664035e-10,,p_or_nonzero
+log_ctg,False,,106,Tideglusib,bin,Regression spline bs(df=4) (top-4 covariates),0.60514706885472,,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,bin,Regression spline bs(df=4) (top-4 covariates),0.409033908652682,,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,bin,Regression spline bs(df=4) (top-4 covariates),0.233685210490607,,p_or_nonzero
+age_at_onset,True,,106,Tideglusib,bin,Ridge (glmnet),,0.153790805241216,p_or_nonzero
+albumin,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.0323436241861406,p_or_nonzero
+bmi,True,,106,Tideglusib,bin,Ridge (glmnet),,0.108393738347955,p_or_nonzero
+cataracts,True,,106,Tideglusib,bin,Ridge (glmnet),,0.242475629964296,p_or_nonzero
+ck_level,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.138937882011425,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.99564519980552,p_or_nonzero
+disease_duration,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.204816412163487,p_or_nonzero
+family_history,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.12295207444122594,p_or_nonzero
+insulin_resistance,True,,106,Tideglusib,bin,Ridge (glmnet),,0.105320099351745,p_or_nonzero
+log_ctg,True,,106,Tideglusib,bin,Ridge (glmnet),,0.181233375854896,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.160813197515512,p_or_nonzero
+myotonia_severity,True,,106,Tideglusib,bin,Ridge (glmnet),,0.194797361148427,p_or_nonzero
+phenotype,True,,106,Tideglusib,bin,Ridge (glmnet),,0.0014529302364509472,p_or_nonzero
+pr_interval,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.0798156764085712,p_or_nonzero
+sex,True,,106,Tideglusib,bin,Ridge (glmnet),,0.131370768318687,p_or_nonzero
+smoking_status,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.04532277424421485,p_or_nonzero
+somatic_mosaicism_index,True,,106,Tideglusib,bin,Ridge (glmnet),,-0.0334220405076284,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,"Smoothing spline (top-1 covariate, cv=TRUE)",3.81757130496662e-12,,p_or_nonzero
+cataracts,True,,106,Tideglusib,bin,Stepwise backward (AIC),0.0161800878427839,0.663360081289087,p_or_nonzero
+ck_level,False,,106,Tideglusib,bin,Stepwise backward (AIC),0.0920358920559757,-0.434799744215771,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Stepwise backward (AIC),1.09910855132634e-07,-1.88729967635327,p_or_nonzero
+disease_duration,True,,106,Tideglusib,bin,Stepwise backward (AIC),0.0181915332374381,-1.00589563588023,p_or_nonzero
+family_history,True,,106,Tideglusib,bin,Stepwise backward (AIC),0.0494060280595702,-0.476804041896747,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,bin,Stepwise backward (AIC),0.0332914832611275,-0.812450480065088,p_or_nonzero
+cataracts,True,,106,Tideglusib,bin,Stepwise both (AIC),0.0161800878427839,0.663360081289087,p_or_nonzero
+ck_level,False,,106,Tideglusib,bin,Stepwise both (AIC),0.0920358920559757,-0.434799744215771,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Stepwise both (AIC),1.09910855132634e-07,-1.88729967635327,p_or_nonzero
+disease_duration,True,,106,Tideglusib,bin,Stepwise both (AIC),0.0181915332374381,-1.00589563588023,p_or_nonzero
+family_history,True,,106,Tideglusib,bin,Stepwise both (AIC),0.0494060280595702,-0.476804041896747,p_or_nonzero
+muscle_strength,True,,106,Tideglusib,bin,Stepwise both (AIC),0.0332914832611275,-0.812450480065088,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Stepwise both (BIC),4.58984535059224e-08,-1.63523655175019,p_or_nonzero
+age_at_onset,False,,106,Tideglusib,bin,Stepwise forward (AIC),0.158990676365057,0.361331709158299,p_or_nonzero
+cataracts,False,,106,Tideglusib,bin,Stepwise forward (AIC),0.0864724497395427,0.4219651915583,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,Stepwise forward (AIC),1.10743108799682e-07,-1.8301433075218,p_or_nonzero
+family_history,False,,106,Tideglusib,bin,Stepwise forward (AIC),0.10942772853726,-0.375945954383472,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,bin,Stepwise forward (AIC),0.0506285929442375,0.539037686582061,p_or_nonzero
+age_at_onset,False,,106,Tideglusib,bin,lm / glm (all covariates),0.74342457676365,0.191504189335561,p_or_nonzero
+albumin,False,,106,Tideglusib,bin,lm / glm (all covariates),0.760180113794793,0.0878589038153525,p_or_nonzero
+bmi,False,,106,Tideglusib,bin,lm / glm (all covariates),0.318940072308206,0.261582821077733,p_or_nonzero
+cataracts,True,,106,Tideglusib,bin,lm / glm (all covariates),0.0231885344260079,0.700376611028867,p_or_nonzero
+ck_level,False,,106,Tideglusib,bin,lm / glm (all covariates),0.0848562437168273,-0.479236554709416,p_or_nonzero
+cognitive_function,True,,106,Tideglusib,bin,lm / glm (all covariates),7.44211728321548e-07,-1.96706653150671,p_or_nonzero
+disease_duration,False,,106,Tideglusib,bin,lm / glm (all covariates),0.088912758015463,-0.938970426427543,p_or_nonzero
+family_history,False,,106,Tideglusib,bin,lm / glm (all covariates),0.0733893184838379,-0.5447345670679595,p_or_nonzero
+insulin_resistance,False,,106,Tideglusib,bin,lm / glm (all covariates),0.885013868532887,0.0447282479098487,p_or_nonzero
+log_ctg,False,,106,Tideglusib,bin,lm / glm (all covariates),0.674073363792844,0.273704236874506,p_or_nonzero
+muscle_strength,False,,106,Tideglusib,bin,lm / glm (all covariates),0.0984550387080576,-0.807744441426974,p_or_nonzero
+myotonia_severity,False,,106,Tideglusib,bin,lm / glm (all covariates),0.791306839431852,0.167138800737142,p_or_nonzero
+phenotype,False,,106,Tideglusib,bin,lm / glm (all covariates),0.727301603437007,-0.169039126585255,p_or_nonzero
+pr_interval,False,,106,Tideglusib,bin,lm / glm (all covariates),0.470020641126382,-0.206168878755781,p_or_nonzero
+sex,False,,106,Tideglusib,bin,lm / glm (all covariates),0.608983920489234,0.151522163228411,p_or_nonzero
+smoking_status,False,,106,Tideglusib,bin,lm / glm (all covariates),0.268811577298395,-0.12023248737323634,p_or_nonzero
+somatic_mosaicism_index,False,,106,Tideglusib,bin,lm / glm (all covariates),0.512387762636696,-0.230848477401203,p_or_nonzero

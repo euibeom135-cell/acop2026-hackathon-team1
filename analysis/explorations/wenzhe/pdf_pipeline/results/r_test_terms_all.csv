@@ -1,0 +1,375 @@
+method,fit,term,coef,arm,task
+lm / glm (all covariates),train,log_ctg,0.219938193589259,Mexiletine,reg
+lm / glm (all covariates),train,somatic_mosaicism_index,-0.0395359857258635,Mexiletine,reg
+lm / glm (all covariates),train,age_at_onset,-0.035598591339768,Mexiletine,reg
+lm / glm (all covariates),train,disease_duration,0.224845732878555,Mexiletine,reg
+lm / glm (all covariates),train,myotonia_severity,-1.24260818090306,Mexiletine,reg
+lm / glm (all covariates),train,muscle_strength,0.0186721084062152,Mexiletine,reg
+lm / glm (all covariates),train,pr_interval,-0.0109831314356645,Mexiletine,reg
+lm / glm (all covariates),train,cognitive_function,0.146196295523896,Mexiletine,reg
+lm / glm (all covariates),train,ck_level,-0.102057540661675,Mexiletine,reg
+lm / glm (all covariates),train,insulin_resistance,0.0557548197299465,Mexiletine,reg
+lm / glm (all covariates),train,bmi,-0.0032331383922632,Mexiletine,reg
+lm / glm (all covariates),train,sex_Male,-0.0077998741415435,Mexiletine,reg
+lm / glm (all covariates),train,cataracts_Yes,-0.25465249675682,Mexiletine,reg
+lm / glm (all covariates),train,family_history_Yes,-0.665394311575076,Mexiletine,reg
+lm / glm (all covariates),train,family_history_Unknown,-0.752759209884884,Mexiletine,reg
+lm / glm (all covariates),train,smoking_status_Former,0.0319169981021768,Mexiletine,reg
+lm / glm (all covariates),train,smoking_status_Current,0.0762099729933306,Mexiletine,reg
+lm / glm (all covariates),train,phenotype_adult_onset,-0.0814073072056909,Mexiletine,reg
+lm / glm (all covariates),train,phenotype_juvenile_onset,-0.0187240201234256,Mexiletine,reg
+Stepwise both (BIC),train,myotonia_severity,-1.07600839401552,Mexiletine,reg
+Stepwise both (BIC),train,disease_duration,0.155233305403363,Mexiletine,reg
+"Best subset (leaps, BIC, nvmax=10)",train,disease_duration,0.155233305403364,Mexiletine,reg
+"Best subset (leaps, BIC, nvmax=10)",train,myotonia_severity,-1.07600839401552,Mexiletine,reg
+Ridge (glmnet),train,log_ctg,-0.0804277723761363,Mexiletine,reg
+Ridge (glmnet),train,somatic_mosaicism_index,-0.0613930973304054,Mexiletine,reg
+Ridge (glmnet),train,age_at_onset,-0.0534643367056722,Mexiletine,reg
+Ridge (glmnet),train,disease_duration,0.157382493357642,Mexiletine,reg
+Ridge (glmnet),train,myotonia_severity,-0.901316843927468,Mexiletine,reg
+Ridge (glmnet),train,muscle_strength,-0.0266809817800342,Mexiletine,reg
+Ridge (glmnet),train,pr_interval,0.0250174938274343,Mexiletine,reg
+Ridge (glmnet),train,cognitive_function,0.147614098725747,Mexiletine,reg
+Ridge (glmnet),train,ck_level,-0.0897589945569432,Mexiletine,reg
+Ridge (glmnet),train,insulin_resistance,0.0356941672809877,Mexiletine,reg
+Ridge (glmnet),train,bmi,-0.0177629629667324,Mexiletine,reg
+Ridge (glmnet),train,sex_Male,-0.0393472500410212,Mexiletine,reg
+Ridge (glmnet),train,cataracts_Yes,-0.114773469877338,Mexiletine,reg
+Ridge (glmnet),train,family_history_Yes,-0.173099929084641,Mexiletine,reg
+Ridge (glmnet),train,family_history_Unknown,-0.212742871394227,Mexiletine,reg
+Ridge (glmnet),train,smoking_status_Former,0.0234024417511964,Mexiletine,reg
+Ridge (glmnet),train,smoking_status_Current,0.0467344952853618,Mexiletine,reg
+Ridge (glmnet),train,phenotype_adult_onset,-0.0279083388266191,Mexiletine,reg
+Ridge (glmnet),train,phenotype_juvenile_onset,0.0205353246601666,Mexiletine,reg
+"LASSO (glmnet, lambda.min)",train,disease_duration,0.117223842953534,Mexiletine,reg
+"LASSO (glmnet, lambda.min)",train,myotonia_severity,-1.01118235297545,Mexiletine,reg
+"LASSO (glmnet, lambda.min)",train,cognitive_function,0.0694730912874361,Mexiletine,reg
+"LASSO (glmnet, lambda.min)",train,ck_level,-0.0283406206338412,Mexiletine,reg
+"Elastic net (glmnet, alpha=.5)",train,somatic_mosaicism_index,-0.0143265856860909,Mexiletine,reg
+"Elastic net (glmnet, alpha=.5)",train,disease_duration,0.127737342805374,Mexiletine,reg
+"Elastic net (glmnet, alpha=.5)",train,myotonia_severity,-0.973892802889807,Mexiletine,reg
+"Elastic net (glmnet, alpha=.5)",train,cognitive_function,0.0845788090543405,Mexiletine,reg
+"Elastic net (glmnet, alpha=.5)",train,ck_level,-0.0377352842655951,Mexiletine,reg
+"GAM (mgcv, s(k=5), REML, select)",train,log_ctg,1.0,Mexiletine,reg
+"GAM (mgcv, s(k=5), REML, select)",train,myotonia_severity,1.0,Mexiletine,reg
+"GAM (mgcv, s(k=5), REML, select)",train,pr_interval,1.0,Mexiletine,reg
+"GAM (mgcv, s(k=5), REML, select)",train,family_history_Yes,1.0,Mexiletine,reg
+"GAM (mgcv, s(k=5), REML, select)",train,family_history_Unknown,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC1,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC2,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC3,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC4,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC5,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC6,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC7,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC8,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC9,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC10,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC11,1.0,Mexiletine,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC12,1.0,Mexiletine,reg
+lm / glm (all covariates),train,log_ctg,0.0315399970857673,Mexiletine,bin
+lm / glm (all covariates),train,somatic_mosaicism_index,0.0175395497089759,Mexiletine,bin
+lm / glm (all covariates),train,age_at_onset,0.432259949750637,Mexiletine,bin
+lm / glm (all covariates),train,disease_duration,0.065293276748889,Mexiletine,bin
+lm / glm (all covariates),train,myotonia_severity,0.533667098552573,Mexiletine,bin
+lm / glm (all covariates),train,muscle_strength,0.565408214931052,Mexiletine,bin
+lm / glm (all covariates),train,pr_interval,0.50464537096208,Mexiletine,bin
+lm / glm (all covariates),train,cognitive_function,-0.358488410071061,Mexiletine,bin
+lm / glm (all covariates),train,ck_level,0.239524377611774,Mexiletine,bin
+lm / glm (all covariates),train,insulin_resistance,-0.189349560317396,Mexiletine,bin
+lm / glm (all covariates),train,bmi,-0.183779343301264,Mexiletine,bin
+lm / glm (all covariates),train,sex_Male,-0.0023541530013278,Mexiletine,bin
+lm / glm (all covariates),train,cataracts_Yes,0.385855409197463,Mexiletine,bin
+lm / glm (all covariates),train,family_history_Yes,2.77870333450091,Mexiletine,bin
+lm / glm (all covariates),train,family_history_Unknown,2.7624351179627,Mexiletine,bin
+lm / glm (all covariates),train,smoking_status_Former,-0.0340129076774845,Mexiletine,bin
+lm / glm (all covariates),train,smoking_status_Current,0.167143487082952,Mexiletine,bin
+lm / glm (all covariates),train,phenotype_adult_onset,2.58697606329701,Mexiletine,bin
+lm / glm (all covariates),train,phenotype_juvenile_onset,3.32366344785811,Mexiletine,bin
+Stepwise both (BIC),train,myotonia_severity,0.927114525961136,Mexiletine,bin
+Stepwise both (BIC),train,family_history_Yes,2.21108864884875,Mexiletine,bin
+Stepwise both (BIC),train,family_history_Unknown,2.39000970190543,Mexiletine,bin
+Ridge (glmnet),train,log_ctg,0.14771532512369,Mexiletine,bin
+Ridge (glmnet),train,somatic_mosaicism_index,0.0826705668598809,Mexiletine,bin
+Ridge (glmnet),train,age_at_onset,-0.0964540446623507,Mexiletine,bin
+Ridge (glmnet),train,disease_duration,-0.0606263353878099,Mexiletine,bin
+Ridge (glmnet),train,myotonia_severity,0.156552221322214,Mexiletine,bin
+Ridge (glmnet),train,muscle_strength,0.0728251243003063,Mexiletine,bin
+Ridge (glmnet),train,pr_interval,0.0639852437168735,Mexiletine,bin
+Ridge (glmnet),train,cognitive_function,-0.10472282962186,Mexiletine,bin
+Ridge (glmnet),train,ck_level,0.0286540902735807,Mexiletine,bin
+Ridge (glmnet),train,insulin_resistance,-0.0494573406960187,Mexiletine,bin
+Ridge (glmnet),train,bmi,-0.0583141516863788,Mexiletine,bin
+Ridge (glmnet),train,sex_Male,0.012075501988856,Mexiletine,bin
+Ridge (glmnet),train,cataracts_Yes,-0.0085682238863959,Mexiletine,bin
+Ridge (glmnet),train,family_history_Yes,0.027201585614063,Mexiletine,bin
+Ridge (glmnet),train,family_history_Unknown,0.0310988723805481,Mexiletine,bin
+Ridge (glmnet),train,smoking_status_Former,0.0038076490452623,Mexiletine,bin
+Ridge (glmnet),train,smoking_status_Current,0.0107326577539122,Mexiletine,bin
+Ridge (glmnet),train,phenotype_adult_onset,0.0223390523976304,Mexiletine,bin
+Ridge (glmnet),train,phenotype_juvenile_onset,0.0328780785480472,Mexiletine,bin
+"LASSO (glmnet, lambda.min)",train,log_ctg,0.246034578876911,Mexiletine,bin
+"LASSO (glmnet, lambda.min)",train,myotonia_severity,0.299576587400913,Mexiletine,bin
+"LASSO (glmnet, lambda.min)",train,muscle_strength,0.0058859814661834,Mexiletine,bin
+"LASSO (glmnet, lambda.min)",train,cognitive_function,-0.0620602635248323,Mexiletine,bin
+"Elastic net (glmnet, alpha=.5)",train,log_ctg,0.210919092494614,Mexiletine,bin
+"Elastic net (glmnet, alpha=.5)",train,age_at_onset,-0.0327618952623527,Mexiletine,bin
+"Elastic net (glmnet, alpha=.5)",train,myotonia_severity,0.241526395151407,Mexiletine,bin
+"Elastic net (glmnet, alpha=.5)",train,cognitive_function,-0.0625134343243879,Mexiletine,bin
+"GAM (mgcv, s(k=5), REML, select)",train,family_history_Yes,1.0,Mexiletine,bin
+"GAM (mgcv, s(k=5), REML, select)",train,family_history_Unknown,1.0,Mexiletine,bin
+"GAM (mgcv, s(k=5), REML, select)",train,phenotype_juvenile_onset,1.0,Mexiletine,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC1,1.0,Mexiletine,bin
+lm / glm (all covariates),train,log_ctg,0.659134191045933,Oligonucleotide,reg
+lm / glm (all covariates),train,somatic_mosaicism_index,0.042202067013854,Oligonucleotide,reg
+lm / glm (all covariates),train,age_at_onset,0.420730674400678,Oligonucleotide,reg
+lm / glm (all covariates),train,disease_duration,0.37131849459168,Oligonucleotide,reg
+lm / glm (all covariates),train,myotonia_severity,0.0939877280133764,Oligonucleotide,reg
+lm / glm (all covariates),train,muscle_strength,0.113910654723416,Oligonucleotide,reg
+lm / glm (all covariates),train,pr_interval,-0.0458982023036294,Oligonucleotide,reg
+lm / glm (all covariates),train,cognitive_function,0.177837790234938,Oligonucleotide,reg
+lm / glm (all covariates),train,ck_level,-0.112671608651319,Oligonucleotide,reg
+lm / glm (all covariates),train,insulin_resistance,0.0198229677090387,Oligonucleotide,reg
+lm / glm (all covariates),train,albumin,-0.0066934863482447,Oligonucleotide,reg
+lm / glm (all covariates),train,bmi,-0.125113754928178,Oligonucleotide,reg
+lm / glm (all covariates),train,sex_Male,0.0011335458686728,Oligonucleotide,reg
+lm / glm (all covariates),train,cataracts_Yes,-0.218887316244813,Oligonucleotide,reg
+lm / glm (all covariates),train,family_history_Yes,-0.8283806303875,Oligonucleotide,reg
+lm / glm (all covariates),train,family_history_Unknown,-0.614485684660659,Oligonucleotide,reg
+lm / glm (all covariates),train,smoking_status_Former,0.335386902437633,Oligonucleotide,reg
+lm / glm (all covariates),train,smoking_status_Current,0.214979937385746,Oligonucleotide,reg
+lm / glm (all covariates),train,phenotype_adult_onset,0.485650377620335,Oligonucleotide,reg
+lm / glm (all covariates),train,phenotype_juvenile_onset,1.13216436932437,Oligonucleotide,reg
+Stepwise both (BIC),train,log_ctg,0.616233626117996,Oligonucleotide,reg
+Stepwise both (BIC),train,family_history_Yes,-0.609643801675556,Oligonucleotide,reg
+"Best subset (leaps, BIC, nvmax=10)",train,log_ctg,0.616233626117996,Oligonucleotide,reg
+"Best subset (leaps, BIC, nvmax=10)",train,family_history_Yes,-0.609643801675556,Oligonucleotide,reg
+Ridge (glmnet),train,log_ctg,0.18008889577241,Oligonucleotide,reg
+Ridge (glmnet),train,somatic_mosaicism_index,0.0920220011125439,Oligonucleotide,reg
+Ridge (glmnet),train,age_at_onset,-0.0578637194585151,Oligonucleotide,reg
+Ridge (glmnet),train,disease_duration,0.0702106696469786,Oligonucleotide,reg
+Ridge (glmnet),train,myotonia_severity,0.150185276547,Oligonucleotide,reg
+Ridge (glmnet),train,muscle_strength,-0.0587816620907532,Oligonucleotide,reg
+Ridge (glmnet),train,pr_interval,0.0027348121127818,Oligonucleotide,reg
+Ridge (glmnet),train,cognitive_function,0.0582245788573112,Oligonucleotide,reg
+Ridge (glmnet),train,ck_level,-0.0192803834487464,Oligonucleotide,reg
+Ridge (glmnet),train,insulin_resistance,0.0460000288999898,Oligonucleotide,reg
+Ridge (glmnet),train,albumin,-0.0169526431126323,Oligonucleotide,reg
+Ridge (glmnet),train,bmi,-0.0478622999739492,Oligonucleotide,reg
+Ridge (glmnet),train,sex_Male,-0.0136922497251899,Oligonucleotide,reg
+Ridge (glmnet),train,cataracts_Yes,-0.0298403044999228,Oligonucleotide,reg
+Ridge (glmnet),train,family_history_Yes,-0.0758215653448703,Oligonucleotide,reg
+Ridge (glmnet),train,family_history_Unknown,0.0203380418014998,Oligonucleotide,reg
+Ridge (glmnet),train,smoking_status_Former,0.0480689279085347,Oligonucleotide,reg
+Ridge (glmnet),train,smoking_status_Current,-0.0076287309253788,Oligonucleotide,reg
+Ridge (glmnet),train,phenotype_adult_onset,0.0121504019529594,Oligonucleotide,reg
+Ridge (glmnet),train,phenotype_juvenile_onset,0.0234367044141734,Oligonucleotide,reg
+"LASSO (glmnet, lambda.min)",train,log_ctg,0.426588912835518,Oligonucleotide,reg
+"LASSO (glmnet, lambda.min)",train,disease_duration,0.106279124045118,Oligonucleotide,reg
+"LASSO (glmnet, lambda.min)",train,myotonia_severity,0.0790521350602186,Oligonucleotide,reg
+"LASSO (glmnet, lambda.min)",train,cognitive_function,0.0227217383997533,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,log_ctg,0.419123466916734,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,somatic_mosaicism_index,0.0290862509336135,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,disease_duration,0.150379771279825,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,myotonia_severity,0.143147131306708,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,cognitive_function,0.0797304622419608,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,bmi,-0.0237492133449908,Oligonucleotide,reg
+"Elastic net (glmnet, alpha=.5)",train,family_history_Yes,-0.109552357143557,Oligonucleotide,reg
+"GAM (mgcv, s(k=5), REML, select)",train,log_ctg,1.0,Oligonucleotide,reg
+"GAM (mgcv, s(k=5), REML, select)",train,disease_duration,1.0,Oligonucleotide,reg
+"GAM (mgcv, s(k=5), REML, select)",train,pr_interval,1.0,Oligonucleotide,reg
+"GAM (mgcv, s(k=5), REML, select)",train,ck_level,1.0,Oligonucleotide,reg
+"GAM (mgcv, s(k=5), REML, select)",train,family_history_Yes,1.0,Oligonucleotide,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC1,1.0,Oligonucleotide,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC2,1.0,Oligonucleotide,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC3,1.0,Oligonucleotide,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC4,1.0,Oligonucleotide,reg
+lm / glm (all covariates),train,log_ctg,1.05768209247651,Oligonucleotide,bin
+lm / glm (all covariates),train,somatic_mosaicism_index,-0.199999362568269,Oligonucleotide,bin
+lm / glm (all covariates),train,age_at_onset,0.72731504293961,Oligonucleotide,bin
+lm / glm (all covariates),train,disease_duration,0.56599861610607,Oligonucleotide,bin
+lm / glm (all covariates),train,myotonia_severity,0.110629687576245,Oligonucleotide,bin
+lm / glm (all covariates),train,muscle_strength,-0.0020266897164396,Oligonucleotide,bin
+lm / glm (all covariates),train,pr_interval,-0.074838187460658,Oligonucleotide,bin
+lm / glm (all covariates),train,cognitive_function,0.385173684499488,Oligonucleotide,bin
+lm / glm (all covariates),train,ck_level,-0.422874763343038,Oligonucleotide,bin
+lm / glm (all covariates),train,insulin_resistance,0.0402202049489501,Oligonucleotide,bin
+lm / glm (all covariates),train,albumin,-0.15112457414001,Oligonucleotide,bin
+lm / glm (all covariates),train,bmi,-0.0514522375912801,Oligonucleotide,bin
+lm / glm (all covariates),train,sex_Male,0.167385132523668,Oligonucleotide,bin
+lm / glm (all covariates),train,cataracts_Yes,-0.311504495926192,Oligonucleotide,bin
+lm / glm (all covariates),train,family_history_Yes,-1.03330995082377,Oligonucleotide,bin
+lm / glm (all covariates),train,family_history_Unknown,-1.13480385403181,Oligonucleotide,bin
+lm / glm (all covariates),train,smoking_status_Former,0.415289812367879,Oligonucleotide,bin
+lm / glm (all covariates),train,smoking_status_Current,0.232653932439738,Oligonucleotide,bin
+lm / glm (all covariates),train,phenotype_adult_onset,1.63625490983007,Oligonucleotide,bin
+lm / glm (all covariates),train,phenotype_juvenile_onset,2.49503362030282,Oligonucleotide,bin
+Stepwise both (BIC),train,log_ctg,0.906281089783526,Oligonucleotide,bin
+Stepwise both (BIC),train,disease_duration,0.480803968539748,Oligonucleotide,bin
+Ridge (glmnet),train,log_ctg,0.21573438225274,Oligonucleotide,bin
+Ridge (glmnet),train,somatic_mosaicism_index,0.0570021547934087,Oligonucleotide,bin
+Ridge (glmnet),train,age_at_onset,-0.0817208438767877,Oligonucleotide,bin
+Ridge (glmnet),train,disease_duration,0.106245057657962,Oligonucleotide,bin
+Ridge (glmnet),train,myotonia_severity,0.176401535253534,Oligonucleotide,bin
+Ridge (glmnet),train,muscle_strength,-0.108944145320575,Oligonucleotide,bin
+Ridge (glmnet),train,pr_interval,0.0139490007070754,Oligonucleotide,bin
+Ridge (glmnet),train,cognitive_function,0.074157338839777,Oligonucleotide,bin
+Ridge (glmnet),train,ck_level,-0.0843699075146401,Oligonucleotide,bin
+Ridge (glmnet),train,insulin_resistance,0.0698932935531632,Oligonucleotide,bin
+Ridge (glmnet),train,albumin,-0.0594913568748359,Oligonucleotide,bin
+Ridge (glmnet),train,bmi,-0.0116334555249949,Oligonucleotide,bin
+Ridge (glmnet),train,sex_Male,0.0064737122472675,Oligonucleotide,bin
+Ridge (glmnet),train,cataracts_Yes,-0.0378500558396506,Oligonucleotide,bin
+Ridge (glmnet),train,family_history_Yes,-0.0607353616449624,Oligonucleotide,bin
+Ridge (glmnet),train,family_history_Unknown,0.0110176901849132,Oligonucleotide,bin
+Ridge (glmnet),train,smoking_status_Former,0.0492660023981366,Oligonucleotide,bin
+Ridge (glmnet),train,smoking_status_Current,-0.0158179303727592,Oligonucleotide,bin
+Ridge (glmnet),train,phenotype_adult_onset,0.0626177666041634,Oligonucleotide,bin
+Ridge (glmnet),train,phenotype_juvenile_onset,0.0057087296804917,Oligonucleotide,bin
+"LASSO (glmnet, lambda.min)",train,log_ctg,0.608655676587329,Oligonucleotide,bin
+"LASSO (glmnet, lambda.min)",train,disease_duration,0.2511001822705,Oligonucleotide,bin
+"LASSO (glmnet, lambda.min)",train,myotonia_severity,0.0681935776633496,Oligonucleotide,bin
+"LASSO (glmnet, lambda.min)",train,cognitive_function,0.0705142741575498,Oligonucleotide,bin
+"LASSO (glmnet, lambda.min)",train,ck_level,-0.0521852507070424,Oligonucleotide,bin
+"Elastic net (glmnet, alpha=.5)",train,log_ctg,0.435796882725998,Oligonucleotide,bin
+"Elastic net (glmnet, alpha=.5)",train,disease_duration,0.182067036620785,Oligonucleotide,bin
+"Elastic net (glmnet, alpha=.5)",train,myotonia_severity,0.170035095319403,Oligonucleotide,bin
+"Elastic net (glmnet, alpha=.5)",train,muscle_strength,-0.0641540171008377,Oligonucleotide,bin
+"Elastic net (glmnet, alpha=.5)",train,cognitive_function,0.0537100948322122,Oligonucleotide,bin
+"Elastic net (glmnet, alpha=.5)",train,ck_level,-0.0533974684703902,Oligonucleotide,bin
+"GAM (mgcv, s(k=5), REML, select)",train,log_ctg,1.0,Oligonucleotide,bin
+"GAM (mgcv, s(k=5), REML, select)",train,age_at_onset,1.0,Oligonucleotide,bin
+"GAM (mgcv, s(k=5), REML, select)",train,disease_duration,1.0,Oligonucleotide,bin
+"GAM (mgcv, s(k=5), REML, select)",train,ck_level,1.0,Oligonucleotide,bin
+"GAM (mgcv, s(k=5), REML, select)",train,albumin,1.0,Oligonucleotide,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC1,1.0,Oligonucleotide,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC2,1.0,Oligonucleotide,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC3,1.0,Oligonucleotide,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC4,1.0,Oligonucleotide,bin
+lm / glm (all covariates),train,log_ctg,-0.481980065846002,Tideglusib,reg
+lm / glm (all covariates),train,somatic_mosaicism_index,0.297691491667147,Tideglusib,reg
+lm / glm (all covariates),train,age_at_onset,-0.873988286933737,Tideglusib,reg
+lm / glm (all covariates),train,disease_duration,-1.6225789121959,Tideglusib,reg
+lm / glm (all covariates),train,myotonia_severity,0.322796407498668,Tideglusib,reg
+lm / glm (all covariates),train,muscle_strength,-1.09237210351259,Tideglusib,reg
+lm / glm (all covariates),train,pr_interval,-0.237526958097422,Tideglusib,reg
+lm / glm (all covariates),train,cognitive_function,-1.75368757089696,Tideglusib,reg
+lm / glm (all covariates),train,ck_level,-0.190945875076744,Tideglusib,reg
+lm / glm (all covariates),train,insulin_resistance,0.0250122917965086,Tideglusib,reg
+lm / glm (all covariates),train,albumin,0.166613377941057,Tideglusib,reg
+lm / glm (all covariates),train,bmi,0.115693623989397,Tideglusib,reg
+lm / glm (all covariates),train,sex_Male,0.295358408608079,Tideglusib,reg
+lm / glm (all covariates),train,cataracts_Yes,0.857192660801032,Tideglusib,reg
+lm / glm (all covariates),train,family_history_Yes,-0.0429917204679773,Tideglusib,reg
+lm / glm (all covariates),train,family_history_Unknown,-0.0594272176977892,Tideglusib,reg
+lm / glm (all covariates),train,smoking_status_Former,-0.725526705152496,Tideglusib,reg
+lm / glm (all covariates),train,smoking_status_Current,0.138210341794733,Tideglusib,reg
+lm / glm (all covariates),train,phenotype_adult_onset,-1.82689550954905,Tideglusib,reg
+lm / glm (all covariates),train,phenotype_juvenile_onset,-3.13640626429266,Tideglusib,reg
+Stepwise both (BIC),train,disease_duration,-1.16599103195232,Tideglusib,reg
+Stepwise both (BIC),train,muscle_strength,-0.827617896776398,Tideglusib,reg
+Stepwise both (BIC),train,cognitive_function,-1.69559704908221,Tideglusib,reg
+"Best subset (leaps, BIC, nvmax=10)",train,disease_duration,-1.16599103195232,Tideglusib,reg
+"Best subset (leaps, BIC, nvmax=10)",train,muscle_strength,-0.827617896776398,Tideglusib,reg
+"Best subset (leaps, BIC, nvmax=10)",train,cognitive_function,-1.69559704908221,Tideglusib,reg
+Ridge (glmnet),train,log_ctg,-0.137109677050911,Tideglusib,reg
+Ridge (glmnet),train,somatic_mosaicism_index,0.286744202408404,Tideglusib,reg
+Ridge (glmnet),train,age_at_onset,-0.0832550311699638,Tideglusib,reg
+Ridge (glmnet),train,disease_duration,-0.729021944253095,Tideglusib,reg
+Ridge (glmnet),train,myotonia_severity,0.194315662512236,Tideglusib,reg
+Ridge (glmnet),train,muscle_strength,-0.415092675154164,Tideglusib,reg
+Ridge (glmnet),train,pr_interval,-0.194458199315137,Tideglusib,reg
+Ridge (glmnet),train,cognitive_function,-1.43178165368481,Tideglusib,reg
+Ridge (glmnet),train,ck_level,-0.0776074732225162,Tideglusib,reg
+Ridge (glmnet),train,insulin_resistance,-0.0351907587520553,Tideglusib,reg
+Ridge (glmnet),train,albumin,0.0395133745429442,Tideglusib,reg
+Ridge (glmnet),train,bmi,0.0561311583874112,Tideglusib,reg
+Ridge (glmnet),train,sex_Male,0.308213065199649,Tideglusib,reg
+Ridge (glmnet),train,cataracts_Yes,0.313990731054655,Tideglusib,reg
+Ridge (glmnet),train,family_history_Yes,0.106649514496621,Tideglusib,reg
+Ridge (glmnet),train,family_history_Unknown,0.0727083529172707,Tideglusib,reg
+Ridge (glmnet),train,smoking_status_Former,-0.428289238075614,Tideglusib,reg
+Ridge (glmnet),train,smoking_status_Current,0.121127245898782,Tideglusib,reg
+Ridge (glmnet),train,phenotype_adult_onset,-0.219222497104736,Tideglusib,reg
+Ridge (glmnet),train,phenotype_juvenile_onset,-0.0930238755528126,Tideglusib,reg
+"LASSO (glmnet, lambda.min)",train,somatic_mosaicism_index,0.212547143128389,Tideglusib,reg
+"LASSO (glmnet, lambda.min)",train,disease_duration,-0.309402383819047,Tideglusib,reg
+"LASSO (glmnet, lambda.min)",train,myotonia_severity,0.0684251301979688,Tideglusib,reg
+"LASSO (glmnet, lambda.min)",train,cognitive_function,-1.48124073189432,Tideglusib,reg
+"Elastic net (glmnet, alpha=.5)",train,somatic_mosaicism_index,0.21220717637852,Tideglusib,reg
+"Elastic net (glmnet, alpha=.5)",train,disease_duration,-0.315098335043745,Tideglusib,reg
+"Elastic net (glmnet, alpha=.5)",train,myotonia_severity,0.102552032423774,Tideglusib,reg
+"Elastic net (glmnet, alpha=.5)",train,cognitive_function,-1.40431225297749,Tideglusib,reg
+"GAM (mgcv, s(k=5), REML, select)",train,age_at_onset,1.0,Tideglusib,reg
+"GAM (mgcv, s(k=5), REML, select)",train,disease_duration,1.0,Tideglusib,reg
+"GAM (mgcv, s(k=5), REML, select)",train,muscle_strength,1.0,Tideglusib,reg
+"GAM (mgcv, s(k=5), REML, select)",train,cognitive_function,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC1,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC2,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC3,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC4,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC5,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC6,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC7,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC8,1.0,Tideglusib,reg
+"PCR (prcomp, k by 5-fold CV)",train,PC9,1.0,Tideglusib,reg
+lm / glm (all covariates),train,log_ctg,-0.614751381214711,Tideglusib,bin
+lm / glm (all covariates),train,somatic_mosaicism_index,-0.0685377434987067,Tideglusib,bin
+lm / glm (all covariates),train,age_at_onset,-0.631549798617565,Tideglusib,bin
+lm / glm (all covariates),train,disease_duration,-1.21610024365945,Tideglusib,bin
+lm / glm (all covariates),train,myotonia_severity,0.847354132513718,Tideglusib,bin
+lm / glm (all covariates),train,muscle_strength,-0.989050370480649,Tideglusib,bin
+lm / glm (all covariates),train,pr_interval,-0.300715356028123,Tideglusib,bin
+lm / glm (all covariates),train,cognitive_function,-1.4658397339539,Tideglusib,bin
+lm / glm (all covariates),train,ck_level,-0.455715225509167,Tideglusib,bin
+lm / glm (all covariates),train,insulin_resistance,-0.0234302611952322,Tideglusib,bin
+lm / glm (all covariates),train,albumin,0.0442683567244892,Tideglusib,bin
+lm / glm (all covariates),train,bmi,0.254225776003946,Tideglusib,bin
+lm / glm (all covariates),train,sex_Male,-0.236386698311158,Tideglusib,bin
+lm / glm (all covariates),train,cataracts_Yes,1.31203865175276,Tideglusib,bin
+lm / glm (all covariates),train,family_history_Yes,-0.532619796811791,Tideglusib,bin
+lm / glm (all covariates),train,family_history_Unknown,0.0631291259540542,Tideglusib,bin
+lm / glm (all covariates),train,smoking_status_Former,-0.491610564385102,Tideglusib,bin
+lm / glm (all covariates),train,smoking_status_Current,0.47110256238017,Tideglusib,bin
+lm / glm (all covariates),train,phenotype_adult_onset,-1.01548387879331,Tideglusib,bin
+lm / glm (all covariates),train,phenotype_juvenile_onset,-1.96995170937459,Tideglusib,bin
+Stepwise both (BIC),train,cognitive_function,-1.27452436402317,Tideglusib,bin
+Ridge (glmnet),train,log_ctg,0.0445447163322315,Tideglusib,bin
+Ridge (glmnet),train,somatic_mosaicism_index,0.0703678116980524,Tideglusib,bin
+Ridge (glmnet),train,age_at_onset,-0.0378913770329933,Tideglusib,bin
+Ridge (glmnet),train,disease_duration,-0.183128944145187,Tideglusib,bin
+Ridge (glmnet),train,myotonia_severity,0.238050771518757,Tideglusib,bin
+Ridge (glmnet),train,muscle_strength,-0.147850060740692,Tideglusib,bin
+Ridge (glmnet),train,pr_interval,-0.175905312031964,Tideglusib,bin
+Ridge (glmnet),train,cognitive_function,-0.745188514709391,Tideglusib,bin
+Ridge (glmnet),train,ck_level,-0.159474445854669,Tideglusib,bin
+Ridge (glmnet),train,insulin_resistance,-0.0269223684152361,Tideglusib,bin
+Ridge (glmnet),train,albumin,-0.0373483071291778,Tideglusib,bin
+Ridge (glmnet),train,bmi,0.0965081181655702,Tideglusib,bin
+Ridge (glmnet),train,sex_Male,0.0156472189052504,Tideglusib,bin
+Ridge (glmnet),train,cataracts_Yes,0.158447214097053,Tideglusib,bin
+Ridge (glmnet),train,family_history_Yes,-0.0866124351651147,Tideglusib,bin
+Ridge (glmnet),train,family_history_Unknown,0.141547029757313,Tideglusib,bin
+Ridge (glmnet),train,smoking_status_Former,-0.155740012614125,Tideglusib,bin
+Ridge (glmnet),train,smoking_status_Current,0.0798330858821498,Tideglusib,bin
+Ridge (glmnet),train,phenotype_adult_onset,-0.0436088376872705,Tideglusib,bin
+Ridge (glmnet),train,phenotype_juvenile_onset,0.0216187306900769,Tideglusib,bin
+"LASSO (glmnet, lambda.min)",train,myotonia_severity,0.145470054439739,Tideglusib,bin
+"LASSO (glmnet, lambda.min)",train,cognitive_function,-0.859757634767362,Tideglusib,bin
+"Elastic net (glmnet, alpha=.5)",train,somatic_mosaicism_index,0.0138678030517681,Tideglusib,bin
+"Elastic net (glmnet, alpha=.5)",train,disease_duration,-0.020416233945325,Tideglusib,bin
+"Elastic net (glmnet, alpha=.5)",train,myotonia_severity,0.240004810052368,Tideglusib,bin
+"Elastic net (glmnet, alpha=.5)",train,pr_interval,-0.09716871654212,Tideglusib,bin
+"Elastic net (glmnet, alpha=.5)",train,cognitive_function,-0.828415292537695,Tideglusib,bin
+"Elastic net (glmnet, alpha=.5)",train,ck_level,-0.0688239615436827,Tideglusib,bin
+"GAM (mgcv, s(k=5), REML, select)",train,muscle_strength,1.0,Tideglusib,bin
+"GAM (mgcv, s(k=5), REML, select)",train,cognitive_function,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC1,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC2,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC3,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC4,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC5,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC6,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC7,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC8,1.0,Tideglusib,bin
+"PCR (prcomp, k by 5-fold CV)",train,PC9,1.0,Tideglusib,bin

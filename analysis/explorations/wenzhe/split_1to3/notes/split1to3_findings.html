@@ -1,0 +1,8 @@
+<!doctype html><meta charset=utf-8><title>1:3 split notes</title><body style="font-family:system-ui;max-width:900px;margin:2em auto">
+<h1>1:3 re-randomised split, all methods (2026-10-12)</h1><ul>
+<li>Request: 1:3 test:train split with covariate re-randomisation; run all PDF methods with code + predictions per method; clarify whether ML and covariate models are parallel. Separate folder split_1to3/.</li>
+<li>Split: outcome-quartile strata, 5000 candidate seeds, accept best 2% Mahalanobis, first accepted seed (Mex 51, Oligo 80, Tide 22). Max feature |SMD| 0.21/0.22/0.27 vs random median 0.35 and old split 0.30/0.41/0.45.</li>
+<li>Design choice for rigor: 'top-4 covariate' rows (poly, cut, bs) select covariates inside each training fit; no information from the old analyses or old test set enters.</li>
+<li>Findings: same covariates as before (Mex myotonia_severity 16/16 methods; Oligo log_ctg 16/16; Tide cognitive_function 16/16); no ML-vs-covariate difference significant in any of 6 comparisons (Tide continuous gap shrinks and its CI now includes 0); tuning helps ~60-75% of comparisons but within CI.</li>
+<li>Caveat: same 500 patients, so not independent of the main project; a split robustness check only.</li>
+<li>Gotcha: foreground sleep is blocked; background launcher notifications fire when the launcher shell exits, so poll for the EXIT line in the log.</li></ul></body>

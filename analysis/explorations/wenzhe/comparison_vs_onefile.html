@@ -1,0 +1,23 @@
+<!doctype html><meta charset=utf-8><title>dm1_hackathon_r vs onefile</title>
+<style>body{font-family:system-ui;max-width:1100px;margin:2em auto;line-height:1.45}table{border-collapse:collapse;font-size:12.5px}td,th{border:1px solid #ccc;padding:3px 9px}th{background:#f3f5f8}.box{background:#f4f7fb;border-left:4px solid #3a6ea5;padding:.4em 1em}</style>
+<h1>dm1_hackathon_r.zip vs the long R file (dm1_analysis_onefile.R) vs our analysis</h1>
+<div class=box>The zip's six scripts were run unchanged except for the one line the README tells you to edit (<code>arm_name</code>), once per arm (02, 03, 04), then 05. All finished without errors. Dataset identical. Each pipeline uses its own 75/25 split (zip: seed 2026 stratified by label; onefile: seed 20261011 stratified by label and phenotype), so test patients differ and single-split numbers differ by noise. Output: <code>dm1_hackathon_r/results/</code>.</div>
+<h2>1. Main covariate per arm (selected by the most methods)</h2>
+<table><tr><th>Arm</th><th>zip (6 methods, continuous)</th><th>onefile re-run (5 methods)</th><th>our analysis (16 methods, 20 splits)</th></tr>
+<tr><td>Mexiletine</td><td><b>myotonia_severity 6/6</b>; then cognitive_function, age 4/6</td><td><b>myotonia_severity</b> signal (+ ctg_repeats)</td><td><b>myotonia_severity 20/20</b></td></tr>
+<tr><td>Oligonucleotide</td><td><b>ctg_repeats 6/6</b>; family_history 5/6, age 4/6</td><td><b>ctg_repeats</b> signal</td><td><b>log CTG 16/20</b>; family history 9/20</td></tr>
+<tr><td>Tideglusib</td><td><b>cognitive_function 6/6</b>; muscle_strength, myotonia 3/6</td><td><b>cognitive_function</b> signal (disease_duration uncertain)</td><td><b>cognitive_function 20/20</b>; disease_duration 14/20</td></tr></table>
+<p>Same lead covariate in every arm across all three pipelines. The two noise probes were selected only once across all six arm × outcome tables (Oligonucleotide, responder label), so the noise yardstick behaves as intended.</p>
+<h2>2. Test performance (best method; R² for the continuous outcome)</h2>
+<table><tr><th>Arm</th><th>zip (single split)</th><th>onefile (single split)</th><th>ours (mean of 20 splits)</th></tr>
+<tr><td>Mexiletine</td><td>0.75 (best subset, RF, stepwise BIC; CI 0.55-0.85)</td><td>0.54 (CI 0.07-0.70)</td><td>0.66</td></tr>
+<tr><td>Oligonucleotide</td><td>0.18 (best subset / stepwise BIC, RF; CI -0.09 to 0.34)</td><td>0.09 (CI -0.18 to 0.27)</td><td>0.14</td></tr>
+<tr><td>Tideglusib</td><td>0.47 (random forest; CI 0.30-0.58)</td><td>0.56 (random forest; CI 0.37-0.66)</td><td>0.53</td></tr></table>
+<p>Same pattern: Mexiletine and Tideglusib are predictable, Oligonucleotide barely so. Differences between pipelines are inside the intervals of a ~40-patient test set. Random forest is the best or tied-best method in Tideglusib in all three; in Mexiletine and Oligonucleotide simple covariate models (best subset, stepwise BIC, elastic net) tie with ML.</p>
+<h2>3. Differences and flags</h2><ul>
+<li><b>Age instead of disease duration.</b> The zip drops <code>disease_duration</code> and keeps <code>age</code> (and age_at_onset). Age is the sum of onset age and duration, so it then appears as a secondary pick (Mexiletine 4/6, Oligonucleotide 4/6); our analysis keeps onset and duration instead and finds duration for Tideglusib. These are the same information in different coordinates.</li>
+<li><b>Cutoff 0.5 for the responder label.</b> Recall is 0.00 for elastic net (Mexiletine, Oligonucleotide) and tuned XGBoost (Mexiletine): with 29-41% responders almost nobody is called a responder at 0.5, so accuracy/recall/precision are hard to compare; AUC is unaffected. The onefile and our analyses use a cutoff matched to the training responder share.</li>
+<li><b>Stepwise AIC is unstable:</b> Tideglusib continuous R² -0.01 (CI -0.43 to 0.27) versus stepwise BIC 0.20, the instability the kickoff guide warns about.</li>
+<li><b>Untuned XGBoost</b> is worst or near-worst in Oligonucleotide (R² -0.25); tuned XGBoost recovers it, matching the 'tuning helps on small data only sometimes' message.</li>
+<li>Method sets differ: the zip has best subset but no plain LASSO; the onefile has LASSO and a cut-off model; ours covers every method in the kickoff guide.</li></ul>
+<h2>Verdict</h2><p><b>Yes, similar.</b> Same drivers, same arm ordering of predictability and, within the noise of a single ~40-patient test set, similar scores. The zip's pipeline is also internally consistent with ours on which methods are stable and which are not.</p>

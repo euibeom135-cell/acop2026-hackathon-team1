@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DM1 PDF pipeline: compute notes</title>
+<style>
+body{font:15px/1.5 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;color:#222}
+h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:2rem;border-bottom:1px solid #ddd;padding-bottom:.2rem}
+table{border-collapse:collapse;margin:.6rem 0;font-size:.9rem}td,th{border:1px solid #ccc;padding:.3rem .55rem;text-align:left;vertical-align:top}th{background:#f3f3f3}
+code{background:#f3f3f3;padding:0 .25rem;border-radius:3px}.box{background:#fff8e1;border-left:4px solid #e0a800;padding:.6rem .9rem;margin:.8rem 0}
+</style></head><body>
+<h1>DM1 six-step pipeline (PDF-faithful): compute notes</h1>
+<p>Compute layer only (result tables in <code>results/</code>; no HTML report pages). Everything lives in <code>/Users/wma/Codes/DM1/pdf_pipeline/</code>; the main project's <code>src/</code> (feature builder, loader) and <code>results/split_seed42.csv</code> are imported read-only. Run end to end with <code>bash pdf_pipeline/run_pipeline.sh</code> (wipes <code>results/</code> first). All seeds are fixed (split file given; CV folds seed 42, R <code>set.seed</code> 1/42/43/44, sklearn <code>random_state</code> 42/0, bootstrap CIs seed 0).</p>
+
+<h2>1. Split (Step 2)</h2>
+<p>The genuine locked 80/20 per-arm split (stratified by responder label, seed 42) from <code>/Users/wma/Codes/DM1/results/split_seed42.csv</code>: Mexiletine 128/33, Oligonucleotide 136/34, Tideglusib 135/34 (train/test). Nothing was re-randomised; no new split exists in this folder.</p>
+
+<h2>2. Method scope (PDF example scope; nothing extra)</h2>
+<table><tr><th>Track</th><th>Methods kept</th><th>Dropped (and why)</th></tr>
+<tr><td>Covariate (R: MASS, leaps, glmnet, mgcv, prcomp)</td><td>lm/glm (all covariates); stepwise both-direction with BIC; best subset (leaps, BIC, nvmax=10; continuous outcome only); ridge; LASSO (lambda.min); elastic net (alpha=.5); GAM (mgcv, s(k=5), REML, select=TRUE); PCA + PCR (k by 5-fold CV inside each fit)</td>
+<td>forward/backward stepwise and all AIC variants; LASSO lambda.1se; polynomial, piecewise (cut), regression spline, smoothing spline. Curvature is represented by the single GAM.</td></tr>
+<tr><td>ML (Python: scikit-learn, xgboost)</td><td>logistic regression (label only); decision tree; random forest; SVM (RBF); KNN; XGBoost; MLP (16,). Each as an UNTUNED row (PDF snippet settings) and a TUNED row (small GridSearchCV, inner 3-fold, grids as in split_1to3)</td><td>none</td></tr>
+<tr><td>Supporting</td><td>Permutation importance and SHAP computed ON THE TEST SET for the ML models (permutation: all ML rows, 10 repeats; SHAP: TreeExplainer for tree/forest/XGBoost rows). Baselines: Mean only (reg), Prevalence only (label). Unsupervised PCA table per arm.</td><td></td></tr></table>
+<p>Metrics: regression RMSE / MAE / R2 in original units (R2 relative to the evaluation-set mean, can be negative; the table also carries R2 vs the train mean). Direction per arm: Mexiletine lower = better (more negative change), Oligonucleotide and Tideglusib higher = better. Classification: ROC-AUC, recall, precision, accuracy plus TP/FP/FN/TN at the stated cutoff (Youden J of the method's TRAIN out-of-fold scores averaged over CV repeats, fixed before any test row is read). 95% bootstrap CIs (2000 resamples, seed 0) on test RMSE, test AUC and the RMSE gain over the mean-only baseline.</p>
+
+<h2>3. Rigor choices (the clean-build fixes)</h2>
+<ol>
+<li><b>Standardisation.</b> Only numeric covariates are z-scored; the 0/1 dummies are never scaled. There are 12 numeric model columns, not 13: <code>age</code> is dropped because age = age_at_onset + disease_duration holds exactly (checked: max abs difference 0), and CTG enters as log10. The scaler is re-fitted on the training rows of every CV fold (sklearn: a ColumnTransformer inside each Pipeline, so inner GridSearchCV folds also refit it; R: <code>scale_fit()</code> inside every fit) and, for test scoring, on the full TRAIN set then applied to test. Trees, forests and XGBoost are invariant to per-column affine rescaling, so they receive the same pipeline output (stated, not tuned). glmnet is called with <code>standardize=FALSE</code> on that matrix, so dummies keep their natural 0/1 scale in the penalty. Constant-in-train columns are dropped (Mexiletine: albumin; Oligonucleotide and Tideglusib keep all 12).</li>
+<li><b>Train-only everywhere before the test pass.</b> CV, selection, signal-vs-noise evidence, PCA and importance used in verdicts all use TRAIN rows only. Test features are exported only inside s07.</li>
+<li><b>Primary models by CV only.</b> s05 picks, per arm and outcome, the best covariate model and the best ML model (tuned and untuned rows pooled) by repeated 5-fold x3 TRAIN CV (lowest RMSE for regression, highest ROC-AUC for the label) and records the CV value, the runner-up and the baseline in <code>results/primary_selection.csv</code>. Baselines are excluded from the pool.</li>
+<li><b>Nested tuning.</b> Tuned rows run an inner 3-fold GridSearchCV on each outer fold's training rows, so CV scores of tuned models are not tuned on their own evaluation fold.</li>
+</ol>
+
+<h2>4. Test-once discipline</h2>
+<div class="box"><b>Disclosure.</b> The main project already scored this same 80/20 test set once (its step 5, with different, frozen specifications). That file (<code>results/step5_metrics.csv</code>) was NOT read or used here. This canonical scoring selects primary models by TRAIN CV only and scores the full PDF-scope method set on the test set in a single pass (<code>s07_test_scoring.py</code>), after which <code>results/TEST_SCORED.lock</code> (timestamps, SHA-256 of the selection file) blocks any re-run unless <code>--force</code> / <code>FORCE7=1</code> is given. The runner wipes <code>results/</code> (including the lock) at the start, so a from-scratch run produces exactly one scoring pass; the pipeline is deterministic.</div>
+<p>Test permutation importance and SHAP come from the very models scored in that pass (nothing refitted afterwards) and are explanatory only: they feed no selection and no verdict. While debugging s07 a code-only dry-run mode (<code>DM1_DRYRUN=1</code>) substitutes 30 TRAIN rows for the test rows, so the real test rows were not read during development. All test numbers are reported whatever they are; nothing was tuned or removed after seeing them.</p>
+
+<h2>5. Signal vs noise: the single pre-stated verdict rule</h2>
+<p>Applied unchanged to every arm and to both outcomes (continuous outcome; responder label). No second or relaxed rule exists. Evidence uses TRAIN rows only (<code>r_signal.R</code>, <code>s06a_rf_null.py</code>, <code>s06_signal_noise.py</code>). A covariate scores one point per criterion:</p>
+<table><tr><th>Criterion</th><th>Definition</th></tr>
+<tr><td>(a) selection frequency</td><td>pooled selection frequency &ge; 0.6 over three selectors (LASSO lambda.min, elastic net alpha=.5, stepwise-BIC both) in B=200 bootstrap resamples (cv.glmnet folds keep duplicated patients together)</td></tr>
+<tr><td>(b) sign stability</td><td>sign of the lm/glm coefficient equals the full-train sign in &ge; 4 of 5 train subsamples (each 80%, leave-one-fold-out)</td></tr>
+<tr><td>(c) multi-family use</td><td>used by &ge; 2 of 3 families on full train: penalised (LASSO or EN nonzero); stepwise-BIC retained; nonlinear/ML (GAM term p&lt;0.05 under REML select=TRUE, or RF held-out permutation importance &gt; 0 in &ge; 4/5 CV folds)</td></tr>
+<tr><td>(d) beats shuffled-outcome null</td><td>lm/glm |t| (|z|) above the 95th percentile of its own null from 500 outcome permutations, OR RF held-out permutation importance above the 95th percentile of the RF null from 100 outcome permutations</td></tr></table>
+<p><b>SIGNAL</b> = all four; <b>NOISE</b> = 0 or 1 of 4; <b>BORDERLINE</b> = 2 or 3. Wording deviation: the brief says "GAM edf&gt;1"; a smooth with edf near 1 is a straight-line effect that edf&gt;1 would exclude, so the GAM family test is the term's p&lt;0.05 (edf is reported alongside). Direction = sign of the full-train standardised lm/glm coefficient, translated to benefit (Mexiletine outcome: negative = better; label: Responder = better). Prior signs are transcribed from the hypothesis sheet in <code>src/priors.py</code> before looking at results; "n/a (prior open)" means the sheet gives no direction. Plausible-but-noise flags: among NOISE covariates, those listed by the sheet as plausible-looking noise first, then by prior strength (strong, moderate, weak); at most one dummy per parent covariate; top 3 per arm and outcome, each with an auto-generated one-line reason carrying its numbers. Verdicts are at feature level (dummy levels are separate rows).</p>
+
+<h2>6. Where things are</h2>
+<table><tr><th>File(s) in <code>results/</code></th><th>Content</th></tr>
+<tr><td><code>features_train_&lt;arm&gt;.csv</code>, <code>features_test_&lt;arm&gt;.csv</code>, <code>feature_map_&lt;arm&gt;.csv</code>, <code>folds_&lt;arm&gt;.csv</code></td><td>per-arm feature export (unscaled; test written only by s07), domain map, shared CV folds</td></tr>
+<tr><td><code>cv_scoreboard.csv</code>, <code>primary_selection.csv</code></td><td>CV scoreboard (both tracks, both tasks, mean and sd over 3 repeats); CV-chosen primaries</td></tr>
+<tr><td><code>covariate_use_&lt;arm&gt;_&lt;task&gt;.csv</code>, <code>r_*_cv_terms.csv</code></td><td>selection frequency of each covariate by method over the 15 CV fits; held-out permutation importance of tuned ML models</td></tr>
+<tr><td><code>pca_&lt;arm&gt;_{var,loadings}.csv</code></td><td>unsupervised PCA</td></tr>
+<tr><td><code>signal_noise_&lt;arm&gt;_&lt;reg|bin&gt;.csv</code>, <code>signal_noise_summary.csv</code>, <code>signal_noise_headline.csv</code>, <code>signal_r_*.csv</code>, <code>signal_rf_*.csv</code></td><td>ranked verdict tables with the four criteria, prior sign and agreement, plausible-but-noise flags; raw evidence</td></tr>
+<tr><td><code>test_scoreboard.csv</code>, <code>test_scoreboard_compact.csv</code>, <code>test_headlines.csv</code>, <code>test_predictions.csv</code>, <code>r_test_terms_all.csv</code>, <code>TEST_SCORED.lock</code></td><td>the single test scoreboard (CIs, confusion counts), headline comparison, predictions, guard</td></tr>
+<tr><td><code>test_importance.csv</code>, <code>test_shap.pkl</code></td><td>test-set permutation importance and SHAP (pickle: dict (arm, task, method) to (shap values, raw X, transformed X))</td></tr></table>
+
+<h2>7. Development log (what was learnt)</h2>
+<ul>
+<li>A first signal run froze the bootstrap: <code>set.seed(1)</code> inside <code>cv.glmnet</code> helper reset the RNG every iteration, so every resample was identical and selection frequencies were 0 or 1. Fixed by passing a fixed fold id inside the bootstrap (no RNG reset); results regenerated before any verdict was read.</li>
+<li>Mexiletine's albumin is constant in train and is dropped; the stepwise-BIC and best-subset fits coincide for Oligonucleotide continuous outcome (same model chosen).</li>
+<li>GAM fits on the label sometimes warn "step failure" from mgcv's Newton step; predictions were still produced (no NA predictions in any CV fit).</li>
+</ul>
+</body></html>

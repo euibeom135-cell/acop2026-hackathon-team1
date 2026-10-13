@@ -1,0 +1,7 @@
+arm,task,signal,borderline,plausible_but_noise,sign_disagreements_among_signal_borderline
+Mexiletine,reg,myotonia_severity; disease_duration,cognitive_function; somatic_mosaicism_index; family_history_Unknown; family_history_Yes; log_ctg,pr_interval; insulin_resistance; cataracts_Yes,cognitive_function
+Mexiletine,bin,none,myotonia_severity; family_history_Unknown; family_history_Yes; log_ctg; cognitive_function; age_at_onset,pr_interval; cataracts_Yes; insulin_resistance,cognitive_function
+Oligonucleotide,reg,log_ctg,family_history_Yes; disease_duration; cognitive_function,pr_interval; cataracts_Yes; insulin_resistance,disease_duration
+Oligonucleotide,bin,none,log_ctg; disease_duration; ck_level,pr_interval; cataracts_Yes; insulin_resistance,disease_duration
+Tideglusib,reg,cognitive_function; disease_duration,muscle_strength; sex_Male,pr_interval; ck_level; smoking_status_Current,none
+Tideglusib,bin,cognitive_function,disease_duration; muscle_strength,pr_interval; ck_level; smoking_status_Current,none

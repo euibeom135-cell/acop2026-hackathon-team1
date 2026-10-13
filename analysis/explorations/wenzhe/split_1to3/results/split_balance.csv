@@ -1,0 +1,131 @@
+arm,split,var,smd,p
+Mexiletine,new 1:3 re-randomised,log_ctg,0.02885629718935043,0.8742349840741649
+Mexiletine,new 1:3 re-randomised,somatic_mosaicism_index,-0.08980127038933478,0.622193557902126
+Mexiletine,new 1:3 re-randomised,age_at_onset,0.139216327239261,0.4446896023419117
+Mexiletine,new 1:3 re-randomised,disease_duration,-0.05397323288443819,0.76716803548294
+Mexiletine,new 1:3 re-randomised,myotonia_severity,0.021032829740230182,0.9081547360621531
+Mexiletine,new 1:3 re-randomised,muscle_strength,-0.055736773056633,0.7597886669872549
+Mexiletine,new 1:3 re-randomised,pr_interval,0.20738230155014525,0.2543639201274948
+Mexiletine,new 1:3 re-randomised,cognitive_function,0.11107383599979467,0.5421325464186484
+Mexiletine,new 1:3 re-randomised,ck_level,-0.2108075552844102,0.24657077514796139
+Mexiletine,new 1:3 re-randomised,insulin_resistance,0.09810094910254462,0.5903530091275182
+Mexiletine,new 1:3 re-randomised,bmi,0.12548781515247065,0.4909432423749035
+Mexiletine,new 1:3 re-randomised,sex=Male,-0.010195893624720355,0.955402187248306
+Mexiletine,new 1:3 re-randomised,cataracts=Yes,-0.08984035507006448,0.6220418972559421
+Mexiletine,new 1:3 re-randomised,family_history=Yes,0.0694290959769612,0.7032759190358456
+Mexiletine,new 1:3 re-randomised,family_history=Unknown,0.005218446550148525,0.97716531873565
+Mexiletine,new 1:3 re-randomised,smoking_status=Former,-0.0697403330392835,0.702008685059646
+Mexiletine,new 1:3 re-randomised,smoking_status=Current,0.09175468582585106,0.6146332571976559
+Mexiletine,new 1:3 re-randomised,phenotype=adult_onset,-0.07934658347855433,0.6633142530880317
+Mexiletine,new 1:3 re-randomised,phenotype=juvenile_onset,-0.05217265250112602,0.7747240285562655
+Mexiletine,new 1:3 re-randomised,OUTCOME myotonia_change_12wk,-0.0033875544064187286,0.9249625951705155
+Mexiletine,new 1:3 re-randomised,LABEL responder share,0.06646341463414634,0.43163971318900557
+Mexiletine,old 80/20 (main project),log_ctg,-0.0057222660156810235,0.976799397510691
+Mexiletine,old 80/20 (main project),somatic_mosaicism_index,0.012766618048809871,0.9482672012035067
+Mexiletine,old 80/20 (main project),age_at_onset,-0.0313782172292328,0.8732932423815521
+Mexiletine,old 80/20 (main project),disease_duration,-0.05835341542238492,0.7667681470037517
+Mexiletine,old 80/20 (main project),myotonia_severity,-0.14097008439148348,0.47336201671491507
+Mexiletine,old 80/20 (main project),muscle_strength,-0.023816146399774876,0.9036583791805533
+Mexiletine,old 80/20 (main project),pr_interval,-0.19394027728544674,0.32356444353897756
+Mexiletine,old 80/20 (main project),cognitive_function,-0.08726762173922552,0.657296145389076
+Mexiletine,old 80/20 (main project),ck_level,0.04862742079770381,0.8047858509162035
+Mexiletine,old 80/20 (main project),insulin_resistance,0.022962804066838448,0.9070945553545484
+Mexiletine,old 80/20 (main project),bmi,-0.29814078814118283,0.12832395181134643
+Mexiletine,old 80/20 (main project),sex=Male,-0.14013560612612794,0.4759891340144667
+Mexiletine,old 80/20 (main project),cataracts=Yes,-0.10573933984849777,0.590829978493661
+Mexiletine,old 80/20 (main project),family_history=Yes,0.18270430243937294,0.3524710095154096
+Mexiletine,old 80/20 (main project),family_history=Unknown,-0.266340239473234,0.174611905485703
+Mexiletine,old 80/20 (main project),smoking_status=Former,-0.13694821007477312,0.48609622396037694
+Mexiletine,old 80/20 (main project),smoking_status=Current,0.15910920925336308,0.4182499256045791
+Mexiletine,old 80/20 (main project),phenotype=adult_onset,0.27341134529601285,0.1633800154546282
+Mexiletine,old 80/20 (main project),phenotype=juvenile_onset,-0.1605647103662675,0.4139961389143782
+Mexiletine,old 80/20 (main project),OUTCOME myotonia_change_12wk,0.12070810074685864,0.8478729306448721
+Mexiletine,old 80/20 (main project),LABEL responder share,0.013967803030303039,1.0
+Oligonucleotide,new 1:3 re-randomised,log_ctg,0.1044762046276795,0.5564779035441002
+Oligonucleotide,new 1:3 re-randomised,somatic_mosaicism_index,0.21727508084570557,0.2205305676140314
+Oligonucleotide,new 1:3 re-randomised,age_at_onset,-0.21044984654361235,0.23543708839200353
+Oligonucleotide,new 1:3 re-randomised,disease_duration,0.08416238667218946,0.6357483334807444
+Oligonucleotide,new 1:3 re-randomised,myotonia_severity,-0.03224875324971007,0.8560232799119799
+Oligonucleotide,new 1:3 re-randomised,muscle_strength,-0.007068846101700932,0.9682772603081506
+Oligonucleotide,new 1:3 re-randomised,pr_interval,0.00872460118410063,0.9608521075069324
+Oligonucleotide,new 1:3 re-randomised,cognitive_function,-0.002820420451856757,0.9873400673294415
+Oligonucleotide,new 1:3 re-randomised,ck_level,-0.03997541032917601,0.8220442492126238
+Oligonucleotide,new 1:3 re-randomised,insulin_resistance,0.023768963587196396,0.8936188726431489
+Oligonucleotide,new 1:3 re-randomised,albumin,-0.07418798925484713,0.6763227881530043
+Oligonucleotide,new 1:3 re-randomised,bmi,0.06636721500948467,0.7088090009545936
+Oligonucleotide,new 1:3 re-randomised,sex=Male,0.12354612191313058,0.4867006662871016
+Oligonucleotide,new 1:3 re-randomised,cataracts=Yes,-0.09973460738301716,0.5745483620695229
+Oligonucleotide,new 1:3 re-randomised,family_history=Yes,0.09347966295162467,0.5987986391717837
+Oligonucleotide,new 1:3 re-randomised,family_history=Unknown,0.011321809601452348,0.9492120728258062
+Oligonucleotide,new 1:3 re-randomised,smoking_status=Former,-0.045004193165772956,0.8001017732118879
+Oligonucleotide,new 1:3 re-randomised,smoking_status=Current,0.045800871201643036,0.7966393957666222
+Oligonucleotide,new 1:3 re-randomised,phenotype=adult_onset,0.0443373890527397,0.803002715245268
+Oligonucleotide,new 1:3 re-randomised,phenotype=juvenile_onset,0.09342319676904445,0.5990196378780039
+Oligonucleotide,new 1:3 re-randomised,OUTCOME qmt_change_26wk,-0.0527059155363502,0.8983360374321976
+Oligonucleotide,new 1:3 re-randomised,LABEL responder share,-0.021973997436366965,0.858916353868884
+Oligonucleotide,old 80/20 (main project),log_ctg,-0.04311503406488344,0.823365764169147
+Oligonucleotide,old 80/20 (main project),somatic_mosaicism_index,-0.06592039737659695,0.7328615142994902
+Oligonucleotide,old 80/20 (main project),age_at_onset,-0.02069025133176624,0.9146994537194442
+Oligonucleotide,old 80/20 (main project),disease_duration,-0.260822951209251,0.1757530197956988
+Oligonucleotide,old 80/20 (main project),myotonia_severity,0.07437581892221476,0.7001483584506595
+Oligonucleotide,old 80/20 (main project),muscle_strength,0.32914966487484365,0.08700221953368686
+Oligonucleotide,old 80/20 (main project),pr_interval,-0.016240520523208752,0.9329958751796711
+Oligonucleotide,old 80/20 (main project),cognitive_function,-0.08055509971178694,0.6765813478840179
+Oligonucleotide,old 80/20 (main project),ck_level,-0.20553985395301694,0.2864862842661752
+Oligonucleotide,old 80/20 (main project),insulin_resistance,-0.06961609403346272,0.7184999382704965
+Oligonucleotide,old 80/20 (main project),albumin,0.1006903297784106,0.6020367811448315
+Oligonucleotide,old 80/20 (main project),bmi,0.06651193945496428,0.7305563744489874
+Oligonucleotide,old 80/20 (main project),sex=Male,-0.1480872194397731,0.4429005922865291
+Oligonucleotide,old 80/20 (main project),cataracts=Yes,-0.10312749764932908,0.5932678887179664
+Oligonucleotide,old 80/20 (main project),family_history=Yes,-0.04672557109276504,0.8088468312274977
+Oligonucleotide,old 80/20 (main project),family_history=Unknown,0.09092412093166354,0.6377411449735223
+Oligonucleotide,old 80/20 (main project),smoking_status=Former,-0.2045792720962428,0.2887520041644667
+Oligonucleotide,old 80/20 (main project),smoking_status=Current,0.4125099905973162,0.03153328320891277
+Oligonucleotide,old 80/20 (main project),phenotype=adult_onset,0.015087642174539565,0.9377424040840142
+Oligonucleotide,old 80/20 (main project),phenotype=juvenile_onset,-0.019042403611367293,0.921470377117743
+Oligonucleotide,old 80/20 (main project),OUTCOME qmt_change_26wk,-0.07296351782663696,0.7003711371060866
+Oligonucleotide,old 80/20 (main project),LABEL responder share,0.0,1.0
+Tideglusib,new 1:3 re-randomised,log_ctg,-0.07472544789152345,0.674432289879615
+Tideglusib,new 1:3 re-randomised,somatic_mosaicism_index,0.043714524507911565,0.8059140865475127
+Tideglusib,new 1:3 re-randomised,age_at_onset,0.08947735832622619,0.6149226207382423
+Tideglusib,new 1:3 re-randomised,disease_duration,0.014039008328847928,0.937111529770839
+Tideglusib,new 1:3 re-randomised,myotonia_severity,-0.08682466622216566,0.6254546161423687
+Tideglusib,new 1:3 re-randomised,muscle_strength,0.04750963686832813,0.7894417690645538
+Tideglusib,new 1:3 re-randomised,pr_interval,0.04495737581037983,0.8005098229588176
+Tideglusib,new 1:3 re-randomised,cognitive_function,0.26633085779736304,0.13313070826126733
+Tideglusib,new 1:3 re-randomised,ck_level,-0.07286877957008422,0.6820773184139892
+Tideglusib,new 1:3 re-randomised,insulin_resistance,0.12253603127093048,0.4907281573054621
+Tideglusib,new 1:3 re-randomised,albumin,0.010762697432684312,0.9517675068423052
+Tideglusib,new 1:3 re-randomised,bmi,-0.22245546415380713,0.21014621515601611
+Tideglusib,new 1:3 re-randomised,sex=Male,0.13331786598971593,0.45332256371307206
+Tideglusib,new 1:3 re-randomised,cataracts=Yes,0.02263586357688432,0.8987678692165316
+Tideglusib,new 1:3 re-randomised,family_history=Yes,0.08390508102652178,0.6371343996100245
+Tideglusib,new 1:3 re-randomised,family_history=Unknown,-0.13331799036831227,0.4533221416099242
+Tideglusib,new 1:3 re-randomised,smoking_status=Former,-0.08317952503999015,0.6400510426002181
+Tideglusib,new 1:3 re-randomised,smoking_status=Current,0.17025329661484573,0.3379853451021603
+Tideglusib,new 1:3 re-randomised,phenotype=adult_onset,0.0007743821812538766,0.9965275584210392
+Tideglusib,new 1:3 re-randomised,phenotype=juvenile_onset,-0.15213109697517027,0.3920382066455771
+Tideglusib,new 1:3 re-randomised,OUTCOME tideglusib_composite,-0.055098206408238044,0.7592882132618098
+Tideglusib,new 1:3 re-randomised,LABEL responder share,-0.019010705057216692,0.8612233266530414
+Tideglusib,old 80/20 (main project),log_ctg,-0.023914734910090912,0.9015452353359823
+Tideglusib,old 80/20 (main project),somatic_mosaicism_index,-0.20687138476316583,0.28373929271492826
+Tideglusib,old 80/20 (main project),age_at_onset,0.205199196872432,0.2876628673289683
+Tideglusib,old 80/20 (main project),disease_duration,-0.0496832204809451,0.7971570950951138
+Tideglusib,old 80/20 (main project),myotonia_severity,-0.0010996688456671152,0.9954613426344185
+Tideglusib,old 80/20 (main project),muscle_strength,0.04301935383855828,0.8238872175440919
+Tideglusib,old 80/20 (main project),pr_interval,0.21531257634459966,0.26448287253963576
+Tideglusib,old 80/20 (main project),cognitive_function,0.025384503746130244,0.8955277226889367
+Tideglusib,old 80/20 (main project),ck_level,-0.09493925482539195,0.6232268893734069
+Tideglusib,old 80/20 (main project),insulin_resistance,0.04078180144450372,0.8329097421329831
+Tideglusib,old 80/20 (main project),albumin,-0.06608312117388253,0.7324288507321484
+Tideglusib,old 80/20 (main project),bmi,-0.03365879194926131,0.861771980559634
+Tideglusib,old 80/20 (main project),sex=Male,-0.036617336632274004,0.8497595260518981
+Tideglusib,old 80/20 (main project),cataracts=Yes,-0.038314318548635186,0.8428847236076386
+Tideglusib,old 80/20 (main project),family_history=Yes,-0.10966967903011296,0.570322531672171
+Tideglusib,old 80/20 (main project),family_history=Unknown,-0.19613921561091965,0.3095494018159421
+Tideglusib,old 80/20 (main project),smoking_status=Former,-0.1963689179375454,0.30898137634788353
+Tideglusib,old 80/20 (main project),smoking_status=Current,0.45315785177415485,0.018088112227258295
+Tideglusib,old 80/20 (main project),phenotype=adult_onset,-0.010054821184830002,0.9585191032312601
+Tideglusib,old 80/20 (main project),phenotype=juvenile_onset,-0.02251716033660396,0.9072723811418236
+Tideglusib,old 80/20 (main project),OUTCOME tideglusib_composite,0.19619268927099304,0.04329370119651546
+Tideglusib,old 80/20 (main project),LABEL responder share,-0.010893246187363814,1.0

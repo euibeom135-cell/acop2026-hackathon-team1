@@ -1,0 +1,103 @@
+"method","term","coef","p"
+"lm / glm (all covariates)","log_ctg",0.838147030953664,0.0126815739724999
+"lm / glm (all covariates)","somatic_mosaicism_index",0.0646227581941794,0.710311431139501
+"lm / glm (all covariates)","age_at_onset",0.580794026224916,0.139795611274103
+"lm / glm (all covariates)","disease_duration",0.416542569803513,0.144622992465925
+"lm / glm (all covariates)","myotonia_severity",-0.00799260680650775,0.977013745317864
+"lm / glm (all covariates)","muscle_strength",0.0073857788309291,0.979283707793329
+"lm / glm (all covariates)","pr_interval",0.0684187889990949,0.666996958721595
+"lm / glm (all covariates)","cognitive_function",0.0397315025329328,0.820632794356567
+"lm / glm (all covariates)","ck_level",-0.057238756392046,0.703189844160177
+"lm / glm (all covariates)","insulin_resistance",0.105707917335062,0.556677548066712
+"lm / glm (all covariates)","albumin",-0.0075154978487404,0.958171373105971
+"lm / glm (all covariates)","bmi",-0.157787726000404,0.266072213255936
+"lm / glm (all covariates)","sex_Male",-0.0533490212319664,0.74700825933647
+"lm / glm (all covariates)","cataracts_Yes",-0.0393334493130743,0.791784741780118
+"lm / glm (all covariates)","family_history_Yes",-0.398808521951136,0.0458737489900357
+"lm / glm (all covariates)","family_history_Unknown",-0.393746482630055,0.051679742802895
+"lm / glm (all covariates)","smoking_status_Former",0.0713384208104879,0.64623353739196
+"lm / glm (all covariates)","smoking_status_Current",-0.0517276214392535,0.729506998415466
+"lm / glm (all covariates)","phenotype_adult_onset",0.282703532397602,0.432967853302921
+"lm / glm (all covariates)","phenotype_juvenile_onset",0.38338698845557,0.432267457689264
+"Stepwise forward (AIC)","log_ctg",0.934706385769224,3.5178469901627e-07
+"Stepwise forward (AIC)","disease_duration",0.477584979714325,0.000347312548364375
+"Stepwise forward (AIC)","age_at_onset",0.329145832543498,0.0603681405097123
+"Stepwise backward (AIC)","log_ctg",0.961201296256542,1.39158756108908e-07
+"Stepwise backward (AIC)","age_at_onset",0.407940896124191,0.0207292061631977
+"Stepwise backward (AIC)","disease_duration",0.437662989569896,0.00100088367529673
+"Stepwise backward (AIC)","family_history_Yes",-0.410381390924949,0.0231753894450678
+"Stepwise backward (AIC)","family_history_Unknown",-0.374734650332632,0.0351247725691418
+"Stepwise both (AIC)","log_ctg",0.961201296256542,1.39158756108908e-07
+"Stepwise both (AIC)","age_at_onset",0.407940896124191,0.0207292061631977
+"Stepwise both (AIC)","disease_duration",0.437662989569896,0.00100088367529673
+"Stepwise both (AIC)","family_history_Yes",-0.410381390924949,0.0231753894450678
+"Stepwise both (AIC)","family_history_Unknown",-0.374734650332632,0.0351247725691418
+"Stepwise both (BIC)","log_ctg",0.716145900153637,2.43775494199488e-07
+"Stepwise both (BIC)","disease_duration",0.485912309920267,0.00031385894418471
+"Best subset (leaps, BIC, nvmax=10)","log_ctg",0.716145900153637,2.43775494199488e-07
+"Best subset (leaps, BIC, nvmax=10)","disease_duration",0.485912309920267,0.00031385894418471
+"Ridge (glmnet)","log_ctg",0.192099642398386,NA
+"Ridge (glmnet)","somatic_mosaicism_index",0.0963824074288264,NA
+"Ridge (glmnet)","age_at_onset",-0.0209188727057371,NA
+"Ridge (glmnet)","disease_duration",0.126247342290611,NA
+"Ridge (glmnet)","myotonia_severity",0.143039831507437,NA
+"Ridge (glmnet)","muscle_strength",-0.13050838206625,NA
+"Ridge (glmnet)","pr_interval",0.0818909482938968,NA
+"Ridge (glmnet)","cognitive_function",0.0112967408859054,NA
+"Ridge (glmnet)","ck_level",-0.00744560067627714,NA
+"Ridge (glmnet)","insulin_resistance",0.0825035393568498,NA
+"Ridge (glmnet)","albumin",0.00478156987901893,NA
+"Ridge (glmnet)","bmi",-0.0476639408585079,NA
+"Ridge (glmnet)","sex_Male",-0.059979260452953,NA
+"Ridge (glmnet)","cataracts_Yes",-0.00801457748780076,NA
+"Ridge (glmnet)","family_history_Yes",-0.0839232128071116,NA
+"Ridge (glmnet)","family_history_Unknown",-0.0491759343424594,NA
+"Ridge (glmnet)","smoking_status_Former",0.0350366885328508,NA
+"Ridge (glmnet)","smoking_status_Current",-0.0595469885187829,NA
+"Ridge (glmnet)","phenotype_adult_onset",0.0376336581586667,NA
+"Ridge (glmnet)","phenotype_juvenile_onset",0.0227862035957986,NA
+"LASSO (glmnet, lambda.min)","log_ctg",0.475172148013769,NA
+"LASSO (glmnet, lambda.min)","disease_duration",0.173035556330655,NA
+"LASSO (glmnet, lambda.min)","muscle_strength",-0.122337242606664,NA
+"LASSO (glmnet, lambda.1se)","log_ctg",0.314139936393595,NA
+"LASSO (glmnet, lambda.1se)","disease_duration",0.0127003619298517,NA
+"LASSO (glmnet, lambda.1se)","muscle_strength",-0.121164490449517,NA
+"Elastic net (glmnet, alpha=.5)","log_ctg",0.396847114714025,NA
+"Elastic net (glmnet, alpha=.5)","disease_duration",0.163024019477338,NA
+"Elastic net (glmnet, alpha=.5)","myotonia_severity",0.058620492560117,NA
+"Elastic net (glmnet, alpha=.5)","muscle_strength",-0.133493223066951,NA
+"Elastic net (glmnet, alpha=.5)","pr_interval",0.00702541215252776,NA
+"Elastic net (glmnet, alpha=.5)","insulin_resistance",0.00276009049953285,NA
+"Polynomial deg-2 (top-4 covariates)","poly(log_ctg, 2)",NA,0.094138976865819
+"Polynomial deg-2 (top-4 covariates)","poly(myotonia_severity, 2)",NA,0.956285787002879
+"Polynomial deg-2 (top-4 covariates)","poly(muscle_strength, 2)",NA,0.00959668171253051
+"Polynomial deg-2 (top-4 covariates)","poly(somatic_mosaicism_index, 2)",NA,0.910848023347638
+"Piecewise: cut() tertile bins (top-4 covariates)","log_ctg_bin",NA,0.0198620037070898
+"Piecewise: cut() tertile bins (top-4 covariates)","myotonia_severity_bin",NA,0.937939411222677
+"Piecewise: cut() tertile bins (top-4 covariates)","muscle_strength_bin",NA,0.0321548786396044
+"Piecewise: cut() tertile bins (top-4 covariates)","somatic_mosaicism_index_bin",NA,0.765414323241636
+"Regression spline bs(df=4) (top-4 covariates)","bs(log_ctg, df = 4)",NA,0.186283497364502
+"Regression spline bs(df=4) (top-4 covariates)","bs(myotonia_severity, df = 4)",NA,0.494401031046959
+"Regression spline bs(df=4) (top-4 covariates)","bs(muscle_strength, df = 4)",NA,0.042246574210504
+"Regression spline bs(df=4) (top-4 covariates)","bs(somatic_mosaicism_index, df = 4)",NA,0.975324908092852
+"Smoothing spline (top-1 covariate, cv=TRUE)","log_ctg",NA,1.20290692905237e-06
+"GAM (mgcv, s(k=5), REML, select)","sex_Male",-0.102181777041104,0.452385526893428
+"GAM (mgcv, s(k=5), REML, select)","cataracts_Yes",-0.0236757373070047,0.863350146837614
+"GAM (mgcv, s(k=5), REML, select)","family_history_Yes",-0.486791844456672,0.00945464796330016
+"GAM (mgcv, s(k=5), REML, select)","family_history_Unknown",-0.451601216380164,0.0162017041969965
+"GAM (mgcv, s(k=5), REML, select)","smoking_status_Former",0.108611940746204,0.442586228292185
+"GAM (mgcv, s(k=5), REML, select)","smoking_status_Current",-0.0628774193385635,0.649740324318588
+"GAM (mgcv, s(k=5), REML, select)","phenotype_adult_onset",-0.108354437901174,0.670596535006449
+"GAM (mgcv, s(k=5), REML, select)","phenotype_juvenile_onset",-0.117331318042983,0.683833041780472
+"GAM (mgcv, s(k=5), REML, select)","log_ctg",NA,7.29087921041982e-05
+"GAM (mgcv, s(k=5), REML, select)","somatic_mosaicism_index",NA,0.560569840751155
+"GAM (mgcv, s(k=5), REML, select)","age_at_onset",NA,0.251891236194605
+"GAM (mgcv, s(k=5), REML, select)","disease_duration",NA,0.0148283060394997
+"GAM (mgcv, s(k=5), REML, select)","myotonia_severity",NA,0.898204523414594
+"GAM (mgcv, s(k=5), REML, select)","muscle_strength",NA,0.455112946987461
+"GAM (mgcv, s(k=5), REML, select)","pr_interval",NA,0.268132389737658
+"GAM (mgcv, s(k=5), REML, select)","cognitive_function",NA,0.660565983982916
+"GAM (mgcv, s(k=5), REML, select)","ck_level",NA,0.829685434729563
+"GAM (mgcv, s(k=5), REML, select)","insulin_resistance",NA,0.0123173046514901
+"GAM (mgcv, s(k=5), REML, select)","albumin",NA,0.645582256333417
+"GAM (mgcv, s(k=5), REML, select)","bmi",NA,0.51662586184587

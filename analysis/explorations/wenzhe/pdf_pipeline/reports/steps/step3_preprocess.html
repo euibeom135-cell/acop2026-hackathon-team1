@@ -1,0 +1,370 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>DM1 Step 3: Preprocess</title><style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:1180px;margin:1.2em auto;line-height:1.5;padding:0 1em;color:#222}
+.t{border-collapse:collapse;font-size:12.5px;margin:.4em 0}.t td,.t th{border:1px solid #ccc;padding:3px 8px;text-align:left;vertical-align:top}.t th{background:#f3f5f8}
+.box{background:#f4f7fb;border-left:4px solid #3a6ea5;padding:.4em 1em;margin:1em 0}.warn{background:#fff8e1;border-left:4px solid #e0a800;padding:.4em 1em;margin:1em 0}
+.note{color:#555;font-size:13px}.cap{font-weight:600;margin:.9em 0 0}h2{border-bottom:2px solid var(--c);padding-bottom:2px;margin-top:1.6em}h3{margin-bottom:.2em}
+.strip{display:flex;gap:8px;margin:.5em 0 1em;flex-wrap:wrap}.cell{flex:1;min-width:140px;text-decoration:none;color:#222;background:var(--bg);border-radius:10px;padding:8px 10px;border:2px solid transparent;font-size:12px}
+.cell.on{border-color:var(--c)}.cell .n{display:inline-block;background:var(--c);color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;margin-right:6px}
+.nav{display:flex;justify-content:space-between;margin:.8em 0}.nav a{color:#3a6ea5;text-decoration:none}details{margin:.5em 0}summary{cursor:pointer;color:#3a6ea5}
+.foot{color:#555;font-size:12px;border-top:1px solid #ddd;margin-top:2em;padding-top:.6em}.sig{background:#bfe3c8}.bor{background:#fbe7a6}.noi{color:#777}.req td:first-child{width:32%}</style></head><body style='--c:#6c5ce7'><div class="strip"><a href="step1_understand.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">1</span><b>Understand</b></a><a href="step2_split_cv.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">2</span><b>Split / Cross-validation</b></a><a href="step3_preprocess.html" class="cell on" style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">3</span><b>Preprocess</b></a><a href="step4_select.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">4</span><b>Select</b></a><a href="step5_train.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">5</span><b>Train</b></a><a href="step6_evaluate.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">6</span><b>Evaluate</b></a></div><div class="nav"><a href="step2_split_cv.html">&larr; Step 2: Split / Cross-validation</a><span><a href="index.html">Index</a> &middot; <a href="../summary.html">Summary</a></span><a href="step4_select.html">Step 4: Select &rarr;</a></div><h1 style='color:#6c5ce7'>Step 3 &middot; Preprocess only what each method needs</h1><div class="box">Split first, fit preprocessing on train only, apply the fitted steps to test. Only numeric columns are z-scored; 0/1 dummies are left as they are.</div><h2>PDF requirements for this step</h2><table class="dataframe t req">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Kickoff says</th>
+      <th>What we did</th>
+      <th>Where</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Preprocess only what the chosen method needs</td>
+      <td>Table 3.2: what each method family needs; trees/forests/XGBoost need no scaling but get the same matrix so all methods see identical inputs</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>Leakage rule 1: split first, before any preprocessing</td>
+      <td>The split (Step 2) exists before any scaling or encoding is fitted</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Leakage rule 2: fit on train only</td>
+      <td>Means/SDs come from training rows only; inside CV from each fold's training part</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Leakage rule 3: apply to test, never refit on test</td>
+      <td>For the single test scoring the scaler fitted on full TRAIN is applied unchanged to test rows</td>
+      <td>3.1, 3.4</td>
+    </tr>
+  </tbody>
+</table><h2>3.1 What was done</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Item</th>
+      <th>Transformation</th>
+      <th>Why / how</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CTG repeat count</td>
+      <td>log10 transform</td>
+      <td>Repeat counts are multiplicative in scale; a scale choice made before fitting, not fitted to the outcome.</td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td>dropped</td>
+      <td>age = age_at_onset + disease_duration exactly (max abs difference 0): perfectly collinear.</td>
+    </tr>
+    <tr>
+      <td>albumin (Mexiletine only)</td>
+      <td>dropped</td>
+      <td>Single constant value in the Mexiletine train rows (zero variance); kept in the other two arms.</td>
+    </tr>
+    <tr>
+      <td>sex, cataracts, family history, smoking, phenotype</td>
+      <td>0/1 dummies</td>
+      <td>Family history has a separate 'Unknown' level. Dummies are NOT standardised.</td>
+    </tr>
+    <tr>
+      <td>12 numeric columns (11 in Mexiletine)</td>
+      <td>z-score: (x - train mean) / train SD</td>
+      <td>Re-fitted on the training part of every CV fold (a scaler inside each sklearn Pipeline / each R fit, also inside the inner grid-search folds); fitted once on the full TRAIN set for the single test scoring.</td>
+    </tr>
+    <tr>
+      <td>Missing values / outliers</td>
+      <td>none to treat / none removed</td>
+      <td>No missing values in the feature matrices; extreme values are plausible clinical values and are kept.</td>
+    </tr>
+  </tbody>
+</table>
+<h2>3.2 Which methods need which preprocessing</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Methods</th>
+      <th>Dummy coding</th>
+      <th>Scaling</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lm / glm, stepwise-BIC, best subset</td>
+      <td>yes (dummies)</td>
+      <td>not required (only changes coefficient units); done so every method sees one matrix</td>
+    </tr>
+    <tr>
+      <td>Ridge, LASSO, elastic net</td>
+      <td>yes</td>
+      <td>required: the penalty depends on column scale; glmnet is called with standardize=FALSE on the z-scored matrix, so dummies keep their 0/1 scale</td>
+    </tr>
+    <tr>
+      <td>GAM (s(k=5), REML)</td>
+      <td>yes</td>
+      <td>numeric columns enter as smooths on the z-scored matrix; dummies linear</td>
+    </tr>
+    <tr>
+      <td>PCA / PCR</td>
+      <td>yes</td>
+      <td>required: components follow variance; PCA on the z-scored numeric and 0/1 columns as built</td>
+    </tr>
+    <tr>
+      <td>Logistic regression, SVM (RBF), KNN, MLP</td>
+      <td>yes</td>
+      <td>required: distance- or gradient-based</td>
+    </tr>
+    <tr>
+      <td>Decision tree, random forest, XGBoost</td>
+      <td>yes</td>
+      <td>not needed (split-based, invariant to per-column rescaling); they are given the same z-scored matrix for comparability</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">Trees, random forests and XGBoost are invariant to per-column affine rescaling, so scaling is not needed for them; they simply receive the same z-scored matrix so that all methods are compared on identical inputs. This is stated, not tuned.</p>
+<h2>3.3 Final design matrix per arm</h2><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Arm</th>
+      <th>Train matrix</th>
+      <th>Test matrix (same columns)</th>
+      <th>z-scored numeric</th>
+      <th>0/1 dummies (not scaled)</th>
+      <th>Missing values (train)</th>
+      <th>Dropped</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mexiletine</td>
+      <td>128 x 19</td>
+      <td>33 x 19</td>
+      <td>11</td>
+      <td>8</td>
+      <td>0</td>
+      <td>age (= onset + duration), albumin (constant in train)</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotide</td>
+      <td>136 x 20</td>
+      <td>34 x 20</td>
+      <td>12</td>
+      <td>8</td>
+      <td>0</td>
+      <td>age (= onset + duration)</td>
+    </tr>
+    <tr>
+      <td>Tideglusib</td>
+      <td>135 x 20</td>
+      <td>34 x 20</td>
+      <td>12</td>
+      <td>8</td>
+      <td>0</td>
+      <td>age (= onset + duration)</td>
+    </tr>
+  </tbody>
+</table>
+<details><summary>Stored scaler statistics (full-train mean and SD per numeric column)</summary><p class=cap>Mexiletine</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Column</th>
+      <th>Train mean</th>
+      <th>Train SD (ddof=0)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>log10 CTG repeats</td>
+      <td>2.418</td>
+      <td>0.293</td>
+    </tr>
+    <tr>
+      <td>Somatic mosaicism</td>
+      <td>0.347</td>
+      <td>0.249</td>
+    </tr>
+    <tr>
+      <td>Age at onset</td>
+      <td>25.242</td>
+      <td>12.802</td>
+    </tr>
+    <tr>
+      <td>Disease duration</td>
+      <td>8.180</td>
+      <td>6.871</td>
+    </tr>
+    <tr>
+      <td>Myotonia severity</td>
+      <td>4.955</td>
+      <td>2.106</td>
+    </tr>
+    <tr>
+      <td>Muscle strength</td>
+      <td>64.695</td>
+      <td>14.508</td>
+    </tr>
+    <tr>
+      <td>PR interval</td>
+      <td>179.164</td>
+      <td>16.982</td>
+    </tr>
+    <tr>
+      <td>Cognitive function</td>
+      <td>-0.379</td>
+      <td>0.637</td>
+    </tr>
+    <tr>
+      <td>Creatine kinase</td>
+      <td>129.789</td>
+      <td>77.663</td>
+    </tr>
+    <tr>
+      <td>Insulin resistance</td>
+      <td>2.406</td>
+      <td>0.667</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>25.919</td>
+      <td>4.036</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Oligonucleotide</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Column</th>
+      <th>Train mean</th>
+      <th>Train SD (ddof=0)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>log10 CTG repeats</td>
+      <td>2.363</td>
+      <td>0.311</td>
+    </tr>
+    <tr>
+      <td>Somatic mosaicism</td>
+      <td>0.296</td>
+      <td>0.229</td>
+    </tr>
+    <tr>
+      <td>Age at onset</td>
+      <td>27.728</td>
+      <td>12.583</td>
+    </tr>
+    <tr>
+      <td>Disease duration</td>
+      <td>8.853</td>
+      <td>7.352</td>
+    </tr>
+    <tr>
+      <td>Myotonia severity</td>
+      <td>4.310</td>
+      <td>2.047</td>
+    </tr>
+    <tr>
+      <td>Muscle strength</td>
+      <td>62.176</td>
+      <td>15.423</td>
+    </tr>
+    <tr>
+      <td>PR interval</td>
+      <td>177.669</td>
+      <td>16.120</td>
+    </tr>
+    <tr>
+      <td>Cognitive function</td>
+      <td>-0.317</td>
+      <td>0.636</td>
+    </tr>
+    <tr>
+      <td>Creatine kinase</td>
+      <td>120.522</td>
+      <td>65.949</td>
+    </tr>
+    <tr>
+      <td>Insulin resistance</td>
+      <td>2.449</td>
+      <td>0.666</td>
+    </tr>
+    <tr>
+      <td>Albumin</td>
+      <td>4.193</td>
+      <td>0.351</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>25.972</td>
+      <td>4.024</td>
+    </tr>
+  </tbody>
+</table><p class=cap>Tideglusib</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Column</th>
+      <th>Train mean</th>
+      <th>Train SD (ddof=0)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>log10 CTG repeats</td>
+      <td>2.364</td>
+      <td>0.332</td>
+    </tr>
+    <tr>
+      <td>Somatic mosaicism</td>
+      <td>0.319</td>
+      <td>0.255</td>
+    </tr>
+    <tr>
+      <td>Age at onset</td>
+      <td>25.807</td>
+      <td>10.953</td>
+    </tr>
+    <tr>
+      <td>Disease duration</td>
+      <td>7.904</td>
+      <td>7.086</td>
+    </tr>
+    <tr>
+      <td>Myotonia severity</td>
+      <td>4.429</td>
+      <td>2.239</td>
+    </tr>
+    <tr>
+      <td>Muscle strength</td>
+      <td>66.333</td>
+      <td>15.858</td>
+    </tr>
+    <tr>
+      <td>PR interval</td>
+      <td>175.556</td>
+      <td>16.603</td>
+    </tr>
+    <tr>
+      <td>Cognitive function</td>
+      <td>-0.487</td>
+      <td>0.640</td>
+    </tr>
+    <tr>
+      <td>Creatine kinase</td>
+      <td>113.556</td>
+      <td>69.797</td>
+    </tr>
+    <tr>
+      <td>Insulin resistance</td>
+      <td>2.385</td>
+      <td>0.575</td>
+    </tr>
+    <tr>
+      <td>Albumin</td>
+      <td>4.164</td>
+      <td>0.400</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>26.404</td>
+      <td>3.799</td>
+    </tr>
+  </tbody>
+</table></details>
+<h2>3.4 Leakage check</h2>
+<p>Leakage is prevented by construction: the scaler lives inside each model pipeline (sklearn) or inside each fit (R), so it is re-estimated on the training part of every fold and never sees validation or test rows. A numerical check of test covariates scaled with the train scaler is <b>not part of results/</b> and was not computed here, because producing it would mean opening the test covariates before Step 6.</p><div class="nav"><a href="step2_split_cv.html">&larr; Step 2: Split / Cross-validation</a><span><a href="index.html">Index</a> &middot; <a href="../summary.html">Summary</a></span><a href="step4_select.html">Step 4: Select &rarr;</a></div><p class=foot>AI tool disclosure (kickoff checklist): Claude Code (Anthropic) was used to write the analysis code (R and Python), to generate these pages, and to draft the text; every number on these pages is read from results/*.csv produced by the scripts in pdf_pipeline/src. Data are simulated; results do not describe real patients or approved therapies.</p></body></html>

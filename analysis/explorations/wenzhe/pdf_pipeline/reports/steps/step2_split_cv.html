@@ -1,0 +1,130 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>DM1 Step 2: Split / Cross-validation</title><style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:1180px;margin:1.2em auto;line-height:1.5;padding:0 1em;color:#222}
+.t{border-collapse:collapse;font-size:12.5px;margin:.4em 0}.t td,.t th{border:1px solid #ccc;padding:3px 8px;text-align:left;vertical-align:top}.t th{background:#f3f5f8}
+.box{background:#f4f7fb;border-left:4px solid #3a6ea5;padding:.4em 1em;margin:1em 0}.warn{background:#fff8e1;border-left:4px solid #e0a800;padding:.4em 1em;margin:1em 0}
+.note{color:#555;font-size:13px}.cap{font-weight:600;margin:.9em 0 0}h2{border-bottom:2px solid var(--c);padding-bottom:2px;margin-top:1.6em}h3{margin-bottom:.2em}
+.strip{display:flex;gap:8px;margin:.5em 0 1em;flex-wrap:wrap}.cell{flex:1;min-width:140px;text-decoration:none;color:#222;background:var(--bg);border-radius:10px;padding:8px 10px;border:2px solid transparent;font-size:12px}
+.cell.on{border-color:var(--c)}.cell .n{display:inline-block;background:var(--c);color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;margin-right:6px}
+.nav{display:flex;justify-content:space-between;margin:.8em 0}.nav a{color:#3a6ea5;text-decoration:none}details{margin:.5em 0}summary{cursor:pointer;color:#3a6ea5}
+.foot{color:#555;font-size:12px;border-top:1px solid #ddd;margin-top:2em;padding-top:.6em}.sig{background:#bfe3c8}.bor{background:#fbe7a6}.noi{color:#777}.req td:first-child{width:32%}</style></head><body style='--c:#4d9a6e'><div class="strip"><a href="step1_understand.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">1</span><b>Understand</b></a><a href="step2_split_cv.html" class="cell on" style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">2</span><b>Split / Cross-validation</b></a><a href="step3_preprocess.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">3</span><b>Preprocess</b></a><a href="step4_select.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">4</span><b>Select</b></a><a href="step5_train.html" class="cell " style="--c:#6c5ce7;--bg:#f0eefe"><span class="n">5</span><b>Train</b></a><a href="step6_evaluate.html" class="cell " style="--c:#4d9a6e;--bg:#eef6f2"><span class="n">6</span><b>Evaluate</b></a></div><div class="nav"><a href="step1_understand.html">&larr; Step 1: Understand</a><span><a href="index.html">Index</a> &middot; <a href="../summary.html">Summary</a></span><a href="step3_preprocess.html">Step 3: Preprocess &rarr;</a></div><h1 style='color:#4d9a6e'>Step 2 &middot; Split once per arm, then cross-validate inside train</h1><div class="box">A genuine, seeded, stratified 80/20 split per arm; the test set is locked until Step 6. Model comparison uses repeated 5-fold CV on train.</div><h2>PDF requirements for this step</h2><table class="dataframe t req">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Kickoff says</th>
+      <th>What we did</th>
+      <th>Where</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Split each arm separately</td>
+      <td>Three independent 80/20 splits, one per arm</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Stratify by outcome (responder label directly; continuous outcome binned first)</td>
+      <td>Stratified on the responder label; train vs test label share and continuous-outcome mean/SD shown</td>
+      <td>2.1, 2.2</td>
+    </tr>
+    <tr>
+      <td>Fix the random seed</td>
+      <td>Seed 42; the split file results/split_seed42.csv is read as given, nothing re-randomised</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Lock the test set; use it only for the final evaluation</td>
+      <td>Test rows are first opened in Step 6; a lock file blocks re-scoring</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>(Step 5 / checklist) tuning on training data only</td>
+      <td>Repeated stratified 5-fold x3 CV inside TRAIN for every comparison; inner 3-fold grid search for tuned ML</td>
+      <td>2.4</td>
+    </tr>
+  </tbody>
+</table><h2>2.1 The split</h2>
+<p>One split per arm, 80% train / 20% test, stratified on the responder label, random seed 42. The split is the project's single locked split file (<code>results/split_seed42.csv</code>, read-only); no new split was drawn and no alternative split was compared.</p>
+<p class=cap>Set sizes and balance (outcome summaries of the test set are read from the locked scoring output, for balance only)</p><table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Arm</th>
+      <th>Train n</th>
+      <th>Test n</th>
+      <th>Train / total</th>
+      <th>Responders train</th>
+      <th>Responders test</th>
+      <th>Outcome mean (SD) train</th>
+      <th>Outcome mean (SD) test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mexiletine</td>
+      <td>128</td>
+      <td>33</td>
+      <td>80%</td>
+      <td>37 (28.9%)</td>
+      <td>10 (30.3%)</td>
+      <td>-1.99 (1.36)</td>
+      <td>-1.82 (1.25)</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotide</td>
+      <td>136</td>
+      <td>34</td>
+      <td>80%</td>
+      <td>56 (41.2%)</td>
+      <td>14 (41.2%)</td>
+      <td>1.08 (1.60)</td>
+      <td>0.96 (2.07)</td>
+    </tr>
+    <tr>
+      <td>Tideglusib</td>
+      <td>135</td>
+      <td>34</td>
+      <td>80%</td>
+      <td>65 (48.1%)</td>
+      <td>16 (47.1%)</td>
+      <td>5.53 (3.01)</td>
+      <td>6.14 (3.48)</td>
+    </tr>
+  </tbody>
+</table>
+<h2>2.2 Balance check</h2><img src="figs/s2_balance.png" alt="s2_balance" style="max-width:100%">
+<p class="note">Stratification keeps the responder share of train and test within about one patient of each other (table). The continuous outcome was not used for stratification; its train and test distributions overlap as shown, but with 33-34 test patients small differences in mean and SD are expected.</p>
+<h2>2.3 Test set is locked</h2>
+<p>The test rows are not used for exploration (Step 1), preprocessing (Step 3), selection (Step 4) or tuning (Step 5). They are opened once, in Step 6, in a single scoring pass. The guard file <code>results/TEST_SCORED.lock</code> records that pass (started 2026-10-12T23:21:03, finished 2026-10-12T23:23:44) and blocks a second scoring unless explicitly forced.</p>
+<h2>2.4 Cross-validation inside train</h2>
+<p>All model comparison and tuning uses <b>repeated stratified 5-fold CV, 3 repeats, seed 42</b>, on the training rows only, stratified on the responder label. The same folds are used for every method and for both outcome types, so methods are compared on the same patients. Tuned ML models additionally run an inner 3-fold grid search on each outer fold's training rows (nested), so a tuned model is never tuned on the fold that scores it. Every preprocessing step is re-fitted on each fold's training part (Step 3).</p>
+<table class="dataframe t">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Arm</th>
+      <th>Repeats x folds</th>
+      <th>Validation fold size</th>
+      <th>Fit size (train rows per fit)</th>
+      <th>Responder share per validation fold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mexiletine</td>
+      <td>3 x 5 = 15 fits per method</td>
+      <td>25-26</td>
+      <td>102-103</td>
+      <td>27%-31% (train 29%)</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotide</td>
+      <td>3 x 5 = 15 fits per method</td>
+      <td>27-28</td>
+      <td>108-109</td>
+      <td>41%-43% (train 41%)</td>
+    </tr>
+    <tr>
+      <td>Tideglusib</td>
+      <td>3 x 5 = 15 fits per method</td>
+      <td>27-27</td>
+      <td>108-108</td>
+      <td>48%-48% (train 48%)</td>
+    </tr>
+  </tbody>
+</table><div class="nav"><a href="step1_understand.html">&larr; Step 1: Understand</a><span><a href="index.html">Index</a> &middot; <a href="../summary.html">Summary</a></span><a href="step3_preprocess.html">Step 3: Preprocess &rarr;</a></div><p class=foot>AI tool disclosure (kickoff checklist): Claude Code (Anthropic) was used to write the analysis code (R and Python), to generate these pages, and to draft the text; every number on these pages is read from results/*.csv produced by the scripts in pdf_pipeline/src. Data are simulated; results do not describe real patients or approved therapies.</p></body></html>
