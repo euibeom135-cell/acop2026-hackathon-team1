@@ -1,5 +1,8 @@
 # Analysis
 
+Repository: https://github.com/euibeom135-cell/acop2026-hackathon-team1
+
+
 One script, `dm1_analysis.R`, runs everything for all three arms. It gets the cleaned data and the train/test split from `R/common.R`, which the per-member `explorations/` also use, so everyone works from the same split.
 
 ## Run

@@ -2,6 +2,7 @@
 # Question: can ML identify additional predictors and improve stratification beyond
 #           traditional covariate modelling?
 # Run:      Rscript dm1_analysis.R     (from this folder; put the dataset in data/)
+# Repository: https://github.com/euibeom135-cell/acop2026-hackathon-team1  (code, decision log, AI disclosure, team pipelines)
 # Output:   dm1_outputs/  scoreboard_*.csv, covariates_*.csv, fig_*.png
 #
 # AI disclosure: drafted with Claude (Anthropic) via Claude Code, used for code writing and

@@ -1,5 +1,8 @@
 # ACoP 2026 Hackathon — Team 1
 
+Repository: https://github.com/euibeom135-cell/acop2026-hackathon-team1
+
+
 **Beyond CTG Repeats: Advancing Patient Stratification in Myotonic Dystrophy Type 1 (DM1)**
 
 > **The question:** can machine learning identify additional predictors and improve patient stratification beyond traditional covariate modelling?
