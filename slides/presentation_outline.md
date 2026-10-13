@@ -12,7 +12,7 @@ References: `references.md`, one per claim, in small type on the slide that make
 
 | Drug | Main covariate | Held-out responders, high vs low |
 |---|---|---|
-| Mexiletine (symptomatic) | Myotonia severity | 67% vs 10% |
+| Mexiletine (symptomatic) | Myotonia severity | 48% vs 10% |
 | Oligonucleotide (targets the RNA) | CTG repeat length | 59% vs 31% |
 | Tideglusib (multisystem) | Cognitive function | 74% vs 17% |
 
@@ -48,7 +48,7 @@ References: `references.md`, one per claim, in small type on the slide that make
 
 ## 5. So what, limits, AI (40 s) — all three
 
-- Stratification proposal, one line: "Measure the organ the drug acts on: myotonia before mexiletine, repeat length before the antisense drug, cognition before tideglusib. One routine measurement per drug separates groups that differ 2- to 7-fold in response."
+- Stratification proposal, one line: "Measure the organ the drug acts on: myotonia before mexiletine, repeat length before the antisense drug, cognition before tideglusib. One routine measurement per drug separates groups that differ 2- to 5-fold in response."
 - Small figure: `fig_strata_Tideglusib.png` (held-out thirds by predicted benefit: 21 / 46 / 79%).
 - Trial-design implication, one line per arm (judge Sarah Kim works on model-based trial design):
   - Mexiletine: enrol by baseline myotonia severity, not by diagnosis; mild-myotonia patients dilute the effect (ref 5, the null 6-minute-walk trial).
