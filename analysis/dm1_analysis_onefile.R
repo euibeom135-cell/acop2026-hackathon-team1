@@ -1,7 +1,7 @@
 # ACoP 2026 Hackathon, Team 1: DM1 treatment-response predictors per arm
 # Question: can ML identify additional predictors and improve stratification beyond
 #           traditional covariate modelling?
-# Run:      Rscript dm1_analysis_onefile.R     (from the analysis folder; dataset in data/)
+# Run:      Rscript dm1_analysis_onefile.R     (from the folder holding this file; dataset in data/ next to it)
 # Repository: https://github.com/euibeom135-cell/acop2026-hackathon-team1  (code, decision log, AI disclosure, team pipelines)
 # Output:   dm1_outputs/  scoreboard_*.csv, covariates_*.csv, fig_*.png
 #
@@ -39,7 +39,7 @@ SEED <- 20261011
 
 # Find the analysis folder from wherever the calling script is run.
 ANALYSIS_DIR <- local({ d <- normalizePath(getwd())
-  repeat { if (file.exists(file.path(d, "dm1_analysis.R"))) break
+  repeat { if (file.exists(file.path(d, "dm1_analysis.R")) || file.exists(file.path(d, "dm1_analysis_onefile.R"))) break   # works standalone too
            if (file.exists(file.path(d, "analysis", "dm1_analysis.R"))) { d <- file.path(d, "analysis"); break }
            if (dirname(d) == d) stop("Run from inside the repository."); d <- dirname(d) }
   d })
