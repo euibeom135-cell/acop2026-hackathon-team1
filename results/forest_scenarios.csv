@@ -1,0 +1,16 @@
+"arm","scenario","responder_prob","lo90","hi90"
+"Mexiletine","Reference patient (median, adult onset)",0.263634594880891,0.167941344936029,0.353111830551047
+"Mexiletine","myotonia_severity at 10th percentile (2)",0.169536295933327,0.0443562387748458,0.350278452432393
+"Mexiletine","myotonia_severity at 90th percentile (7.7)",0.376304899915528,0.168192579040423,0.658940779291644
+"Mexiletine","juvenile_onset (other covariates at reference)",0.301964611619369,0.144145354323405,0.485510630502868
+"Mexiletine","late_onset (other covariates at reference)",0.108385733993311,1.42971773278412e-08,0.315977463960902
+"Oligonucleotide","Reference patient (median, adult onset)",0.477852137412621,0.376464014778434,0.59176666108325
+"Oligonucleotide","ctg_repeats at 10th percentile (73)",0.216848621549699,0.105173592462158,0.348868166259517
+"Oligonucleotide","ctg_repeats at 90th percentile (510)",0.749496711088862,0.601145181445402,0.874165994335609
+"Oligonucleotide","juvenile_onset (other covariates at reference)",0.276482663527211,0.134688854882219,0.439202705708768
+"Oligonucleotide","late_onset (other covariates at reference)",0.338194830721839,0.124841195066071,0.583280623027832
+"Tideglusib","Reference patient (median, adult onset)",0.487543844649912,0.377467360324968,0.596050272368002
+"Tideglusib","cognitive_function at 10th percentile (-1.2)",0.867962538263044,0.756267402766936,0.957193743157165
+"Tideglusib","cognitive_function at 90th percentile (0.27)",0.135591661733965,0.0508308916913391,0.22679591852106
+"Tideglusib","juvenile_onset (other covariates at reference)",0.41313113053282,0.230099577989671,0.611097391048777
+"Tideglusib","late_onset (other covariates at reference)",0.450853287399529,0.212412407816559,0.697418414284833

@@ -1,0 +1,4 @@
+CHECK  somatic_mosaicism_index: 15% of patients sit exactly at 0 (a floor, ceiling or detection limit)
+CHECK  ck_level: 32% of patients sit exactly at 50 (a floor, ceiling or detection limit)
+CHECK  albumin: 9 extreme values (beyond 3 IQR), e.g. 3.25, 3.14, 3.18, 5.21, 5.31; range 3.14 to 5.35
+CHECK  albumin has a single value (4.18) for every Mexiletine patient: no information in that arm; dropped there

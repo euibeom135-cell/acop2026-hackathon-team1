@@ -1,0 +1,361 @@
+"seed","arm","method","R2"
+20261011,"Mexiletine","Stepwise (BIC)",0.543397106918027
+20261011,"Mexiletine","LASSO",0.481783606975436
+20261011,"Mexiletine","Elastic net",0.470699761110996
+20261011,"Mexiletine","Random forest",0.503151397230595
+20261011,"Mexiletine","XGBoost, untuned",0.330358841179651
+20261011,"Mexiletine","XGBoost, tuned",0.540566349645521
+20261011,"Oligonucleotide","Stepwise (BIC)",0.0511552297847528
+20261011,"Oligonucleotide","LASSO",0.0604187216395891
+20261011,"Oligonucleotide","Elastic net",0.0546767089835727
+20261011,"Oligonucleotide","Random forest",0.0923412713919431
+20261011,"Oligonucleotide","XGBoost, untuned",-0.0764200915607034
+20261011,"Oligonucleotide","XGBoost, tuned",0.0595479309268788
+20261011,"Tideglusib","Stepwise (BIC)",0.303520643275764
+20261011,"Tideglusib","LASSO",0.242451982247688
+20261011,"Tideglusib","Elastic net",0.253799768185514
+20261011,"Tideglusib","Random forest",0.556630309100649
+20261011,"Tideglusib","XGBoost, untuned",0.401553498846745
+20261011,"Tideglusib","XGBoost, tuned",0.550138108706014
+20261012,"Mexiletine","Stepwise (BIC)",0.674493323099691
+20261012,"Mexiletine","LASSO",0.61253105093013
+20261012,"Mexiletine","Elastic net",0.604059355429159
+20261012,"Mexiletine","Random forest",0.652199757544432
+20261012,"Mexiletine","XGBoost, untuned",0.641308076573623
+20261012,"Mexiletine","XGBoost, tuned",0.714990659765721
+20261012,"Oligonucleotide","Stepwise (BIC)",0.0956777344801496
+20261012,"Oligonucleotide","LASSO",0.0983574355541758
+20261012,"Oligonucleotide","Elastic net",0.093307950233433
+20261012,"Oligonucleotide","Random forest",0.13654763219618
+20261012,"Oligonucleotide","XGBoost, untuned",0.0300418559598779
+20261012,"Oligonucleotide","XGBoost, tuned",0.145623895846799
+20261012,"Tideglusib","Stepwise (BIC)",0.441444010771054
+20261012,"Tideglusib","LASSO",0.340677845059003
+20261012,"Tideglusib","Elastic net",0.354658373633374
+20261012,"Tideglusib","Random forest",0.464279839579297
+20261012,"Tideglusib","XGBoost, untuned",0.4392392049644
+20261012,"Tideglusib","XGBoost, tuned",0.553846611843191
+20261013,"Mexiletine","Stepwise (BIC)",0.670578970068967
+20261013,"Mexiletine","LASSO",0.601275212763271
+20261013,"Mexiletine","Elastic net",0.601261517096936
+20261013,"Mexiletine","Random forest",0.682283182595553
+20261013,"Mexiletine","XGBoost, untuned",0.660059163952429
+20261013,"Mexiletine","XGBoost, tuned",0.709863477055243
+20261013,"Oligonucleotide","Stepwise (BIC)",0.243260316645952
+20261013,"Oligonucleotide","LASSO",-0.00317134054266011
+20261013,"Oligonucleotide","Elastic net",-0.00317134054266011
+20261013,"Oligonucleotide","Random forest",0.159098343565863
+20261013,"Oligonucleotide","XGBoost, untuned",-0.0777110697331123
+20261013,"Oligonucleotide","XGBoost, tuned",0.134233194141239
+20261013,"Tideglusib","Stepwise (BIC)",0.347291633713136
+20261013,"Tideglusib","LASSO",0.305434409243718
+20261013,"Tideglusib","Elastic net",0.304541463993327
+20261013,"Tideglusib","Random forest",0.385484405036891
+20261013,"Tideglusib","XGBoost, untuned",0.0487759532478994
+20261013,"Tideglusib","XGBoost, tuned",0.376320970945586
+20261014,"Mexiletine","Stepwise (BIC)",0.584447889935896
+20261014,"Mexiletine","LASSO",0.545939654139248
+20261014,"Mexiletine","Elastic net",0.584624973548652
+20261014,"Mexiletine","Random forest",0.620284682313631
+20261014,"Mexiletine","XGBoost, untuned",0.456651899394891
+20261014,"Mexiletine","XGBoost, tuned",0.672612284002328
+20261014,"Oligonucleotide","Stepwise (BIC)",-0.0121822221508365
+20261014,"Oligonucleotide","LASSO",0.0601808395064923
+20261014,"Oligonucleotide","Elastic net",0.0583185600206103
+20261014,"Oligonucleotide","Random forest",-0.0714985208255836
+20261014,"Oligonucleotide","XGBoost, untuned",-0.791637011501107
+20261014,"Oligonucleotide","XGBoost, tuned",-0.104514252984172
+20261014,"Tideglusib","Stepwise (BIC)",0.298000443131861
+20261014,"Tideglusib","LASSO",0.304862543775515
+20261014,"Tideglusib","Elastic net",0.297643728905284
+20261014,"Tideglusib","Random forest",0.4736941641621
+20261014,"Tideglusib","XGBoost, untuned",0.414030097364916
+20261014,"Tideglusib","XGBoost, tuned",0.492503427618545
+20261015,"Mexiletine","Stepwise (BIC)",0.645971784979689
+20261015,"Mexiletine","LASSO",0.614567526915279
+20261015,"Mexiletine","Elastic net",0.613120058111202
+20261015,"Mexiletine","Random forest",0.566875150317016
+20261015,"Mexiletine","XGBoost, untuned",0.391470265136661
+20261015,"Mexiletine","XGBoost, tuned",0.551679955520179
+20261015,"Oligonucleotide","Stepwise (BIC)",0.0290397429588494
+20261015,"Oligonucleotide","LASSO",0.055003642798094
+20261015,"Oligonucleotide","Elastic net",0.0428119512398569
+20261015,"Oligonucleotide","Random forest",0.0392281741984803
+20261015,"Oligonucleotide","XGBoost, untuned",-0.216507788293358
+20261015,"Oligonucleotide","XGBoost, tuned",-0.00801992462833323
+20261015,"Tideglusib","Stepwise (BIC)",0.289595560426055
+20261015,"Tideglusib","LASSO",0.293866769387727
+20261015,"Tideglusib","Elastic net",0.284232223901549
+20261015,"Tideglusib","Random forest",0.512797039925124
+20261015,"Tideglusib","XGBoost, untuned",0.440382231612408
+20261015,"Tideglusib","XGBoost, tuned",0.592709476685457
+20261016,"Mexiletine","Stepwise (BIC)",0.616060477546528
+20261016,"Mexiletine","LASSO",0.552052984420652
+20261016,"Mexiletine","Elastic net",0.582202228560765
+20261016,"Mexiletine","Random forest",0.635049026569191
+20261016,"Mexiletine","XGBoost, untuned",0.575231660189135
+20261016,"Mexiletine","XGBoost, tuned",0.70433952222235
+20261016,"Oligonucleotide","Stepwise (BIC)",0.1553753682958
+20261016,"Oligonucleotide","LASSO",0.104704362644026
+20261016,"Oligonucleotide","Elastic net",0.0995323960853798
+20261016,"Oligonucleotide","Random forest",0.158821959570238
+20261016,"Oligonucleotide","XGBoost, untuned",0.0583765296357559
+20261016,"Oligonucleotide","XGBoost, tuned",0.0805928319383943
+20261016,"Tideglusib","Stepwise (BIC)",0.38503526007393
+20261016,"Tideglusib","LASSO",0.358130983390534
+20261016,"Tideglusib","Elastic net",0.356194614917645
+20261016,"Tideglusib","Random forest",0.542542914902207
+20261016,"Tideglusib","XGBoost, untuned",0.358641939802693
+20261016,"Tideglusib","XGBoost, tuned",0.561202224300055
+20261017,"Mexiletine","Stepwise (BIC)",0.70655385895045
+20261017,"Mexiletine","LASSO",0.593588345784932
+20261017,"Mexiletine","Elastic net",0.605774822391534
+20261017,"Mexiletine","Random forest",0.649658439214875
+20261017,"Mexiletine","XGBoost, untuned",0.679427870417086
+20261017,"Mexiletine","XGBoost, tuned",0.654679263688
+20261017,"Oligonucleotide","Stepwise (BIC)",0.220167008556475
+20261017,"Oligonucleotide","LASSO",0.0523929451023049
+20261017,"Oligonucleotide","Elastic net",0.0337096556409768
+20261017,"Oligonucleotide","Random forest",0.112046576286564
+20261017,"Oligonucleotide","XGBoost, untuned",-0.0958051702199492
+20261017,"Oligonucleotide","XGBoost, tuned",0.0935909653789249
+20261017,"Tideglusib","Stepwise (BIC)",0.279208270748665
+20261017,"Tideglusib","LASSO",0.275364559144207
+20261017,"Tideglusib","Elastic net",0.26429241385163
+20261017,"Tideglusib","Random forest",0.475457781445619
+20261017,"Tideglusib","XGBoost, untuned",0.46556826741525
+20261017,"Tideglusib","XGBoost, tuned",0.542218240455012
+20261018,"Mexiletine","Stepwise (BIC)",0.757262501310833
+20261018,"Mexiletine","LASSO",0.659535944949673
+20261018,"Mexiletine","Elastic net",0.625119083937697
+20261018,"Mexiletine","Random forest",0.615883967827326
+20261018,"Mexiletine","XGBoost, untuned",0.51288177354419
+20261018,"Mexiletine","XGBoost, tuned",0.654305301064384
+20261018,"Oligonucleotide","Stepwise (BIC)",0.0968014408314575
+20261018,"Oligonucleotide","LASSO",0.0555598215972204
+20261018,"Oligonucleotide","Elastic net",0.0282638455183503
+20261018,"Oligonucleotide","Random forest",0.0933696514041502
+20261018,"Oligonucleotide","XGBoost, untuned",-0.282790779772842
+20261018,"Oligonucleotide","XGBoost, tuned",0.0679506774570223
+20261018,"Tideglusib","Stepwise (BIC)",0.406575938222603
+20261018,"Tideglusib","LASSO",0.314976580392871
+20261018,"Tideglusib","Elastic net",0.321213534448398
+20261018,"Tideglusib","Random forest",0.50841181917231
+20261018,"Tideglusib","XGBoost, untuned",0.404770571050327
+20261018,"Tideglusib","XGBoost, tuned",0.542526690603734
+20261019,"Mexiletine","Stepwise (BIC)",0.640520091174084
+20261019,"Mexiletine","LASSO",0.635096137671375
+20261019,"Mexiletine","Elastic net",0.627530190305633
+20261019,"Mexiletine","Random forest",0.591379223189828
+20261019,"Mexiletine","XGBoost, untuned",0.401374828588456
+20261019,"Mexiletine","XGBoost, tuned",0.478390481044672
+20261019,"Oligonucleotide","Stepwise (BIC)",-0.035276114667055
+20261019,"Oligonucleotide","LASSO",0.0573069896347481
+20261019,"Oligonucleotide","Elastic net",0.0429982280036697
+20261019,"Oligonucleotide","Random forest",0.0271311922455335
+20261019,"Oligonucleotide","XGBoost, untuned",-0.273272171607163
+20261019,"Oligonucleotide","XGBoost, tuned",0.0652239405650596
+20261019,"Tideglusib","Stepwise (BIC)",0.475268218319766
+20261019,"Tideglusib","LASSO",0.313345645776795
+20261019,"Tideglusib","Elastic net",0.31577079991558
+20261019,"Tideglusib","Random forest",0.568542697516436
+20261019,"Tideglusib","XGBoost, untuned",0.508367063846702
+20261019,"Tideglusib","XGBoost, tuned",0.614834307747712
+20261020,"Mexiletine","Stepwise (BIC)",0.579117900098724
+20261020,"Mexiletine","LASSO",0.534946094443764
+20261020,"Mexiletine","Elastic net",0.523082496238921
+20261020,"Mexiletine","Random forest",0.600124900963849
+20261020,"Mexiletine","XGBoost, untuned",0.426116096926879
+20261020,"Mexiletine","XGBoost, tuned",0.620849920191194
+20261020,"Oligonucleotide","Stepwise (BIC)",0.123808996157873
+20261020,"Oligonucleotide","LASSO",0.0614824685736526
+20261020,"Oligonucleotide","Elastic net",0.0475345653608875
+20261020,"Oligonucleotide","Random forest",0.17386612901547
+20261020,"Oligonucleotide","XGBoost, untuned",-0.043041734348723
+20261020,"Oligonucleotide","XGBoost, tuned",0.139462882701301
+20261020,"Tideglusib","Stepwise (BIC)",0.301089304548246
+20261020,"Tideglusib","LASSO",0.271057363500662
+20261020,"Tideglusib","Elastic net",0.238294626565754
+20261020,"Tideglusib","Random forest",0.333075741896288
+20261020,"Tideglusib","XGBoost, untuned",0.192790390240702
+20261020,"Tideglusib","XGBoost, tuned",0.402161972036908
+20261021,"Mexiletine","Stepwise (BIC)",0.662648352977221
+20261021,"Mexiletine","LASSO",0.5963580389766
+20261021,"Mexiletine","Elastic net",0.606079820116572
+20261021,"Mexiletine","Random forest",0.630306372634757
+20261021,"Mexiletine","XGBoost, untuned",0.589596859149345
+20261021,"Mexiletine","XGBoost, tuned",0.674329397243531
+20261021,"Oligonucleotide","Stepwise (BIC)",0.247049376255829
+20261021,"Oligonucleotide","LASSO",0.0635183783937343
+20261021,"Oligonucleotide","Elastic net",0.0681840398920521
+20261021,"Oligonucleotide","Random forest",0.0163208194798856
+20261021,"Oligonucleotide","XGBoost, untuned",-0.143891611569036
+20261021,"Oligonucleotide","XGBoost, tuned",0.12329610421928
+20261021,"Tideglusib","Stepwise (BIC)",0.353268504036064
+20261021,"Tideglusib","LASSO",0.300909365855622
+20261021,"Tideglusib","Elastic net",0.305624365011359
+20261021,"Tideglusib","Random forest",0.45767368875507
+20261021,"Tideglusib","XGBoost, untuned",0.421184530313309
+20261021,"Tideglusib","XGBoost, tuned",0.497658439411259
+20261022,"Mexiletine","Stepwise (BIC)",0.629288768736857
+20261022,"Mexiletine","LASSO",0.570831732535819
+20261022,"Mexiletine","Elastic net",0.585970846602166
+20261022,"Mexiletine","Random forest",0.6415976498921
+20261022,"Mexiletine","XGBoost, untuned",0.64316333090796
+20261022,"Mexiletine","XGBoost, tuned",0.634238387956124
+20261022,"Oligonucleotide","Stepwise (BIC)",0.261055213045368
+20261022,"Oligonucleotide","LASSO",-0.0128364131348346
+20261022,"Oligonucleotide","Elastic net",0.0131667950339672
+20261022,"Oligonucleotide","Random forest",0.159663929703255
+20261022,"Oligonucleotide","XGBoost, untuned",0.187664139844464
+20261022,"Oligonucleotide","XGBoost, tuned",0.148941172859091
+20261022,"Tideglusib","Stepwise (BIC)",0.340337674206531
+20261022,"Tideglusib","LASSO",0.195803045401279
+20261022,"Tideglusib","Elastic net",0.170450848203522
+20261022,"Tideglusib","Random forest",0.486865754549444
+20261022,"Tideglusib","XGBoost, untuned",0.563458571590522
+20261022,"Tideglusib","XGBoost, tuned",0.548347993480395
+20261023,"Mexiletine","Stepwise (BIC)",0.641817081262743
+20261023,"Mexiletine","LASSO",0.606327655498527
+20261023,"Mexiletine","Elastic net",0.596298867941178
+20261023,"Mexiletine","Random forest",0.597543969382127
+20261023,"Mexiletine","XGBoost, untuned",0.613565604094533
+20261023,"Mexiletine","XGBoost, tuned",0.640517971552681
+20261023,"Oligonucleotide","Stepwise (BIC)",0.320419689845825
+20261023,"Oligonucleotide","LASSO",0.0412697405236426
+20261023,"Oligonucleotide","Elastic net",0.030644090437006
+20261023,"Oligonucleotide","Random forest",0.36604851066953
+20261023,"Oligonucleotide","XGBoost, untuned",0.303064573218625
+20261023,"Oligonucleotide","XGBoost, tuned",0.174885457753358
+20261023,"Tideglusib","Stepwise (BIC)",0.413631104985981
+20261023,"Tideglusib","LASSO",0.284148123569892
+20261023,"Tideglusib","Elastic net",0.287987210694329
+20261023,"Tideglusib","Random forest",0.478946637955344
+20261023,"Tideglusib","XGBoost, untuned",0.479929548900867
+20261023,"Tideglusib","XGBoost, tuned",0.621636291597612
+20261024,"Mexiletine","Stepwise (BIC)",0.684924192562288
+20261024,"Mexiletine","LASSO",0.615449670816766
+20261024,"Mexiletine","Elastic net",0.585367498083392
+20261024,"Mexiletine","Random forest",0.583398139746556
+20261024,"Mexiletine","XGBoost, untuned",0.574579370506089
+20261024,"Mexiletine","XGBoost, tuned",0.614342749927851
+20261024,"Oligonucleotide","Stepwise (BIC)",0.169001170586578
+20261024,"Oligonucleotide","LASSO",0.076018572795074
+20261024,"Oligonucleotide","Elastic net",0.0573349662425894
+20261024,"Oligonucleotide","Random forest",0.0317575546558501
+20261024,"Oligonucleotide","XGBoost, untuned",-0.229310867393828
+20261024,"Oligonucleotide","XGBoost, tuned",0.0310768328727319
+20261024,"Tideglusib","Stepwise (BIC)",0.328976313052233
+20261024,"Tideglusib","LASSO",0.329123974965167
+20261024,"Tideglusib","Elastic net",0.31288040968806
+20261024,"Tideglusib","Random forest",0.401496847119878
+20261024,"Tideglusib","XGBoost, untuned",0.422610980011877
+20261024,"Tideglusib","XGBoost, tuned",0.471024306187236
+20261025,"Mexiletine","Stepwise (BIC)",0.577173072413331
+20261025,"Mexiletine","LASSO",0.577446213246479
+20261025,"Mexiletine","Elastic net",0.58974848454082
+20261025,"Mexiletine","Random forest",0.54503037609451
+20261025,"Mexiletine","XGBoost, untuned",0.365076834726186
+20261025,"Mexiletine","XGBoost, tuned",0.37557676209999
+20261025,"Oligonucleotide","Stepwise (BIC)",0.180027592778632
+20261025,"Oligonucleotide","LASSO",0.117536873851539
+20261025,"Oligonucleotide","Elastic net",0.0941253305466405
+20261025,"Oligonucleotide","Random forest",0.121289815235358
+20261025,"Oligonucleotide","XGBoost, untuned",0.0705024865922855
+20261025,"Oligonucleotide","XGBoost, tuned",0.112609225516857
+20261025,"Tideglusib","Stepwise (BIC)",0.46945093539187
+20261025,"Tideglusib","LASSO",0.327655936600124
+20261025,"Tideglusib","Elastic net",0.338761923671027
+20261025,"Tideglusib","Random forest",0.526772710583198
+20261025,"Tideglusib","XGBoost, untuned",0.407511866110833
+20261025,"Tideglusib","XGBoost, tuned",0.556620854618543
+20261026,"Mexiletine","Stepwise (BIC)",0.653590415014999
+20261026,"Mexiletine","LASSO",0.596145541832921
+20261026,"Mexiletine","Elastic net",0.596905678833938
+20261026,"Mexiletine","Random forest",0.630938591341031
+20261026,"Mexiletine","XGBoost, untuned",0.544163937463493
+20261026,"Mexiletine","XGBoost, tuned",0.578529899752102
+20261026,"Oligonucleotide","Stepwise (BIC)",-0.218999386319076
+20261026,"Oligonucleotide","LASSO",0.0774783976567043
+20261026,"Oligonucleotide","Elastic net",0.0633135007072269
+20261026,"Oligonucleotide","Random forest",0.00521136625900331
+20261026,"Oligonucleotide","XGBoost, untuned",-0.424875562912383
+20261026,"Oligonucleotide","XGBoost, tuned",-0.00202066300247727
+20261026,"Tideglusib","Stepwise (BIC)",0.473188185090555
+20261026,"Tideglusib","LASSO",0.353466028673821
+20261026,"Tideglusib","Elastic net",0.340064165363897
+20261026,"Tideglusib","Random forest",0.513937049938223
+20261026,"Tideglusib","XGBoost, untuned",0.441766003523348
+20261026,"Tideglusib","XGBoost, tuned",0.540138119933477
+20261027,"Mexiletine","Stepwise (BIC)",0.58906029559643
+20261027,"Mexiletine","LASSO",0.633847259816567
+20261027,"Mexiletine","Elastic net",0.626199670926415
+20261027,"Mexiletine","Random forest",0.632354653205434
+20261027,"Mexiletine","XGBoost, untuned",0.504198485022576
+20261027,"Mexiletine","XGBoost, tuned",0.600706579210579
+20261027,"Oligonucleotide","Stepwise (BIC)",0.189242144295035
+20261027,"Oligonucleotide","LASSO",0.0838581613171158
+20261027,"Oligonucleotide","Elastic net",0.0796893274390688
+20261027,"Oligonucleotide","Random forest",0.125777420418153
+20261027,"Oligonucleotide","XGBoost, untuned",-0.127879487502867
+20261027,"Oligonucleotide","XGBoost, tuned",0.100925036334804
+20261027,"Tideglusib","Stepwise (BIC)",0.305923553822263
+20261027,"Tideglusib","LASSO",0.288214749981601
+20261027,"Tideglusib","Elastic net",0.274471663861947
+20261027,"Tideglusib","Random forest",0.40622311432341
+20261027,"Tideglusib","XGBoost, untuned",0.238588910428125
+20261027,"Tideglusib","XGBoost, tuned",0.459310926480043
+20261028,"Mexiletine","Stepwise (BIC)",0.726649885971191
+20261028,"Mexiletine","LASSO",0.565088856936388
+20261028,"Mexiletine","Elastic net",0.570812210966765
+20261028,"Mexiletine","Random forest",0.693985545372498
+20261028,"Mexiletine","XGBoost, untuned",0.756915109111612
+20261028,"Mexiletine","XGBoost, tuned",0.704233021569354
+20261028,"Oligonucleotide","Stepwise (BIC)",0.0702381577685925
+20261028,"Oligonucleotide","LASSO",0.0760667683867345
+20261028,"Oligonucleotide","Elastic net",0.0587416944061855
+20261028,"Oligonucleotide","Random forest",0.124816226775191
+20261028,"Oligonucleotide","XGBoost, untuned",-0.188505911571049
+20261028,"Oligonucleotide","XGBoost, tuned",0.124040289448762
+20261028,"Tideglusib","Stepwise (BIC)",0.363239060645265
+20261028,"Tideglusib","LASSO",0.297054327608935
+20261028,"Tideglusib","Elastic net",0.285763419964423
+20261028,"Tideglusib","Random forest",0.410018527494262
+20261028,"Tideglusib","XGBoost, untuned",0.346780936492796
+20261028,"Tideglusib","XGBoost, tuned",0.498165201192955
+20261029,"Mexiletine","Stepwise (BIC)",0.73829928233314
+20261029,"Mexiletine","LASSO",0.57228670239123
+20261029,"Mexiletine","Elastic net",0.581524841641935
+20261029,"Mexiletine","Random forest",0.641343955429968
+20261029,"Mexiletine","XGBoost, untuned",0.657873904659014
+20261029,"Mexiletine","XGBoost, tuned",0.631884620828066
+20261029,"Oligonucleotide","Stepwise (BIC)",0.123974062546567
+20261029,"Oligonucleotide","LASSO",0.0843767963163279
+20261029,"Oligonucleotide","Elastic net",0.0847606681046672
+20261029,"Oligonucleotide","Random forest",0.139808035495779
+20261029,"Oligonucleotide","XGBoost, untuned",-0.179945656609896
+20261029,"Oligonucleotide","XGBoost, tuned",0.0836907811695785
+20261029,"Tideglusib","Stepwise (BIC)",0.350793912033157
+20261029,"Tideglusib","LASSO",0.25947667526205
+20261029,"Tideglusib","Elastic net",0.247793976598322
+20261029,"Tideglusib","Random forest",0.468345007528452
+20261029,"Tideglusib","XGBoost, untuned",0.4365178276572
+20261029,"Tideglusib","XGBoost, tuned",0.56854493137667
+20261030,"Mexiletine","Stepwise (BIC)",0.776137225616145
+20261030,"Mexiletine","LASSO",0.69413510595343
+20261030,"Mexiletine","Elastic net",0.684540606629819
+20261030,"Mexiletine","Random forest",0.735987281444582
+20261030,"Mexiletine","XGBoost, untuned",0.703256217541132
+20261030,"Mexiletine","XGBoost, tuned",0.630125229196266
+20261030,"Oligonucleotide","Stepwise (BIC)",-0.0887861375299475
+20261030,"Oligonucleotide","LASSO",0.0668158626227956
+20261030,"Oligonucleotide","Elastic net",0.0651912239921074
+20261030,"Oligonucleotide","Random forest",0.0784216829142641
+20261030,"Oligonucleotide","XGBoost, untuned",-0.490532006997865
+20261030,"Oligonucleotide","XGBoost, tuned",-0.0343921906655609
+20261030,"Tideglusib","Stepwise (BIC)",0.368913923545762
+20261030,"Tideglusib","LASSO",0.23463396757718
+20261030,"Tideglusib","Elastic net",0.2353194436928
+20261030,"Tideglusib","Random forest",0.471363569529734
+20261030,"Tideglusib","XGBoost, untuned",0.475204200340125
+20261030,"Tideglusib","XGBoost, tuned",0.536283376393238

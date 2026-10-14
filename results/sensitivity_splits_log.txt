@@ -1,0 +1,197 @@
+seed 20261011  Mexiletine       Stepwise (BIC) 0.54 | LASSO 0.48 | Elastic net 0.47 | Random forest 0.50 | XGBoost, untuned 0.33 | XGBoost, tuned 0.54
+seed 20261011  Oligonucleotide  Stepwise (BIC) 0.05 | LASSO 0.06 | Elastic net 0.05 | Random forest 0.09 | XGBoost, untuned -0.08 | XGBoost, tuned 0.06
+seed 20261011  Tideglusib       Stepwise (BIC) 0.30 | LASSO 0.24 | Elastic net 0.25 | Random forest 0.56 | XGBoost, untuned 0.40 | XGBoost, tuned 0.55
+seed 20261012  Mexiletine       Stepwise (BIC) 0.67 | LASSO 0.61 | Elastic net 0.60 | Random forest 0.65 | XGBoost, untuned 0.64 | XGBoost, tuned 0.71
+seed 20261012  Oligonucleotide  Stepwise (BIC) 0.10 | LASSO 0.10 | Elastic net 0.09 | Random forest 0.14 | XGBoost, untuned 0.03 | XGBoost, tuned 0.15
+seed 20261012  Tideglusib       Stepwise (BIC) 0.44 | LASSO 0.34 | Elastic net 0.35 | Random forest 0.46 | XGBoost, untuned 0.44 | XGBoost, tuned 0.55
+seed 20261013  Mexiletine       Stepwise (BIC) 0.67 | LASSO 0.60 | Elastic net 0.60 | Random forest 0.68 | XGBoost, untuned 0.66 | XGBoost, tuned 0.71
+seed 20261013  Oligonucleotide  Stepwise (BIC) 0.24 | LASSO -0.00 | Elastic net -0.00 | Random forest 0.16 | XGBoost, untuned -0.08 | XGBoost, tuned 0.13
+seed 20261013  Tideglusib       Stepwise (BIC) 0.35 | LASSO 0.31 | Elastic net 0.30 | Random forest 0.39 | XGBoost, untuned 0.05 | XGBoost, tuned 0.38
+seed 20261014  Mexiletine       Stepwise (BIC) 0.58 | LASSO 0.55 | Elastic net 0.58 | Random forest 0.62 | XGBoost, untuned 0.46 | XGBoost, tuned 0.67
+seed 20261014  Oligonucleotide  Stepwise (BIC) -0.01 | LASSO 0.06 | Elastic net 0.06 | Random forest -0.07 | XGBoost, untuned -0.79 | XGBoost, tuned -0.10
+seed 20261014  Tideglusib       Stepwise (BIC) 0.30 | LASSO 0.30 | Elastic net 0.30 | Random forest 0.47 | XGBoost, untuned 0.41 | XGBoost, tuned 0.49
+seed 20261015  Mexiletine       Stepwise (BIC) 0.65 | LASSO 0.61 | Elastic net 0.61 | Random forest 0.57 | XGBoost, untuned 0.39 | XGBoost, tuned 0.55
+seed 20261015  Oligonucleotide  Stepwise (BIC) 0.03 | LASSO 0.06 | Elastic net 0.04 | Random forest 0.04 | XGBoost, untuned -0.22 | XGBoost, tuned -0.01
+seed 20261015  Tideglusib       Stepwise (BIC) 0.29 | LASSO 0.29 | Elastic net 0.28 | Random forest 0.51 | XGBoost, untuned 0.44 | XGBoost, tuned 0.59
+seed 20261016  Mexiletine       Stepwise (BIC) 0.62 | LASSO 0.55 | Elastic net 0.58 | Random forest 0.64 | XGBoost, untuned 0.58 | XGBoost, tuned 0.70
+seed 20261016  Oligonucleotide  Stepwise (BIC) 0.16 | LASSO 0.10 | Elastic net 0.10 | Random forest 0.16 | XGBoost, untuned 0.06 | XGBoost, tuned 0.08
+seed 20261016  Tideglusib       Stepwise (BIC) 0.39 | LASSO 0.36 | Elastic net 0.36 | Random forest 0.54 | XGBoost, untuned 0.36 | XGBoost, tuned 0.56
+seed 20261017  Mexiletine       Stepwise (BIC) 0.71 | LASSO 0.59 | Elastic net 0.61 | Random forest 0.65 | XGBoost, untuned 0.68 | XGBoost, tuned 0.65
+seed 20261017  Oligonucleotide  Stepwise (BIC) 0.22 | LASSO 0.05 | Elastic net 0.03 | Random forest 0.11 | XGBoost, untuned -0.10 | XGBoost, tuned 0.09
+seed 20261017  Tideglusib       Stepwise (BIC) 0.28 | LASSO 0.28 | Elastic net 0.26 | Random forest 0.48 | XGBoost, untuned 0.47 | XGBoost, tuned 0.54
+seed 20261018  Mexiletine       Stepwise (BIC) 0.76 | LASSO 0.66 | Elastic net 0.63 | Random forest 0.62 | XGBoost, untuned 0.51 | XGBoost, tuned 0.65
+seed 20261018  Oligonucleotide  Stepwise (BIC) 0.10 | LASSO 0.06 | Elastic net 0.03 | Random forest 0.09 | XGBoost, untuned -0.28 | XGBoost, tuned 0.07
+seed 20261018  Tideglusib       Stepwise (BIC) 0.41 | LASSO 0.31 | Elastic net 0.32 | Random forest 0.51 | XGBoost, untuned 0.40 | XGBoost, tuned 0.54
+seed 20261019  Mexiletine       Stepwise (BIC) 0.64 | LASSO 0.64 | Elastic net 0.63 | Random forest 0.59 | XGBoost, untuned 0.40 | XGBoost, tuned 0.48
+seed 20261019  Oligonucleotide  Stepwise (BIC) -0.04 | LASSO 0.06 | Elastic net 0.04 | Random forest 0.03 | XGBoost, untuned -0.27 | XGBoost, tuned 0.07
+seed 20261019  Tideglusib       Stepwise (BIC) 0.48 | LASSO 0.31 | Elastic net 0.32 | Random forest 0.57 | XGBoost, untuned 0.51 | XGBoost, tuned 0.61
+seed 20261020  Mexiletine       Stepwise (BIC) 0.58 | LASSO 0.53 | Elastic net 0.52 | Random forest 0.60 | XGBoost, untuned 0.43 | XGBoost, tuned 0.62
+seed 20261020  Oligonucleotide  Stepwise (BIC) 0.12 | LASSO 0.06 | Elastic net 0.05 | Random forest 0.17 | XGBoost, untuned -0.04 | XGBoost, tuned 0.14
+seed 20261020  Tideglusib       Stepwise (BIC) 0.30 | LASSO 0.27 | Elastic net 0.24 | Random forest 0.33 | XGBoost, untuned 0.19 | XGBoost, tuned 0.40
+seed 20261021  Mexiletine       Stepwise (BIC) 0.66 | LASSO 0.60 | Elastic net 0.61 | Random forest 0.63 | XGBoost, untuned 0.59 | XGBoost, tuned 0.67
+seed 20261021  Oligonucleotide  Stepwise (BIC) 0.25 | LASSO 0.06 | Elastic net 0.07 | Random forest 0.02 | XGBoost, untuned -0.14 | XGBoost, tuned 0.12
+seed 20261021  Tideglusib       Stepwise (BIC) 0.35 | LASSO 0.30 | Elastic net 0.31 | Random forest 0.46 | XGBoost, untuned 0.42 | XGBoost, tuned 0.50
+seed 20261022  Mexiletine       Stepwise (BIC) 0.63 | LASSO 0.57 | Elastic net 0.59 | Random forest 0.64 | XGBoost, untuned 0.64 | XGBoost, tuned 0.63
+seed 20261022  Oligonucleotide  Stepwise (BIC) 0.26 | LASSO -0.01 | Elastic net 0.01 | Random forest 0.16 | XGBoost, untuned 0.19 | XGBoost, tuned 0.15
+seed 20261022  Tideglusib       Stepwise (BIC) 0.34 | LASSO 0.20 | Elastic net 0.17 | Random forest 0.49 | XGBoost, untuned 0.56 | XGBoost, tuned 0.55
+seed 20261023  Mexiletine       Stepwise (BIC) 0.64 | LASSO 0.61 | Elastic net 0.60 | Random forest 0.60 | XGBoost, untuned 0.61 | XGBoost, tuned 0.64
+seed 20261023  Oligonucleotide  Stepwise (BIC) 0.32 | LASSO 0.04 | Elastic net 0.03 | Random forest 0.37 | XGBoost, untuned 0.30 | XGBoost, tuned 0.17
+seed 20261023  Tideglusib       Stepwise (BIC) 0.41 | LASSO 0.28 | Elastic net 0.29 | Random forest 0.48 | XGBoost, untuned 0.48 | XGBoost, tuned 0.62
+seed 20261024  Mexiletine       Stepwise (BIC) 0.68 | LASSO 0.62 | Elastic net 0.59 | Random forest 0.58 | XGBoost, untuned 0.57 | XGBoost, tuned 0.61
+seed 20261024  Oligonucleotide  Stepwise (BIC) 0.17 | LASSO 0.08 | Elastic net 0.06 | Random forest 0.03 | XGBoost, untuned -0.23 | XGBoost, tuned 0.03
+seed 20261024  Tideglusib       Stepwise (BIC) 0.33 | LASSO 0.33 | Elastic net 0.31 | Random forest 0.40 | XGBoost, untuned 0.42 | XGBoost, tuned 0.47
+seed 20261025  Mexiletine       Stepwise (BIC) 0.58 | LASSO 0.58 | Elastic net 0.59 | Random forest 0.55 | XGBoost, untuned 0.37 | XGBoost, tuned 0.38
+seed 20261025  Oligonucleotide  Stepwise (BIC) 0.18 | LASSO 0.12 | Elastic net 0.09 | Random forest 0.12 | XGBoost, untuned 0.07 | XGBoost, tuned 0.11
+seed 20261025  Tideglusib       Stepwise (BIC) 0.47 | LASSO 0.33 | Elastic net 0.34 | Random forest 0.53 | XGBoost, untuned 0.41 | XGBoost, tuned 0.56
+seed 20261026  Mexiletine       Stepwise (BIC) 0.65 | LASSO 0.60 | Elastic net 0.60 | Random forest 0.63 | XGBoost, untuned 0.54 | XGBoost, tuned 0.58
+seed 20261026  Oligonucleotide  Stepwise (BIC) -0.22 | LASSO 0.08 | Elastic net 0.06 | Random forest 0.01 | XGBoost, untuned -0.42 | XGBoost, tuned -0.00
+seed 20261026  Tideglusib       Stepwise (BIC) 0.47 | LASSO 0.35 | Elastic net 0.34 | Random forest 0.51 | XGBoost, untuned 0.44 | XGBoost, tuned 0.54
+seed 20261027  Mexiletine       Stepwise (BIC) 0.59 | LASSO 0.63 | Elastic net 0.63 | Random forest 0.63 | XGBoost, untuned 0.50 | XGBoost, tuned 0.60
+seed 20261027  Oligonucleotide  Stepwise (BIC) 0.19 | LASSO 0.08 | Elastic net 0.08 | Random forest 0.13 | XGBoost, untuned -0.13 | XGBoost, tuned 0.10
+seed 20261027  Tideglusib       Stepwise (BIC) 0.31 | LASSO 0.29 | Elastic net 0.27 | Random forest 0.41 | XGBoost, untuned 0.24 | XGBoost, tuned 0.46
+seed 20261028  Mexiletine       Stepwise (BIC) 0.73 | LASSO 0.57 | Elastic net 0.57 | Random forest 0.69 | XGBoost, untuned 0.76 | XGBoost, tuned 0.70
+seed 20261028  Oligonucleotide  Stepwise (BIC) 0.07 | LASSO 0.08 | Elastic net 0.06 | Random forest 0.12 | XGBoost, untuned -0.19 | XGBoost, tuned 0.12
+seed 20261028  Tideglusib       Stepwise (BIC) 0.36 | LASSO 0.30 | Elastic net 0.29 | Random forest 0.41 | XGBoost, untuned 0.35 | XGBoost, tuned 0.50
+seed 20261029  Mexiletine       Stepwise (BIC) 0.74 | LASSO 0.57 | Elastic net 0.58 | Random forest 0.64 | XGBoost, untuned 0.66 | XGBoost, tuned 0.63
+seed 20261029  Oligonucleotide  Stepwise (BIC) 0.12 | LASSO 0.08 | Elastic net 0.08 | Random forest 0.14 | XGBoost, untuned -0.18 | XGBoost, tuned 0.08
+seed 20261029  Tideglusib       Stepwise (BIC) 0.35 | LASSO 0.26 | Elastic net 0.25 | Random forest 0.47 | XGBoost, untuned 0.44 | XGBoost, tuned 0.57
+seed 20261030  Mexiletine       Stepwise (BIC) 0.78 | LASSO 0.69 | Elastic net 0.68 | Random forest 0.74 | XGBoost, untuned 0.70 | XGBoost, tuned 0.63
+seed 20261030  Oligonucleotide  Stepwise (BIC) -0.09 | LASSO 0.07 | Elastic net 0.07 | Random forest 0.08 | XGBoost, untuned -0.49 | XGBoost, tuned -0.03
+seed 20261030  Tideglusib       Stepwise (BIC) 0.37 | LASSO 0.23 | Elastic net 0.24 | Random forest 0.47 | XGBoost, untuned 0.48 | XGBoost, tuned 0.54
+
+Test R² over 20 splits (median, 10th to 90th percentile) and how often each method ranked first:
+             arm           method median_R2   q10  q90     seed
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261011
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261015
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261017
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261018
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261019
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261023
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261024
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261026
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261029
+      Mexiletine   Stepwise (BIC)      0.65  0.58 0.74 20261030
+      Mexiletine   XGBoost, tuned      0.63  0.53 0.70 20261012
+      Mexiletine   XGBoost, tuned      0.63  0.53 0.70 20261013
+      Mexiletine   XGBoost, tuned      0.63  0.53 0.70 20261014
+      Mexiletine   XGBoost, tuned      0.63  0.53 0.70 20261016
+      Mexiletine   XGBoost, tuned      0.63  0.53 0.70 20261020
+      Mexiletine   XGBoost, tuned      0.63  0.53 0.70 20261021
+      Mexiletine    Random forest      0.63  0.56 0.68       NA
+      Mexiletine      Elastic net      0.60  0.57 0.63 20261025
+      Mexiletine            LASSO      0.60  0.54 0.64 20261027
+      Mexiletine XGBoost, untuned      0.57  0.39 0.68 20261022
+      Mexiletine XGBoost, untuned      0.57  0.39 0.68 20261028
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261013
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261017
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261018
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261021
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261022
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261024
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261025
+ Oligonucleotide   Stepwise (BIC)      0.12 -0.04 0.25 20261027
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261011
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261016
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261020
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261023
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261028
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261029
+ Oligonucleotide    Random forest      0.12  0.02 0.16 20261030
+ Oligonucleotide   XGBoost, tuned      0.09 -0.01 0.15 20261012
+ Oligonucleotide   XGBoost, tuned      0.09 -0.01 0.15 20261019
+ Oligonucleotide            LASSO      0.06  0.04 0.10 20261014
+ Oligonucleotide            LASSO      0.06  0.04 0.10 20261015
+ Oligonucleotide            LASSO      0.06  0.04 0.10 20261026
+ Oligonucleotide      Elastic net      0.06  0.03 0.09       NA
+ Oligonucleotide XGBoost, untuned     -0.14 -0.43 0.08       NA
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261012
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261014
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261015
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261016
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261017
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261018
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261019
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261020
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261021
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261023
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261024
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261025
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261026
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261027
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261028
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261029
+      Tideglusib   XGBoost, tuned      0.54  0.45 0.59 20261030
+      Tideglusib    Random forest      0.47  0.40 0.54 20261011
+      Tideglusib    Random forest      0.47  0.40 0.54 20261013
+      Tideglusib XGBoost, untuned      0.42  0.23 0.48 20261022
+      Tideglusib   Stepwise (BIC)      0.35  0.30 0.47       NA
+      Tideglusib            LASSO      0.30  0.24 0.34       NA
+      Tideglusib      Elastic net      0.29  0.24 0.34       NA
+ times_ranked_first
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  0
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  0
+                  0
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  1
+                  0
+                  0
+                  0
+Done.

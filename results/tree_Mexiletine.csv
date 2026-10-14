@@ -1,0 +1,4 @@
+"leaf","test_n","test_responder_pct","rule"
+"2",20,10,"myotonia_severity< 4.85"
+"6",15,40,"myotonia_severity>=4.85 & ctg_repeats< 457.5"
+"7",6,67,"myotonia_severity>=4.85 & ctg_repeats>=457.5"

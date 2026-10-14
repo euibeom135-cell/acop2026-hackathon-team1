@@ -1,0 +1,10 @@
+"arm","key","phenotype","n","slope_per_unit","interaction_p"
+"Mexiletine","myotonia_severity","adult_onset",71,-0.512,0.029
+"Mexiletine","myotonia_severity","juvenile_onset",28,-0.664,0.029
+"Mexiletine","myotonia_severity","late_onset",21,-0.251,0.029
+"Oligonucleotide","ctg_repeats","adult_onset",78,0.005,0.5
+"Oligonucleotide","ctg_repeats","juvenile_onset",23,0.006,0.5
+"Oligonucleotide","ctg_repeats","late_onset",26,0.014,0.5
+"Tideglusib","cognitive_function","adult_onset",83,-3.086,0.158
+"Tideglusib","cognitive_function","juvenile_onset",24,-4.442,0.158
+"Tideglusib","cognitive_function","late_onset",21,-1.341,0.158
