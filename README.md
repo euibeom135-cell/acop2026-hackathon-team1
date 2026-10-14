@@ -1,101 +1,50 @@
-# ACoP 2026 Hackathon — Team 1
+# ACoP 2026 Hackathon, Team 1: Beyond CTG repeats
 
-Repository: https://github.com/euibeom135-cell/acop2026-hackathon-team1
+Which baseline measures predict who responds to three DM1 treatments, and does machine learning find more than standard covariate models? A simulated trial of 500 patients, three arms (mexiletine, antisense oligonucleotide, tideglusib), 18 baseline covariates, some of them noise by design.
 
+**Answer.** Each arm has one dominant baseline predictor, and it is the measure closest to the drug's site of action: myotonia severity for mexiletine (one axis with CTG repeat length), CTG repeat length for the antisense oligonucleotide, cognitive function for tideglusib, as a threshold near z = -0.5. Machine learning selected the same covariates and added no new predictor; it was ahead in one arm only, because that effect is a step, and a linear model with one cut-off recovers most of the gap. A planted pure-noise covariate was never selected. Four independent pipelines (R and Python, different splits) reached the same three covariates.
 
-**Beyond CTG Repeats: Advancing Patient Stratification in Myotonic Dystrophy Type 1 (DM1)**
+## Start here
 
-> **The question:** can machine learning identify additional predictors and improve patient stratification beyond traditional covariate modelling?
-
-For each of three treatment arms in a simulated 500-patient dataset, we find which baseline covariates drive response, separate real predictors from planted noise, and compare covariate models with machine-learning models.
-
-| | |
+| File | What it is |
 |---|---|
-| **Submission** | Slides and all code in the Team 1 SharePoint folder by **Tue 13 Oct 2026, 11:59 PM ET** |
-| **Presentation** | Wed 14 Oct, 9:00 AM. 5-minute talk + 3-minute Q&A (one judge question) |
-| **Scoring** | Clinical 10, Technical 10, Communication 10 |
-| **Office hour** | Tue 13 Oct, 8:00 to 9:00 AM, Magnolia 1 |
+| [`slides/Team1_DM1_slides.pptx`](slides/Team1_DM1_slides.pptx) | The talk: 8 slides plus backups, speaker notes on every slide |
+| [`analysis/dm1_analysis_onefile.R`](analysis/dm1_analysis_onefile.R) | The analysis in one R file; every number on the slides comes from its outputs ([PDF listing](analysis/dm1_analysis_onefile.pdf)) |
+| [`results/`](results/) | The outputs of that script: tables and figures the slides quote |
+| [`slides/5_analysis_report.pdf`](slides/5_analysis_report.pdf) | Full report, pages 1 and 2 are the conclusion ([annotated copy](slides/5_analysis_report_annotated.pdf) with plain-English notes) |
+| [`DECISIONS.md`](DECISIONS.md) | Every analysis choice and its reason |
+| [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) | Which AI tools were used, and for what |
 
-**New here? Read [`GETTING_STARTED.md`](GETTING_STARTED.md).** Everyone on the team has write access.
+## Reproduce
 
-## Folders
-
-| Folder | What's inside |
-|---|---|
-| [`slides/`](slides/) | The original kickoff deck, our 3-page brief, our 10-page detailed guide, and the outline for our talk |
-| [`analysis/`](analysis/) | The analysis script, the shared data-loading and split code, and one folder per member for trying ideas |
-| [`results/`](results/) | The team's official tables and figures, which the slides are built from |
-
-```
-├── slides/
-│   ├── 1_kickoff_slides_original.pdf
-│   ├── 2_brief.pdf
-│   ├── 3_detailed_guide.pdf
-│   └── presentation_outline.md
-├── analysis/
-│   ├── dm1_analysis.R       main pipeline; the only place the test set is used
-│   ├── R/common.R           shared data loading, cleaning and the one train/test split
-│   ├── explorations/        one folder per member (training data only)
-│   ├── data/                put the dataset here (never uploaded)
-│   └── dm1_outputs/         your own run's output (not uploaded)
-├── results/                 official team results, one shared copy
-├── GETTING_STARTED.md       setup, sharing and troubleshooting
-├── sync.sh                  one command to save, pull and upload
-├── DECISIONS.md             analysis decisions and their reasons
-├── AI_DISCLOSURE.md         which AI tools were used, and for what
-├── CONTRIBUTING.md          how to share changes
-└── AGENTS.md / CLAUDE.md    rules for Codex and Claude Code
-```
-
-## Quick start
-
-1. Get the dataset from the team SharePoint folder and save it into `analysis/data/`.
-2. Install packages once: `Rscript analysis/install_packages.R`
-3. Run:
+The dataset is not in this repository. Place `dm1_clinical_trial_dataset.csv` in `analysis/data/`, then:
 
 ```bash
-cd analysis && Rscript dm1_analysis.R
+Rscript analysis/install_packages.R          # once
+cd analysis && Rscript dm1_analysis_onefile.R   # about a minute; writes dm1_outputs/
+Rscript sensitivity_splits.R                    # optional, 20 repeated splits, about 12 minutes
 ```
 
-Your results appear in `analysis/dm1_outputs/` (personal, not uploaded). The team's official copy is in `results/`. See [`analysis/README.md`](analysis/README.md) for what each file means.
-
-To share work: `bash sync.sh "what I changed"`.
-
-## Working with AI assistants
-
-Several of us use Codex or Claude Code. Both pick up the project rules automatically from `AGENTS.md` / `CLAUDE.md` when started inside this folder. The rules that matter most: the dataset is never uploaded, explorations see training patients only, nobody changes the split or the seed, and every AI tool used is logged in `AI_DISCLOSURE.md`. Each person works in their own folder under `analysis/explorations/`.
+`dm1_analysis_onefile.R` is `R/common.R` and `dm1_analysis.R` joined for reading; the two-file form is what the explorations source.
 
 ## Workflow
 
-| Step | What the script does |
-|---|---|
-| 1. Understand | Data checks, correlated covariates, responder balance |
-| 2. Split | Per arm, 75/25, stratified by responder label and onset phenotype, fixed seed, test set locked |
-| 3. Preprocess | Category encoding; scaling and imputation learned on the training set only |
-| 4. Select | Covariate models (stepwise, LASSO, elastic net) and ML (random forest, XGBoost) |
-| 5. Train | Tuning by 5-fold cross-validation inside the training set |
-| 6. Evaluate | Once on the test set, with bootstrap intervals; covariates compared across methods |
+Per arm: 75/25 train/test split stratified by responder status and onset phenotype, fixed seed, test set scored once. All model choices by 5-fold cross-validation inside the training set. Covariate models: stepwise (BIC), LASSO, elastic net, plus a linear model on the agreed covariates with one cut-off where the data show a step. Machine learning: random forest, XGBoost untuned and tuned; importance by permutation and SHAP. Noise control: a pure-noise covariate, 200 bootstrap resamples for selection stability, agreement across the five methods. Robustness: the split repeated with 20 seeds.
 
-## Task board
+## Folders
 
-- [ ] Dataset received and placed in `analysis/data/`
-- [ ] Data checks reviewed; cleaning decisions recorded in `DECISIONS.md`
-- [ ] Analysis run on real data; outputs shared
-- [ ] Clinical sense-check of selected covariates per arm
-- [ ] Team call: agree the story
-- [ ] Slides drafted (five slides)
-- [ ] AI disclosure final in code and slides
-- [ ] Slides and code uploaded to SharePoint; representative emails the chairs
+```
+slides/        the deck, the report, references, the talk outline, the team's kickoff notes and guides
+analysis/      the R pipeline (one-file and two-file forms), the sensitivity script, and explorations/
+results/       outputs of the main script on the locked split (aggregate tables and figures only)
+```
 
-## Team and roles
+`analysis/explorations/` holds each member's work: `euibeom/` (follow-up checks and the covariate forest plot), `bei/` (correlation screen), `wenzhe/` (two Python + R pipelines and a cross-pipeline comparison), `ming/` (agentic pipeline with pre-registration and a shuffled-outcome null). Patient-level files were removed from all of them before upload.
 
-| Role | Who |
-|---|---|
-| Analysis and code | Euibeom Shin |
-| Clinical sense-check | to be agreed |
-| Slides | to be agreed |
-| Presenter and team representative | to be agreed |
+## Team
 
-## Status
+Euibeom Shin, Wenzhe Ma, Leo Vuong, Bei Zhao, Ming Gao, Izumi Hamada. Context for teammates and their AI assistants: [`TEAM_CONTEXT.md`](TEAM_CONTEXT.md); rules for AI assistants working in this repository: [`AGENTS.md`](AGENTS.md).
 
-The script has been tested end to end on mock data built with the kickoff's column names. It has **not yet been run on the real dataset**.
+## AI use
+
+Claude (Anthropic) via Claude Code, and Codex, drafted code, documentation and the slides, as noted in the code headers and in `AI_DISCLOSURE.md`. Every analysis decision and interpretation was reviewed by the team, which is accountable for the results. Data are simulated; nothing here describes real patients or approved therapies.
